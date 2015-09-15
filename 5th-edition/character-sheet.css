@@ -32,6 +32,10 @@ body {
     src: url(copyright.woff) format("woff");
 }
 
+.text-black {
+    color: #272425;
+}
+
 .copyright {
     font-family: copyright;
     position: absolute;
@@ -39,8 +43,24 @@ body {
     white-space: nowrap;
 }
 
-.text-black {
-    color: #272425;
+@font-face {
+    font-family: header;
+    src: url(header.woff) format("woff");
+}
+
+.character-name {
+    font-family: header;
+    position: absolute;
+}
+
+.character-name label {
+    position: relative;
+}
+
+.character-name>fieldset {
+    border-style: none;
+    padding: 0;
+    margin: 0;
 }
 
 @media screen {
@@ -70,6 +90,22 @@ body {
         bottom: 13.5px;
         width: 444px;
     }
+
+    .character-name {
+        font-size: 8px;
+        left: 366px;
+        top: 23.75px;
+        right: 27.75px;
+        bottom: 702px;
+    }
+
+    .character-name>fieldset {
+        height: 13px;
+    }
+
+    .character-name label {
+        bottom: -6.625px;
+    }
 }
 
 @media print {
@@ -94,5 +130,21 @@ body {
         left: 85pt;
         bottom: 13.5pt;
         width: 444pt;
+    }
+
+    .character-name {
+        font-size: 8pt;
+        left: 365.875pt;
+        top: 23.75pt;
+        right: 27.75pt;
+        bottom: 702pt;
+    }
+
+    .character-name>fieldset {
+        height: 13pt;
+    }
+
+    .character-name label {
+        bottom: -6.625pt;
     }
 }
