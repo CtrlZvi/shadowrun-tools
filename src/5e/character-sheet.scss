@@ -138,19 +138,22 @@ body {
   @include bottom(57);
   // 24.75 works best, but it causes Safari to split the text between
   // multiple lines.
-  @include font-size(24.25);
+  @include font-size(24.49999);
   font-family: copyright;
   position: absolute;
   text-align: justify;
   text-align-last: justify;
   overflow: hidden;
   line-height: 0.8;
-}
 
-@supports not (text-align-last: justify) {
-  .copyright::after {
-    content: "";
-    width: 100%;
-    display: inline-block;
-  }
+  // Once Safari 8 is no longer supported we can add the feature query.
+  // Unfortunately, Safari 8 neither supports feature queries nor
+  // text-align-last.
+  // @supports not (text-align-last: justify) {
+    &::after {
+      content: "";
+      width: 100%;
+      display: inline-block;
+    }
+  // }
 }
