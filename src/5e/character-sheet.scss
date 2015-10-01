@@ -3,20 +3,6 @@ $black: #272425;
 $page-width: 612;
 $page-height: 765;
 
-@mixin transform($transform) {
-  transform: $transform;
-  -moz-transform: $transform;
-  -ms-transform: $transform;
-  -webkit-transform: $transform;
-}
-
-@mixin transform-origin($x, $y) {
-  transform-origin: $x $y;
-  -moz-transform-origin: $x $y;
-  -ms-transform-origin: $x $y;
-  -webkit-transform-origin: $x $y;
-}
-
 body {
   margin: 0;
 }
@@ -35,6 +21,7 @@ body {
 .pdf-page {
   background-color: white;
   position: relative;
+  overflow: hidden;
   @media screen {
     width: #{$page-width}px;
     height: #{$page-height}px;
@@ -54,8 +41,8 @@ body {
 }
 
 .pdf-page-content {
-  @include transform(scale(0.24));
-  @include transform-origin(left, top);
+  transform: scale(0.24);
+  transform-origin: left top;
   width: 2550px;
   height: 3188px;
   opacity: 0.5;
