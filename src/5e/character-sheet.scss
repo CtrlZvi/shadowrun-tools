@@ -3,6 +3,78 @@ $black: #272425;
 $page-width: 612;
 $page-height: 765;
 
+@mixin create-font-face($name) {
+  @font-face {
+    font-family: $name;
+    src: url(#{$name}.woff) format("woff");
+  }
+}
+
+@mixin bottom($bottom) {
+  @media screen {
+    bottom: #{$bottom}px;
+  }
+  @media print {
+    bottom: #{$bottom}pt;
+  }
+}
+
+@mixin font-size($font-size) {
+  @media screen {
+    font-size: #{$font-size}px;
+  }
+  @media print {
+    font-size: #{$font-size}pt;
+  }
+}
+
+@mixin height($height) {
+  @media screen {
+    height: #{$height}px;
+  }
+  @media print {
+    height: #{$height}pt;
+  }
+}
+
+@mixin left($left) {
+  @media screen {
+    left: #{$left}px;
+  }
+  @media print {
+    left: #{$left}pt;
+  }
+}
+
+@mixin right($right) {
+  @media screen {
+    right: #{$right}px;
+  }
+  @media print {
+    right: #{$right}pt;
+  }
+}
+
+@mixin top($top) {
+  @media screen {
+    top: #{$top}px;
+  }
+  @media print {
+    top: #{$top}pt;
+  }
+}
+
+@mixin width($width) {
+  @media screen {
+    width: #{$width}px;
+  }
+  @media print {
+    width: #{$width}pt;
+  }
+}
+
+@include create-font-face(copyright);
+
 body {
   margin: 0;
 }
@@ -19,47 +91,54 @@ body {
 }
 
 .pdf-page {
+  @include width($page-width);
+  @include height($page-height);
+  background-size: 100% 100%;
   background-color: white;
   position: relative;
   overflow: hidden;
   @media screen {
-    width: #{$page-width}px;
-    height: #{$page-height}px;
     margin: 13px auto;
     box-shadow: 1px 1px 3px 1px #333333;
-    background-size: #{$page-width}px #{$page-height}px;
   }
   @media print {
-    width: #{$page-width}pt;
-    height: #{$page-height}pt;
     margin: 0pt;
     box-shadow: none;
-    background-size: #{$page-width}pt #{$page-height}pt;
     page-break-after: always;
     page-break-inside: avoid;
   }
 }
 
 .pdf-page-content {
+  @include width(2550);
+  @include height(3188);
   transform: scale(0.24);
   transform-origin: left top;
-  width: 2550px;
-  height: 3188px;
   opacity: 0.5;
 }
 
-#character-sheet-front-original {
+#character-sheet-front {
     background-image: url("CAT27000_Shadowrun 5_CharacterSheet Front.png");
 }
 
-#character-sheet-back-original {
+#character-sheet-back {
     background-image: url("CAT27000_Shadowrun 5_CharacterSheet Back.png");
 }
 
-#character-sheet-front {
-    background-image: url("character-sheet-front.png");
+.background {
+  width: 100%;
+  height: 100%;
+  user-select: none;
 }
 
-#character-sheet-back {
-    background-image: url("characyer-sheet-back.png");
+.copyright {
+  @include width(1849);
+  @include height(23);
+  @include left(354);
+  @include bottom(62);
+  @include font-size(24);
+  font-family: copyright;
+  position: absolute;
+  text-align-last: justify;
+  white-space: nowrap;
 }
