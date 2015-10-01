@@ -1,0 +1,25 @@
+{
+  "name": "shadowrun-tools",
+  "version": "0.1.0",
+  "description": "Tools for players of Shadowrun",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.0.4",
+    "gulp-sourcemaps": "^1.6.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CtrlZvi/shadowrun-tools.git"
+  },
+  "author": "Zvi \"Viz\" Effron",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/CtrlZvi/shadowrun-tools/issues"
+  },
+  "homepage": "https://github.com/CtrlZvi/shadowrun-tools#readme"
+}

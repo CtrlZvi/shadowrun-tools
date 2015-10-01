@@ -1,0 +1,78 @@
+$black: #272425;
+
+$page-width: 612;
+$page-height: 765;
+
+@mixin transform($transform) {
+  transform: $transform;
+  -moz-transform: $transform;
+  -ms-transform: $transform;
+  -webkit-transform: $transform;
+}
+
+@mixin transform-origin($x, $y) {
+  transform-origin: $x $y;
+  -moz-transform-origin: $x $y;
+  -ms-transform-origin: $x $y;
+  -webkit-transform-origin: $x $y;
+}
+
+body {
+  margin: 0;
+}
+
+.pdf {
+  @media screen {
+    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
+    overflow: auto;
+  }
+  @media print {
+    overflow: visible;
+    background: transparent;
+  }
+}
+
+.pdf-page {
+  background-color: white;
+  position: relative;
+  @media screen {
+    width: #{$page-width}px;
+    height: #{$page-height}px;
+    margin: 13px auto;
+    box-shadow: 1px 1px 3px 1px #333333;
+    background-size: #{$page-width}px #{$page-height}px;
+  }
+  @media print {
+    width: #{$page-width}pt;
+    height: #{$page-height}pt;
+    margin: 0pt;
+    box-shadow: none;
+    background-size: #{$page-width}pt #{$page-height}pt;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
+
+.pdf-page-content {
+  @include transform(scale(0.24));
+  @include transform-origin(left, top);
+  width: 2550px;
+  height: 3188px;
+  opacity: 0.5;
+}
+
+#character-sheet-front-original {
+    background-image: url("CAT27000_Shadowrun 5_CharacterSheet Front.png");
+}
+
+#character-sheet-back-original {
+    background-image: url("CAT27000_Shadowrun 5_CharacterSheet Back.png");
+}
+
+#character-sheet-front {
+    background-image: url("character-sheet-front.png");
+}
+
+#character-sheet-back {
+    background-image: url("characyer-sheet-back.png");
+}
