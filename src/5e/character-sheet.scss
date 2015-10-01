@@ -133,12 +133,24 @@ body {
 
 .copyright {
   @include width(1849);
-  @include height(23);
+  @include height(24);
   @include left(354);
-  @include bottom(62);
-  @include font-size(24);
+  @include bottom(57);
+  // 24.75 works best, but it causes Safari to split the text between
+  // multiple lines.
+  @include font-size(24.25);
   font-family: copyright;
   position: absolute;
+  text-align: justify;
   text-align-last: justify;
-  white-space: nowrap;
+  overflow: hidden;
+  line-height: 0.8;
+}
+
+@supports not (text-align-last: justify) {
+  .copyright::after {
+    content: "";
+    width: 100%;
+    display: inline-block;
+  }
 }
