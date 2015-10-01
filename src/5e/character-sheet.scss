@@ -46,6 +46,24 @@ $page-height: 765;
   }
 }
 
+@mixin letter-spacing($letter-spacing) {
+  @media screen {
+    letter-spacing: #{$letter-spacing}px;
+  }
+  @media print {
+    letter-spacing: #{$letter-spacing}pt;
+  }
+}
+
+@mixin margin-left($margin-left) {
+  @media screen {
+    margin-left: #{$margin-left}px;
+  }
+  @media print {
+    margin-left: #{$margin-left}pt;
+  }
+}
+
 @mixin right($right) {
   @media screen {
     right: #{$right}px;
@@ -74,6 +92,13 @@ $page-height: 765;
 }
 
 @include create-font-face(copyright);
+@include create-font-face(header);
+
+.no-boundary {
+  margin: 0;
+  border: none;
+  padding: 0;
+}
 
 body {
   margin: 0;
@@ -138,13 +163,15 @@ body {
   @include bottom(57);
   // 24.75 works best, but it causes Safari to split the text between
   // multiple lines.
+  // 24.5 is where Safari splits the text onto a second line.
   @include font-size(24.49999);
-  font-family: copyright;
   position: absolute;
+  color: $black;
+  font-family: copyright;
+  line-height: 0.8;
   text-align: justify;
   text-align-last: justify;
   overflow: hidden;
-  line-height: 0.8;
 
   // Once Safari 8 is no longer supported we can add the feature query.
   // Unfortunately, Safari 8 neither supports feature queries nor
@@ -156,4 +183,71 @@ body {
       display: inline-block;
     }
   // }
+}
+
+.name {
+  @include width(909);
+  @include height(162);
+  @include right(116);
+  @include top(100);
+  @include font-size(33);
+  position: absolute;
+  font-family: header;
+  color: $black;
+
+  fieldset {
+    @extend .no-boundary;
+    @include height(54.5);
+    position: relative;
+
+    &[name=character-name] {
+      .line {
+        @include margin-left(1.5);
+        @include letter-spacing(-3.95);
+      }
+
+      input[type=text] {
+        @include width(642);
+      }
+    }
+
+    &[name=player-name] {
+      .line {
+        @include margin-left(9);
+        @include letter-spacing(-4.25);
+      }
+
+      input[type=text] {
+        @include width(723);
+      }
+    }
+
+    &[name=notes] {
+      .line {
+        @include margin-left(10);
+        @include letter-spacing(-4.35);
+      }
+
+      input[type=text] {
+        @include width(750);
+      }
+    }
+  }
+
+  label {
+    @include bottom(0);
+    @include letter-spacing(0.25);
+    position: absolute;
+    line-height: 0.8;
+  }
+
+  input[type=text] {
+    @extend .no-boundary;
+    @include height(41);
+    @include right(0);
+    @include bottom(-1);
+    @include font-size(33);
+    position: absolute;
+    background-color: transparent;
+  }
 }
