@@ -3,15 +3,22 @@
   "version": "0.1.0",
   "description": "Tools for players of Shadowrun",
   "main": "gulpfile.js",
-  "dependencies": {},
+  "dependencies": {
+    "react": "^0.13.3"
+  },
   "devDependencies": {
+    "file-loader": "^0.8.4",
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.2",
     "gulp-babel": "^5.2.1",
     "gulp-load-plugins": "^0.10.0",
     "gulp-sass": "^2.0.4",
     "gulp-scss-lint": "^0.3.4",
-    "gulp-sourcemaps": "^1.6.0"
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-typescript": "^2.9.2",
+    "gulp-util": "^3.0.6",
+    "gulp-webpack": "^1.5.0",
+    "tsd": "^0.6.4"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
