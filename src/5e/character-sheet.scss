@@ -1,98 +1,64 @@
-$black: #272425;
-
-$page-width: 612;
-$page-height: 765;
-
 @mixin create-font-face($name) {
   @font-face {
     font-family: $name;
-    src: url(#{$name}.woff) format("woff");
+    src: url(#{$name}.woff) format('woff');
+  }
+}
+
+@mixin media-units($name, $value) {
+  @media screen {
+    #{$name}: #{$value}px;
+  }
+  @media print {
+    #{$name}: #{$value}pt;
   }
 }
 
 @mixin bottom($bottom) {
-  @media screen {
-    bottom: #{$bottom}px;
-  }
-  @media print {
-    bottom: #{$bottom}pt;
-  }
+  @include media-units(bottom, $bottom);
 }
 
 @mixin font-size($font-size) {
-  @media screen {
-    font-size: #{$font-size}px;
-  }
-  @media print {
-    font-size: #{$font-size}pt;
-  }
+  @include media-units(font-size, $font-size);
 }
 
 @mixin height($height) {
-  @media screen {
-    height: #{$height}px;
-  }
-  @media print {
-    height: #{$height}pt;
-  }
+  @include media-units(height, $height);
 }
 
 @mixin left($left) {
-  @media screen {
-    left: #{$left}px;
-  }
-  @media print {
-    left: #{$left}pt;
-  }
+  @include media-units(left, $left);
 }
 
 @mixin letter-spacing($letter-spacing) {
-  @media screen {
-    letter-spacing: #{$letter-spacing}px;
-  }
-  @media print {
-    letter-spacing: #{$letter-spacing}pt;
-  }
+  @include media-units(letter-spacing, $letter-spacing);
 }
 
 @mixin margin-left($margin-left) {
-  @media screen {
-    margin-left: #{$margin-left}px;
-  }
-  @media print {
-    margin-left: #{$margin-left}pt;
-  }
+  @include media-units(margin-left, $margin-left);
 }
 
 @mixin right($right) {
-  @media screen {
-    right: #{$right}px;
-  }
-  @media print {
-    right: #{$right}pt;
-  }
+  @include media-units(right, $right);
 }
 
 @mixin top($top) {
-  @media screen {
-    top: #{$top}px;
-  }
-  @media print {
-    top: #{$top}pt;
-  }
+  @include media-units(top, $top);
 }
 
 @mixin width($width) {
-  @media screen {
-    width: #{$width}px;
-  }
-  @media print {
-    width: #{$width}pt;
-  }
+  @include media-units(width, $width);
 }
 
 @include create-font-face(copyright);
 @include create-font-face(header);
+
+$black-text: #272425;
+
+$page-width: 612;
+$page-height: 765;
+
+
 
 .no-boundary {
   margin: 0;
@@ -166,7 +132,7 @@ body {
   // 24.5 is where Safari splits the text onto a second line.
   @include font-size(24.49999);
   position: absolute;
-  color: $black;
+  color: $black-text;
   font-family: copyright;
   line-height: 0.8;
   text-align: justify;
@@ -193,7 +159,7 @@ body {
   @include font-size(34);
   position: absolute;
   font-family: header;
-  color: $black;
+  color: $black-text;
 
   fieldset {
     @extend .no-boundary;
