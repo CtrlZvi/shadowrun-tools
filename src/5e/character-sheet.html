@@ -2,66 +2,11 @@
 <html>
     <head>
         <link rel="stylesheet" href="character-sheet.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/react/0.13.3/react.js"></script>
         <meta charset="utf8" />
     </head>
     <body>
-        <div class="pdf">
-            <div id="character-sheet-front" class="pdf-page">
-                <div class="pdf-page-content">
-                    <img src="character-sheet-front.png" class="background" />
-                    <header class="name">
-                        <fieldset name="character-name">
-                            <label for="character-name-front">
-                                CHARACTER<span class="line">______________________</span>
-                            </label>
-                            <input type="text" id="character-name-front" />
-                        </fieldset>
-                        <fieldset name="player-name">
-                            <label for="player-name-front">
-                                PLAYER<span class="line">_________________________</span>
-                            </label>
-                            <input type="text" id="player-name-front" />
-                        </fieldset>
-                        <fieldset name="notes">
-                            <label for="notes-front">
-                                NOTES<span class="line">__________________________</span>
-                            </label>
-                            <input type="text" id="notes-front" />
-                        </fieldset>
-                    </header>
-                    <footer class="copyright">
-                        © 2013 The Topps Company, Inc. Shadowrun is a registered trademark of The Topps Company, Inc., in the United States and/or other countries. Permission given to copy for personal use.
-                    </footer>
-                </div>
-            </div>
-            <div id="character-sheet-back" class="pdf-page">
-                <div class="pdf-page-content">
-                    <img src="character-sheet-back.png" class="background" />
-                    <header class="name">
-                        <fieldset name="character-name">
-                            <label for="character-name-back">
-                                CHARACTER<span class="line">______________________</span>
-                            </label>
-                            <input type="text" id="character-name-back" />
-                        </fieldset>
-                        <fieldset name="player-name">
-                            <label for="player-name-back">
-                                PLAYER<span class="line">_________________________</span>
-                            </label>
-                            <input type="text" id="player-name-back" />
-                        </fieldset>
-                        <fieldset name="notes">
-                            <label for="notes-back">
-                                NOTES<span class="line">__________________________</span>
-                            </label>
-                            <input type="text" id="notes-back" />
-                        </fieldset>
-                    </header>
-                    <footer class="copyright">
-                        © 2013 The Topps Company, Inc. Shadowrun is a registered trademark of The Topps Company, Inc., in the United States and/or other countries. Permission given to copy for personal use.
-                    </footer>
-                </div>
-            </div>
-        </div>
+        <div id="character-sheet"></div>
+        <script type="text/javascript" src="character-sheet.js"></script>
     </body>
 </html>

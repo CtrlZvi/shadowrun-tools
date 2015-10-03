@@ -190,7 +190,7 @@ body {
   @include height(162);
   @include right(116);
   @include top(100);
-  @include font-size(33);
+  @include font-size(34);
   position: absolute;
   font-family: header;
   color: $black;
@@ -202,8 +202,8 @@ body {
 
     &[name=character-name] {
       .line {
-        @include margin-left(1.5);
-        @include letter-spacing(-3.95);
+        @include margin-left(3);
+        @include letter-spacing(-4.8);
       }
 
       input[type=text] {
@@ -213,8 +213,8 @@ body {
 
     &[name=player-name] {
       .line {
-        @include margin-left(9);
-        @include letter-spacing(-4.25);
+        @include margin-left(10);
+        @include letter-spacing(-5.15);
       }
 
       input[type=text] {
@@ -225,7 +225,7 @@ body {
     &[name=notes] {
       .line {
         @include margin-left(10);
-        @include letter-spacing(-4.35);
+        @include letter-spacing(-5.2);
       }
 
       input[type=text] {
@@ -236,7 +236,7 @@ body {
 
   label {
     @include bottom(0);
-    @include letter-spacing(0.25);
+    @include letter-spacing(-0.75);
     position: absolute;
     line-height: 0.8;
   }
