@@ -53,16 +53,17 @@
 @include create-font-face(copyright);
 @include create-font-face(header);
 
+// Colors
 $black-text: #272425;
+$page-background: #fff;
+$page-shadow: #333;
 
 $page-width: 612;
 $page-height: 765;
 
-
-
-.no-boundary {
+%no-boundary {
+  border: 0;
   margin: 0;
-  border: none;
   padding: 0;
 }
 
@@ -72,29 +73,30 @@ body {
 
 .pdf {
   @media screen {
-    background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=");
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');
     overflow: auto;
   }
   @media print {
-    overflow: visible;
     background: transparent;
+    overflow: visible;
+
   }
 }
 
 .pdf-page {
   @include width($page-width);
   @include height($page-height);
+  background-color: $page-background;
   background-size: 100% 100%;
-  background-color: white;
-  position: relative;
   overflow: hidden;
+  position: relative;
   @media screen {
+    box-shadow: 1px 1px 3px 1px $page-shadow;
     margin: 13px auto;
-    box-shadow: 1px 1px 3px 1px #333333;
   }
   @media print {
-    margin: 0pt;
     box-shadow: none;
+    margin: 0;
     page-break-after: always;
     page-break-inside: avoid;
   }
@@ -103,23 +105,25 @@ body {
 .pdf-page-content {
   @include width(2550);
   @include height(3188);
-  transform: scale(0.24);
+  opacity: .5;
+  transform: scale(.24);
   transform-origin: left top;
-  opacity: 0.5;
 }
 
+// scss-lint:disable IdSelector
 #character-sheet-front {
-    background-image: url("CAT27000_Shadowrun 5_CharacterSheet Front.png");
+  background-image: url('CAT27000_Shadowrun%205_CharacterSheet%20Front.png');
 }
 
 #character-sheet-back {
-    background-image: url("CAT27000_Shadowrun 5_CharacterSheet Back.png");
+  background-image: url('CAT27000_Shadowrun%205_CharacterSheet%20Back.png');
 }
+// scss-lint:enable IdSelector
 
 .background {
-  width: 100%;
   height: 100%;
   user-select: none;
+  width: 100%;
 }
 
 .copyright {
@@ -131,23 +135,23 @@ body {
   // multiple lines.
   // 24.5 is where Safari splits the text onto a second line.
   @include font-size(24.49999);
-  position: absolute;
   color: $black-text;
   font-family: copyright;
-  line-height: 0.8;
+  line-height: .8;
+  overflow: hidden;
+  position: absolute;
   text-align: justify;
   text-align-last: justify;
-  overflow: hidden;
 
   // Once Safari 8 is no longer supported we can add the feature query.
   // Unfortunately, Safari 8 neither supports feature queries nor
   // text-align-last.
   // @supports not (text-align-last: justify) {
-    &::after {
-      content: "";
-      width: 100%;
-      display: inline-block;
-    }
+  &::after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+  }
   // }
 }
 
@@ -157,63 +161,63 @@ body {
   @include right(116);
   @include top(100);
   @include font-size(34);
-  position: absolute;
-  font-family: header;
   color: $black-text;
+  font-family: header;
+  position: absolute;
 
   fieldset {
-    @extend .no-boundary;
+    @extend %no-boundary;
     @include height(54.5);
     position: relative;
-
-    &[name=character-name] {
-      .line {
-        @include margin-left(3);
-        @include letter-spacing(-4.8);
-      }
-
-      input[type=text] {
-        @include width(642);
-      }
-    }
-
-    &[name=player-name] {
-      .line {
-        @include margin-left(10);
-        @include letter-spacing(-5.15);
-      }
-
-      input[type=text] {
-        @include width(723);
-      }
-    }
-
-    &[name=notes] {
-      .line {
-        @include margin-left(10);
-        @include letter-spacing(-5.2);
-      }
-
-      input[type=text] {
-        @include width(750);
-      }
-    }
   }
 
   label {
     @include bottom(0);
-    @include letter-spacing(-0.75);
+    @include letter-spacing(-.75);
+    line-height: .8;
     position: absolute;
-    line-height: 0.8;
   }
 
-  input[type=text] {
-    @extend .no-boundary;
+  input {
+    @extend %no-boundary;
     @include height(41);
     @include right(0);
     @include bottom(-1);
     @include font-size(33);
-    position: absolute;
     background-color: transparent;
+    position: absolute;
+  }
+}
+
+[name=character-name] {
+  .line {
+    @include margin-left(3);
+    @include letter-spacing(-4.8);
+  }
+
+  input {
+    @include width(642);
+  }
+}
+
+[name=player-name] {
+  .line {
+    @include margin-left(10);
+    @include letter-spacing(-5.15);
+  }
+
+  input {
+    @include width(723);
+  }
+}
+
+[name=notes] {
+  .line {
+    @include margin-left(10);
+    @include letter-spacing(-5.2);
+  }
+
+  input {
+    @include width(750);
   }
 }
