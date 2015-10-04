@@ -21,6 +21,7 @@
     "style-loader": "^0.12.4",
     "ts-loader": "^0.5.5",
     "tsd": "^0.6.4",
+    "tslint-loader": "^1.0.2",
     "webpack": "^1.12.2",
     "webpack-dev-server": "^1.12.0"
   },

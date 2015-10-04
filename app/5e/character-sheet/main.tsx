@@ -1,2 +1,2 @@
-import "./character-sheet.tsx"
-import "./character-sheet.scss"
+import "./character-sheet.tsx";
+import "./character-sheet.scss";

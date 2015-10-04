@@ -1,8 +1,10 @@
-var gulp = require("gulp");
-var gutil = require("gulp-util");
-var webpack = require("webpack");
-var WebpackDevServer = require("webpack-dev-server");
-var webpackConfig = require("./webpack.config.js");
+"use strict";
+
+let gulp = require("gulp");
+let gutil = require("gulp-util");
+let webpack = require("webpack");
+let WebpackDevServer = require("webpack-dev-server");
+let webpackConfig = require("./webpack.config.js");
 
 // The development server (the recommended option for development)
 gulp.task("default", ["webpack-dev-server"]);
@@ -19,9 +21,8 @@ gulp.task("build-dev", ["webpack:build-dev"], function() {
 gulp.task("build", ["webpack:build"]);
 
 gulp.task("webpack:build", function(callback) {
-    // modify some webpack config options
-    var myConfig = Object.create(webpackConfig);
-    myConfig.plugins = myConfig.plugins.concat(
+    let config = Object.create(webpackConfig);
+    config.plugins = config.plugins.concat(
         new webpack.DefinePlugin({
             process: {
                 env: {
@@ -31,9 +32,14 @@ gulp.task("webpack:build", function(callback) {
             }
         })
     );
+    // Make lint check failures fail the build
+    config.tslint = {
+        emitErrors: true,
+        failOnHint: true,
+    };
 
     // run webpack
-    webpack(myConfig, function(err, stats) {
+    webpack(config, function(err, stats) {
         if(err) throw new gutil.PluginError("webpack:build", err);
         gutil.log("[webpack:build]", stats.toString({
             colors: true
@@ -44,7 +50,7 @@ gulp.task("webpack:build", function(callback) {
 
 // modify some webpack config options
 var myDevConfig = Object.create(webpackConfig);
-myDevConfig.devtool = "sourcemap";
+myDevConfig.devtool = "source-map";
 myDevConfig.debug = true;
 
 // create a single instance of the compiler to allow caching
