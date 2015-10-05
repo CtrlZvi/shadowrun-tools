@@ -14,7 +14,6 @@
     "eofline": true,
     "forin": true,
     "indent": [true, "spaces"],
-    "interface-name": true,
     "jsdoc-format": true,
     "label-position": true,
     "label-undefined": true,
@@ -23,7 +22,7 @@
     "member-ordering": [true,
         "public-before-private",
         "static-before-instance",
-        "variables-before-functions"
+        "functions-before-variables"
     ],
     "no-any": false,
     "no-arg": true,

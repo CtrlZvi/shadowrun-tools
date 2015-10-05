@@ -18,6 +18,14 @@
   @include media-units(bottom, $bottom);
 }
 
+@mixin column-gap($column-gap) {
+  @include media-units(column-gap, $column-gap);
+}
+
+@mixin column-width($column-width) {
+  @include media-units(column-width, $column-width);
+}
+
 @mixin font-size($font-size) {
   @include media-units(font-size, $font-size);
 }
@@ -34,8 +42,20 @@
   @include media-units(letter-spacing, $letter-spacing);
 }
 
+@mixin margin-bottom($margin-bottom) {
+  @include media-units(margin-bottom, $margin-bottom);
+}
+
 @mixin margin-left($margin-left) {
   @include media-units(margin-left, $margin-left);
+}
+
+@mixin margin-right($margin-right) {
+  @include media-units(margin-right, $margin-right);
+}
+
+@mixin margin-top($margin-top) {
+  @include media-units(margin-top, $margin-top);
 }
 
 @mixin right($right) {
@@ -52,14 +72,19 @@
 
 @include create-font-face(copyright);
 @include create-font-face(header);
+@include create-font-face(title);
 
 // Colors
-$black-text: #272425;
+$text: #272425;
+$title-text: #fff;
 $page-background: #fff;
 $page-shadow: #333;
 
+// Dimensions
 $page-width: 612;
 $page-height: 765;
+$stats-width: 2330;
+$stats-column-width: 1128;
 
 %no-boundary {
   border: 0;
@@ -84,8 +109,8 @@ body {
 }
 
 .pdf-page {
-  @include width($page-width);
   @include height($page-height);
+  @include width($page-width);
   background-color: $page-background;
   background-size: 100% 100%;
   overflow: hidden;
@@ -110,40 +135,51 @@ body {
   }
 }
 
+.pdf-page:nth-child(1) {
+  background-image: url('./CAT27000_Shadowrun 5_CharacterSheet Front.png');
+}
+
+.pdf-page:nth-child(2) {
+  background-image: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
+}
+
 .pdf-page-content {
-  @include width(2550);
   @include height(3188);
-  opacity: .5;
-  transform: scale(.24);
+  @include width(2550);
+  opacity: 0.5;
+  transform: scale(0.24);
   transform-origin: left top;
 }
 
 .background {
   height: 100%;
+  opacity: 0;
   user-select: none;
   width: 100%;
 
-  .pdf-page:nth-child(1) & {
+  .pdf-page:nth-child(1)
+  & {
     content: url('./character-sheet-front.png');
   }
 
-  .pdf-page:nth-child(2) & {
+  .pdf-page:nth-child(2)
+  & {
     content: url('./character-sheet-back.png');
   }
 }
 
 .copyright {
-  @include width(1849);
-  @include height(24);
-  @include left(354);
   @include bottom(57);
   // 24.75 works best, but it causes Safari to split the text between
   // multiple lines.
   // 24.5 is where Safari splits the text onto a second line.
   @include font-size(24.49999);
-  color: $black-text;
+  @include height(24);
+  @include left(354);
+  @include width(1849);
+  color: $text;
   font-family: copyright;
-  line-height: .8;
+  line-height: 0.8;
   overflow: hidden;
   position: absolute;
   text-align: justify;
@@ -162,13 +198,14 @@ body {
 }
 
 .name {
-  @include width(909);
+  @include font-size(34);
   @include height(162);
+  @include width(909);
   @include right(116);
   @include top(100);
-  @include font-size(34);
-  color: $black-text;
+  color: $text;
   font-family: header;
+  text-transform: uppercase;
   position: absolute;
 
   fieldset {
@@ -179,17 +216,17 @@ body {
 
   label {
     @include bottom(0);
-    @include letter-spacing(-.75);
-    line-height: .8;
+    @include letter-spacing(-0.75);
+    line-height: 0.8;
     position: absolute;
   }
 
   input {
     @extend %no-boundary;
-    @include height(41);
-    @include right(0);
     @include bottom(-1);
     @include font-size(33);
+    @include height(41);
+    @include right(0);
     background-color: transparent;
     position: absolute;
   }
@@ -197,8 +234,8 @@ body {
 
 [name=character-name] {
   .line {
-    @include margin-left(3);
     @include letter-spacing(-4.8);
+    @include margin-left(3);
   }
 
   input {
@@ -208,8 +245,8 @@ body {
 
 [name=player-name] {
   .line {
-    @include margin-left(10);
     @include letter-spacing(-5.15);
+    @include margin-left(10);
   }
 
   input {
@@ -219,11 +256,227 @@ body {
 
 [name=notes] {
   .line {
-    @include margin-left(10);
     @include letter-spacing(-5.2);
+    @include margin-left(10);
   }
 
   input {
     @include width(750);
   }
+}
+
+.stats {
+  @include column-gap(($stats-width - (2 * $stats-column-width)));
+  @include column-width($stats-column-width);
+  @include font-size(24);
+  @include width($stats-width);
+  column-count: 2;
+  column-fill: auto;
+  position: absolute;
+
+  .pdf-page:nth-child(1)
+  & {
+    @include height(2662);
+    @include left(109);
+    @include top(356);
+  }
+
+  .pdf-page:nth-child(2)
+  & {
+    @include height(2750);
+    @include left(110);
+    @include top(314);
+  }
+}
+
+.stat-block {
+  @include margin-bottom(36);
+  @include width($stats-column-width);
+  break-inside: avoid;
+  position: relative;
+
+  .pdf-page:nth-child(1)
+  &:nth-child(1) {
+    @include height(362);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(2) {
+    @include height(711);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(3) {
+    @include height(1058);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(4) {
+    @include height(422);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(5) {
+    @include height(412);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(6) {
+    @include height(1137);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(7) {
+    @include height(584);
+  }
+
+  .pdf-page:nth-child(1)
+  &:nth-child(8) {
+    @include height(421);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(1) {
+    @include height(478);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(2) {
+    @include height(501);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(3) {
+    @include height(575);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(4) {
+    @include height(1087);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(5) {
+    @include height(478);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(6) {
+    @include height(501);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(7) {
+    @include height(428);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(8) {
+    @include height(631.5);
+  }
+
+  .pdf-page:nth-child(2)
+  &:nth-child(9) {
+    @include height(567);
+  }
+}
+
+.stat-title-box {
+  @include height(54);
+  @include top(0);
+  position: absolute;
+}
+
+.stat-column-left {
+  @include right(0);
+}
+
+.stat-column-right {
+  @include left(0);
+}
+
+.stat-title {
+  @include font-size(38);
+  @include letter-spacing(-0.4);
+  color: $title-text;
+  font-family: title;
+  font-variant: small-caps;
+  line-height: 0.8;
+  text-transform: uppercase;
+  white-space: nowrap;
+
+
+  .stat-column-left
+  & {
+    @include margin-right(18);
+    @include margin-top(14.25);
+    text-align: right;
+  }
+
+  .stat-column-right
+  & {
+    @include margin-top(14.25);
+    text-align: left;
+  }
+
+  .pdf-page:nth-child(1)
+  .stat-column-right
+  & {
+    @include margin-left(18.5);
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-column-right
+  & {
+    @include margin-left(22);
+  }
+
+  .pdf-page:nth-child(1)
+  .stat-block:nth-child(8)
+  .stat-column-right
+  & {
+    @include margin-left(25);
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-block:nth-child(8)
+  & {
+    @include font-size(34);
+    @include letter-spacing(-1.55);
+    @include margin-top(8);
+    line-height: 1.16;
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-block:nth-child(9)
+  .stat-column-right
+  & {
+    @include margin-left(25);
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-block:nth-child(9)
+  & span:nth-child(1) {
+    @include letter-spacing(-1.2);
+    @include margin-left(-2);
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-block:nth-child(9)
+  & span:nth-child(2) {
+    @include letter-spacing(-2);
+    @include margin-left(-5.5);
+    @include margin-right(-7);
+  }
+
+  .pdf-page:nth-child(2)
+  .stat-block:nth-child(9)
+  & span:nth-child(3) {
+    @include letter-spacing(-1.1);
+  }
+}
+
+.stat-title-small-caps {
+  @include font-size(30);
+  text-transform: uppercase;
 }

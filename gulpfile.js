@@ -73,6 +73,7 @@ gulp.task("webpack-dev-server", function(callback) {
     config.devtool = "eval-source-map";
     config.debug = true;
     config.output.publicPath = "/dist"
+    config.entry.unshift("webpack-dev-server/client?http://localhost:8080");
 
     // Start a webpack-dev-server
     new WebpackDevServer(webpack(config), {

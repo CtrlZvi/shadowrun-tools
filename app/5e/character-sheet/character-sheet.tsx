@@ -1,19 +1,19 @@
 /// <reference path="../../../typings/react/react.d.ts" />
 import * as React from "react";
 
-interface IData {
+interface Data {
   [index: string]: any;
   "character-name": string;
   "player-name": string;
   "notes": string;
-  "domNodes": React.Component<IHeaderFieldProps, {}>[];
+  "domNodes": React.Component<HeaderFieldProps, {}>[];
 }
 
-let data: IData = {
+let data: Data = {
   "character-name": "Wade Wilson",
   "player-name": "Chris Laubach",
   "notes": "Test",
-  domNodes: []
+  "domNodes": []
 };
 
 class Background extends React.Component<{}, {}> {
@@ -24,13 +24,13 @@ class Background extends React.Component<{}, {}> {
   }
 }
 
-interface IHeaderFieldProps {
+interface HeaderFieldProps {
   name: string;
   label: string;
   line: string;
 }
 
-class HeaderField extends React.Component<IHeaderFieldProps, {}> {
+class HeaderField extends React.Component<HeaderFieldProps, {}> {
   componentDidMount() {
     data.domNodes.unshift(this);
   }
@@ -75,12 +75,56 @@ class Footer extends React.Component<{}, {}> {
   }
 }
 
+enum Column {
+  Left,
+  Right
+}
+
+interface StatBlockProps extends React.Props<StatBlock> {
+  name?: string;
+  column: Column;
+}
+
+class StatTitle extends React.Component<StatBlockProps, {}> {
+  render() {
+    return (
+      <div className={"stat-title-box stat-column-" + Column[this.props.column].toLowerCase()}>
+        <div className="stat-title">
+          {this.props.name ? this.props.name : this.props.children}
+        </div>
+      </div>
+    );
+  }
+}
+
+class StatBlock extends React.Component<StatBlockProps, {}> {
+    render() {
+      return (
+        <div className="stat-block">
+          <StatTitle {...this.props} />
+        </div>
+      );
+    }
+}
+
+class Stats extends React.Component<React.Props<Stats>, {}> {
+  render() {
+    return (
+      <div className="stats">
+        {this.props.children}
+      </div>
+    );
+  }
+}
+
 class CharacterSheetPageContent extends React.Component<{}, {}> {
   render() {
     return (
       <div className="pdf-page-content">
         <Background />
         <Header />
+        <Stats {...this.props} >
+        </Stats>
         <Footer />
       </div>
     );
@@ -91,24 +135,51 @@ class CharacterSheetPage extends React.Component<{}, {}> {
   render() {
     return (
       <div className="pdf-page">
-        <CharacterSheetPageContent />
+        <CharacterSheetPageContent {...this.props} />
       </div>
     );
   }
 }
 
-class CharacterSheet extends React.Component<{}, {}> {
+class CharacterSheet extends React.Component<React.Props<CharacterSheet>, {}> {
   render() {
     return (
       <div className="pdf">
-        <CharacterSheetPage />
-        <CharacterSheetPage />
+        {this.props.children}
       </div>
     );
   }
 }
 
 React.render(
-  <CharacterSheet />,
+  <CharacterSheet>
+    <CharacterSheetPage>
+      <StatBlock name="PERSONAL DATA" column={Column.Left} />
+      <StatBlock name="ATTRIBUTES" column={Column.Left} />
+      <StatBlock name="SKILLS" column={Column.Left} />
+      <StatBlock name="IDS / LIFESTYLES / CURRENCY" column={Column.Left} />
+      <StatBlock name="CORE COMBAT INFO" column={Column.Right} />
+      <StatBlock name="CONDITION MONITOR" column={Column.Right} />
+      <StatBlock name="QUALITIES" column={Column.Right} />
+      <StatBlock name="CONTACTS" column={Column.Right} />
+    </CharacterSheetPage>
+    <CharacterSheetPage>
+      <StatBlock name="RANGED WEAPONS" column={Column.Left} />
+      <StatBlock name="ARMOR" column={Column.Left} />
+      <StatBlock name="AUGMENTATIONS" column={Column.Left} />
+      <StatBlock name="GEAR" column={Column.Left} />
+      <StatBlock name="MELEE WEAPONS" column={Column.Right} />
+      <StatBlock name="CYBERDECK" column={Column.Right} />
+      <StatBlock name="VEHICLE" column={Column.Right} />
+      <StatBlock column={Column.Right}>
+        SPELLS / PREPARATIONS
+        <br />
+        RITUALS / COMPLEX FORMS
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        ADEPT POWERS <span className="stat-title-small-caps">or</span> OTHER ABILITIES
+      </StatBlock>
+    </CharacterSheetPage>
+  </CharacterSheet>,
   document.getElementById("character-sheet")
 );

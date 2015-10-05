@@ -7,7 +7,7 @@ let ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     cache: true,
-    entry: "./app/5e/character-sheet/main.tsx",
+    entry: ["./app/5e/character-sheet/main.tsx"],
     output: {
         path: path.join(__dirname, "dist"),
         filename: "[name].js",
