@@ -28,12 +28,7 @@ module.exports = {
             },
             {
                 test: /\.png$/,
-                exclude: /character-sheet-(?:back|front)\.png$/,
                 loader: "file"
-            },
-            {
-                test: /character-sheet-(?:back|front)\.png$/,
-                loader: "file?name=[name].[ext]"
             },
             {
                 test: /\.woff$/,

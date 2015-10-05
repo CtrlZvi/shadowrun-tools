@@ -17,12 +17,9 @@ let data: IData = {
 };
 
 class Background extends React.Component<{}, {}> {
-  props: {
-    src: string;
-  };
   render() {
     return (
-      <img src={"dist/" + this.props.src} className="background" />
+      <img className="background" />
     );
   }
 }
@@ -79,13 +76,10 @@ class Footer extends React.Component<{}, {}> {
 }
 
 class CharacterSheetPageContent extends React.Component<{}, {}> {
-  props: {
-    background: string
-  };
   render() {
     return (
       <div className="pdf-page-content">
-        <Background src={this.props.background} />
+        <Background />
         <Header />
         <Footer />
       </div>
@@ -94,13 +88,10 @@ class CharacterSheetPageContent extends React.Component<{}, {}> {
 }
 
 class CharacterSheetPage extends React.Component<{}, {}> {
-  props: {
-    id: string
-  };
   render() {
     return (
-      <div id={this.props.id} className="pdf-page">
-        <CharacterSheetPageContent background={this.props.id + ".png"} />
+      <div className="pdf-page">
+        <CharacterSheetPageContent />
       </div>
     );
   }
@@ -110,8 +101,8 @@ class CharacterSheet extends React.Component<{}, {}> {
   render() {
     return (
       <div className="pdf">
-        <CharacterSheetPage id="character-sheet-front" />
-        <CharacterSheetPage id="character-sheet-back" />
+        <CharacterSheetPage />
+        <CharacterSheetPage />
       </div>
     );
   }
