@@ -22,7 +22,7 @@ class Background extends React.Component<{}, {}> {
   };
   render() {
     return (
-      <img src={this.props.src} className="background" />
+      <img src={"dist/" + this.props.src} className="background" />
     );
   }
 }

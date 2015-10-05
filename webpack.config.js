@@ -17,7 +17,8 @@ module.exports = {
         loaders: [
             { test: /\.tsx$/, loader: "babel-loader!ts-loader" },
             { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") },
-            { test: /\.png$/, loader: "file-loader" },
+            { test: /\.png$/, exclude: /character-sheet-(?:back|front)\.png$/, loader: "file-loader" },
+            { test: /character-sheet-(?:back|front)\.png$/, loader: "file-loader?name=[name].[ext]" },
             { test: /\.woff$/, loader: "file-loader" },
         ],
         preLoaders: [

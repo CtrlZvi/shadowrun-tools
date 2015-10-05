@@ -72,10 +72,11 @@ gulp.task("webpack-dev-server", function(callback) {
     var config = Object.create(webpackConfig);
     config.devtool = "eval-source-map";
     config.debug = true;
+    config.output.publicPath = "/dist"
 
     // Start a webpack-dev-server
     new WebpackDevServer(webpack(config), {
-        publicPath: "/" + config.output.path,
+        publicPath: config.output.publicPath,
         stats: {
             colors: true
         }
