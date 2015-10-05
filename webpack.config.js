@@ -15,14 +15,36 @@ module.exports = {
     },
     module: {
         loaders: [
-            { test: /\.tsx$/, loader: "babel-loader!ts-loader" },
-            { test: /\.scss$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!sass-loader") },
-            { test: /\.png$/, exclude: /character-sheet-(?:back|front)\.png$/, loader: "file-loader" },
-            { test: /character-sheet-(?:back|front)\.png$/, loader: "file-loader?name=[name].[ext]" },
-            { test: /\.woff$/, loader: "file-loader" },
+            {
+                test: /\.tsx$/,
+                loader: "babel!ts"
+            },
+            {
+                test: /\.scss$/,
+                loader: ExtractTextPlugin.extract(
+                    "style",
+                    "css!autoprefixer?{browsers:['> 1%', 'last 2 version']}!sass"
+                )
+            },
+            {
+                test: /\.png$/,
+                exclude: /character-sheet-(?:back|front)\.png$/,
+                loader: "file"
+            },
+            {
+                test: /character-sheet-(?:back|front)\.png$/,
+                loader: "file?name=[name].[ext]"
+            },
+            {
+                test: /\.woff$/,
+                loader: "file"
+            },
         ],
         preLoaders: [
-            { test: /\.tsx$/, loader: "tslint-loader" },,
+            {
+                test: /\.tsx$/,
+                loader: "tslint"
+            },,
         ]
     },
     resolve: {
