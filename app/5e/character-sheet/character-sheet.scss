@@ -135,36 +135,28 @@ body {
   }
 }
 
-.pdf-page:nth-child(1) {
-  background-image: url('./CAT27000_Shadowrun 5_CharacterSheet Front.png');
-}
-
-.pdf-page:nth-child(2) {
-  background-image: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
-}
-
 .pdf-page-content {
   @include height(3188);
   @include width(2550);
-  opacity: 0.5;
+  opacity: 1;
   transform: scale(0.24);
   transform-origin: left top;
-}
 
-.background {
-  height: 100%;
-  opacity: 0;
-  user-select: none;
-  width: 100%;
+  &::before {
+    opacity: 1;
+    user-select: none;
+    width: 100%;
 
-  .pdf-page:nth-child(1)
-  & {
-    content: url('./character-sheet-front.png');
-  }
 
-  .pdf-page:nth-child(2)
-  & {
-    content: url('./character-sheet-back.png');
+    .pdf-page:nth-child(1)
+    & {
+      content: url('./character-sheet-front.png');
+    }
+
+    .pdf-page:nth-child(2)
+    & {
+      content: url('./character-sheet-back.png');
+    }
   }
 }
 

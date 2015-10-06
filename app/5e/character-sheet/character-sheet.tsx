@@ -16,14 +16,6 @@ let data: Data = {
   "domNodes": []
 };
 
-class Background extends React.Component<{}, {}> {
-  render() {
-    return (
-      <img className="background" />
-    );
-  }
-}
-
 interface HeaderFieldProps {
   name: string;
   label: string;
@@ -121,7 +113,6 @@ class CharacterSheetPageContent extends React.Component<{}, {}> {
   render() {
     return (
       <div className="pdf-page-content">
-        <Background />
         <Header />
         <Stats {...this.props} >
         </Stats>
