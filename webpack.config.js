@@ -4,6 +4,7 @@ let glob = require("glob");
 let path = require("path");
 let webpack = require("webpack");
 let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let cssExtractor = new ExtractTextPlugin("[name].css")
 
 module.exports = {
     cache: true,
@@ -21,10 +22,16 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loader: ExtractTextPlugin.extract(
-                    "style",
-                    "css!autoprefixer?{browsers:['> 1%', 'last 2 version']}!sass"
-                )
+                loaders: cssExtractor.extract(
+                    [
+                        "style"
+                    ],
+                    [
+                        "css",
+                        "autoprefixer?{browsers:['> 1%', 'last 2 version']}",
+                        "sass"
+                    ]
+                ).split("!")
             },
             {
                 test: /\.png$/,
@@ -46,6 +53,6 @@ module.exports = {
         extensions: ["", ".webpack.js", ".web.js", ".js", ".ts", ".tsx", ".png", ".woff"]
     },
     plugins: [
-        new ExtractTextPlugin("[name].css")
+        cssExtractor
     ]
 };
