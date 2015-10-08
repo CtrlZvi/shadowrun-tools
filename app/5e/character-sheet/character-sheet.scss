@@ -138,12 +138,12 @@ body {
 .pdf-page-content {
   @include height(3188);
   @include width(2550);
-  opacity: 1;
+  opacity: 0.5;
   transform: scale(0.24);
   transform-origin: left top;
 
   &::before {
-    opacity: 1;
+    opacity: 0;
     user-select: none;
     width: 100%;
 
@@ -377,14 +377,16 @@ body {
   @include height(54);
   @include top(0);
   position: absolute;
-}
 
-.stat-column-left {
-  @include right(0);
-}
+  .stat-column-left
+  & {
+    @include right(0);
+  }
 
-.stat-column-right {
-  @include left(0);
+  .stat-column-left
+  & {
+    @include left(0);
+  }
 }
 
 .stat-title {

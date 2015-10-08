@@ -67,33 +67,32 @@ class Footer extends React.Component<{}, {}> {
   }
 }
 
-enum Column {
-  Left,
-  Right
-}
-
-interface StatBlockProps extends React.Props<StatBlock> {
-  name?: string;
-  column: Column;
-}
-
-class StatTitle extends React.Component<StatBlockProps, {}> {
+class StatTitle extends React.Component<React.Props<StatTitle>, {}> {
   render() {
     return (
-      <div className={"stat-title-box stat-column-" + Column[this.props.column].toLowerCase()}>
+      <div className="stat-title-box">
         <div className="stat-title">
-          {this.props.name ? this.props.name : this.props.children}
+          {this.props.children}
         </div>
       </div>
     );
   }
 }
 
+enum Column {
+  Left,
+  Right
+}
+
+interface StatBlockProps extends React.Props<StatBlock> {
+  column: Column;
+}
+
 class StatBlock extends React.Component<StatBlockProps, {}> {
-    render() {
+    render(): JSX.Element {
       return (
-        <div className="stat-block">
-          <StatTitle {...this.props} />
+        <div className={"stat-block stat-column-" + Column[this.props.column].toLowerCase()}>
+          {this.props.children}
         </div>
       );
     }
@@ -109,24 +108,16 @@ class Stats extends React.Component<React.Props<Stats>, {}> {
   }
 }
 
-class CharacterSheetPageContent extends React.Component<{}, {}> {
-  render() {
-    return (
-      <div className="pdf-page-content">
-        <Header />
-        <Stats {...this.props} >
-        </Stats>
-        <Footer />
-      </div>
-    );
-  }
-}
-
 class CharacterSheetPage extends React.Component<{}, {}> {
   render() {
     return (
       <div className="pdf-page">
-        <CharacterSheetPageContent {...this.props} />
+        <div className="pdf-page-content">
+          <Header />
+          <Stats {...this.props} >
+          </Stats>
+          <Footer />
+        </div>
       </div>
     );
   }
@@ -145,30 +136,64 @@ class CharacterSheet extends React.Component<React.Props<CharacterSheet>, {}> {
 React.render(
   <CharacterSheet>
     <CharacterSheetPage>
-      <StatBlock name="PERSONAL DATA" column={Column.Left} />
-      <StatBlock name="ATTRIBUTES" column={Column.Left} />
-      <StatBlock name="SKILLS" column={Column.Left} />
-      <StatBlock name="IDS / LIFESTYLES / CURRENCY" column={Column.Left} />
-      <StatBlock name="CORE COMBAT INFO" column={Column.Right} />
-      <StatBlock name="CONDITION MONITOR" column={Column.Right} />
-      <StatBlock name="QUALITIES" column={Column.Right} />
-      <StatBlock name="CONTACTS" column={Column.Right} />
-    </CharacterSheetPage>
-    <CharacterSheetPage>
-      <StatBlock name="RANGED WEAPONS" column={Column.Left} />
-      <StatBlock name="ARMOR" column={Column.Left} />
-      <StatBlock name="AUGMENTATIONS" column={Column.Left} />
-      <StatBlock name="GEAR" column={Column.Left} />
-      <StatBlock name="MELEE WEAPONS" column={Column.Right} />
-      <StatBlock name="CYBERDECK" column={Column.Right} />
-      <StatBlock name="VEHICLE" column={Column.Right} />
-      <StatBlock column={Column.Right}>
-        SPELLS / PREPARATIONS
-        <br />
-        RITUALS / COMPLEX FORMS
+      <StatBlock column={Column.Left}>
+        <StatTitle>PERSONAL DATA</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>ATTRIBUTES</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>SKILLS</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>IDS / LIFESTYLES / CURRENCY</StatTitle>
       </StatBlock>
       <StatBlock column={Column.Right}>
-        ADEPT POWERS <span className="stat-title-small-caps">or</span> OTHER ABILITIES
+        <StatTitle>CORE COMBAT INFO</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>CONDITION MONITOR</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>QUALITIES</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>CONTACTS</StatTitle>
+      </StatBlock>
+    </CharacterSheetPage>
+    <CharacterSheetPage>
+      <StatBlock column={Column.Left}>
+        <StatTitle>RANGED WEAPONS</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>ARMOR</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>AUGMENTATIONS</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Left}>
+        <StatTitle>GEAR</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>MELEE WEAPONS</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>CYBERDECK</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>VEHICLE</StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>
+          SPELLS / PREPARATIONS
+          <br />
+          RITUALS / COMPLEX FORMS
+        </StatTitle>
+      </StatBlock>
+      <StatBlock column={Column.Right}>
+        <StatTitle>
+          ADEPT POWERS <span className="stat-title-small-caps">or</span> OTHER ABILITIES
+        </StatTitle>
       </StatBlock>
     </CharacterSheetPage>
   </CharacterSheet>,
