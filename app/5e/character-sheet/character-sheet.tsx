@@ -108,6 +108,16 @@ class Stats extends React.Component<React.Props<Stats>, {}> {
   }
 }
 
+class Skill extends React.Component<React.Props<Skill>, {}> {
+  render() {
+    return (
+      <div className="skill">
+        A/K
+      </div>
+    );
+  }
+}
+
 class CharacterSheetPage extends React.Component<{}, {}> {
   render() {
     return (
@@ -144,6 +154,46 @@ React.render(
       </StatBlock>
       <StatBlock column={Column.Left}>
         <StatTitle>SKILLS</StatTitle>
+        <div className="skill-block">
+          <div className="skill-block-heading">Skill</div>
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <div className="skill-block-heading">Skill</div>
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+          <Skill />
+        </div>
       </StatBlock>
       <StatBlock column={Column.Left}>
         <StatTitle>IDS / LIFESTYLES / CURRENCY</StatTitle>

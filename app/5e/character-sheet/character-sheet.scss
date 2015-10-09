@@ -58,6 +58,10 @@
   @include media-units(margin-top, $margin-top);
 }
 
+@mixin padding-right($padding-right) {
+  @include media-units(padding-right, $padding-right);
+}
+
 @mixin right($right) {
   @include media-units(right, $right);
 }
@@ -72,19 +76,23 @@
 
 @include create-font-face(copyright);
 @include create-font-face(header);
+@include create-font-face(heading);
 @include create-font-face(title);
+@include create-font-face(type);
 
 // Colors
-$text: #272425;
-$title-text: #fff;
-$page-background: #fff;
-$page-shadow: #333;
+$text: rgb(39, 36, 37);
+$title-text: rgb(255, 255, 255);
+$page-background: rgb(255, 255, 255);
+$page-shadow: rgb(51, 51, 51);
 
 // Dimensions
 $page-width: 612;
 $page-height: 765;
 $stats-width: 2330;
 $stats-column-width: 1128;
+$skills-width: 1034;
+$skills-column-width: 497;
 
 %no-boundary {
   border: 0;
@@ -473,4 +481,46 @@ body {
 .stat-title-small-caps {
   @include font-size(30);
   text-transform: uppercase;
+}
+
+.skill-block {
+  @include column-gap(($skills-width - (2 * $skills-column-width)));
+  @include column-width($skills-column-width);
+  @include height(943);
+  @include left(50);
+  @include top(84);
+  @include width($skills-width);
+  column-count: 2;
+  column-fill: auto;
+  overflow: hidden;
+  position: relative;
+}
+
+.skill-block-heading {
+  @include font-size(24);
+  @include height(42);
+  @include width($skills-column-width);
+  font-family: heading;
+  color: $text;
+  break-inside: avoid;
+  line-height: 1.85;
+}
+
+.skill {
+  $padding: 1;
+  @include height(49.6);
+  @include font-size(25);
+  @include letter-spacing(3.8);
+  @include padding-right($padding);
+  @include width($skills-column-width - $padding);
+  break-inside: avoid;
+  color: $text;
+  font-family: type;
+  line-height: 2.55;
+  text-align: right;
+
+  &:nth-child(19n + 2) {
+    @include height(42);
+    line-height: 1.95;
+  }
 }
