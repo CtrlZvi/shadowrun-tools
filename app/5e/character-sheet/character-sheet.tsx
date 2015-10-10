@@ -108,6 +108,18 @@ class Stats extends React.Component<React.Props<Stats>, {}> {
   }
 }
 
+class SkillHeading extends React.Component<{}, {}> {
+  render() {
+    return (
+      <div className="skill-block-heading">
+        <span>Skill</span>
+        <span>RTG</span>
+        <span>Type</span>
+      </div>
+    );
+  }
+}
+
 class Skill extends React.Component<React.Props<Skill>, {}> {
   render() {
     return (
@@ -155,7 +167,7 @@ React.render(
       <StatBlock column={Column.Left}>
         <StatTitle>SKILLS</StatTitle>
         <div className="skill-block">
-          <div className="skill-block-heading">Skill</div>
+          <SkillHeading />
           <Skill />
           <Skill />
           <Skill />
@@ -174,7 +186,7 @@ React.render(
           <Skill />
           <Skill />
           <Skill />
-          <div className="skill-block-heading">Skill</div>
+          <SkillHeading />
           <Skill />
           <Skill />
           <Skill />
