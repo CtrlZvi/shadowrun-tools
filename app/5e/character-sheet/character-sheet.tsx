@@ -1,6 +1,9 @@
 /// <reference path="../../../typings/react/react.d.ts" />
 import * as React from "react";
 
+import * as Attributes from "./attributes";
+import * as Skills from "./skills";
+
 interface Data {
   [index: string]: any;
   "character-name": string;
@@ -120,10 +123,37 @@ class SkillHeading extends React.Component<{}, {}> {
   }
 }
 
+class SkillDropDown extends React.Component<{}, {}> {
+  render() {
+    let optgroups: JSX.Element[] = [];
+    for (let attribute of Attributes.attributes) {
+      let options: JSX.Element[] = [];
+      for (let skill of Skills.getSkillsByAttribute(attribute)) {
+        options.push(
+          <option value={skill.id.toString()}>{skill.displayName}</option>
+        );
+      }
+      if (options.length)  {
+        optgroups.push(
+          <optgroup label={attribute.displayName}>
+            {options}
+          </optgroup>
+        );
+      }
+    }
+    return (
+      <select required>
+        {optgroups}
+      </select>
+    );
+  }
+}
+
 class Skill extends React.Component<React.Props<Skill>, {}> {
   render() {
     return (
       <div className="skill">
+        <SkillDropDown />
         A/K
       </div>
     );

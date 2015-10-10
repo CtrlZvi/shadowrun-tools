@@ -1,6 +1,7 @@
 export const enum AttributeId {
   Agility,
   Body,
+  Charisma,
   Edge,
   Essence,
   Intuition,
@@ -12,75 +13,82 @@ export const enum AttributeId {
   Willpower
 }
 
-class Attribute {
+export class Attribute {
   id: AttributeId;
   displayName: string;
 }
 
-export const Agility: Attribute = {
+export const agility: Attribute = {
   displayName: "Agility",
   id: AttributeId.Agility
-}
+};
 
-export const Body: Attribute = {
+export const body: Attribute = {
   displayName: "Body",
   id: AttributeId.Body
-}
+};
 
-export const Edge: Attribute = {
+export const charisma: Attribute = {
+  displayName: "Charisma",
+  id: AttributeId.Charisma
+};
+
+export const edge: Attribute = {
   displayName: "Edge",
   id: AttributeId.Edge
-}
+};
 
-export const Essence: Attribute = {
+export const essence: Attribute = {
   displayName: "Essence",
   id: AttributeId.Essence
-}
+};
 
-export const Intuition: Attribute = {
+export const intuition: Attribute = {
   displayName: "Intuition",
   id: AttributeId.Intuition
-}
-export const Logic: Attribute = {
+};
+
+export const logic: Attribute = {
   displayName: "Logic",
   id: AttributeId.Logic
-}
+};
 
-export const Magic: Attribute = {
+export const magic: Attribute = {
   displayName: "Magic",
   id: AttributeId.Magic
-}
+};
 
-export const Reaction: Attribute = {
+export const reaction: Attribute = {
   displayName: "Reaction",
   id: AttributeId.Reaction
-}
+};
 
-export const Resonance: Attribute = {
+export const resonance: Attribute = {
   displayName: "Resonance",
   id: AttributeId.Resonance
-}
+};
 
-export const Strength: Attribute = {
+export const strength: Attribute = {
   displayName: "Strength",
   id: AttributeId.Strength
-}
+};
 
-export const Willpower: Attribute = {
+export const willpower: Attribute = {
   displayName: "Willpower",
   id: AttributeId.Willpower
-}
+};
 
-export const Attributes = [
-  Agility,
-  Body,
-  Edge,
-  Essence,
-  Intuition,
-  Logic,
-  Magic,
-  Reaction,
-  Resonance,
-  Strength,
-  Willpower
-]
+export const attributes = [
+  agility,
+  body,
+  charisma,
+  edge,
+  essence,
+  intuition,
+  logic,
+  magic,
+  reaction,
+  resonance,
+  strength,
+  willpower
+];
