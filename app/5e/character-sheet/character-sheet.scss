@@ -1,3 +1,17 @@
+// Colors
+$text: rgb(39, 36, 37);
+$title-text: rgb(255, 255, 255);
+$page-background: rgb(255, 255, 255);
+$page-shadow: rgb(51, 51, 51);
+
+// Dimensions
+$transform-scale: 0.24;
+$debug-scale: 2;
+$page-width: 612;
+$page-height: 765;
+$stats-width: 2330;
+$stats-column-width: 1128;
+
 @mixin create-font-face($name) {
   @font-face {
     font-family: $name;
@@ -7,7 +21,7 @@
 
 @mixin media-units($name, $value) {
   @media screen {
-    #{$name}: #{$value}px;
+    #{$name}: #{$value * $debug-scale}px;
   }
   @media print {
     #{$name}: #{$value}pt;
@@ -79,20 +93,6 @@
 @include create-font-face(heading);
 @include create-font-face(title);
 @include create-font-face(type);
-
-// Colors
-$text: rgb(39, 36, 37);
-$title-text: rgb(255, 255, 255);
-$page-background: rgb(255, 255, 255);
-$page-shadow: rgb(51, 51, 51);
-
-// Dimensions
-$page-width: 612;
-$page-height: 765;
-$stats-width: 2330;
-$stats-column-width: 1128;
-$skills-width: 1034;
-$skills-column-width: 497;
 
 %no-boundary {
   border: 0;
@@ -483,13 +483,15 @@ body {
   text-transform: uppercase;
 }
 
+$skill-block-width: 1034;
+$skill-block-column-width: 497;
 .skill-block {
-  @include column-gap(($skills-width - (2 * $skills-column-width)));
-  @include column-width($skills-column-width);
+  @include column-gap(($skill-block-width - (2 * $skill-block-column-width)));
+  @include column-width($skill-block-column-width);
   @include height(943);
   @include left(50);
   @include top(84);
-  @include width($skills-width);
+  @include width($skill-block-width);
   column-count: 2;
   column-fill: auto;
   overflow: hidden;
@@ -499,7 +501,7 @@ body {
 .skill-block-heading {
   @include font-size(24);
   @include height(42);
-  @include width($skills-column-width);
+  @include width($skill-block-column-width);
   font-family: heading;
   color: $text;
   break-inside: avoid;
@@ -517,21 +519,49 @@ body {
   }
 }
 
+$skill-row-height: 49.6;
+$skill-font-size: 25;
+$skill-line-height: 2.55;
+$skill-first-row-height: 42;
+$skill-first-row-line-height: 1.95;
+
 .skill {
   $padding: 1;
-  @include height(49.6);
-  @include font-size(25);
+  @include height($skill-row-height);
+  @include font-size($skill-font-size);
   @include letter-spacing(3.8);
   @include padding-right($padding);
-  @include width($skills-column-width - $padding);
+  @include width($skill-block-column-width - $padding);
   break-inside: avoid;
   color: $text;
   font-family: type;
-  line-height: 2.55;
+  line-height: $skill-line-height;
+  position: relative;
   text-align: right;
 
   &:nth-child(19n + 2) {
-    @include height(42);
-    line-height: 1.95;
+    @include height($skill-first-row-height);
+    line-height: $skill-first-row-line-height;
+  }
+}
+
+// The transform applies to the select box, but not the dropwdown that appears
+// when it is clicked. So we undo the transform and manually apply it.
+.skill-dropdown {
+  @extend %no-boundary;
+  @include height($skill-row-height * $transform-scale);
+  @include font-size($skill-font-size * $transform-scale);
+  @include left(0);
+  @include top(0);
+  letter-spacing: normal;
+  line-height: $skill-line-height * $transform-scale;
+  position: absolute;
+  transform: scale(1 / $transform-scale);
+  transform-origin: top left;
+
+  .skill:nth-child(19n + 2)
+  & {
+    @include height($skill-first-row-height  * $transform-scale);
+    line-height: $skill-first-row-line-height * $transform-scale;
   }
 }

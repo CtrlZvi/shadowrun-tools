@@ -142,7 +142,7 @@ class SkillDropDown extends React.Component<{}, {}> {
       }
     }
     return (
-      <select required>
+      <select required className="skill-dropdown">
         {optgroups}
       </select>
     );
