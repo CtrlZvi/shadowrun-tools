@@ -1,10 +1,19 @@
 // Information from the PDF
+$pixel-to-point-ratio: 0.7196715192235909pt;
+$point-to-pixel-ratio: 1 / $pixel-to-point-ratio;
+
+$page-width: 612pt;
+$page-height: 765pt;
+
 $background-offset-x: -10.03pt;
 $background-offset-y: -9pt;
-$background-width-pt: 642.667pt;
-$background-height-pt: 783pt;
-$background-width-to-height-ratio: 642.667 / 783;
-$pixel-to-point-ratio: 0.7196715192235909;
+$background-width: 642.667pt;
+$background-height: 783pt;
+
+$shadowrun-logo-offset-x: 18.544pt;
+$shadowrun-logo-offset-y: 12.458pt;
+$shadowrun-logo-width: 339.681pt;
+$shadowrun-logo-height: 58.991pt;
 
 // Styles from skills branch
 
@@ -12,23 +21,26 @@ $page-background: rgb(255, 255, 255);
 $page-shadow: rgb(51, 51, 51);
 
 $debug-scale: 1;
-$page-width: 612;
-$page-height: 765;
 
 // Approved styles
 
 // Dimensions
-$page-width-to-height-ratio: 612 / 765;
-
-$page-height-vh: 99vh;
-$page-height-pt: 765pt;
-$page-width-vh: $page-width-to-height-ratio * $page-height-vh;
-$page-width-pt: $page-width-to-height-ratio * $page-height-pt;
-$background-to-page-height-ratio: $background-height-pt / $page-height-pt;
-$background-to-page-width-ratio: $background-width-pt / $page-width-pt;
 
 body {
     margin: 0;
+}
+
+.character-sheet {
+    @media screen {
+        background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');
+        overflow: auto;
+        width: 100vw;
+        height: 100vh;
+    }
+    @media print {
+        background: transparent;
+        overflow: visible; 
+    }
 }
 
 $page: '.character-sheet-page';
@@ -39,11 +51,11 @@ $page: '.character-sheet-page';
     overflow: hidden;
     position: relative;
     z-index: 0;
+    height: $page-height;
+    width: $page-width;
     @media screen {
-        height: $page-height-vh;
-        width: $page-width-vh;
         box-shadow: 1px 1px 3px 1px $page-shadow;
-        margin: 0.5vh auto;
+        margin: auto;
     }
     @media print {
         box-shadow: none;
@@ -71,17 +83,29 @@ $page: '.character-sheet-page';
     #{$page}:nth-child(2) .background {
         content: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
     }
+
+    #{$page} .shadowrun-logo {
+        visibility: hidden;
+    }
 }
 
 .wip {
     #{$page} .background {
-        width: percentage($background-to-page-width-ratio);
-        height: percentage($background-to-page-height-ratio);
-        left: percentage($background-offset-x / $page-width-pt);
-        top: percentage($background-offset-y / $page-height-pt);
+        height: percentage($background-height / $page-height);
+        width: percentage($background-width / $page-width);
+        left: percentage($background-offset-x / $page-width);
+        top: percentage($background-offset-y / $page-height);
+        content: url('./Background.png');
     }
 
-    #{$page} .background {
-        content: url('./A9Ridn5sr_1m701rr_8t0.png');
+    #{$page} .shadowrun-logo {
+        .logo {
+            height: percentage($shadowrun-logo-height / $page-height);
+            width: percentage($shadowrun-logo-width / $page-width);
+            left: percentage($shadowrun-logo-offset-x / $page-width);
+            top: percentage($shadowrun-logo-offset-y / $page-height);
+            content: url('./Shadowrun Logo.png');
+            position: absolute;
+        }
     }
 }

@@ -27,6 +27,9 @@ const developmentState = observable({
             <div className={"character-sheet " + (developmentState.rendered ? "rendered" : "wip")}>
                 <div className="character-sheet-page">
                     <div className="background" />
+                    <div className="shadowrun-logo">
+                        <div className="logo" />
+                    </div>
                     Test test
                 </div>
             </div>
