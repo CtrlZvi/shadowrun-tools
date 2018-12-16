@@ -12,8 +12,26 @@ $background-height: 783pt;
 
 $shadowrun-logo-offset-x: 18.544pt;
 $shadowrun-logo-offset-y: 12.458pt;
-$shadowrun-logo-width: 339.681pt;
+$shadowrun-logo-width: 339.682pt;
 $shadowrun-logo-height: 58.991pt;
+
+$shadowrun-logo-shadow-offset-x: 30.348pt;
+$shadowrun-logo-shadow-offset-y: 15.372pt;
+$shadowrun-logo-shadow-width: 318pt;
+$shadowrun-logo-shadow-height: 56.4pt;
+
+$trademark-offset-x: 342.593pt;
+$trademark-offset-y: 18.154pt;
+$trademark-width: 5.863pt;
+$trademark-height: 5.831pt;
+
+$footer-offset-x: 84.919pt;
+$footer-offset-y: 745.321pt;
+$footer-width: 460.666pt;
+$footer-height: 6.522pt;
+$footer-line-spacing: 1.2;
+$footer-paragraph-spacing: 0;
+$footer-character-spacing: 0;
 
 // Styles from skills branch
 
@@ -22,7 +40,10 @@ $page-shadow: rgb(51, 51, 51);
 
 $debug-scale: 1;
 
-// Approved styles
+@font-face {
+    font-family: 'Univers LT Std';
+    src: url('./GKFLFT+UniversLTStd-Cn.woff2') format('woff2');
+}
 
 // Dimensions
 
@@ -84,28 +105,63 @@ $page: '.character-sheet-page';
         content: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
     }
 
-    #{$page} .shadowrun-logo {
-        visibility: hidden;
+    @each $class in '.shadowrun-logo', '.footer' {
+        #{$page} #{$class} {
+            visibility: hidden;
+        }
     }
 }
 
 .wip {
     #{$page} .background {
         height: percentage($background-height / $page-height);
-        width: percentage($background-width / $page-width);
         left: percentage($background-offset-x / $page-width);
         top: percentage($background-offset-y / $page-height);
+        width: percentage($background-width / $page-width);
         content: url('./Background.png');
     }
 
     #{$page} .shadowrun-logo {
         .logo {
             height: percentage($shadowrun-logo-height / $page-height);
-            width: percentage($shadowrun-logo-width / $page-width);
             left: percentage($shadowrun-logo-offset-x / $page-width);
             top: percentage($shadowrun-logo-offset-y / $page-height);
+            width: percentage($shadowrun-logo-width / $page-width);
             content: url('./Shadowrun Logo.png');
+            z-index: 1;
             position: absolute;
         }
+
+        .shadow {
+            height: percentage($shadowrun-logo-shadow-height / $page-height);
+            left: percentage($shadowrun-logo-shadow-offset-x / $page-width);
+            top: percentage($shadowrun-logo-shadow-offset-y / $page-height);
+            width: percentage($shadowrun-logo-shadow-width / $page-width);
+            content: url('./Shadowrun Logo Shadow.svg');
+            position: absolute;
+        }
+
+        .trademark {
+            height: percentage($trademark-height / $page-height);
+            left: percentage($trademark-offset-x / $page-width);
+            top: percentage($trademark-offset-y / $page-height);
+            width: percentage($trademark-width / $page-width);
+            content: url('./Trademark.svg');
+            position: absolute;
+        }
+    }
+
+    #{$page} .footer {
+        height: percentage($footer-height / $page-height);
+        left: percentage($footer-offset-x / $page-width);
+        top: percentage($footer-offset-y / $page-height);
+        width: percentage($footer-width / $page-width);
+        position: absolute;
+        font-family: 'Univers LT Std';
+        font-size: 6pt;
+        text-align: left;
+        line-height: $footer-line-spacing;
+        font-stretch: condensed;
+        letter-spacing: $footer-character-spacing;
     }
 }

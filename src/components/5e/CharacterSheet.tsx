@@ -7,6 +7,26 @@ const developmentState = observable({
     rendered: false
 });
 
+function CharacterSheetHeader() {
+    return (
+        <div className="header">
+            <div className="shadowrun-logo">
+                <div className="logo" />
+                <div className="shadow" />
+                <div className="trademark" />
+            </div>
+        </div>
+    );
+}
+
+function CharacterSheetFooter() {
+    return (
+        <div className="footer">
+            © 2013 The Topps Company, Inc. Shadowrun is a registered trademark of The Topps Company, Inc., in the United States and/or other countries. Permission given to copy for personal use.
+        </div>
+    );
+}
+
 @observer class CharacterSheet extends React.Component {
     constructor(props: {}) {
         window.onkeyup = action(
@@ -27,10 +47,9 @@ const developmentState = observable({
             <div className={"character-sheet " + (developmentState.rendered ? "rendered" : "wip")}>
                 <div className="character-sheet-page">
                     <div className="background" />
-                    <div className="shadowrun-logo">
-                        <div className="logo" />
-                    </div>
+                    <CharacterSheetHeader />
                     Test test
+                    <CharacterSheetFooter />
                 </div>
             </div>
         );
