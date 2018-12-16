@@ -15,6 +15,14 @@ function CharacterSheetHeader() {
                 <div className="shadow" />
                 <div className="trademark" />
             </div>
+            <div className="name-box">
+                <div className="character">CHARACTER</div>
+                <div className="character-line">________________________</div>
+                <div className="player">PLAYER</div>
+                <div className="player-line">___________________________</div>
+                <div className="notes">NOTES</div>
+                <div className="notes-line">____________________________</div>
+            </div>
         </div>
     );
 }
@@ -48,7 +56,11 @@ function CharacterSheetFooter() {
                 <div className="character-sheet-page">
                     <div className="background" />
                     <CharacterSheetHeader />
-                    Test test
+                    <CharacterSheetFooter />
+                </div>
+                <div className="character-sheet-page">
+                    <div className="background" />
+                    <CharacterSheetHeader />
                     <CharacterSheetFooter />
                 </div>
             </div>

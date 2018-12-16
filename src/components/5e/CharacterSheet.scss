@@ -25,13 +25,19 @@ $trademark-offset-y: 18.154pt;
 $trademark-width: 5.863pt;
 $trademark-height: 5.831pt;
 
+$character-name-top: 29.62pt;
+$player-name-top: 42.62pt;
+$notes-top: 55.62pt;
+$name-height: 8.8pt;
+$name-line-height: 8.928pt;
+$name-box-line-spacing: 1.56;
+$name-box-character-spacing: -1.60pt;
+
 $footer-offset-x: 84.919pt;
 $footer-offset-y: 745.321pt;
 $footer-width: 460.666pt;
 $footer-height: 6.522pt;
 $footer-line-spacing: 1.2;
-$footer-paragraph-spacing: 0;
-$footer-character-spacing: 0;
 
 // Styles from skills branch
 
@@ -43,6 +49,11 @@ $debug-scale: 1;
 @font-face {
     font-family: 'Univers LT Std';
     src: url('./GKFLFT+UniversLTStd-Cn.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Armadura Solid';
+    src: url('./QGYBDK+ArmaduraSolid.woff2') format('woff2');
 }
 
 // Dimensions
@@ -105,7 +116,7 @@ $page: '.character-sheet-page';
         content: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
     }
 
-    @each $class in '.shadowrun-logo', '.footer' {
+    @each $class in '.shadowrun-logo', '.footer', '.name-box' {
         #{$page} #{$class} {
             visibility: hidden;
         }
@@ -151,6 +162,64 @@ $page: '.character-sheet-page';
         }
     }
 
+    #{$page} .name-box {
+        font-family: 'Armadura Solid';
+        font-size: 8pt;
+        text-align: justify;
+        line-height: 1.56;
+        
+        .character {
+            height: percentage($name-height / $page-height);
+            left: percentage(366.226pt / $page-width);
+            top: percentage($character-name-top / $page-height);
+            width: percentage(48.524pt / $page-width);
+            position: absolute;
+        }
+        
+        .character-line {
+            height: percentage($name-line-height / $page-height);
+            left: percentage(430.162pt / $page-width);
+            top: percentage($character-name-top / $page-height);
+            width: percentage(59.408pt / $page-width);
+            position: absolute;
+            letter-spacing: -1.6pt;
+        }
+
+        .player {
+            height: percentage($name-height / $page-height);
+            left: percentage(366.226pt / $page-width);
+            top: percentage($player-name-top / $page-height);
+            width: percentage(31.88pt / $page-width);
+            position: absolute;
+        }
+
+        .player-line {
+            height: percentage($name-line-height / $page-height);
+            left: percentage(410.961pt / $page-width);
+            top: percentage($player-name-top / $page-height);
+            width: percentage(66.608pt / $page-width);
+            position: absolute;
+            letter-spacing: -1.6pt;
+        }
+
+        .notes {
+            height: percentage($name-height / $page-height);
+            left: percentage(366.119pt / $page-width);
+            top: percentage($notes-top / $page-height);
+            width: percentage(25.884pt / $page-width);
+            position: absolute;
+        }
+
+        .notes-line {
+            height: percentage($name-line-height / $page-height);
+            left: percentage(404.562pt / $page-width);
+            top: percentage($notes-top / $page-height);
+            width: percentage(69.008pt / $page-width);
+            position: absolute;
+            letter-spacing: -1.6pt;
+        }
+    }
+
     #{$page} .footer {
         height: percentage($footer-height / $page-height);
         left: percentage($footer-offset-x / $page-width);
@@ -162,6 +231,5 @@ $page: '.character-sheet-page';
         text-align: left;
         line-height: $footer-line-spacing;
         font-stretch: condensed;
-        letter-spacing: $footer-character-spacing;
     }
 }
