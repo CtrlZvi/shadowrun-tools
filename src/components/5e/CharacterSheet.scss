@@ -1,0 +1,87 @@
+// Information from the PDF
+$background-offset-x: -10.03pt;
+$background-offset-y: -9pt;
+$background-width-pt: 642.667pt;
+$background-height-pt: 783pt;
+$background-width-to-height-ratio: 642.667 / 783;
+$pixel-to-point-ratio: 0.7196715192235909;
+
+// Styles from skills branch
+
+$page-background: rgb(255, 255, 255);
+$page-shadow: rgb(51, 51, 51);
+
+$debug-scale: 1;
+$page-width: 612;
+$page-height: 765;
+
+// Approved styles
+
+// Dimensions
+$page-width-to-height-ratio: 612 / 765;
+
+$page-height-vh: 99vh;
+$page-height-pt: 765pt;
+$page-width-vh: $page-width-to-height-ratio * $page-height-vh;
+$page-width-pt: $page-width-to-height-ratio * $page-height-pt;
+$background-to-page-height-ratio: $background-height-pt / $page-height-pt;
+$background-to-page-width-ratio: $background-width-pt / $page-width-pt;
+
+body {
+    margin: 0;
+}
+
+$page: '.character-sheet-page';
+
+#{$page} {
+    background-color: $page-background;
+    background-size: 100% 100%;
+    overflow: hidden;
+    position: relative;
+    z-index: 0;
+    @media screen {
+        height: $page-height-vh;
+        width: $page-width-vh;
+        box-shadow: 1px 1px 3px 1px $page-shadow;
+        margin: 0.5vh auto;
+    }
+    @media print {
+        box-shadow: none;
+        margin: 0;
+        page-break-after: always;
+        page-break-inside: avoid;
+    }
+}
+
+#{$page} .background {
+    z-index: -1;
+    position: absolute;
+}
+
+.rendered {
+    #{$page} .background {
+        width: 100%;
+        height: 100%;
+    }
+
+    #{$page}:nth-child(1) .background {
+        content: url('./CAT27000_Shadowrun 5_CharacterSheet Front.png');
+    }
+
+    #{$page}:nth-child(2) .background {
+        content: url('./CAT27000_Shadowrun 5_CharacterSheet Back.png');
+    }
+}
+
+.wip {
+    #{$page} .background {
+        width: percentage($background-to-page-width-ratio);
+        height: percentage($background-to-page-height-ratio);
+        left: percentage($background-offset-x / $page-width-pt);
+        top: percentage($background-offset-y / $page-height-pt);
+    }
+
+    #{$page} .background {
+        content: url('./A9Ridn5sr_1m701rr_8t0.png');
+    }
+}
