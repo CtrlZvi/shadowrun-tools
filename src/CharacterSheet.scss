@@ -1,0 +1,196 @@
+$page-width: 612pt;
+$page-height: 765pt;
+
+$pt-to-px: 1pt / 1px;
+
+@font-face {
+  font-family: 'ArmaduraSolid';
+  src: url('armadura_solid-webfont.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'UniversLTStd-Cn';
+  src: url('UniversLTStd-Cn.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'UniversLTStd-BoldCn';
+  src: url('UniversLTStd-BoldCn.woff2') format('woff2')
+}
+
+$page-background: rgb(255, 255, 255);
+$page-shadow: rgb(51, 51, 51);
+
+body {
+  margin: 0;
+}
+
+.character-sheet {
+  @media screen {
+    background-image: url('data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI1IiBoZWlnaHQ9IjUiPgo8cmVjdCB3aWR0aD0iNSIgaGVpZ2h0PSI1IiBmaWxsPSIjOWU5ZTllIj48L3JlY3Q+CjxwYXRoIGQ9Ik0wIDVMNSAwWk02IDRMNCA2Wk0tMSAxTDEgLTFaIiBzdHJva2U9IiM4ODgiIHN0cm9rZS13aWR0aD0iMSI+PC9wYXRoPgo8L3N2Zz4=');
+    overflow: auto;
+  }
+  @media print {
+    background: transparent;
+    overflow: visible;
+
+  }
+}
+
+.character-sheet-page {
+  height: $page-height;
+  width: $page-width;
+  background-color: $page-background;
+  background-size: 100% 100%;
+  // overflow: hidden;
+  position: relative;
+  @media screen {
+    box-shadow: 1px 1px 3px 1px $page-shadow;
+    margin: 13px auto;
+  }
+  @media print {
+    box-shadow: none;
+    margin: 0;
+    page-break-after: always;
+    page-break-inside: avoid;
+  }
+}
+
+.character-sheet-page.rendered {
+  content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_1.png')
+}
+
+.background {
+  width: 642.66701pt;
+  height: 783.00005pt;
+  left: -10.03023pt;
+  top: -9pt;
+  position: absolute;
+}
+
+.metatext {
+  width: 513.19101pt;
+  height: 739.38544pt;
+  left: 18.54434pt;
+  top: 12.45831pt;
+  position: absolute;
+}
+
+// Style from Background.svg
+
+.b3b32603-42f1-458c-8932-714af9251e80 {
+  fill: none;
+}
+
+.fce7dd8a-542d-4e1e-a77a-fc7a5d8c153e {
+  clip-path: url(#fc7851e7-d6e3-4051-8a0f-b1e021bcf9b2);
+}
+
+.aae126ed-298c-4acf-98ee-746a86f33834 {
+  clip-path: url(#beac3603-49b4-4ee9-97fb-331bbd834dce);
+}
+
+.a918776f-7632-44d1-bdf2-e889496119a4 {
+  clip-path: url(#e41c8c61-1ebd-4494-bf98-3f24f219797d);
+}
+
+// Style from MetaText.svg
+
+.a503b0a6-72e4-49c0-8128-7493ac2c62cc {
+  clip-path: url(#bccac16e-250c-4ef8-ba68-51f1d4283600);
+}
+
+.ecfb8969-fc42-44a7-858b-500ed5bafa59 {
+  fill: none;
+}
+
+.ae9d9e78-b567-4774-adc4-599e84875aca {
+  isolation: isolate;
+}
+
+.bfb0fbcf-536a-419f-b803-1ff8b90aa248 {
+  clip-path: url(#a2138730-c933-46cc-a00e-ce647744fed5);
+}
+
+.e54da0e3-2027-4c1b-b0a1-4cbd6a2e5771, .ff6a0474-ae4b-4aa2-8cb3-85b56bc1ba24 {
+  font-size: 8px;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+.a1ca554c-54a6-40fb-b985-0dc8593a2b99, .e54da0e3-2027-4c1b-b0a1-4cbd6a2e5771 {
+  letter-spacing: -0.19995em;
+}
+
+.a1e4a4b7-23ee-4919-a13c-548c7c0ec992 {
+  letter-spacing: -0.19897em;
+}
+
+.ed85b710-90f3-4793-8dee-b3d743b0e7d4 {
+  letter-spacing: -0.20007em;
+}
+
+.be9df0fb-c869-4eeb-87b9-d7d2da0124f0 {
+  letter-spacing: 0.00012em;
+}
+
+.e3d58e88-f4cc-432a-8017-041e7be27ff7 {
+  letter-spacing: -0.1991em;
+}
+
+.fa15b43c-22b1-4c9f-92a6-3b8f7554bb85 {
+  mask: url(#b97b971c-2441-40b1-a59f-eb874fe5aa62);
+}
+
+.a8c6ed11-9911-43d0-82b0-75a4e37fa550 {
+  clip-path: url(#a3951d59-53d9-4e00-ad0d-46b08378e0d4);
+}
+
+.e2ea92d9-8e60-40f6-ae86-2c28ab668011 {
+  opacity: 0.2;
+  mix-blend-mode: multiply;
+}
+
+.badbbff3-4389-448a-b77d-6141ed6aa412 {
+  clip-path: url(#b7e1fe98-5604-4b75-8e95-532ebf58b821);
+}
+
+.b16d6697-b50d-441f-a96f-aa9bbdf58cb6 {
+  clip-path: url(#a3e6cf86-307a-41d1-9c29-6f07d4587a1c);
+}
+
+.ebcbd2ab-faea-42e9-9454-fbd176d01cc8 {
+  opacity: 0.75;
+}
+
+.a4860314-6629-4ccb-8be6-56291fca0f63 {
+  clip-path: url(#bb173a8a-ca1b-4c22-b583-db1b28e89f8b);
+}
+
+.adff938c-144b-4c26-8df2-a37eceb73f8b {
+  clip-path: url(#e18c4679-7c93-403e-8551-e9da9efba746);
+}
+
+.b21f87e8-9797-4101-a65d-a82b61a117b6 {
+  font-size: 6px;
+  font-family: UniversLTStd-Cn, Univers LT Std;
+}
+
+.befc96bc-76cf-4233-8bc5-758ac12f43da {
+  letter-spacing: -0.09001em;
+}
+
+.abff3b97-a1f7-4cf2-a750-32b1fc7b410d {
+  letter-spacing: -0.03703em;
+}
+
+.b2b57193-b3b9-4146-bcdf-851fb905cf38 {
+  letter-spacing: -0.00008em;
+}
+
+.ed0576f1-1457-46d8-82a7-bd3a5efa479c {
+  letter-spacing: -0.03597em;
+}
+
+.e49d269d-cdc5-403b-b7fb-160fa3994ece {
+  letter-spacing: -0.00016em;
+}

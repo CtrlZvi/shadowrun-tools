@@ -1,11 +1,13 @@
-import * as React from 'react';
-import * as ReactDOM from 'react-dom';
-import CharacterSheet from './components/5e/CharacterSheet';
-import './index.css';
-import registerServiceWorker from './registerServiceWorker';
+import React from 'react';
+import ReactDOM from 'react-dom';
+// import './index.css';
+// import App from './App';
+import * as serviceWorker from './serviceWorker';
+import CharacterSheet from './CharacterSheet';
 
-ReactDOM.render(
-  <CharacterSheet />,
-  document.getElementById('root') as HTMLElement
-);
-registerServiceWorker();
+ReactDOM.render(<CharacterSheet />, document.getElementById('root'));
+
+// If you want your app to work offline and load faster, you can change
+// unregister() to register() below. Note this comes with some pitfalls.
+// Learn more about service workers: http://bit.ly/CRA-PWA
+serviceWorker.unregister();
