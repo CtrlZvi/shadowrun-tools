@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.18896 7.56006">
+  <defs>
+    <style>
+      .f6bd5e96-8363-4f08-aea8-7be89a49bd02 {
+        font-size: 7px;
+        fill: #680015;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .b48d70f5-9fdd-47fc-86cf-033c13dd660b {
+        letter-spacing: -0.009em;
+      }
+
+      .a653b384-0420-41ce-9147-45b9de475200 {
+        letter-spacing: -0.00997em;
+      }
+    </style>
+  </defs>
+  <title>Body</title>
+  <g id="b9f51532-fafe-46af-83e2-8d18985efeb3" data-name="Layer 2">
+    <g id="aea81a63-a83c-4427-9e36-8d2da23ab9d1" data-name="Layer 1">
+      <text class="f6bd5e96-8363-4f08-aea8-7be89a49bd02" transform="translate(0 5.81006)"><tspan class="b48d70f5-9fdd-47fc-86cf-033c13dd660b">B</tspan><tspan class="a653b384-0420-41ce-9147-45b9de475200" x="4.21387" y="0">o</tspan><tspan class="b48d70f5-9fdd-47fc-86cf-033c13dd660b" x="7.64404" y="0">d</tspan><tspan x="11.08105" y="0">y</tspan></text>
+    </g>
+  </g>
+</svg>

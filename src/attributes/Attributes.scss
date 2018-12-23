@@ -1,0 +1,1008 @@
+.attributes-tab {
+  width: 103.04001pt;
+  height: 13.20001pt;
+  left: 193.397pt;
+  top: 181.016pt;
+  position: absolute;
+}
+
+.attributes-style {
+  width: 105.36pt;
+  height: 15.36pt;
+  left: #{466.35951 - 274.112}pt;
+  top: #{10.35962 + 169.496}pt;
+  position: absolute;
+}
+
+.attributes-box {
+  width: 270.625pt;
+  height: 164.892pt;
+  left: 26.1875pt;
+  top: 181.01563pt;
+  position: absolute;
+}
+
+.attributes-text {
+  width: 76.67969pt;
+  height: 9.8999pt;
+  left: 215.957pt;
+  top: 183.088pt;
+  position: absolute;
+}
+
+%attributes-key-odd {
+  width: 37.925pt;
+  height: 0.75pt;
+  left: 39.248pt;
+  position: absolute;
+}
+
+%attributes-key-even {
+  width: 53.01001pt;
+  height: 0.75pt;
+  left: 159.57pt;
+  position: absolute;
+}
+
+.attributes-key-1 {
+  @extend %attributes-key-odd;
+  top: 211.152pt;
+}
+
+.attributes-key-2 {
+  @extend %attributes-key-even;
+  top: 211.152pt;
+}
+
+.attributes-key-3 {
+  @extend %attributes-key-odd;
+  top: 224.11pt;
+}
+
+.attributes-key-4 {
+  @extend %attributes-key-even;
+  top: 224.11pt;
+}
+
+.attributes-key-5 {
+  @extend %attributes-key-odd;
+  top: 237.07pt;
+}
+
+.attributes-key-6 {
+  @extend %attributes-key-even;
+  top: 237.07pt;
+}
+
+.attributes-key-7 {
+  @extend %attributes-key-odd;
+  top: 250.029pt;
+}
+
+.attributes-key-8 {
+  @extend %attributes-key-even;
+  top: 250.029pt;
+}
+
+.attributes-key-9 {
+  @extend %attributes-key-odd;
+  top: 262.988pt;
+}
+
+.attributes-key-10 {
+  @extend %attributes-key-even;
+  top: 262.988pt;
+}
+
+.attributes-key-11 {
+  @extend %attributes-key-odd;
+  top: 275.947pt;
+}
+
+.attributes-key-12 {
+  @extend %attributes-key-even;
+  top: 275.947pt;
+}
+
+.attributes-key-13 {
+  @extend %attributes-key-odd;
+  top: 288.906pt;
+}
+
+.attributes-key-14 {
+  @extend %attributes-key-even;
+  top: 288.906pt;
+}
+
+.attributes-key-15 {
+  @extend %attributes-key-odd;
+  top: 301.865pt;
+}
+
+.attributes-key-16 {
+  @extend %attributes-key-even;
+  top: 301.865pt;
+}
+
+.attributes-key-17 {
+  @extend %attributes-key-odd;
+  top: 314.273pt;
+}
+
+.attributes-key-18 {
+  @extend %attributes-key-even;
+  top: 314.273pt;
+}
+
+.attributes-key-19 {
+  @extend %attributes-key-odd;
+  top: 327.232pt;
+}
+
+.attributes-key-20 {
+  @extend %attributes-key-even;
+  top: 327.232pt;
+}
+
+%attributes-value-odd {
+  width: 66.068pt;
+  height: 0.75pt;
+  left: 84.732pt;
+  position: absolute;
+}
+
+%attributes-value-even {
+  width: 69.42801pt;
+  height: 0.75pt;
+  left: 219.292pt;
+  position: absolute;
+}
+
+.attributes-value-1 {
+  @extend %attributes-value-odd;
+  top: 211.152pt;
+}
+
+.attributes-value-2 {
+  @extend %attributes-value-even;
+  top: 211.152pt;
+}
+
+.attributes-value-3 {
+  @extend %attributes-value-odd;
+  top: 224.11pt;
+}
+
+.attributes-value-4 {
+  @extend %attributes-value-even;
+  top: 224.11pt;
+}
+
+.attributes-value-5 {
+  @extend %attributes-value-odd;
+  top: 237.07pt;
+}
+
+.attributes-value-6 {
+  @extend %attributes-value-even;
+  top: 237.07pt;
+}
+
+.attributes-value-7 {
+  @extend %attributes-value-odd;
+  top: 250.029pt;
+}
+
+.attributes-value-8 {
+  @extend %attributes-value-even;
+  top: 250.029pt;
+}
+
+.attributes-value-9 {
+  @extend %attributes-value-odd;
+  top: 262.988pt;
+}
+
+.attributes-value-10 {
+  @extend %attributes-value-even;
+  top: 262.988pt;
+}
+
+.attributes-value-11 {
+  @extend %attributes-value-odd;
+  top: 275.947pt;
+}
+
+.attributes-value-12 {
+  @extend %attributes-value-even;
+  top: 275.947pt;
+}
+
+.attributes-value-13 {
+  @extend %attributes-value-odd;
+  top: 288.906pt;
+}
+
+.attributes-value-14 {
+  @extend %attributes-value-even;
+  top: 288.906pt;
+}
+
+.attributes-value-15 {
+  @extend %attributes-value-odd;
+  top: 301.865pt;
+}
+
+.attributes-value-16 {
+  @extend %attributes-value-even;
+  top: 301.865pt;
+}
+
+.attributes-value-17 {
+  @extend %attributes-value-odd;
+  top: 314.273pt;
+}
+
+.attributes-value-18 {
+  @extend %attributes-value-even;
+  top: 314.273pt;
+}
+
+.attributes-value-20 {
+  @extend %attributes-value-even;
+  top: 327.232pt;
+}
+
+.attributes-limits {
+  width: 245.407pt;
+  height: 0.75pt;
+  left: 43.248pt;
+  top: 345.2pt;
+  position: absolute;
+}
+
+%attributes-edge-point {
+  width: 9pt;
+  height: 10.39237pt;
+  top: 317.269pt;
+  position: absolute;
+}
+
+.attributes-edge-point-1 {
+  @extend %attributes-edge-point;
+  left: 83.37pt;
+}
+
+.attributes-edge-point-2 {
+  @extend %attributes-edge-point;
+  left: 91.847pt;
+}
+
+.attributes-edge-point-3 {
+  @extend %attributes-edge-point;
+  left: 100.325pt;
+}
+
+.attributes-edge-point-4 {
+  @extend %attributes-edge-point;
+  left: 108.802pt;
+}
+
+.attributes-edge-point-5 {
+  @extend %attributes-edge-point;
+  left: 117.279pt;
+}
+
+.attributes-edge-point-6 {
+  @extend %attributes-edge-point;
+  left: 125.757pt;
+}
+
+.attributes-edge-point-7 {
+  @extend %attributes-edge-point;
+  left: 134.234pt;
+}
+
+.attributes-edge-point-8 {
+  @extend %attributes-edge-point;
+  left: 142.711pt;
+}
+
+%attribute-key {
+  height: 7.56006pt;
+  position: absolute;
+}
+
+.attributes-body {
+  @extend %attribute-key;
+  width: 14.18896pt;
+  left: 60.998pt;
+  top: 203.254pt;
+}
+
+.attributes-essence {
+  @extend %attribute-key;
+  width: 23.32373pt;
+  left: 187.173pt;
+  top: 203.254pt;
+}
+
+.attributes-agility {
+  @extend %attribute-key;
+  width: 18.29102pt;
+  left: 56.924pt;
+  top: 216.193pt;
+}
+
+.attributes-magic-resonance {
+  @extend %attribute-key;
+  width: 50.79199pt;
+  left: 159.726pt;
+  top: 216.193pt;
+}
+
+.attributes-reaction {
+  @extend %attribute-key;
+  width: 24.84277pt;
+  left: 50.379pt;
+  top: 229.136pt;
+}
+
+.attributes-initiative {
+  @extend %attribute-key;
+  width: 24.68896pt;
+  left: 185.815pt;
+  top: 229.136pt;
+}
+
+.attributes-strength {
+  @extend %attribute-key;
+  width: 23.67383pt;
+  left: 51.548pt;
+  top: 242.08pt;
+}
+
+.attributes-matrix-initiative {
+  @extend %attribute-key;
+  width:  43.76367pt;
+  left: 166.817pt;
+  top: 242.08pt;
+}
+
+.attributes-willpower {
+  @extend %attribute-key;
+  width:  29.84082pt;
+  left: 45.388pt;
+  top: 255.022pt;
+}
+
+.attributes-astral-initiative {
+  @extend %attribute-key;
+  width:  42.88867pt;
+  left: 167.643pt;
+  top: 255.022pt;
+}
+
+.attributes-logic {
+  @extend %attribute-key;
+  width:  15.30176pt;
+  left: 59.899pt;
+  top: 267.965pt;
+}
+
+.attributes-composure {
+  @extend %attribute-key;
+  width:  31.35986pt;
+  left: 179.144pt;
+  top: 267.965pt;
+}
+
+.attributes-intuition {
+  @extend %attribute-key;
+  width:  23.22607pt;
+  left: 52.003pt;
+  top: 280.908pt;
+}
+
+.attributes-judge-intentions {
+  @extend %attribute-key;
+  width:  46.44482pt;
+  left: 164.073pt;
+  top: 280.908pt;
+}
+
+.attributes-charisma {
+  @extend %attribute-key;
+  width:  26.38965pt;
+  left: 48.832pt;
+  top: 293.852pt;
+}
+
+.attributes-memory {
+  @extend %attribute-key;
+  width:  22.99463pt;
+  left: 187.495pt;
+  top: 293.852pt;
+}
+
+.attributes-edge {
+  @extend %attribute-key;
+  width:  13.8042pt;
+  left: 61.383pt;
+  top: 306.276pt;
+}
+
+.attributes-lift-carry {
+  @extend %attribute-key;
+  width:  25.4585pt;
+  left: 185.045pt;
+  top: 306.276pt;
+}
+
+.attributes-edge-points {
+  @extend %attribute-key;
+  width:  32.81592pt;
+  left: 42.427pt;
+  top: 319.219pt;
+}
+
+.attributes-movement {
+  @extend %attribute-key;
+  width:  29.48389pt;
+  left: 181.02pt;
+  top: 319.219pt;
+}
+
+.attributes-physical-limit {
+  @extend %attribute-key;
+  width:  40.71143pt;
+  left: 45.57pt;
+  top: 337.188pt;
+}
+
+.attributes-mental-limit {
+  @extend %attribute-key;
+  width:  36.53955pt;
+  left: 127.547pt;
+  top: 337.188pt;
+}
+
+.attributes-social-limit {
+  @extend %attribute-key;
+  width:  34.60059pt;
+  left: 209.839pt;
+  top: 337.188pt;
+}
+
+// Style from AttributesTab.svg
+
+.ace3b20c-9a05-4f2a-a012-06375ff0f8c4 {
+  fill: #7e0f12;
+}
+
+// Style from AttributesStyle.svg
+
+.fe4b5995-ea27-490a-a5fa-b563ad817f1f {
+  fill: none;
+}
+
+.b7bae466-bcb0-467d-b06d-3bec000ba348 {
+  isolation: isolate;
+}
+
+.fce1bcca-6eb0-40e3-b114-d1253d8abcee {
+  clip-path: url(#e453c584-785f-4f1f-8812-b3a63953bb93);
+}
+
+.a061a7e1-1a19-44e3-940d-7c4cca3b1cb3 {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.b9b07007-aa21-4441-bc1b-586e1020bde2 {
+  clip-path: url(#f4a730c2-3244-49ee-b92d-af252c2945e6);
+}
+
+.fd1a6f7d-c47d-45f7-911c-8f2fdb902520 {
+  clip-path: url(#aaa78857-945e-4927-b0b7-6a7e15f4cded);
+}
+
+// Style from AttributesBox.svg
+
+.a818c24f-ecf8-4fc0-a69a-3c4346334dba {
+  fill: url(#a0d2df59-2ef8-4963-bcdd-09bfdea46b79);
+}
+
+.f75c05d4-2eff-4b48-b839-9d8bd6d7d42e {
+  fill: url(#b6469cec-7f39-4d77-9140-c9410e302520);
+}
+
+.b6d8c739-05e0-4f4e-a65a-419acc1424c7, .bd331363-d6d4-40cd-a9a9-4252dc2cb11e, .fd82c07e-917a-410e-b41b-5c469cb8de68 {
+  fill: none;
+}
+
+.be1b0713-fe41-4a8e-9493-d3eed9dc5fe6 {
+  clip-path: url(#a89d09b0-82c6-4226-b545-124050e53fe9);
+}
+
+.b6d5c2d7-adbc-4df4-933d-65a91d4e63ed {
+  mask: url(#b060bf84-eae1-4678-90d8-58147c10d4bc);
+}
+
+.acccc021-209c-4b31-80d8-5c3ccf927545 {
+  clip-path: url(#bcc14f70-ada2-4cd1-ba1a-f6c22f3b2319);
+}
+
+.b6d8c739-05e0-4f4e-a65a-419acc1424c7, .bd331363-d6d4-40cd-a9a9-4252dc2cb11e {
+  stroke: #7e0f12;
+}
+
+.ef736a76-0d6e-482e-b8d9-79090d7e9754 {
+  mask: url(#e9599f84-2f83-4c7f-989e-6191e098342b);
+}
+
+.a39c7562-b4ba-4c2d-933e-885f1418f899 {
+  clip-path: url(#ba580d5b-4d04-46cf-a95b-f659f9b687b0);
+}
+
+.b6d8c739-05e0-4f4e-a65a-419acc1424c7 {
+  stroke-width: 0.75px;
+}
+
+// Style from AttributesText.svg
+
+.a2d726bd-6f19-4502-8d75-4b2cb64fd7cf {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+// Style from AttributesKeyOdd.svg
+
+.beb5c586-e2ca-4526-9279-eb30ca6e508a {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from AttributesKeyEven.svg
+
+.eb794805-7f02-4d59-ad78-6c2da35fbcb9 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from AttributesValueOdd.svg
+
+.b80f4f93-e1b8-4af8-a7b5-eb1502e887e3 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from AttributesValuesEven.svg
+
+.fbfacaa0-a0b7-44c1-9927-0ce2758f7718 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from AttributesLimits.svg
+
+.e45a59b7-860a-4df8-92fe-2fa1f08496ae {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from EdgePoint.svg
+
+.fb4a5c40-ed1c-4b38-8b8e-ffda71b29159 {
+  fill: none;
+  stroke: #680015;
+  stroke-width: 0.5px;
+}
+
+// Style from Body.svg
+
+.f6bd5e96-8363-4f08-aea8-7be89a49bd02 {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b48d70f5-9fdd-47fc-86cf-033c13dd660b {
+  letter-spacing: -0.009em;
+}
+
+.a653b384-0420-41ce-9147-45b9de475200 {
+  letter-spacing: -0.00997em;
+}
+
+// Style from Essence.svg
+
+.b7c6c900-1e20-461e-b8ff-5841ddf31f2f {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.f660f0ee-ac67-4d26-b11f-3e85a940cb4d {
+  letter-spacing: -0.00997em;
+}
+
+.ae5d6c61-7da0-42ab-8d33-641f7fc23769 {
+  letter-spacing: -0.009em;
+}
+
+.a5e6517f-491f-4d30-a98e-015ac0b3df99 {
+  letter-spacing: -0.01004em;
+}
+
+// Style from Agility.svg
+
+.b76c9b06-4638-4fa3-bb40-ceefe037888c {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a5ee906f-15c7-4760-afa9-f28067f1dc43 {
+  letter-spacing: -0.009em;
+}
+
+// Style from MagicResonance.svg
+
+.e715ca62-2522-4999-aa9f-4451887a66d4 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b0277547-af48-4d55-8d76-0ebeb77a5b86 {
+  letter-spacing: -0.009em;
+}
+
+.ad274305-4618-4b2e-a47f-dd3c48303d4b {
+  letter-spacing: -0.01004em;
+}
+
+.a3882bc4-6c17-4ffd-998a-282fe3429058 {
+  letter-spacing: -0.00997em;
+}
+
+// Style from Reaction.svg
+
+.ad23bab3-4eaf-4987-9ad6-ad40dac103b3 {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b0d50a1f-2fee-448e-88ca-3d132e8c67de {
+  letter-spacing: -0.009em;
+}
+
+// Style from Initiative.svg
+
+.bf7fe8ce-fe3f-4f9d-bd04-167cca939ea3 {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.fcdbcb50-c9e5-4afb-bd72-79a31c6bca14 {
+  letter-spacing: -0.00997em;
+}
+
+.f4efe6fc-792d-4ae4-a4a0-ad3cf5cb4a3c {
+  letter-spacing: -0.009em;
+}
+
+.b6147de9-30f6-4be6-b5d4-266a3a5b9d13 {
+  letter-spacing: -0.00991em;
+}
+
+// Style from Strength.svg
+
+.f7967fac-be3f-49d9-85b2-f41ca370dc4b {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b9a911e3-6850-4b13-b132-c49f82baa522 {
+  letter-spacing: -0.009em;
+}
+
+// Style from Strength.svg
+
+.f7967fac-be3f-49d9-85b2-f41ca370dc4b {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b9a911e3-6850-4b13-b132-c49f82baa522 {
+  letter-spacing: -0.009em;
+}
+
+// Style from MatrixInitiative.svg
+
+.a2d68ab3-bed8-4a24-85c9-3f95789510d1 {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b9d6e088-e87e-46eb-bc4a-6ef0935bf4ed {
+  letter-spacing: -0.01904em;
+}
+
+// Style from Willpower.svg
+
+.b40a0d7c-0cb7-4a7a-967a-1289f0170597 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.ad9019f0-ae4d-492e-a437-6712c49bf59d {
+  letter-spacing: -0.009em;
+}
+
+// Style from AstralInitiative.svg
+
+.f4acdfcf-ea41-4cfd-8887-ac0769246128 {
+  font-size: 7px;
+  fill: #680015;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a97b9085-d79b-4eff-8d7d-ada668ddc7d6 {
+  letter-spacing: -0.00997em;
+}
+
+.f40bf4ac-abe1-40b5-9681-355701596962 {
+  letter-spacing: -0.009em;
+}
+
+.e7171b70-86a6-4c42-bebf-8d4915e45b09 {
+  letter-spacing: -0.01004em;
+}
+
+.b083bfa2-98a3-4650-8bd1-04d9553b4bae {
+  letter-spacing: -0.00893em;
+}
+
+// Style from Logic.svg
+
+.be2829ab-c86f-4a7c-a2d0-545040f40b4a {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.baf18bd6-d98f-4200-97d2-332e42dbcc81 {
+  letter-spacing: -0.009em;
+}
+
+// Style from Composure.svg
+
+.fe541a2a-7e5e-49b2-b4d5-b70a1994d0ad {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b1c0238e-20d8-4a34-b89b-4b2f605bf947 {
+  letter-spacing: -0.01004em;
+}
+
+.ac169e17-9c3c-4b53-a8e8-e6d8e2e13f36 {
+  letter-spacing: -0.009em;
+}
+
+.bb839443-47f6-4678-ba1c-61701c5c2139 {
+  letter-spacing: -0.00997em;
+}
+
+// Style from Intuition.svg
+
+.e2f4bcd4-7ceb-4747-b530-13b926355ee7 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b4759ead-0b3b-4bde-8f9d-6065336e2784 {
+  letter-spacing: -0.009em;
+}
+
+// Style from JudgeIntentions.svg
+
+.ac4b42ea-e127-4e7f-8713-e558892cb6d7 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a920584c-f0fe-40c3-9743-efdbe30b8db8 {
+  letter-spacing: -0.00997em;
+}
+
+.b5587aa1-6dfc-4e7b-b6a6-47269a6fa1e3 {
+  letter-spacing: -0.009em;
+}
+
+.afe5060b-a3c6-4a35-bd9d-55351bd7b3c0 {
+  letter-spacing: -0.01004em;
+}
+
+// Style from Charisma.svg
+
+.f5fa38af-5c15-4485-87a3-cf5fbe6828ac {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.bdb350da-386b-466a-aa27-5c37a3c270ec {
+  letter-spacing: -0.009em;
+}
+
+// Style from Memory.svg
+
+.b4992344-6293-4f22-8176-ecdb7fdfe855 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.e5cd3f35-62d4-41d4-bcac-fb9c5f4c9fe2 {
+  letter-spacing: -0.009em;
+}
+
+.a33dfe36-65a7-4e4f-b03b-7dd8383dbee9 {
+  letter-spacing: -0.01004em;
+}
+
+.f0bcbc91-ab63-4009-a719-99c8faba3d99 {
+  letter-spacing: -0.00893em;
+}
+
+// Style from Edge.svg
+
+.fd1436b7-d1be-4927-9194-2f508aec2041 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.bab03c0e-67f3-4ce3-94ae-c1a3bcf0a2f3 {
+  letter-spacing: -0.00997em;
+}
+
+.f3a32944-6faa-49c2-aae9-35b35c30dc51 {
+  letter-spacing: -0.009em;
+}
+
+// Style from LiftCarry.svg
+
+.b28bf5a4-6611-492b-b0c1-f01d6b3577c1 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.e93a5b86-ae3c-4d63-9806-2024c7f0c743 {
+  letter-spacing: -0.009em;
+}
+
+.a443fe34-3c5b-4924-a8dd-09d01760bb9d {
+  letter-spacing: -0.00997em;
+}
+
+.e1a471f8-8a55-4aa7-81c3-db06d85cb81e {
+  letter-spacing: -0.00893em;
+}
+
+.fa8252f2-9ec1-4c17-a36e-cd8c4978154c {
+  letter-spacing: -0.01004em;
+}
+
+// Style from EdgePoints.svg
+
+.bb9a7270-c21f-4d84-b864-27832136cb24 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.f133adb2-921e-4c16-ba5a-42b382e98c14 {
+  letter-spacing: -0.009em;
+}
+
+// Style from Movement.svg
+
+.a2f06b77-e557-4ac2-90b6-32338103e49f {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+  letter-spacing: -0.009em;
+}
+
+.f510f20c-14a6-4766-a7a8-a722e49ab8b4 {
+  letter-spacing: -0.01004em;
+}
+
+.ad014fdc-90d8-49f0-ab70-45d114297290 {
+  letter-spacing: 0.00007em;
+}
+
+// Style from PhysicalLimit.svg
+
+.e0bf36cc-8ea8-4484-bae0-73f599bc5ce9 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+  letter-spacing: -0.009em;
+}
+
+.a0e83649-6d8a-4273-9d5b-b2225119d264 {
+  letter-spacing: -0.00997em;
+}
+
+.b6ae9fbc-23e1-4800-bd73-3b7fe5372dd1 {
+  letter-spacing: 0.00007em;
+}
+
+// Style from MentalLimit.svg
+
+.b34cea9b-a77e-45a7-95da-69c2d605fa73 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.bd280545-c258-4446-bfd2-0d1ca3dc960e {
+  letter-spacing: -0.01004em;
+}
+
+.f1ff61a6-ba85-4e20-883a-b0c89cbf142c {
+  letter-spacing: -0.009em;
+}
+
+.bbf50cc2-fcfe-418c-94e5-0e359649937a {
+  letter-spacing: -0.00997em;
+}
+
+// Style from SocialLimit.svg
+
+.b225f6bf-f3df-49d8-9050-cee185fc0278 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a4c8e837-b529-40f8-bc5d-35138816bd6b {
+  letter-spacing: -0.01004em;
+}
+
+.a49c5234-11fa-4a45-bfc1-9f903c8c3165 {
+  letter-spacing: -0.009em;
+}
+
+.be4ba019-b862-4912-865f-4101e807a7f2 {
+  letter-spacing: -0.00997em;
+}
