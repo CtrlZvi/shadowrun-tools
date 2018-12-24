@@ -1,0 +1,259 @@
+.ids-lifestyles-currency-text {
+  position: absolute;
+  width: 194.38037pt;
+  height: 9.89941pt;
+  left: 97.895pt;
+  top: 625.061pt;
+}
+
+.ids-lifestyles-currency-tab {
+  position: absolute;
+  width: 221.03999pt;
+  height: 13.20001pt;
+  left: 75.398pt;
+  top: 622.984pt;
+}
+
+.ids-lifestyles-currency-style {
+  position: absolute;
+  width: 223.43999pt;
+  height: 15.36pt;
+  left: #{348.27952 - 274.112}pt;
+  top: #{10.35992 + 611.464}pt;
+}
+
+.ids-lifestyles-currency-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 102.896pt;
+  left: 26.1875pt;
+  top: 622.98pt;
+}
+
+%ids-lifestyles-currency-line {
+  position: absolute;
+  width: 242.97301pt;
+  height: 0.75pt;
+  left: 43.247pt;
+}
+
+.ids-lifestyles-currency-line-1 {
+  @extend %ids-lifestyles-currency-line;
+  top: 656.813pt;
+}
+
+.ids-lifestyles-currency-line-2 {
+  @extend %ids-lifestyles-currency-line;
+  top: 669.772pt;
+}
+
+.ids-lifestyles-currency-line-3 {
+  @extend %ids-lifestyles-currency-line;
+  top: 682.731pt;
+}
+
+.ids-lifestyles-currency-line-4 {
+  @extend %ids-lifestyles-currency-line;
+  top: 695.69pt;
+}
+
+.ids-lifestyles-currency-line-5 {
+  @extend %ids-lifestyles-currency-line;
+  top: 708.65pt;
+}
+
+.ids-lifestyles-currency-line-6 {
+  @extend %ids-lifestyles-currency-line;
+  top: 721.931pt;
+}
+
+.primary-lifestyle {
+  position: absolute;
+  width: 46.80811pt;
+  height: 7.55957pt;
+  left: 43.253pt;
+  top: 648.94pt;
+}
+
+.nuyen {
+  position: absolute;
+  width: 18.0249pt;
+  height: 7.55957pt;
+  left: 43.248pt;
+  top: 661.855pt;
+}
+
+.licenses {
+  position: absolute;
+  width: 24.80762pt;
+  height: 7.55957pt;
+  left: 176.569pt;
+  top: 661.855pt;
+}
+
+.fake-ids-related-lifestyles-funds-licenses {
+  position: absolute;
+  width: 129.14795pt;
+  height: 7.55957pt;
+  left: 43.248pt;
+  top: 674.099pt;
+}
+
+// Style from IDsLifestylesCurrencyText.svg
+
+.bcc1416c-b8e4-41d9-a246-752298fd26b9 {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+// Style from IDsLifestylesCurrencyTab.svg
+
+.e5aef4ad-1839-445f-a419-93735f12a2f6 {
+  fill: #7e0f12;
+}
+
+// Style from IDsLifestylesCurrencyStyle.svg
+
+.a7823d8c-017c-452a-90cd-7a39b1c16780 {
+  fill: none;
+}
+
+.a2bbd615-2dbd-41b6-af86-2da1f87908fa {
+  isolation: isolate;
+}
+
+.ad3caf6d-0a68-4be3-b0ea-0b4d1749c2c4 {
+  clip-path: url(#b4c61a5c-40a5-4876-b48a-e3dc0afbcebd);
+}
+
+.a9104881-f23d-4f1f-ba94-7a4eaa657c14 {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.b0e2f753-bb36-4fa1-a8c3-c6742973e1c7 {
+  clip-path: url(#fdf0f5e4-d6c0-4387-ac6b-f756550045fb);
+}
+
+.a7170059-c31c-4e7a-bbb0-265e1ba55422 {
+  clip-path: url(#ba531f4d-9019-4ae3-a38b-6f2eb73a8486);
+}
+
+// Style from IDsLifestylesCurrencyBox.svg
+
+.fca38b53-9b6d-4c76-b567-99cbb7c6b092 {
+  fill: url(#a528e914-c03a-4977-9e40-ad1c3e7d9458);
+}
+
+.b955ada9-a699-417c-bc33-b157c0f82726 {
+  fill: url(#b174f638-cea5-4655-bbd2-c28338d3b16b);
+}
+
+.a3d39f96-2ea2-43d5-a772-8c2e7a0a4857, .bd6b819b-f512-42d4-a611-cf055d2ff70a, .bf3a523c-780b-4490-9e73-78673ed0c815 {
+  fill: none;
+}
+
+.a3ba4ea5-1dd4-4bb5-a50d-5816bff41e46 {
+  clip-path: url(#fa9e7fa2-161f-4f5c-a7f4-3b21835a30f9);
+}
+
+.bae13294-af69-4945-beda-83bf7f505025 {
+  mask: url(#f80c1907-e45f-4a47-a6e9-c567061eacbf);
+}
+
+.a7839727-2cc7-44b6-848b-72232aaaaf8c {
+  clip-path: url(#b9b9efdc-72e9-4f19-a7a5-0a8170474e6e);
+}
+
+.a3d39f96-2ea2-43d5-a772-8c2e7a0a4857, .bf3a523c-780b-4490-9e73-78673ed0c815 {
+  stroke: #7e0f12;
+}
+
+.a3d39f96-2ea2-43d5-a772-8c2e7a0a4857 {
+  stroke-width: 0.75px;
+}
+
+.a96de10d-edf3-4a1c-bfe0-965c93162891 {
+  clip-path: url(#ba16d392-12f3-4336-93ae-68b4640143a7);
+}
+
+// Style from IDsLifestylesCurrencyLine.svg
+
+.a1f79da1-294a-468a-aac1-e6a0ac252a2f {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from PrimaryLifestyle.svg
+
+.f2cb1c83-babf-498c-b29d-1cbbb18950ee {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b4ed112a-67d0-4681-b967-08fa3e8d333a {
+  letter-spacing: -0.009em;
+}
+
+.e9244141-0185-437a-a6aa-cb0821698111 {
+  letter-spacing: -0.00997em;
+}
+
+// Style from Nuyen.svg
+
+.f81fbd58-bb2d-4350-95b6-79fa89058166 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b9c44e43-ce0c-4108-9d8a-1b78c7fa44f0 {
+  letter-spacing: -0.009em;
+}
+
+// Style from License.svg
+
+.f0cd7fc0-ee6e-4e23-94da-f570d90c5e04 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a85cec3a-a4bc-483d-994a-9d9109af03bd {
+  letter-spacing: -0.009em;
+}
+
+.ac5ca197-eed9-41d8-b28f-a8d624a6bae0 {
+  letter-spacing: -0.00997em;
+}
+
+.a6c9d976-e981-4c74-89b0-0233b8899ac9 {
+  letter-spacing: -0.01004em;
+}
+
+// Style from FakeIDsRelatedLifestylesFundsLicenses.svg
+
+.e43523ea-0d65-4b98-b990-551474133d92 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b2c3618c-e61c-4429-8f47-4907fa724d7f {
+  letter-spacing: -0.009em;
+}
+
+.e33794e5-0a39-40e1-8206-6aa878d13e9f {
+  letter-spacing: -0.00997em;
+}
+
+.f6e8f311-7600-4508-ba22-3725e24eae28 {
+  letter-spacing: -0.01004em;
+}
+
+.b9632bf8-2bd8-4f84-8910-f4a7787cd21a {
+  letter-spacing: -0.00893em;
+}

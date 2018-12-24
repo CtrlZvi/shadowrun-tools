@@ -4,6 +4,7 @@ import { ReactComponent as MetaText } from './MetaText.svg';
 import PersonalData from './personalData';
 import Attributes from './attributes';
 import Skills from './skills';
+import IDsLifestylesCurrency from './idsLifestylesCurrency';
 import './CharacterSheet.scss';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
@@ -22,6 +23,7 @@ const developmentState = observable({
                 <PersonalData />
                 <Attributes />
                 <Skills />
+                <IDsLifestylesCurrency />
             </div>
         </div>
         );

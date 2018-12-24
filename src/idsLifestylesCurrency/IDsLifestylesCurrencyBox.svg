@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 102.896">
+  <defs>
+    <style>
+      .fca38b53-9b6d-4c76-b567-99cbb7c6b092 {
+        fill: url(#a528e914-c03a-4977-9e40-ad1c3e7d9458);
+      }
+
+      .b955ada9-a699-417c-bc33-b157c0f82726 {
+        fill: url(#b174f638-cea5-4655-bbd2-c28338d3b16b);
+      }
+
+      .a3d39f96-2ea2-43d5-a772-8c2e7a0a4857, .bd6b819b-f512-42d4-a611-cf055d2ff70a, .bf3a523c-780b-4490-9e73-78673ed0c815 {
+        fill: none;
+      }
+
+      .a3ba4ea5-1dd4-4bb5-a50d-5816bff41e46 {
+        clip-path: url(#fa9e7fa2-161f-4f5c-a7f4-3b21835a30f9);
+      }
+
+      .bae13294-af69-4945-beda-83bf7f505025 {
+        mask: url(#f80c1907-e45f-4a47-a6e9-c567061eacbf);
+      }
+
+      .a7839727-2cc7-44b6-848b-72232aaaaf8c {
+        clip-path: url(#b9b9efdc-72e9-4f19-a7a5-0a8170474e6e);
+      }
+
+      .a3d39f96-2ea2-43d5-a772-8c2e7a0a4857, .bf3a523c-780b-4490-9e73-78673ed0c815 {
+        stroke: #7e0f12;
+      }
+
+      .a3d39f96-2ea2-43d5-a772-8c2e7a0a4857 {
+        stroke-width: 0.75px;
+      }
+
+      .a96de10d-edf3-4a1c-bfe0-965c93162891 {
+        clip-path: url(#ba16d392-12f3-4336-93ae-68b4640143a7);
+      }
+    </style>
+    <linearGradient id="a528e914-c03a-4977-9e40-ad1c3e7d9458" y1="764.92902" x2="1" y2="764.92902" gradientTransform="matrix(0, -140.00226, -140.00226, 0, 107397.7901, 762.98224)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.1558"/>
+      <stop offset="0.64995" stop-color="#fff"/>
+      <stop offset="0.95052" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b174f638-cea5-4655-bbd2-c28338d3b16b" y1="761.81959" x2="1" y2="761.81959" gradientTransform="matrix(0, -87.98, -87.98, 0, 67330.89007, 723.87598)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.0723"/>
+      <stop offset="0.61235" stop-color="#fff"/>
+      <stop offset="0.94521" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="fa9e7fa2-161f-4f5c-a7f4-3b21835a30f9" transform="translate(-26.1875 -622.98)">
+      <rect class="bd6b819b-f512-42d4-a611-cf055d2ff70a" width="612" height="765"/>
+    </clipPath>
+    <mask id="f80c1907-e45f-4a47-a6e9-c567061eacbf" x="-26.1875" y="-622.97987" width="611.99994" height="764.99988" maskUnits="userSpaceOnUse">
+      <g transform="translate(-26.1875 -622.98)">
+        <rect class="fca38b53-9b6d-4c76-b567-99cbb7c6b092" y="0.00012" width="611.99994" height="764.99988"/>
+      </g>
+    </mask>
+    <clipPath id="b9b9efdc-72e9-4f19-a7a5-0a8170474e6e" transform="translate(-26.1875 -622.98)">
+      <rect class="bd6b819b-f512-42d4-a611-cf055d2ff70a" x="287.06201" y="615.98" width="18.75" height="109.326"/>
+    </clipPath>
+    <clipPath id="ba16d392-12f3-4336-93ae-68b4640143a7" transform="translate(-26.1875 -622.98)">
+      <rect class="bd6b819b-f512-42d4-a611-cf055d2ff70a" x="17.1875" y="628.896" width="288.49951" height="97.98"/>
+    </clipPath>
+  </defs>
+  <title>IDSLifeStylesCurrencyBox</title>
+  <g id="a15af3d3-36bb-487c-81e2-cf7c976664d9" data-name="Layer 2">
+    <g id="e1cb3e89-b284-4bb8-9b39-0d2b08806a52" data-name="Layer 1">
+      <g id="f973099b-1c8e-4da5-9669-ab9386e69849" data-name="Boxes">
+        <g class="a3ba4ea5-1dd4-4bb5-a50d-5816bff41e46">
+          <g class="bae13294-af69-4945-beda-83bf7f505025">
+            <g class="a7839727-2cc7-44b6-848b-72232aaaaf8c">
+              <line class="a3d39f96-2ea2-43d5-a772-8c2e7a0a4857" x1="270.25" x2="270.25" y2="101.326"/>
+            </g>
+          </g>
+          <g class="bae13294-af69-4945-beda-83bf7f505025">
+            <g class="a96de10d-edf3-4a1c-bfe0-965c93162891">
+              <polyline class="bf3a523c-780b-4490-9e73-78673ed0c815" points="270.5 13.416 11.66 13.416 0.5 24.576 0.5 102.896"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
