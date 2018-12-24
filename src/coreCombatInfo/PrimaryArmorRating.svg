@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 15.06543 6.47998">
+  <defs>
+    <style>
+      .e05fb601-3182-49c9-bc86-d35bf2f21788 {
+        fill: none;
+      }
+
+      .b6547fcd-f845-4ce4-a0b9-be73efcf76b5 {
+        clip-path: url(#be984457-5559-4162-95c5-d45fec0dc232);
+      }
+
+      .a166d99e-92fd-40a8-afd6-73e4f085702f {
+        opacity: 0.35001;
+      }
+
+      .a8d10743-dedb-43a7-8080-d6f211d5f4ba {
+        clip-path: url(#ae94f3f2-c0a4-4cc0-bbda-b63f6c622aa0);
+      }
+
+      .a85e08cc-f0f5-42b0-bb75-9d8a5174228b {
+        font-size: 6px;
+        font-family: UniversLTStd-Cn, Univers LT Std;
+      }
+
+      .a1c4374f-5198-4551-b6f6-b92c1a660cd5 {
+        letter-spacing: -0.00895em;
+      }
+    </style>
+    <clipPath id="be984457-5559-4162-95c5-d45fec0dc232" transform="translate(-500.10156 -108.56836)">
+      <rect class="e05fb601-3182-49c9-bc86-d35bf2f21788" width="612" height="765"/>
+    </clipPath>
+    <clipPath id="ae94f3f2-c0a4-4cc0-bbda-b63f6c622aa0" transform="translate(-500.10156 -108.56836)">
+      <rect class="e05fb601-3182-49c9-bc86-d35bf2f21788" x="467.72198" y="101.47998" width="79.79504" height="14.56799"/>
+    </clipPath>
+  </defs>
+  <title>PrimaryArmorRating</title>
+  <g id="f526d873-b7d1-456b-b85a-f9410fd3f53c" data-name="Layer 2">
+    <g id="a101ea6c-1ab9-4d00-b53d-e2a129a00a2f" data-name="Layer 1">
+      <g id="f5493311-ca4f-4abb-be6a-03b64508c201" data-name="PrimaryArmorRating">
+        <g class="b6547fcd-f845-4ce4-a0b9-be73efcf76b5">
+          <g class="a166d99e-92fd-40a8-afd6-73e4f085702f">
+            <g class="a8d10743-dedb-43a7-8080-d6f211d5f4ba">
+              <text class="a85e08cc-f0f5-42b0-bb75-9d8a5174228b" transform="translate(0 4.97998)"><tspan class="a1c4374f-5198-4551-b6f6-b92c1a660cd5">Ratin</tspan><tspan x="12.06543" y="0">g</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

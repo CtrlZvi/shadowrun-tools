@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 271 96.89203">
+  <defs>
+    <style>
+      .ac8fea6b-0a77-42d2-a87b-e4b32fcf996c {
+        fill: url(#faf241fb-98b8-422c-9072-f074a64d65db);
+      }
+
+      .af778e88-2f94-417c-a9fb-1a7feda34a37 {
+        fill: url(#a639c2aa-15db-4bae-b799-f5f7f9a5f5c9);
+      }
+
+      .a8cb513a-6875-4d10-94bd-f037817ab1a2, .b7a269a0-3ffd-416c-8095-09731ab7a392, .e3e01a52-d43f-4ef0-b60c-9ff81e7bf2dc {
+        fill: none;
+      }
+
+      .e5af80b7-b45b-42bc-a5cd-584b7177352e {
+        clip-path: url(#ff838420-d6c6-4b13-8ef6-51f08117dd04);
+      }
+
+      .f91c4994-187f-4b38-b762-749b1293193e {
+        mask: url(#bded7f80-52fb-46ed-aee4-2c42dc7cf839);
+      }
+
+      .bd44eafa-57c3-4f2a-a22c-fd3718c6277f {
+        clip-path: url(#f8637ed9-56a5-4426-b7d0-2c0bb4fd17d6);
+      }
+
+      .a8cb513a-6875-4d10-94bd-f037817ab1a2, .b7a269a0-3ffd-416c-8095-09731ab7a392 {
+        stroke: #7e0f12;
+      }
+
+      .f62b0bbc-fcf7-4eee-980e-af62e4861d62 {
+        clip-path: url(#a19dfe36-e57b-4bda-8ca5-06262f7d9a5c);
+      }
+
+      .a8cb513a-6875-4d10-94bd-f037817ab1a2 {
+        stroke-width: 0.75px;
+      }
+    </style>
+    <linearGradient id="faf241fb-98b8-422c-9072-f074a64d65db" y1="761.82385" x2="1" y2="761.82385" gradientTransform="translate(-66719.26507 186.39197) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="a639c2aa-15db-4bae-b799-f5f7f9a5f5c9" y1="765.07028" x2="1" y2="765.07028" gradientTransform="matrix(0, -120.05882, -120.05882, 0, 92159.43681, 205.5589)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.1558"/>
+      <stop offset="0.64995" stop-color="#fff"/>
+      <stop offset="0.95052" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="ff838420-d6c6-4b13-8ef6-51f08117dd04" transform="translate(-314.4375 -85.50012)">
+      <rect class="e3e01a52-d43f-4ef0-b60c-9ff81e7bf2dc" width="612" height="765"/>
+    </clipPath>
+    <mask id="bded7f80-52fb-46ed-aee4-2c42dc7cf839" x="-314.43756" y="-85.50012" width="612.00006" height="765.00006" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.4375 -85.50012)">
+        <rect class="ac8fea6b-0a77-42d2-a87b-e4b32fcf996c" x="-0.00006" width="612.00006" height="765.00006"/>
+      </g>
+    </mask>
+    <clipPath id="f8637ed9-56a5-4426-b7d0-2c0bb4fd17d6" transform="translate(-314.4375 -85.50012)">
+      <rect class="e3e01a52-d43f-4ef0-b60c-9ff81e7bf2dc" x="305.93701" y="91.41199" width="288.5" height="91.98004"/>
+    </clipPath>
+    <clipPath id="a19dfe36-e57b-4bda-8ca5-06262f7d9a5c" transform="translate(-314.4375 -85.50012)">
+      <rect class="e3e01a52-d43f-4ef0-b60c-9ff81e7bf2dc" x="305.43701" y="78.5" width="18.75" height="104.89203"/>
+    </clipPath>
+  </defs>
+  <title>CoreCombatInfoBox</title>
+  <g id="bc50a828-2cf7-446b-9872-cec2d5f37ab6" data-name="Layer 2">
+    <g id="a36eef1d-68b2-4b6a-aba5-7de8fb1edd00" data-name="Layer 1">
+      <g id="aa9e812e-3e41-432e-85d7-ee2c6a68c0fb" data-name="Boxes">
+        <g class="e5af80b7-b45b-42bc-a5cd-584b7177352e">
+          <g class="f91c4994-187f-4b38-b762-749b1293193e">
+            <g id="b5cca496-23ae-4fe7-bfc3-67a983c0fb3e" data-name="CoreCombatInfoCorner">
+              <g class="bd44eafa-57c3-4f2a-a22c-fd3718c6277f">
+                <polyline class="b7a269a0-3ffd-416c-8095-09731ab7a392" points="0.5 13.412 259.34 13.412 270.5 24.572 270.5 96.892"/>
+              </g>
+            </g>
+          </g>
+          <g class="f91c4994-187f-4b38-b762-749b1293193e">
+            <g id="fcd56e18-914c-4942-adda-a88d03b9701a" data-name="CoreCombatInfoVertical">
+              <g class="f62b0bbc-fcf7-4eee-980e-af62e4861d62">
+                <line class="a8cb513a-6875-4d10-94bd-f037817ab1a2" x1="0.375" x2="0.375" y2="96.89203"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

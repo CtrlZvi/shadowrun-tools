@@ -5,6 +5,7 @@ import PersonalData from './personalData';
 import Attributes from './attributes';
 import Skills from './skills';
 import IDsLifestylesCurrency from './idsLifestylesCurrency';
+import CoreCombatInfo from './coreCombatInfo';
 import './CharacterSheet.scss';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
@@ -24,6 +25,7 @@ const developmentState = observable({
                 <Attributes />
                 <Skills />
                 <IDsLifestylesCurrency />
+                <CoreCombatInfo />
             </div>
         </div>
         );

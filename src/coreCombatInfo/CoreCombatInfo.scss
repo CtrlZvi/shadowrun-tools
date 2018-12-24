@@ -1,0 +1,347 @@
+.core-combat-info-text {
+  position: absolute;
+  width: 125.81934pt;
+  height: 9.8999pt;
+  left: 319.305pt;
+  top: 87.571pt;
+}
+
+.core-combat-info-tab {
+  position: absolute;
+  width: 151.03998pt;
+  height: 13.20001pt;
+  left: 315.188pt;
+  top: 85.5pt;
+}
+
+.core-combat-info-style {
+  position: absolute;
+  width: 153.36001pt;
+  height: 15.36pt;
+  left: #{6.27951 + 307.738}pt;
+  top: #{10.35999 + 73.98}pt;
+}
+
+.core-combat-info-box {
+  position: absolute;
+  width: 271pt;
+  height: 96.89203pt;
+  left: 314.4375pt;
+  top: 85.50012pt;
+}
+
+%core-combat-info-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 326.818pt;
+}
+
+.core-combat-info-line-1 {
+  @extend %core-combat-info-line;
+  top: 115.636pt;
+}
+
+.core-combat-info-line-2 {
+  @extend %core-combat-info-line;
+  top: 128.595pt;
+}
+
+.core-combat-info-line-3 {
+  @extend %core-combat-info-line;
+  top: 157.033pt;
+}
+
+.primary-armor {
+  position: absolute;
+  width: 40.42383pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 107.763pt;
+}
+
+.primary-armor-rating {
+  position: absolute;
+  width: 15.06543pt;
+  height: 6.47998pt;
+  left: 500.10156pt;
+  top: 108.56836pt;
+}
+
+.primary-ranged-weapon {
+  position: absolute;
+  width: 68.87988pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 120.707pt;
+}
+
+.primary-melee-weapon {
+  position: absolute;
+  width: 65.8418pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 149.147pt;
+}
+
+.weapon-attributes {
+  position: absolute;
+  width: 218.9668pt;
+  height: 35.97217pt;
+  left: 327.05273pt;
+  top: 131.11768pt;
+}
+
+// Style from CoreCombatInfoText.svg
+
+.bf53ae08-8ab1-4c7b-969c-162d7610ece6 {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+// Style from CoreCombatInfoTab.svg
+
+.a5e77214-f9bf-4f08-988d-c0c7adc66f1e {
+  fill: #7e0f12;
+}
+
+// Style from CoreCombatInfoStyle.svg
+
+.a08a32b3-ee82-4b0a-833b-b364f3cd1d46 {
+  fill: none;
+}
+
+.e32279bd-5612-4eaa-986f-4bd8dc17e436 {
+  isolation: isolate;
+}
+
+.b970e3cc-678e-4fad-89f1-947a1a6e6442 {
+  clip-path: url(#e631566c-d03d-4392-a788-471770d5e8ed);
+}
+
+.adc65f18-3dec-4baf-a38d-6c0b1ca589e7 {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.f839cab3-e0a4-4808-99c2-93d2e9af6543 {
+  clip-path: url(#bb151172-2738-42b7-aa60-f9fd43508eae);
+}
+
+.a2eda78f-cac1-4307-9ced-c3472d0f3c7a {
+  clip-path: url(#e7eca5e3-c787-4100-b48e-df4dd36b6a36);
+}
+
+// Style from CoreCombatInfoBox.svg
+
+.ac8fea6b-0a77-42d2-a87b-e4b32fcf996c {
+  fill: url(#faf241fb-98b8-422c-9072-f074a64d65db);
+}
+
+.af778e88-2f94-417c-a9fb-1a7feda34a37 {
+  fill: url(#a639c2aa-15db-4bae-b799-f5f7f9a5f5c9);
+}
+
+.a8cb513a-6875-4d10-94bd-f037817ab1a2, .b7a269a0-3ffd-416c-8095-09731ab7a392, .e3e01a52-d43f-4ef0-b60c-9ff81e7bf2dc {
+  fill: none;
+}
+
+.e5af80b7-b45b-42bc-a5cd-584b7177352e {
+  clip-path: url(#ff838420-d6c6-4b13-8ef6-51f08117dd04);
+}
+
+.f91c4994-187f-4b38-b762-749b1293193e {
+  mask: url(#bded7f80-52fb-46ed-aee4-2c42dc7cf839);
+}
+
+.bd44eafa-57c3-4f2a-a22c-fd3718c6277f {
+  clip-path: url(#f8637ed9-56a5-4426-b7d0-2c0bb4fd17d6);
+}
+
+.a8cb513a-6875-4d10-94bd-f037817ab1a2, .b7a269a0-3ffd-416c-8095-09731ab7a392 {
+  stroke: #7e0f12;
+}
+
+.f62b0bbc-fcf7-4eee-980e-af62e4861d62 {
+  clip-path: url(#a19dfe36-e57b-4bda-8ca5-06262f7d9a5c);
+}
+
+.a8cb513a-6875-4d10-94bd-f037817ab1a2 {
+  stroke-width: 0.75px;
+}
+
+// Style from CoreCombatInfoLine.svg
+
+.e391d819-5e28-4672-9c43-74b1f81f7eb1 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from PrimaryArmor.svg
+
+.e02ebb39-3490-43ad-a972-0dbe9924ec14 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+  letter-spacing: -0.00991em;
+}
+
+.f2cdcf1f-36eb-444d-a11a-19a5abd3831b {
+  letter-spacing: -0.00907em;
+}
+
+.ac6c6335-bf89-4ad7-8920-140dc5797f28 {
+  letter-spacing: -0.00893em;
+}
+
+.f529ca03-6e3c-4c6d-83e0-3ea58f45ffaf {
+  letter-spacing: -0.00014em;
+}
+
+// Style from PrimaryArmorRating.svg
+
+.e05fb601-3182-49c9-bc86-d35bf2f21788 {
+  fill: none;
+}
+
+.b6547fcd-f845-4ce4-a0b9-be73efcf76b5 {
+  clip-path: url(#be984457-5559-4162-95c5-d45fec0dc232);
+}
+
+.a166d99e-92fd-40a8-afd6-73e4f085702f {
+  opacity: 0.35001;
+}
+
+.a8d10743-dedb-43a7-8080-d6f211d5f4ba {
+  clip-path: url(#ae94f3f2-c0a4-4cc0-bbda-b63f6c622aa0);
+}
+
+.a85e08cc-f0f5-42b0-bb75-9d8a5174228b {
+  font-size: 6px;
+  font-family: UniversLTStd-Cn, Univers LT Std;
+}
+
+.a1c4374f-5198-4551-b6f6-b92c1a660cd5 {
+  letter-spacing: -0.00895em;
+}
+
+// Style from PrimaryRangedWeapon.svg
+
+.a65dec84-847e-4a12-8a00-2528d5d98db3 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.f7a9043f-f4ea-4383-9043-9540f57d07a1 {
+  letter-spacing: -0.00991em;
+}
+
+.af667fa7-d346-47db-ad33-6c962a2d9737 {
+  letter-spacing: -0.00907em;
+}
+
+.bae6e11b-f3a4-4983-8f72-00e8c5d103f9 {
+  letter-spacing: -0.00893em;
+}
+
+.fe1d00fe-19d3-4be6-829b-f4a242b21aa1 {
+  letter-spacing: -0.01004em;
+}
+
+.f921ca01-e1e3-4e0f-ba02-de788984d25d {
+  letter-spacing: -0.03502em;
+}
+
+// Style from PrimaryMeleeWeapon.svg
+
+.ae17de80-6263-416a-948e-4c68bd084110 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a7912cbc-8a67-4ec8-897b-9a1c1d5677ea {
+  letter-spacing: -0.00991em;
+}
+
+.a3e2cd36-a585-4bf6-b1c6-414275512e21 {
+  letter-spacing: -0.00907em;
+}
+
+.a6c444ac-92e6-44c6-a1ea-710c51015a5a {
+  letter-spacing: -0.00893em;
+}
+
+.bba2c6de-ea92-44c7-b1b5-1823b19dab4d {
+  letter-spacing: -0.01004em;
+}
+
+.b0f23119-6dff-4611-abab-04a529df6bf5 {
+  letter-spacing: -0.03404em;
+}
+
+// Style from WeaponAttributes.svg
+
+.fad36e6e-f793-4e35-acc4-5e9e9e8f5a82 {
+  fill: none;
+}
+
+.ffea150c-8692-4e02-9c79-3ed7dc206a86 {
+  clip-path: url(#b129e300-d684-4846-879b-7799de3f0609);
+}
+
+.a8adae6a-52f3-4607-8fd4-4987e80dddc8 {
+  opacity: 0.5;
+}
+
+.ef67c249-95a7-484b-b861-1b013c7e520d {
+  clip-path: url(#b6dfdc1d-26ec-4868-bc76-3dc849dd3a72);
+}
+
+.fb130c84-edca-405d-9bdc-c2531aae850d {
+  font-size: 7px;
+  font-family: UniversLTStd-Cn, Univers LT Std;
+}
+
+.b3f57a05-c082-4247-92a7-922a6628fd2e {
+  letter-spacing: -0.01004em;
+}
+
+.f38a60b6-4365-449f-8ddd-0fd6dbbcd414 {
+  letter-spacing: 3.93806em;
+}
+
+.bd5241f5-c0eb-4d31-972c-635ee035a0cd {
+  letter-spacing: 4.15904em;
+}
+
+.a5763014-1c5c-4fa9-a2e0-cf058345bd7b {
+  letter-spacing: 4.59305em;
+}
+
+.ef9d6b23-cccb-4197-86e9-747f8afdfab1 {
+  letter-spacing: -0.00907em;
+}
+
+.ec3dec11-15ef-4108-9c39-35b6aa37607b {
+  letter-spacing: 3.44699em;
+}
+
+.ed6003ae-1d38-4111-b759-c5f46aeaa1f2 {
+  letter-spacing: -0.00991em;
+}
+
+.a8344e00-4d02-43da-bdb4-e3569348d3c7 {
+  letter-spacing: 4.64802em;
+}
+
+.e59398e6-73b2-49c9-a4ac-bfea1c3d8a63 {
+  clip-path: url(#b466593a-252d-4179-b8f4-3b1ee1536a0e);
+}
+
+.ff1f4637-386d-4042-a3dd-929035702ae8 {
+  letter-spacing: -0.00893em;
+}
