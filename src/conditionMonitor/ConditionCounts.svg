@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 235.7168 84.87012">
+  <defs>
+    <style>
+      .ba1a425f-0537-4b00-a095-a449a71860fe {
+        fill: none;
+      }
+
+      .bd30cc8f-3c9c-4919-a7f6-0bd2a16468ac {
+        clip-path: url(#ef0d33c8-a15a-415d-bbc9-765fe52e2aca);
+      }
+
+      .a4a02dcd-5db6-4feb-b039-a736d6567f2e {
+        opacity: 0.75;
+      }
+
+      .f6ca90d4-42b5-4f18-8b1c-10f2fe4f5c6b {
+        clip-path: url(#faf1d241-5ad0-482a-bc81-ebb2195ef3e2);
+      }
+
+      .b2b0514e-edf3-4190-8012-8e45cc010c8c {
+        font-size: 6px;
+        font-family: UniversLTStd-LightCn, Univers LT Std;
+        font-weight: 300;
+      }
+
+      .f91063a1-a37b-4b3b-83cd-d085bf41a3dd {
+        letter-spacing: -0.00895em;
+      }
+
+      .f15baf39-c285-415f-b720-907e2a381c31 {
+        letter-spacing: -0.01009em;
+      }
+
+      .a9fb52e0-7e6f-440e-b305-ae8082e155ee {
+        letter-spacing: -0.00993em;
+      }
+
+      .ffb578b6-e3ce-4248-986a-4e92da9a6c6d {
+        clip-path: url(#af316e0b-bb3c-4e03-beaa-fa1c0a2dbf85);
+      }
+    </style>
+    <clipPath id="ef0d33c8-a15a-415d-bbc9-765fe52e2aca" transform="translate(-329.8252 -374.35352)">
+      <rect class="ba1a425f-0537-4b00-a095-a449a71860fe" width="612" height="765"/>
+    </clipPath>
+    <clipPath id="faf1d241-5ad0-482a-bc81-ebb2195ef3e2" transform="translate(-329.8252 -374.35352)">
+      <rect class="ba1a425f-0537-4b00-a095-a449a71860fe" x="318.97299" y="439.37799" width="126.75" height="20.84399"/>
+    </clipPath>
+    <clipPath id="af316e0b-bb3c-4e03-beaa-fa1c0a2dbf85" transform="translate(-329.8252 -374.35352)">
+      <rect class="ba1a425f-0537-4b00-a095-a449a71860fe" x="448.871" y="367.98901" width="126.74997" height="20.84399"/>
+    </clipPath>
+  </defs>
+  <title>ConditionCounts</title>
+  <g id="e4ea1620-2b05-4121-9f9d-eabecb52081a" data-name="Layer 2">
+    <g id="b88ab177-30de-4208-88c5-7beb244e0399" data-name="Layer 1">
+      <g id="f2b85121-818c-49ef-bb77-de3079d31c31" data-name="ConditionCounts">
+        <g class="bd30cc8f-3c9c-4919-a7f6-0bd2a16468ac">
+          <g class="a4a02dcd-5db6-4feb-b039-a736d6567f2e">
+            <g class="f6ca90d4-42b5-4f18-8b1c-10f2fe4f5c6b">
+              <text class="b2b0514e-edf3-4190-8012-8e45cc010c8c" transform="translate(0 76.36816)"><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd">Charac</tspan><tspan class="f15baf39-c285-415f-b720-907e2a381c31" x="14.66992" y="0">t</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="16.27734" y="0">ers have 8 + (Body ÷ 2, </tspan><tspan class="a9fb52e0-7e6f-440e-b305-ae8082e155ee" x="65.27734" y="0">r</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="66.88574" y="0">ound up) boxes o</tspan><tspan x="102.65625" y="0">n </tspan></text>
+              <text class="b2b0514e-edf3-4190-8012-8e45cc010c8c" transform="translate(0.6543 83.37012)"><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd">the physical damage track; black out ex</tspan><tspan class="f15baf39-c285-415f-b720-907e2a381c31" x="83.18164" y="0">t</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="84.78906" y="0">ra boxes</tspan><tspan x="102.68066" y="0">.</tspan></text>
+            </g>
+          </g>
+          <g class="a4a02dcd-5db6-4feb-b039-a736d6567f2e">
+            <g class="ffb578b6-e3ce-4248-986a-4e92da9a6c6d">
+              <text class="b2b0514e-edf3-4190-8012-8e45cc010c8c" transform="translate(130.73242 4.97998)"><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd">Charac</tspan><tspan class="f15baf39-c285-415f-b720-907e2a381c31" x="14.66992" y="0">t</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="16.27734" y="0">ers have 8 + (Will ÷ 2, </tspan><tspan class="a9fb52e0-7e6f-440e-b305-ae8082e155ee" x="63.60938" y="0">r</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="65.21777" y="0">ound up) boxes o</tspan><tspan x="100.98828" y="0">n </tspan></text>
+              <text class="b2b0514e-edf3-4190-8012-8e45cc010c8c" transform="translate(134.59668 11.98145)"><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd">the stun damage </tspan><tspan class="f15baf39-c285-415f-b720-907e2a381c31" x="36.7793" y="0">t</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="38.38672" y="0">rack; black ou</tspan><tspan class="f15baf39-c285-415f-b720-907e2a381c31" x="67.28223" y="0">t</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="68.88965" y="0" xml:space="preserve"> ex</tspan><tspan class="a9fb52e0-7e6f-440e-b305-ae8082e155ee" x="75.05762" y="0">tr</tspan><tspan class="f91063a1-a37b-4b3b-83cd-d085bf41a3dd" x="78.2793" y="0">a boxes</tspan><tspan x="94.55664" y="0">.</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

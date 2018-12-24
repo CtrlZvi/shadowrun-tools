@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 70.20001 184.15259">
+  <defs>
+    <style>
+      .ec005c74-0353-47f1-a16d-30b38d419c32 {
+        fill: none;
+      }
+
+      .aaae6832-d518-4b31-9529-109ea6a04fbc {
+        clip-path: url(#ee12f12b-901b-40c2-b780-1dcf1d26faba);
+      }
+
+      .e3c2b5fd-deaa-4fa7-84e7-d2d6fe0466e7 {
+        fill: #b0b2b4;
+      }
+    </style>
+    <clipPath id="ee12f12b-901b-40c2-b780-1dcf1d26faba" transform="translate(-344.33249 -244.25983)">
+      <rect class="ec005c74-0353-47f1-a16d-30b38d419c32" width="612" height="765"/>
+    </clipPath>
+  </defs>
+  <title>PhysicalDamageTrackerIndicatorDetails</title>
+  <g id="ac504d21-efa0-44da-a891-378cf425f4e0" data-name="Layer 2">
+    <g id="bf9fb4de-479d-420f-a455-453b7a8f6b98" data-name="Layer 1">
+      <g id="fb2e1e3e-aaf1-46f9-8eb0-979f844e31ea" data-name="PhysicalDamageTrackerIndicatorDetails">
+        <g class="aaae6832-d518-4b31-9529-109ea6a04fbc">
+          <path class="e3c2b5fd-deaa-4fa7-84e7-d2d6fe0466e7" d="M346.33249,248.25983a2,2,0,1,0-2-2,1.99944,1.99944,0,0,0,2,2" transform="translate(-344.33249 -244.25983)"/>
+          <path class="e3c2b5fd-deaa-4fa7-84e7-d2d6fe0466e7" d="M414.5325,425.85941l-7.012-2.551a5.19345,5.19345,0,0,1,0,5.104l7.012-2.553" transform="translate(-344.33249 -244.25983)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

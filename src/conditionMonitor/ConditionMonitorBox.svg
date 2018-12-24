@@ -1,0 +1,94 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 271 271.04401">
+  <defs>
+    <style>
+      .ac737077-7843-485f-bbd9-2c32866eb2dc {
+        fill: url(#a9fcd6c4-9436-4a5c-828b-f44f72dfa8f2);
+      }
+
+      .bd1ba73e-7751-4931-9200-2cc3d170024e {
+        fill: url(#b57f4758-66d7-4c4f-9a64-487df0fd390d);
+      }
+
+      .eaaead87-b067-46d8-a734-3b74dfa5a4db, .f5406b8b-b7e1-413c-81e1-afda439dcbcc, .f685b443-6f96-4036-9b71-e81d6dc97068 {
+        fill: none;
+      }
+
+      .acff3eab-cc6d-4ef9-9c58-0c62ac77bbab {
+        clip-path: url(#a6d28272-a9ce-49a0-88da-02399b2cc09f);
+      }
+
+      .bfefe52b-15a2-4405-a9b6-c1d03038b4bd {
+        mask: url(#f057c38f-8b2f-4099-84d8-790ed5ef8987);
+      }
+
+      .f6dceb24-5075-4762-b505-c3175e40c19c {
+        clip-path: url(#aae810b9-d529-4183-9b00-4fd72a6ea289);
+      }
+
+      .f5406b8b-b7e1-413c-81e1-afda439dcbcc, .f685b443-6f96-4036-9b71-e81d6dc97068 {
+        stroke: #7e0f12;
+      }
+
+      .a17e5b0d-4321-4ef1-916c-47fe8dae9c7a {
+        mask: url(#e0cf3636-7fb3-4f6f-9d1f-d83f17966e33);
+      }
+
+      .b8cf6e92-2afe-4a87-b348-0764137806d1 {
+        clip-path: url(#bc35cbb3-add5-4b4d-a86e-0b498b4ae919);
+      }
+
+      .f5406b8b-b7e1-413c-81e1-afda439dcbcc {
+        stroke-width: 0.75px;
+      }
+    </style>
+    <linearGradient id="a9fcd6c4-9436-4a5c-828b-f44f72dfa8f2" y1="763.91746" x2="1" y2="763.91746" gradientTransform="translate(-196885.39365 464.05927) rotate(-90) scale(258.13181)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.3" stop-color="#fff"/>
+      <stop offset="0.90106" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b57f4758-66d7-4c4f-9a64-487df0fd390d" y1="765.03113" y2="765.03113" gradientTransform="matrix(0, -271.04379, -271.04379, 0, 207662.93893, 464.05939)" xlink:href="#a9fcd6c4-9436-4a5c-828b-f44f72dfa8f2"/>
+    <clipPath id="a6d28272-a9ce-49a0-88da-02399b2cc09f" transform="translate(-314.4375 -193.01563)">
+      <rect class="eaaead87-b067-46d8-a734-3b74dfa5a4db" width="612" height="765"/>
+    </clipPath>
+    <mask id="f057c38f-8b2f-4099-84d8-790ed5ef8987" x="-314.43744" y="-193.01556" width="611.99994" height="764.99994" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.4375 -193.01563)">
+        <rect class="ac737077-7843-485f-bbd9-2c32866eb2dc" x="0.00006" y="0.00006" width="611.99994" height="764.99994"/>
+      </g>
+    </mask>
+    <clipPath id="aae810b9-d529-4183-9b00-4fd72a6ea289" transform="translate(-314.4375 -193.01563)">
+      <rect class="eaaead87-b067-46d8-a734-3b74dfa5a4db" x="305.93701" y="198.927" width="288.5" height="266.13199"/>
+    </clipPath>
+    <mask id="e0cf3636-7fb3-4f6f-9d1f-d83f17966e33" x="-314.43753" y="-193.01556" width="611.99997" height="764.99997" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.4375 -193.01563)">
+        <rect class="bd1ba73e-7751-4931-9200-2cc3d170024e" x="-0.00003" y="0.00006" width="611.99997" height="764.99997"/>
+      </g>
+    </mask>
+    <clipPath id="bc35cbb3-add5-4b4d-a86e-0b498b4ae919" transform="translate(-314.4375 -193.01563)">
+      <rect class="eaaead87-b067-46d8-a734-3b74dfa5a4db" x="305.43701" y="186.01599" width="18.75" height="279.043"/>
+    </clipPath>
+  </defs>
+  <title>ConditionMonitorBox</title>
+  <g id="a5671391-d2fb-4ff1-983e-a0c652c165b9" data-name="Layer 2">
+    <g id="a9314b48-eacc-4786-8af8-0adbbc8ca369" data-name="Layer 1">
+      <g id="f4b50357-a4c8-4e7f-a59d-3725d674e6b3" data-name="Boxes">
+        <g class="acff3eab-cc6d-4ef9-9c58-0c62ac77bbab">
+          <g class="bfefe52b-15a2-4405-a9b6-c1d03038b4bd">
+            <g id="ec74da00-f4aa-4149-bb6f-2977de7f632f" data-name="ConditionMonitorCorner">
+              <g class="f6dceb24-5075-4762-b505-c3175e40c19c">
+                <polyline class="f685b443-6f96-4036-9b71-e81d6dc97068" points="0.5 13.412 259.34 13.412 270.5 24.572 270.5 271.044"/>
+              </g>
+            </g>
+          </g>
+          <g class="a17e5b0d-4321-4ef1-916c-47fe8dae9c7a">
+            <g id="f469db84-410c-4d21-8b98-95173e03e66e" data-name="ConditionMonitorVertical">
+              <g class="b8cf6e92-2afe-4a87-b348-0764137806d1">
+                <line class="f5406b8b-b7e1-413c-81e1-afda439dcbcc" x1="0.375" x2="0.375" y2="271.04401"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

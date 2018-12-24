@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60.01501 0.75">
+  <defs>
+    <style>
+      .af108a14-c14b-4b64-a0ad-7f47a980d083 {
+        fill: none;
+        stroke: #6d6e70;
+        stroke-width: 0.75px;
+      }
+    </style>
+  </defs>
+  <title>OverflowLine</title>
+  <g id="eb5f9667-f84a-4a17-8207-bdec58c7bfd0" data-name="Layer 2">
+    <g id="f1ac59a4-8878-440e-911d-4ce79b22adfa" data-name="Layer 1">
+      <line id="ad1e6e03-d20b-49fd-b82a-3026ca869eb3" data-name="OverflowLine" class="af108a14-c14b-4b64-a0ad-7f47a980d083" x1="60.01501" y1="0.375" y2="0.375"/>
+    </g>
+  </g>
+</svg>

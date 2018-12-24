@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 76.19998 112.5939">
+  <defs>
+    <style>
+      .b1bde58b-9e39-4979-b433-2013d48413a0 {
+        fill: none;
+      }
+
+      .a0a282a4-3f3c-4e7f-9e81-6588b9dc3935 {
+        clip-path: url(#ad0108e8-8809-4db9-b8c1-c0d66a9dfcbe);
+      }
+
+      .ff2e4c91-be42-44c4-b219-ccd944717d3c {
+        fill: #b0b2b4;
+      }
+    </style>
+    <clipPath id="ad0108e8-8809-4db9-b8c1-c0d66a9dfcbe" transform="translate(-475.74631 -244.25983)">
+      <rect class="b1bde58b-9e39-4979-b433-2013d48413a0" width="612" height="765"/>
+    </clipPath>
+  </defs>
+  <title>StunDamageTrackerIndicatorDetails</title>
+  <g id="af88bd58-f746-41d2-9bf4-e0d69a632b79" data-name="Layer 2">
+    <g id="a9405b5d-ae7b-4ed2-a5c6-4243aab8ec3f" data-name="Layer 1">
+      <g id="bf0498f1-3486-41ff-861e-518028861434" data-name="StunDamageTrackerIndicatorDetails">
+        <g class="a0a282a4-3f3c-4e7f-9e81-6588b9dc3935">
+          <path class="ff2e4c91-be42-44c4-b219-ccd944717d3c" d="M477.74631,248.25983a2,2,0,1,0-2-2,1.99944,1.99944,0,0,0,2,2" transform="translate(-475.74631 -244.25983)"/>
+          <path class="ff2e4c91-be42-44c4-b219-ccd944717d3c" d="M551.94629,354.3027l-7.012-2.553a5.19463,5.19463,0,0,1,0,5.104l7.012-2.551" transform="translate(-475.74631 -244.25983)"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

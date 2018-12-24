@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.19316 109.043">
+  <defs>
+    <style>
+      .aa48f5a3-e862-45cd-bf54-39391235dac3 {
+        fill: none;
+        stroke: #b0b2b4;
+      }
+    </style>
+  </defs>
+  <title>StunDamageTrackerIndicator</title>
+  <g id="e98c955b-6d5c-4cac-9bf5-7243f9abe1a9" data-name="Layer 2">
+    <g id="e6bcfedf-06c0-490b-bf46-30ad413a1d96" data-name="Layer 1">
+      <polyline id="be93d2f8-2a51-47b6-9b05-def438f4eb72" data-name="StunDamageTrackerIndicator" class="aa48f5a3-e862-45cd-bf54-39391235dac3" points="3.777 0.5 77.977 0.5 0.217 34.779 77.977 34.779 0.217 72.148 77.977 72.148 0.217 108.543 72.515 108.543"/>
+    </g>
+  </g>
+</svg>

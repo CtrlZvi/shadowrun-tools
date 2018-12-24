@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0.75 35.625">
+  <defs>
+    <style>
+      .bf3bdc9b-aa0d-47f7-9b1b-1e90a57ae4bd {
+        fill: none;
+        stroke: #680015;
+        stroke-miterlimit: 10;
+        stroke-width: 0.75px;
+      }
+    </style>
+  </defs>
+  <title>PhysicalDamageBoxLeft1</title>
+  <g id="f9dcb000-4ac5-4c02-a760-959b6ec67472" data-name="Layer 2">
+    <g id="a2af055e-e07e-4602-89fe-75e8e2065b27" data-name="Layer 1">
+      <line id="e3ed6c04-1898-4f33-81b6-edc2c74c5c53" data-name="PhysicalDamageBoxLeft1" class="bf3bdc9b-aa0d-47f7-9b1b-1e90a57ae4bd" x1="0.375" y1="35.625" x2="0.375"/>
+    </g>
+  </g>
+</svg>

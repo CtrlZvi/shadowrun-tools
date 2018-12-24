@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 78.99095 180.60001">
+  <defs>
+    <style>
+      .b8792095-8b6a-4d8d-acd1-289a37b98db5 {
+        fill: none;
+        stroke: #b0b2b4;
+      }
+    </style>
+  </defs>
+  <title>PhysicalDamageTrackerIndicator</title>
+  <g id="a4246980-47a1-4087-ada2-c5de5e7675a0" data-name="Layer 2">
+    <g id="a490e640-dab0-44a6-9dc1-7571f4a78f70" data-name="Layer 1">
+      <polyline id="ab75f417-3bbd-4b05-b415-43b153125953" data-name="PhysicalDamageTrackerIndicator" class="b8792095-8b6a-4d8d-acd1-289a37b98db5" points="10.574 0.5 78.774 0.5 1.014 34.779 78.774 34.779 1.014 72.148 78.774 72.148 1.014 108.543 78.774 108.543 0.207 144.357 77.967 144.357 1.014 180.1 73.312 180.1"/>
+    </g>
+  </g>
+</svg>
