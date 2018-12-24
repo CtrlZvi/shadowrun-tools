@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.76807 6.47998">
+  <defs>
+    <style>
+      .eacfd862-a091-4605-b839-6b6c78c70c14 {
+        font-size: 6px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .b42d47f7-dd0a-44fc-a068-ee8f59fa6c9f {
+        letter-spacing: -0.02002em;
+      }
+
+      .ba954388-ea0b-47b5-b43f-cbf8c0bf9ee8 {
+        letter-spacing: -0.01896em;
+      }
+    </style>
+  </defs>
+  <title>RatingLeft</title>
+  <g id="bbf243b6-685c-4f45-8f7f-65d0069c9572" data-name="Layer 2">
+    <g id="b8fe060b-104d-4601-9d21-bb03efc09e9f" data-name="Layer 1">
+      <text id="fa63b548-1edb-4657-a26b-69221cf1ce89" data-name="RatingLeft" class="eacfd862-a091-4605-b839-6b6c78c70c14" transform="translate(0 4.97998)"><tspan class="b42d47f7-dd0a-44fc-a068-ee8f59fa6c9f">R</tspan><tspan class="ba954388-ea0b-47b5-b43f-cbf8c0bf9ee8" x="3.21582" y="0">T</tspan><tspan x="6.10205" y="0">G</tspan></text>
+    </g>
+  </g>
+</svg>

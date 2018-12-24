@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 247.901">
+  <defs>
+    <style>
+      .a9d2e660-69fa-45a0-92a3-6651f9554d29 {
+        fill: url(#ac9e2e33-fba4-4bd0-a321-c367eb39dbb7);
+      }
+
+      .be7ed3f2-f1df-4572-9e7e-14408e8c9837 {
+        fill: url(#b0e798ca-39d3-44f2-b672-e437dfe32263);
+      }
+
+      .b38706db-a33a-49a5-8390-acfb95b375d1, .b93f6be1-2507-4ed7-8390-e457a3cde898, .e6f29d56-88bc-4654-a7ce-32b3dc9b461f {
+        fill: none;
+      }
+
+      .afe4ac10-4f62-4f66-ad40-2df848f73f18 {
+        clip-path: url(#ea695299-04b0-4672-ba86-ba26e45d07fc);
+      }
+
+      .ed32beb9-3255-4b48-9bf8-d3339666469f {
+        mask: url(#e05b4270-2e6d-43da-812e-05c71a915d7f);
+      }
+
+      .a0fccb17-eb28-4486-ac35-dd39b739207f {
+        clip-path: url(#bcf99690-cb7c-4b49-9040-083443a5a0d1);
+      }
+
+      .b93f6be1-2507-4ed7-8390-e457a3cde898, .e6f29d56-88bc-4654-a7ce-32b3dc9b461f {
+        stroke: #7e0f12;
+      }
+
+      .e6f29d56-88bc-4654-a7ce-32b3dc9b461f {
+        stroke-width: 0.75px;
+      }
+
+      .bcd71e2f-bda2-41d3-8853-aab0cf7fd812 {
+        clip-path: url(#ab89a78d-0248-4237-bb16-098ede69d564);
+      }
+    </style>
+    <linearGradient id="ac9e2e33-fba4-4bd0-a321-c367eb39dbb7" y1="764.9655" x2="1" y2="764.9655" gradientTransform="matrix(0, -288.0643, -288.0643, 0, 220665.25241, 608.22485)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.29" stop-color="#fff"/>
+      <stop offset="0.89965" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b0e798ca-39d3-44f2-b672-e437dfe32263" y1="763.93407" y2="763.93407" gradientTransform="matrix(0, -262.50604, -262.50604, 0, 200843.31, 608.22485)" xlink:href="#ac9e2e33-fba4-4bd0-a321-c367eb39dbb7"/>
+    <clipPath id="ea695299-04b0-4672-ba86-ba26e45d07fc" transform="translate(-26.1875 -360.32401)">
+      <rect class="b38706db-a33a-49a5-8390-acfb95b375d1" width="612" height="765"/>
+    </clipPath>
+    <mask id="e05b4270-2e6d-43da-812e-05c71a915d7f" x="-26.18753" y="-360.32394" width="612.00003" height="764.99995" maskUnits="userSpaceOnUse">
+      <g transform="translate(-26.1875 -360.32401)">
+        <rect class="a9d2e660-69fa-45a0-92a3-6651f9554d29" x="-0.00003" y="0.00006" width="612.00003" height="764.99995"/>
+      </g>
+    </mask>
+    <clipPath id="bcf99690-cb7c-4b49-9040-083443a5a0d1" transform="translate(-26.1875 -360.32401)">
+      <rect class="b38706db-a33a-49a5-8390-acfb95b375d1" x="287.06201" y="353.32401" width="18.75" height="255.901"/>
+    </clipPath>
+    <clipPath id="ab89a78d-0248-4237-bb16-098ede69d564" transform="translate(-26.1875 -360.32401)">
+      <rect class="b38706db-a33a-49a5-8390-acfb95b375d1" x="17.1875" y="366.245" width="288.49951" height="242.98001"/>
+    </clipPath>
+  </defs>
+  <title>SkillsBox</title>
+  <g id="bebf8270-3e86-4faa-b410-7d4ca4ec327e" data-name="Layer 2">
+    <g id="a09ae9b2-d9cc-4d9b-8678-f86a8eb07855" data-name="Layer 1">
+      <g id="adb60e5a-ae66-42e9-8605-7498e0617137" data-name="SkillsBox">
+        <g class="afe4ac10-4f62-4f66-ad40-2df848f73f18">
+          <g class="ed32beb9-3255-4b48-9bf8-d3339666469f">
+            <g class="a0fccb17-eb28-4486-ac35-dd39b739207f">
+              <line class="e6f29d56-88bc-4654-a7ce-32b3dc9b461f" x1="270.25" x2="270.25" y2="247.901"/>
+            </g>
+          </g>
+          <g class="ed32beb9-3255-4b48-9bf8-d3339666469f">
+            <g class="bcd71e2f-bda2-41d3-8853-aab0cf7fd812">
+              <polyline class="b93f6be1-2507-4ed7-8390-e457a3cde898" points="270.5 13.421 11.66 13.421 0.5 25.581 0.5 247.901"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

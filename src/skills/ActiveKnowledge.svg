@@ -1,0 +1,470 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 137.57715 208.74219">
+  <defs>
+    <style>
+      .b5fc379d-7be6-4227-9274-0fb4a38eb0a6 {
+        fill: none;
+      }
+
+      .b12ac79b-599c-419e-b7b1-4bf5be49deed {
+        clip-path: url(#b8d3f074-30cd-439a-b643-c64658f061ca);
+      }
+
+      .b5c3479f-40f4-4893-8da9-700950cfec83 {
+        opacity: 0.75;
+      }
+
+      .bd5d2123-c2ea-406f-b567-efda8c5ef36f {
+        clip-path: url(#a800ff0c-ae38-4709-b049-98ec57a7f2ed);
+      }
+
+      .bfbc66fe-f14b-434a-ba66-fa2e1531291d {
+        font-size: 6px;
+        font-family: UniversLTStd-UltraCn, Univers LT Std;
+      }
+
+      .e2b0556f-ec07-491d-ad49-ee159fa2966a {
+        letter-spacing: -0.01904em;
+      }
+
+      .b3528b7f-fb24-435a-ba38-175b0881d560 {
+        clip-path: url(#efa39a84-7a5b-4418-9bf4-26c5dc9cdcbb);
+      }
+
+      .a3b8ac88-c17e-4df3-85d6-e1155a01313d {
+        clip-path: url(#a1470ce4-fae3-478a-b473-16b750ef5239);
+      }
+
+      .bc2c900a-313c-4773-a429-3174de859164 {
+        clip-path: url(#f34354df-2e5b-44e9-b421-459fae0fd17d);
+      }
+
+      .a12d86ef-e284-4ec4-84db-8298651b6266 {
+        clip-path: url(#f5895d48-6067-4e01-a97a-3744dc992b37);
+      }
+
+      .af52c010-2cc5-45a0-96cd-ef2c762584b5 {
+        clip-path: url(#ac58d943-a7ed-446d-bdf3-faec6337cfca);
+      }
+
+      .a10a1a91-e5b2-42b4-af61-d77f67f1ae5a {
+        clip-path: url(#b9fc62a8-4481-43fc-b008-4fed47b97402);
+      }
+
+      .af88ca51-7c73-47d3-b0ae-21e48d3968b2 {
+        clip-path: url(#b7754fbe-baa1-408a-97a4-1d9250b32b36);
+      }
+
+      .bf24befb-d625-4630-9483-fa70d1c7886b {
+        clip-path: url(#a37bcb53-24d9-4490-bd36-c372d8af6b2a);
+      }
+
+      .acd162c9-3d13-437b-ae93-52e6f9e2b2e0 {
+        clip-path: url(#e7cdbe78-667f-480d-9554-5e64e3edc2d5);
+      }
+
+      .ab421a57-2c11-4914-812e-1d270d5a688f {
+        clip-path: url(#af9e4546-9040-4e50-9c53-413a2b2f5a99);
+      }
+
+      .b61caae6-4c03-46bb-9370-be0157334b90 {
+        clip-path: url(#ef56ae28-beb7-4419-b605-588df6473ead);
+      }
+
+      .a9eb2130-098b-48d2-8b72-4895190ca592 {
+        clip-path: url(#fb3a02c0-ea96-415e-a753-dd5c0ca4b228);
+      }
+
+      .adff1e85-9c7c-4521-b253-2f53e6ef05d2 {
+        clip-path: url(#abcdc0e5-8bc2-45d3-a5c7-467620592a68);
+      }
+
+      .aab2b458-1f51-4c8d-93fe-4f363a1ec569 {
+        clip-path: url(#b43c659a-0ee5-467b-a612-dd490dfa2249);
+      }
+
+      .ea4c9602-2843-4773-93a2-71a5b12d87c7 {
+        clip-path: url(#e6f10f0e-07a8-40f3-81e2-06648bd1ce3b);
+      }
+
+      .e64fd23f-d29f-4e9f-8f8b-06bce4e99fd1 {
+        clip-path: url(#f37a9bc9-6891-47ab-8f6f-c4909a2f64d2);
+      }
+
+      .acc6a6fa-c652-4121-93d4-6c02fe06d85c {
+        clip-path: url(#ac6e4708-685c-4056-8b61-4188e7a8b252);
+      }
+
+      .b2ee54ad-6b87-4610-80c6-14e9b2e962e4 {
+        clip-path: url(#a6df1cdb-28a1-4478-8625-faaf7d72ca9b);
+      }
+
+      .aab941ef-f3f8-497b-bb1d-81e121af2377 {
+        clip-path: url(#aed85b01-8c3a-4185-8330-4b5db0c124f2);
+      }
+
+      .a23ca685-a46d-49b8-b6fa-c534b5697685 {
+        clip-path: url(#f2519657-8a86-4997-baa1-26c0477c32a7);
+      }
+
+      .a43c5148-443f-4e2f-9466-32c504e578a0 {
+        clip-path: url(#a5858d24-61c2-4c8b-8581-74563057a32d);
+      }
+
+      .aa0c644e-f362-4b83-86b1-5b100c8135e8 {
+        clip-path: url(#b3f4c6cb-d932-4a51-93db-9d55525eea60);
+      }
+
+      .b5a7ac7d-64e6-4e8d-a53c-2b96a3085ce9 {
+        clip-path: url(#a70fc235-87aa-4194-9255-d3e1ef5f1fb1);
+      }
+
+      .aedcf957-9eff-4598-b190-02b7804b0a45 {
+        clip-path: url(#a8c30331-935b-4d63-b8cd-6fc318e9ec02);
+      }
+
+      .aedf4d85-c7f8-4ff0-8260-65d84421384d {
+        clip-path: url(#a0cbc3ad-35f6-4508-a063-87faa8816250);
+      }
+
+      .b1fe8bca-a64c-49b8-ab5d-d0e83317c785 {
+        clip-path: url(#a31c7c08-14e7-491d-8224-94bce35e61d9);
+      }
+
+      .ac318014-283b-4683-9d76-0a0fea5ba416 {
+        clip-path: url(#a7342102-1b44-4192-9650-37c279850a9a);
+      }
+
+      .ab143f34-f3b4-4406-9483-5baddd727021 {
+        clip-path: url(#f0afc613-e384-42dc-8a8a-2eff6bf29913);
+      }
+
+      .a1927ed9-d1fe-4c23-97c7-a30c0d3a7b38 {
+        clip-path: url(#be178e1a-7a83-49b0-8fcf-50c8b9255f3d);
+      }
+
+      .f4af6e42-805f-430b-98eb-5800d437eaad {
+        clip-path: url(#b111e9dc-51fd-4519-8173-9df4039bd0fc);
+      }
+
+      .bbc71f70-4f58-433c-98e4-68d97f0e57db {
+        clip-path: url(#e477cbf4-fb45-4cd8-9c43-a0bc805072f5);
+      }
+
+      .ab9a8411-ae20-488d-85bd-97bed5966779 {
+        clip-path: url(#b1a5f9c8-7988-44f8-80e9-af3a9bea8f89);
+      }
+
+      .a433591c-69d3-4f01-ac1e-ffd985fe432e {
+        clip-path: url(#b1a55b15-ebcd-4f37-9108-72c51accb019);
+      }
+
+      .bca7c6f5-5964-4382-ae6d-19026dae4fae {
+        clip-path: url(#a6ec1ce7-eadf-434f-8c10-f384a5749aa5);
+      }
+
+      .e9e966db-6f1e-40dd-9f2c-23d509aee188 {
+        clip-path: url(#b81b362b-a553-4be9-b924-fda0bed91335);
+      }
+    </style>
+    <clipPath id="b8d3f074-30cd-439a-b643-c64658f061ca" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" width="612" height="765"/>
+    </clipPath>
+    <clipPath id="a800ff0c-ae38-4709-b049-98ec57a7f2ed" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="386.94601" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="efa39a84-7a5b-4418-9bf4-26c5dc9cdcbb" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="398.85999" width="28.853" height="13.56802"/>
+    </clipPath>
+    <clipPath id="a1470ce4-fae3-478a-b473-16b750ef5239" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="410.77399" width="28.853" height="13.56802"/>
+    </clipPath>
+    <clipPath id="f34354df-2e5b-44e9-b421-459fae0fd17d" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="422.68799" width="28.853" height="13.56802"/>
+    </clipPath>
+    <clipPath id="f5895d48-6067-4e01-a97a-3744dc992b37" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="434.60199" width="28.853" height="13.56802"/>
+    </clipPath>
+    <clipPath id="ac58d943-a7ed-446d-bdf3-faec6337cfca" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="446.51599" width="28.853" height="13.56802"/>
+    </clipPath>
+    <clipPath id="b9fc62a8-4481-43fc-b008-4fed47b97402" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="458.42999" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b7754fbe-baa1-408a-97a4-1d9250b32b36" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="470.34399" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="a37bcb53-24d9-4490-bd36-c372d8af6b2a" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="482.258" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="e7cdbe78-667f-480d-9554-5e64e3edc2d5" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="494.172" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="af9e4546-9040-4e50-9c53-413a2b2f5a99" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="506.086" width="28.853" height="13.56801"/>
+    </clipPath>
+    <clipPath id="ef56ae28-beb7-4419-b605-588df6473ead" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="518" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="fb3a02c0-ea96-415e-a753-dd5c0ca4b228" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="529.914" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="abcdc0e5-8bc2-45d3-a5c7-467620592a68" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="541.828" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b43c659a-0ee5-467b-a612-dd490dfa2249" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="553.742" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="e6f10f0e-07a8-40f3-81e2-06648bd1ce3b" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="565.65601" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="f37a9bc9-6891-47ab-8f6f-c4909a2f64d2" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="577.57001" width="28.853" height="13.56799"/>
+    </clipPath>
+    <clipPath id="ac6e4708-685c-4056-8b61-4188e7a8b252" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="137.459" y="589.48399" width="28.853" height="13.56801"/>
+    </clipPath>
+    <clipPath id="a6df1cdb-28a1-4478-8625-faaf7d72ca9b" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="386.94601" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="aed85b01-8c3a-4185-8330-4b5db0c124f2" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="398.85999" width="28.854" height="13.56802"/>
+    </clipPath>
+    <clipPath id="f2519657-8a86-4997-baa1-26c0477c32a7" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="410.77399" width="28.854" height="13.56802"/>
+    </clipPath>
+    <clipPath id="a5858d24-61c2-4c8b-8581-74563057a32d" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="422.68799" width="28.854" height="13.56802"/>
+    </clipPath>
+    <clipPath id="b3f4c6cb-d932-4a51-93db-9d55525eea60" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="434.60199" width="28.854" height="13.56802"/>
+    </clipPath>
+    <clipPath id="a70fc235-87aa-4194-9255-d3e1ef5f1fb1" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="446.51599" width="28.854" height="13.56802"/>
+    </clipPath>
+    <clipPath id="a8c30331-935b-4d63-b8cd-6fc318e9ec02" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="458.42999" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="a0cbc3ad-35f6-4508-a063-87faa8816250" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="470.34399" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="a31c7c08-14e7-491d-8224-94bce35e61d9" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="482.258" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="a7342102-1b44-4192-9650-37c279850a9a" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="494.172" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="f0afc613-e384-42dc-8a8a-2eff6bf29913" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="506.086" width="28.854" height="13.56801"/>
+    </clipPath>
+    <clipPath id="be178e1a-7a83-49b0-8fcf-50c8b9255f3d" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="518" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b111e9dc-51fd-4519-8173-9df4039bd0fc" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="529.914" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="e477cbf4-fb45-4cd8-9c43-a0bc805072f5" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="541.828" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b1a5f9c8-7988-44f8-80e9-af3a9bea8f89" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="553.742" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b1a55b15-ebcd-4f37-9108-72c51accb019" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="565.65601" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="a6ec1ce7-eadf-434f-8c10-f384a5749aa5" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="577.57001" width="28.854" height="13.56799"/>
+    </clipPath>
+    <clipPath id="b81b362b-a553-4be9-b924-fda0bed91335" transform="translate(-147.56885 -393.30957)">
+      <rect class="b5fc379d-7be6-4227-9274-0fb4a38eb0a6" x="266.366" y="589.48399" width="28.854" height="13.56801"/>
+    </clipPath>
+  </defs>
+  <title>ActiveKnowledge</title>
+  <g id="bb3145a1-a738-4f0f-b7ee-901969b922f4" data-name="Layer 2">
+    <g id="abcf806b-8342-42f7-837b-76158b51d15c" data-name="Layer 1">
+      <g id="e88040fa-9da1-4bc9-b03a-a2a935730946" data-name="ActiveKnowledge">
+        <g class="b12ac79b-599c-419e-b7b1-4bf5be49deed">
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="bd5d2123-c2ea-406f-b567-efda8c5ef36f">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 4.98047)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="b3528b7f-fb24-435a-ba38-175b0881d560">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 16.89453)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a3b8ac88-c17e-4df3-85d6-e1155a01313d">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 28.80859)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="bc2c900a-313c-4773-a429-3174de859164">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 40.72266)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a12d86ef-e284-4ec4-84db-8298651b6266">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 52.63672)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="af52c010-2cc5-45a0-96cd-ef2c762584b5">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 64.55078)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a10a1a91-e5b2-42b4-af61-d77f67f1ae5a">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 76.46484)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="af88ca51-7c73-47d3-b0ae-21e48d3968b2">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 88.37793)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="bf24befb-d625-4630-9483-fa70d1c7886b">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 100.29199)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="acd162c9-3d13-437b-ae93-52e6f9e2b2e0">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 112.20605)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="ab421a57-2c11-4914-812e-1d270d5a688f">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 124.12012)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="b61caae6-4c03-46bb-9370-be0157334b90">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 136.03418)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a9eb2130-098b-48d2-8b72-4895190ca592">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 147.94824)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="adff1e85-9c7c-4521-b253-2f53e6ef05d2">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 159.8623)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="aab2b458-1f51-4c8d-93fe-4f363a1ec569">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 171.77637)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="ea4c9602-2843-4773-93a2-71a5b12d87c7">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 183.69043)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="e64fd23f-d29f-4e9f-8f8b-06bce4e99fd1">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 195.60449)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="acc6a6fa-c652-4121-93d4-6c02fe06d85c">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(0 207.51855)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="b2ee54ad-6b87-4610-80c6-14e9b2e962e4">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 4.98047)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="aab941ef-f3f8-497b-bb1d-81e121af2377">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 16.89453)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a23ca685-a46d-49b8-b6fa-c534b5697685">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 28.80859)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a43c5148-443f-4e2f-9466-32c504e578a0">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 40.72266)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="aa0c644e-f362-4b83-86b1-5b100c8135e8">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 52.63672)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="b5a7ac7d-64e6-4e8d-a53c-2b96a3085ce9">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 64.55078)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="aedcf957-9eff-4598-b190-02b7804b0a45">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 76.46484)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="aedf4d85-c7f8-4ff0-8260-65d84421384d">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 88.37793)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="b1fe8bca-a64c-49b8-ab5d-d0e83317c785">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 100.29199)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="ac318014-283b-4683-9d76-0a0fea5ba416">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 112.20605)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="ab143f34-f3b4-4406-9483-5baddd727021">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 124.12012)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a1927ed9-d1fe-4c23-97c7-a30c0d3a7b38">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 136.03418)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="f4af6e42-805f-430b-98eb-5800d437eaad">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 147.94824)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="bbc71f70-4f58-433c-98e4-68d97f0e57db">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 159.8623)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="ab9a8411-ae20-488d-85bd-97bed5966779">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 171.77637)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="a433591c-69d3-4f01-ac1e-ffd985fe432e">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 183.69043)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="bca7c6f5-5964-4382-ae6d-19026dae4fae">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 195.60449)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+          <g class="b5c3479f-40f4-4893-8da9-700950cfec83">
+            <g class="e9e966db-6f1e-40dd-9f2c-23d509aee188">
+              <text class="bfbc66fe-f14b-434a-ba66-fa2e1531291d" transform="translate(128.90723 207.51855)"><tspan class="e2b0556f-ec07-491d-ad49-ee159fa2966a">A / </tspan><tspan x="6.21582" y="0">K</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
