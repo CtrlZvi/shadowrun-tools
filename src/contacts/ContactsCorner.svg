@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.5 87.98">
+  <defs>
+    <style>
+      .a81407de-72bc-4c6f-add5-fa4141cf4552 {
+        fill: url(#a52effde-d4db-4b25-8092-814229cb297f);
+      }
+
+      .a01d33dd-4b7a-4a5b-a400-5e04fa5145e1, .aec1a6c2-53ee-4178-9d28-961179e38691 {
+        fill: none;
+      }
+
+      .b331ec79-68e9-4380-a2f2-cc6b71d1d4b7 {
+        clip-path: url(#bfb67398-8f2e-4f65-abb5-e807bbee65b3);
+      }
+
+      .a446f7ba-ddbe-4266-92ab-99b2c7706425 {
+        mask: url(#b4197b69-9b88-4eac-8bca-4be03c334c26);
+      }
+
+      .ae4f1109-0c0f-404e-b6d7-9f34bf16b6cf {
+        clip-path: url(#f3f1e08b-7bc8-4658-ba3a-f474e15c7e48);
+      }
+
+      .aec1a6c2-53ee-4178-9d28-961179e38691 {
+        stroke: #7e0f12;
+      }
+    </style>
+    <linearGradient id="a52effde-d4db-4b25-8092-814229cb297f" y1="761.81959" x2="1" y2="761.81959" gradientTransform="translate(-66718.89007 724.30591) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="bfb67398-8f2e-4f65-abb5-e807bbee65b3" transform="translate(-315.3125 -636.3259)">
+      <rect class="a01d33dd-4b7a-4a5b-a400-5e04fa5145e1" width="612" height="765"/>
+    </clipPath>
+    <mask id="b4197b69-9b88-4eac-8bca-4be03c334c26" x="-315.3125" y="-636.3259" width="612" height="765" maskUnits="userSpaceOnUse">
+      <g transform="translate(-315.3125 -636.3259)">
+        <rect class="a81407de-72bc-4c6f-add5-fa4141cf4552" width="612" height="765"/>
+      </g>
+    </mask>
+    <clipPath id="f3f1e08b-7bc8-4658-ba3a-f474e15c7e48" transform="translate(-315.3125 -636.3259)">
+      <rect class="a01d33dd-4b7a-4a5b-a400-5e04fa5145e1" x="306.31201" y="629.326" width="288.5" height="95.9799"/>
+    </clipPath>
+  </defs>
+  <title>ContactsCorner</title>
+  <g id="a841f3e7-4936-4f8a-9419-ee503742b627" data-name="Layer 2">
+    <g id="b9525774-c310-4e42-a528-bf3a1c35eca4" data-name="Layer 1">
+      <g id="b5fe43d7-e5ad-43e0-b977-5f892ddadd1d" data-name="ContactsCorner">
+        <g class="b331ec79-68e9-4380-a2f2-cc6b71d1d4b7">
+          <g class="a446f7ba-ddbe-4266-92ab-99b2c7706425">
+            <g class="ae4f1109-0c0f-404e-b6d7-9f34bf16b6cf">
+              <polyline class="aec1a6c2-53ee-4178-9d28-961179e38691" points="0 0.5 258.84 0.5 270 11.66 270 87.98"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

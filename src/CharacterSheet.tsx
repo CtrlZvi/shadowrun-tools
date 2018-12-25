@@ -8,6 +8,7 @@ import IDsLifestylesCurrency from './idsLifestylesCurrency';
 import CoreCombatInfo from './coreCombatInfo';
 import ConditionMonitor from './conditionMonitor';
 import Qualities from './qualities';
+import Contacts from './contacts';
 import './CharacterSheet.scss';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
@@ -30,6 +31,7 @@ const developmentState = observable({
                 <CoreCombatInfo />
                 <ConditionMonitor />
                 <Qualities />
+                <Contacts />
             </div>
         </div>
         );

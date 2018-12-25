@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 0.75 101.326">
+  <defs>
+    <style>
+      .b2687f4b-01fb-43ee-b2cf-308749cffb7a {
+        fill: url(#aee5bce7-ee98-46cf-88dc-c4e5fd30d80e);
+      }
+
+      .b66f9855-f711-4e1e-91ff-8fd973d4cbca, .ea7764f6-9866-4434-bc8c-ebf2b84489f1 {
+        fill: none;
+      }
+
+      .ff4a0864-fa1d-45c2-9eb5-1dd9e52422fe {
+        clip-path: url(#b95e54ba-7f2b-42bf-b3ab-1b4e16ef55bc);
+      }
+
+      .ad042c06-fb4b-4b49-8cbc-9e42bbd19901 {
+        mask: url(#bd40d495-1577-4b59-beba-6ea0bb51e6ef);
+      }
+
+      .e7aa6c8d-4e38-4ac0-b2f6-a5a4f9cb6973 {
+        clip-path: url(#a1ab2cac-8030-46bb-b9ce-53f83dd8d553);
+      }
+
+      .b66f9855-f711-4e1e-91ff-8fd973d4cbca {
+        stroke: #7e0f12;
+        stroke-width: 0.75px;
+      }
+    </style>
+    <linearGradient id="aee5bce7-ee98-46cf-88dc-c4e5fd30d80e" y1="765.06116" x2="1" y2="765.06116" gradientTransform="matrix(0, -140.00226, -140.00226, 0, 107416.2901, 762.98224)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.1558"/>
+      <stop offset="0.64995" stop-color="#fff"/>
+      <stop offset="0.95052" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="b95e54ba-7f2b-42bf-b3ab-1b4e16ef55bc" transform="translate(-314.5625 -622.98)">
+      <rect class="ea7764f6-9866-4434-bc8c-ebf2b84489f1" width="612" height="765"/>
+    </clipPath>
+    <mask id="bd40d495-1577-4b59-beba-6ea0bb51e6ef" x="-314.56253" y="-622.97987" width="612.00003" height="764.99988" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.5625 -622.98)">
+        <rect class="b2687f4b-01fb-43ee-b2cf-308749cffb7a" x="-0.00003" y="0.00012" width="612.00003" height="764.99988"/>
+      </g>
+    </mask>
+    <clipPath id="a1ab2cac-8030-46bb-b9ce-53f83dd8d553" transform="translate(-314.5625 -622.98)">
+      <rect class="ea7764f6-9866-4434-bc8c-ebf2b84489f1" x="305.56201" y="615.98" width="18.75" height="109.326"/>
+    </clipPath>
+  </defs>
+  <title>ContactsVertical</title>
+  <g id="b9d896d5-586f-4e8e-b3a5-302ce3e5eed6" data-name="Layer 2">
+    <g id="a71a7bff-6994-4b03-bb10-47a9896677d4" data-name="Layer 1">
+      <g id="a8915795-c0e5-4ca4-b474-705596b3f7a1" data-name="Boxes">
+        <g class="ff4a0864-fa1d-45c2-9eb5-1dd9e52422fe">
+          <g class="ad042c06-fb4b-4b49-8cbc-9e42bbd19901">
+            <g id="e11ff133-371f-4316-a9d2-c2ad0cb644d3" data-name="ContactsVertical">
+              <g class="e7aa6c8d-4e38-4ac0-b2f6-a5a4f9cb6973">
+                <line class="b66f9855-f711-4e1e-91ff-8fd973d4cbca" x1="0.375" x2="0.375" y2="101.326"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

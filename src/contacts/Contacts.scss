@@ -1,0 +1,242 @@
+.contacts-text {
+  position: absolute;
+  width: 64.0791pt;
+  height: 9.89941pt;
+  left: 320.72pt;
+  top: 625.494pt;
+}
+
+.contacts-tab {
+  position: absolute;
+  width: 96.03998pt;
+  height: 13.20001pt;
+  left: 315.562pt;
+  top: 623.414pt;
+}
+
+.contacts-style {
+  position: absolute;
+  width: 98.4pt;
+  height: 15.36pt;
+  left: #{239.80003 + 74.582}pt;
+  top: #{29.31992 + 593.014}pt;
+}
+
+.contacts-vertical {
+  position: absolute;
+  width: 0.75pt;
+  height: 101.326pt;
+  left: 314.5625pt;
+  top: 622.98pt;
+}
+
+.contacts-corner {
+  position: absolute;
+  width: 270.5pt;
+  height: 87.98pt;
+  left: 315.3125pt;
+  top: 636.3259pt;
+}
+
+%contacts-line {
+  position: absolute;
+  width: 249.89502pt;
+  height: 0.75pt;
+  left: 321.597pt;
+}
+
+.contacts-line-1 {
+  @extend %contacts-line;
+  top: 653.55pt;
+}
+
+.contacts-line-2 {
+  @extend %contacts-line;
+  top: 666.589pt;
+}
+
+.contacts-line-3 {
+  @extend %contacts-line;
+  top: 679.468pt;
+}
+
+.contacts-line-4 {
+  @extend %contacts-line;
+  top: 692.427pt;
+}
+
+.contacts-line-5 {
+  @extend %contacts-line;
+  top: 705.386pt;
+}
+
+.contacts-line-6 {
+  @extend %contacts-line;
+  top: 718.346pt;
+}
+
+.contacts-name {
+  position: absolute;
+  width: 16.52637pt;
+  height: 7.55957pt;
+  left: 321.598pt;
+  top: 643.119pt;
+}
+
+.contacts-attributes {
+  position: absolute;
+  width: 125.35547pt;
+  height: 7.55957pt;
+  left: 426.989pt;
+  top: 643.119pt;
+}
+
+// Style from ContactsText.svg
+
+.b332c789-3382-4168-b599-c3471e758aa0 {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+// Style from ContactsTab.svg
+
+.b859f703-ed90-4e53-976b-00ca7e9b89d4 {
+  fill: #7e0f12;
+}
+
+// Style from ContactsStyle.svg
+
+.a2406e08-6deb-42b5-b1d9-c25af7254fcb {
+  fill: none;
+}
+
+.b8228955-e746-4bf4-85c3-92eb68e85735 {
+  isolation: isolate;
+}
+
+.be8c2e4c-9ea8-421e-a20b-c94d8b90f18d {
+  clip-path: url(#b162742e-4df3-4623-9807-bf085a687614);
+}
+
+.fcc9e132-283a-4666-acaf-8d7e9fab8111 {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.bd5c88f2-e5f3-463f-8b94-3aa6cb95d4d9 {
+  clip-path: url(#aff6107d-4a2b-45b8-8619-d8e751362d48);
+}
+
+.fc3be990-9b6b-4f11-8dd2-d11686b284f2 {
+  clip-path: url(#fdc5f5aa-e003-4db4-b878-1450a63e2dc3);
+}
+
+// Style from ContactsVertical.svg
+
+.b2687f4b-01fb-43ee-b2cf-308749cffb7a {
+  fill: url(#aee5bce7-ee98-46cf-88dc-c4e5fd30d80e);
+}
+
+.b66f9855-f711-4e1e-91ff-8fd973d4cbca, .ea7764f6-9866-4434-bc8c-ebf2b84489f1 {
+  fill: none;
+}
+
+.ff4a0864-fa1d-45c2-9eb5-1dd9e52422fe {
+  clip-path: url(#b95e54ba-7f2b-42bf-b3ab-1b4e16ef55bc);
+}
+
+.ad042c06-fb4b-4b49-8cbc-9e42bbd19901 {
+  mask: url(#bd40d495-1577-4b59-beba-6ea0bb51e6ef);
+}
+
+.e7aa6c8d-4e38-4ac0-b2f6-a5a4f9cb6973 {
+  clip-path: url(#a1ab2cac-8030-46bb-b9ce-53f83dd8d553);
+}
+
+.b66f9855-f711-4e1e-91ff-8fd973d4cbca {
+  stroke: #7e0f12;
+  stroke-width: 0.75px;
+}
+
+// Style from ContactsCorner.svg
+
+.a81407de-72bc-4c6f-add5-fa4141cf4552 {
+  fill: url(#a52effde-d4db-4b25-8092-814229cb297f);
+}
+
+.a01d33dd-4b7a-4a5b-a400-5e04fa5145e1, .aec1a6c2-53ee-4178-9d28-961179e38691 {
+  fill: none;
+}
+
+.b331ec79-68e9-4380-a2f2-cc6b71d1d4b7 {
+  clip-path: url(#bfb67398-8f2e-4f65-abb5-e807bbee65b3);
+}
+
+.a446f7ba-ddbe-4266-92ab-99b2c7706425 {
+  mask: url(#b4197b69-9b88-4eac-8bca-4be03c334c26);
+}
+
+.ae4f1109-0c0f-404e-b6d7-9f34bf16b6cf {
+  clip-path: url(#f3f1e08b-7bc8-4658-ba3a-f474e15c7e48);
+}
+
+.aec1a6c2-53ee-4178-9d28-961179e38691 {
+  stroke: #7e0f12;
+}
+
+// Style from ContactsLine.svg
+
+.f6d420e4-eaa4-49da-8120-7e1336861446 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from ContactsName.svg
+
+.b39cedfe-c8ff-4b4d-bcfa-aacf7a2ad124 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.aa66c589-886f-4de2-93b6-53c018a83175 {
+  letter-spacing: -0.00907em;
+}
+
+.a1da2a52-058c-4432-b7c4-a99ef1271dcc {
+  letter-spacing: -0.00991em;
+}
+
+// Style from ContactsAttributes.svg
+
+.b17a0aae-2903-46ac-9209-1c51487fefe4 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a1b52cda-a951-4bae-9d45-e05ca1f845b5 {
+  letter-spacing: -0.00893em;
+}
+
+.bc44d97d-22cb-473c-9200-dc77c2a52788 {
+  letter-spacing: -0.01004em;
+}
+
+.a05565c5-ec1d-4d71-911e-476ef19b20ff {
+  letter-spacing: -0.00991em;
+}
+
+.b8dbdd61-5ba4-433a-95d4-88d4930a5c39 {
+  letter-spacing: -0.00907em;
+}
+
+.b1ecdc55-f56b-439e-ab43-52353fc9cfc5 {
+  letter-spacing: 3.54102em;
+}
+
+.ad626b36-196d-417d-8921-1f563c046b48 {
+  letter-spacing: 4.82701em;
+}
