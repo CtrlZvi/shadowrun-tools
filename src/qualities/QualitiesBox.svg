@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 271 135.33109">
+  <defs>
+    <style>
+      .b4916e83-e72f-4d83-a021-d077c2752688 {
+        fill: url(#b847d804-fdc9-4478-b9fb-58abb408eb3a);
+      }
+
+      .f3d96a25-223d-4468-9aa0-00a336e62b2f {
+        fill: url(#e9551029-8841-442f-b753-6834d580ccb9);
+      }
+
+      .ac6eb50b-2171-43cd-b9f6-6a899f1b92da, .ad75174a-8263-47a1-89af-ad81da92fcf7, .f526f9c2-51b6-44c0-ae2d-991aa73f2a8b {
+        fill: none;
+      }
+
+      .f05ee7c7-1188-4e38-8a9e-0cc2dda6f9a5 {
+        clip-path: url(#a1069c7a-6ae1-4ad3-a615-39738aba69dd);
+      }
+
+      .ade80893-7c1e-473e-a52b-cb861cdc39fd {
+        mask: url(#a3dd6543-6925-43af-afb0-9b87d765369e);
+      }
+
+      .a85360da-a242-4f24-95a8-2721e2639c5f {
+        clip-path: url(#a272d19f-27a7-4cf9-9fd7-044bc7cdc8fa);
+      }
+
+      .ad75174a-8263-47a1-89af-ad81da92fcf7, .f526f9c2-51b6-44c0-ae2d-991aa73f2a8b {
+        stroke: #7e0f12;
+      }
+
+      .f526f9c2-51b6-44c0-ae2d-991aa73f2a8b {
+        stroke-width: 0.75px;
+      }
+
+      .a20cfba1-1b5d-46ec-af45-4d94e21355b6 {
+        clip-path: url(#f4385f1b-8e9a-4b77-867f-99e166219be4);
+      }
+    </style>
+    <linearGradient id="b847d804-fdc9-4478-b9fb-58abb408eb3a" y1="765.06338" x2="1" y2="765.06338" gradientTransform="matrix(0, -133.12366, -133.12366, 0, 102154.03528, 607.51697)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.42815" stop-color="#fff"/>
+      <stop offset="0.91917" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="e9551029-8841-442f-b753-6834d580ccb9" y1="762.71737" x2="1" y2="762.71737" gradientTransform="translate(-93065.14905 609.72443) rotate(-90) scale(122.41907)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.41865" stop-color="#fff"/>
+      <stop offset="0.91783" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="a1069c7a-6ae1-4ad3-a615-39738aba69dd" transform="translate(-314.4375 -474.39331)">
+      <rect class="ac6eb50b-2171-43cd-b9f6-6a899f1b92da" width="612" height="765"/>
+    </clipPath>
+    <mask id="a3dd6543-6925-43af-afb0-9b87d765369e" x="-314.43753" y="-474.39331" width="611.99997" height="765" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.4375 -474.39331)">
+        <rect class="b4916e83-e72f-4d83-a021-d077c2752688" x="-0.00003" width="611.99997" height="765"/>
+      </g>
+    </mask>
+    <clipPath id="a272d19f-27a7-4cf9-9fd7-044bc7cdc8fa" transform="translate(-314.4375 -474.39331)">
+      <rect class="ac6eb50b-2171-43cd-b9f6-6a899f1b92da" x="305.43701" y="467.39301" width="18.75" height="141.12399"/>
+    </clipPath>
+    <clipPath id="f4385f1b-8e9a-4b77-867f-99e166219be4" transform="translate(-314.4375 -474.39331)">
+      <rect class="ac6eb50b-2171-43cd-b9f6-6a899f1b92da" x="305.93701" y="480.30499" width="288.5" height="130.41901"/>
+    </clipPath>
+  </defs>
+  <title>QualitiesBox</title>
+  <g id="bec2b5eb-5871-445a-9348-fb31e4123c37" data-name="Layer 2">
+    <g id="a38cf785-a2bf-4406-9b95-91d4aea8a001" data-name="Layer 1">
+      <g id="a92e6bda-c448-4dbe-b4fd-1e9efa0a4af3" data-name="Boxes">
+        <g class="f05ee7c7-1188-4e38-8a9e-0cc2dda6f9a5">
+          <g class="ade80893-7c1e-473e-a52b-cb861cdc39fd">
+            <g id="f44173a4-aee9-4933-9e5a-47f8c9e6654a" data-name="QualitiesVertial">
+              <g class="a85360da-a242-4f24-95a8-2721e2639c5f">
+                <line class="f526f9c2-51b6-44c0-ae2d-991aa73f2a8b" x1="0.375" x2="0.375" y2="133.12399"/>
+              </g>
+            </g>
+          </g>
+          <g class="ade80893-7c1e-473e-a52b-cb861cdc39fd">
+            <g id="a26ad04f-6b12-418a-b863-32cc1ffb0b8d" data-name="QualitiesBox">
+              <g class="a20cfba1-1b5d-46ec-af45-4d94e21355b6">
+                <polyline class="ad75174a-8263-47a1-89af-ad81da92fcf7" points="0.5 13.412 259.34 13.412 270.5 24.572 270.5 135.331"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

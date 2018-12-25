@@ -7,6 +7,7 @@ import Skills from './skills';
 import IDsLifestylesCurrency from './idsLifestylesCurrency';
 import CoreCombatInfo from './coreCombatInfo';
 import ConditionMonitor from './conditionMonitor';
+import Qualities from './qualities';
 import './CharacterSheet.scss';
 import { observable } from 'mobx';
 import { observer } from 'mobx-react';
@@ -28,6 +29,7 @@ const developmentState = observable({
                 <IDsLifestylesCurrency />
                 <CoreCombatInfo />
                 <ConditionMonitor />
+                <Qualities />
             </div>
         </div>
         );
