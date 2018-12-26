@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21.12598 7.56006">
+  <defs>
+    <style>
+      .addf0d42-8fce-49e9-9524-61a88a9d59c6 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .acf42340-5848-4efa-bc17-cce71d3cd1a0 {
+        letter-spacing: -0.04688em;
+      }
+
+      .be2b47ae-8bde-48ca-ad2d-e4e8e1372055 {
+        letter-spacing: -0.00907em;
+      }
+
+      .a5ca6aa8-c885-4ef0-bb19-66b387c2a997 {
+        letter-spacing: -0.01004em;
+      }
+
+      .b19ff1bb-bfce-4f00-9d00-e8a9b5e4f039 {
+        letter-spacing: -0.00893em;
+      }
+    </style>
+  </defs>
+  <title>VehicleName</title>
+  <g id="b14077bb-34ed-412e-8fca-f4827f571b8a" data-name="Layer 2">
+    <g id="a34e678d-97dc-4c8f-a7bd-eca256c578e3" data-name="Layer 1">
+      <text id="b1d4e658-6d46-429d-951c-bfd0de870cc8" data-name="VehicleName" class="addf0d42-8fce-49e9-9524-61a88a9d59c6" transform="translate(0 5.81006)"><tspan class="acf42340-5848-4efa-bc17-cce71d3cd1a0">V</tspan><tspan class="be2b47ae-8bde-48ca-ad2d-e4e8e1372055" x="3.56348" y="0">e</tspan><tspan class="a5ca6aa8-c885-4ef0-bb19-66b387c2a997" x="7" y="0">h</tspan><tspan class="b19ff1bb-bfce-4f00-9d00-e8a9b5e4f039" x="10.42969" y="0">i</tspan><tspan class="a5ca6aa8-c885-4ef0-bb19-66b387c2a997" x="12.31348" y="0">c</tspan><tspan class="be2b47ae-8bde-48ca-ad2d-e4e8e1372055" x="15.74316" y="0">l</tspan><tspan x="17.62598" y="0">e</tspan></text>
+    </g>
+  </g>
+</svg>

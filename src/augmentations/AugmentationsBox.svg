@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 138.009">
+  <defs>
+    <style>
+      .a4bf26fc-13af-4cc2-aff8-ec32f0eb216e {
+        fill: url(#b52b0b38-642c-4656-8dbf-48a25433a144);
+      }
+
+      .bfbd654e-f690-4890-b79e-27475fc512f6 {
+        fill: url(#b3699db5-8e47-46d5-86b3-5fcac2f216ad);
+      }
+
+      .b920fd4e-c58c-4bdd-ac0a-675955889732, .b93a792b-ad56-4b79-8a3b-cf1ce5ef3d9f, .be362711-dde8-498f-b9f5-5ce116176f43 {
+        fill: none;
+      }
+
+      .ba3c221e-d50d-4be9-9de5-ccd329a3acf1 {
+        clip-path: url(#a6c81215-675c-4087-83e3-8a9b0f6b3a8f);
+      }
+
+      .b69571fd-bfd5-4212-8ea3-fb78d6b81746 {
+        mask: url(#baceea8d-db37-482f-8062-1d0e15697a87);
+      }
+
+      .f49a1689-9cde-41c5-8956-3466e2abfd24 {
+        clip-path: url(#e4d9dfaa-36a6-4a0a-ad3d-f1d49a4e99c6);
+      }
+
+      .b920fd4e-c58c-4bdd-ac0a-675955889732, .b93a792b-ad56-4b79-8a3b-cf1ce5ef3d9f {
+        stroke: #7e0f12;
+      }
+
+      .b920fd4e-c58c-4bdd-ac0a-675955889732 {
+        stroke-width: 0.75px;
+      }
+
+      .b5ae775d-1b7e-4441-83a8-4e799cf8f7c4 {
+        clip-path: url(#e89d62d5-f7da-4f4b-adfb-c8651ab27fb0);
+      }
+    </style>
+    <linearGradient id="b52b0b38-642c-4656-8dbf-48a25433a144" y1="764.91862" x2="1" y2="764.91862" gradientTransform="matrix(0, -119.04, -119.04, 0, 91361.9132, 446.69147)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.54" stop-color="#fff"/>
+      <stop offset="0.93498" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b3699db5-8e47-46d5-86b3-5fcac2f216ad" y1="762.7392" x2="1" y2="762.7392" gradientTransform="matrix(0, -123.65656, -123.65656, 0, 94623.70805, 464.22003)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.02947" stop-color="#191919"/>
+      <stop offset="0.11528" stop-color="#5e5e5e"/>
+      <stop offset="0.19655" stop-color="#979797"/>
+      <stop offset="0.27088" stop-color="#c4c4c4"/>
+      <stop offset="0.33691" stop-color="#e4e4e4"/>
+      <stop offset="0.3922" stop-color="#f8f8f8"/>
+      <stop offset="0.43" stop-color="#fff"/>
+      <stop offset="0.91944" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="a6c81215-675c-4087-83e3-8a9b0f6b3a8f" transform="translate(-26.4375 -327.6514)">
+      <rect class="be362711-dde8-498f-b9f5-5ce116176f43" width="612" height="765"/>
+    </clipPath>
+    <mask id="baceea8d-db37-482f-8062-1d0e15697a87" x="-26.43753" y="-327.6514" width="612.00003" height="765.00003" maskUnits="userSpaceOnUse">
+      <g transform="translate(-26.4375 -327.6514)">
+        <rect class="a4bf26fc-13af-4cc2-aff8-ec32f0eb216e" x="-0.00003" width="612.00003" height="765.00003"/>
+      </g>
+    </mask>
+    <clipPath id="e4d9dfaa-36a6-4a0a-ad3d-f1d49a4e99c6" transform="translate(-26.4375 -327.6514)">
+      <rect class="be362711-dde8-498f-b9f5-5ce116176f43" x="287.31201" y="320.651" width="18.75" height="146.009"/>
+    </clipPath>
+    <clipPath id="e89d62d5-f7da-4f4b-adfb-c8651ab27fb0" transform="translate(-26.4375 -327.6514)">
+      <rect class="be362711-dde8-498f-b9f5-5ce116176f43" x="17.4375" y="333.56299" width="288.49951" height="131.65701"/>
+    </clipPath>
+  </defs>
+  <title>AugmentationsBox</title>
+  <g id="b63bf96d-2878-4c55-bd6c-421f2c53ddf4" data-name="Layer 2">
+    <g id="ba02d5db-890a-44fe-b288-cc8fa8c049ed" data-name="Layer 1">
+      <g id="ab278895-e7dc-4f98-9235-5a502aea2e77" data-name="Boxes">
+        <g class="ba3c221e-d50d-4be9-9de5-ccd329a3acf1">
+          <g class="b69571fd-bfd5-4212-8ea3-fb78d6b81746">
+            <g id="b347618f-6c3c-4e74-b92a-d1276621d938" data-name="AugmentationsVertical">
+              <g class="f49a1689-9cde-41c5-8956-3466e2abfd24">
+                <line class="b920fd4e-c58c-4bdd-ac0a-675955889732" x1="270.25" x2="270.25" y2="138.009"/>
+              </g>
+            </g>
+          </g>
+          <g class="b69571fd-bfd5-4212-8ea3-fb78d6b81746">
+            <g id="b973b906-5027-4b55-a2e3-94062ddea104" data-name="AugmentationsCorner">
+              <g class="b5ae775d-1b7e-4441-83a8-4e799cf8f7c4">
+                <polyline class="b93a792b-ad56-4b79-8a3b-cf1ce5ef3d9f" points="270.5 13.412 11.66 13.412 0.5 24.572 0.5 136.569"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

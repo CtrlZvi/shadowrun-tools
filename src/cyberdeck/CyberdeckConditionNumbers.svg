@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 112.63184 8.64014">
+  <defs>
+    <style>
+      .e6c3b683-8211-43b3-bf82-61ad53dabf5f {
+        font-size: 8px;
+        fill: #929496;
+        font-family: UniversLTStd, Univers LT Std;
+      }
+
+      .fa53fa18-5ab6-439f-914f-902f0dd60b97 {
+        letter-spacing: 1.13391em;
+      }
+
+      .b06efa0a-1dd7-4087-bc57-30285b235349 {
+        letter-spacing: 1.13501em;
+      }
+
+      .fb3a271c-9d98-47ff-aa5a-b5e6627672c4 {
+        letter-spacing: 1.13403em;
+      }
+
+      .e76174a2-8aad-4c8d-85ee-e65c22741bad {
+        letter-spacing: 1.13489em;
+      }
+    </style>
+  </defs>
+  <title>CyberdeckConditionNumbers</title>
+  <g id="af665da9-6d4d-4a34-9ec1-6127e8ea42a4" data-name="Layer 2">
+    <g id="ad7740a6-52b0-404a-ab88-9823c4eaac72" data-name="Layer 1">
+      <text id="bd197166-738d-41ed-a842-40c38ca12f11" data-name="CyberdeckConditionNumbers" class="e6c3b683-8211-43b3-bf82-61ad53dabf5f" transform="translate(0 6.64014)"><tspan class="fa53fa18-5ab6-439f-914f-902f0dd60b97">1</tspan><tspan class="b06efa0a-1dd7-4087-bc57-30285b235349" x="13.51953" y="0">2</tspan><tspan class="fb3a271c-9d98-47ff-aa5a-b5e6627672c4" x="27.04785" y="0">3</tspan><tspan class="e76174a2-8aad-4c8d-85ee-e65c22741bad" x="40.56836" y="0">4</tspan><tspan class="fb3a271c-9d98-47ff-aa5a-b5e6627672c4" x="54.0957" y="0">5</tspan><tspan class="e76174a2-8aad-4c8d-85ee-e65c22741bad" x="67.61621" y="0">6</tspan><tspan class="fb3a271c-9d98-47ff-aa5a-b5e6627672c4" x="81.14355" y="0">78</tspan><tspan x="108.18359" y="0">9</tspan></text>
+    </g>
+  </g>
+</svg>

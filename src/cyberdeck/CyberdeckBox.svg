@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 119.04001">
+  <defs>
+    <style>
+      .be2e22c9-4da2-483b-94a9-9f3e1689926d {
+        fill: url(#a457b579-ed96-4289-b2fe-317bbc929613);
+      }
+
+      .abcb278d-7830-4e25-ae3d-5e9aa24cd6a9 {
+        fill: url(#b2965625-aa08-4d4e-8406-71fa33308855);
+      }
+
+      .ada0eba5-bcb9-406d-af03-8cdead500010, .e09d830e-281b-4c6e-b781-282eea0eee37, .f9588b7e-3ccf-475d-9ad0-138354d46d82 {
+        fill: none;
+      }
+
+      .a9af2a62-a6b5-4446-888f-112af71eb392 {
+        clip-path: url(#be6ec4c5-1423-4f25-9236-f1e98e11e0ed);
+      }
+
+      .be5c93f9-408d-4708-9aa2-8d8b93800617 {
+        mask: url(#f95ff448-e91d-49f9-946b-8c23767ea034);
+      }
+
+      .a825387c-b5b6-4462-b226-e3e3e319d71b {
+        clip-path: url(#a553832b-a450-46b7-a3a5-8b6d2af5b30a);
+      }
+
+      .ada0eba5-bcb9-406d-af03-8cdead500010, .f9588b7e-3ccf-475d-9ad0-138354d46d82 {
+        stroke: #7e0f12;
+      }
+
+      .ada0eba5-bcb9-406d-af03-8cdead500010 {
+        stroke-width: 0.75px;
+      }
+
+      .e85aadf1-86ab-4455-a792-a224c0c627f8 {
+        clip-path: url(#f8b40406-d442-4770-b113-f17295dfa4ef);
+      }
+    </style>
+    <linearGradient id="a457b579-ed96-4289-b2fe-317bbc929613" y1="764.91862" x2="1" y2="764.91862" gradientTransform="translate(-90749.9132 317.97382) rotate(-90) scale(119.04)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.54" stop-color="#fff"/>
+      <stop offset="0.93498" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b2965625-aa08-4d4e-8406-71fa33308855" y1="761.82243" x2="1" y2="761.82243" gradientTransform="translate(-66719.14007 299.82581) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="be6ec4c5-1423-4f25-9236-f1e98e11e0ed" transform="translate(-314.9375 -198.93378)">
+      <rect class="e09d830e-281b-4c6e-b781-282eea0eee37" width="612" height="765"/>
+    </clipPath>
+    <mask id="f95ff448-e91d-49f9-946b-8c23767ea034" x="-314.93753" y="-198.93378" width="612.00003" height="765" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.9375 -198.93378)">
+        <rect class="be2e22c9-4da2-483b-94a9-9f3e1689926d" x="-0.00003" width="612.00003" height="765"/>
+      </g>
+    </mask>
+    <clipPath id="a553832b-a450-46b7-a3a5-8b6d2af5b30a" transform="translate(-314.9375 -198.93378)">
+      <rect class="e09d830e-281b-4c6e-b781-282eea0eee37" x="305.93701" y="191.93402" width="18.75" height="127.03998"/>
+    </clipPath>
+    <clipPath id="f8b40406-d442-4770-b113-f17295dfa4ef" transform="translate(-314.9375 -198.93378)">
+      <rect class="e09d830e-281b-4c6e-b781-282eea0eee37" x="306.06201" y="204.84601" width="288.5" height="95.97998"/>
+    </clipPath>
+  </defs>
+  <title>CyberdeckBox</title>
+  <g id="f4016223-4fa1-4ddd-b967-b835dcb43c4f" data-name="Layer 2">
+    <g id="e81b7d17-954f-4237-b068-8a305cdf752b" data-name="Layer 1">
+      <g id="ae8cac78-bec7-4855-82f9-ebf9a4440603" data-name="CyberdeckBox">
+        <g class="a9af2a62-a6b5-4446-888f-112af71eb392">
+          <g class="be5c93f9-408d-4708-9aa2-8d8b93800617">
+            <g class="a825387c-b5b6-4462-b226-e3e3e319d71b">
+              <line class="ada0eba5-bcb9-406d-af03-8cdead500010" x1="0.375" x2="0.375" y2="119.04001"/>
+            </g>
+          </g>
+          <g class="be5c93f9-408d-4708-9aa2-8d8b93800617">
+            <g class="e85aadf1-86ab-4455-a792-a224c0c627f8">
+              <polyline class="f9588b7e-3ccf-475d-9ad0-138354d46d82" points="0.125 13.412 258.965 13.412 270.125 24.572 270.125 100.892"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

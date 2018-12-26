@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 38.96191 7.56006">
+  <defs>
+    <style>
+      .b2a9ded0-232b-4a2d-827a-309373da8ee5 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .a3af5b7d-0496-46e6-9306-d85d9ac10739 {
+        letter-spacing: -0.009em;
+      }
+
+      .f44da795-c9d2-4452-bf3c-ac1e30960994 {
+        letter-spacing: -0.00997em;
+      }
+    </style>
+  </defs>
+  <title>AugmentationsName</title>
+  <g id="aea3d488-6539-4663-88c4-c1fedae9fd8e" data-name="Layer 2">
+    <g id="b887fc6c-416b-48ea-8696-533ef1f26840" data-name="Layer 1">
+      <text id="bbb41597-72df-4a05-b4e0-f5ea053d0f9a" data-name="AugmentationName" class="b2a9ded0-232b-4a2d-827a-309373da8ee5" transform="translate(0 5.81006)"><tspan class="a3af5b7d-0496-46e6-9306-d85d9ac10739">Augm</tspan><tspan class="f44da795-c9d2-4452-bf3c-ac1e30960994" x="16.07861" y="0">e</tspan><tspan class="a3af5b7d-0496-46e6-9306-d85d9ac10739" x="19.50879" y="0">ntati</tspan><tspan class="f44da795-c9d2-4452-bf3c-ac1e30960994" x="32.03174" y="0">o</tspan><tspan x="35.46191" y="0">n</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.61914 7.56006">
+  <defs>
+    <style>
+      .a19f9763-3f26-450c-ad04-04c3ffa2c490 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .fa2a3639-eb63-4cff-baa8-41cd92ed546c {
+        letter-spacing: -0.00991em;
+      }
+
+      .e50e52fb-df45-410f-ab8b-816cfdebdb9d {
+        letter-spacing: -0.00893em;
+      }
+
+      .a88cd14a-643e-463a-b59a-bb54f72a9667 {
+        letter-spacing: -0.01004em;
+      }
+    </style>
+  </defs>
+  <title>VehicleSpeed</title>
+  <g id="b7714292-c7c7-4150-aac8-24cc0586de3b" data-name="Layer 2">
+    <g id="eb9aba4e-ad1f-4b4c-94e0-45ac185343a1" data-name="Layer 1">
+      <text id="b5f89f1a-7bc9-4fd4-8987-cb05ecc06ff1" data-name="VehicleSpeed" class="a19f9763-3f26-450c-ad04-04c3ffa2c490" transform="translate(0 5.81006)"><tspan class="fa2a3639-eb63-4cff-baa8-41cd92ed546c">Sp</tspan><tspan class="e50e52fb-df45-410f-ab8b-816cfdebdb9d" x="7.25195" y="0">e</tspan><tspan class="a88cd14a-643e-463a-b59a-bb54f72a9667" x="10.68945" y="0">e</tspan><tspan x="14.11914" y="0">d</tspan></text>
+    </g>
+  </g>
+</svg>

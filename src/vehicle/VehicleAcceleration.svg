@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36.21094 7.56006">
+  <defs>
+    <style>
+      .fc3716ba-a49a-42bd-887a-029795416bb7 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .bf7a0189-f7e8-43d6-abd9-9ab83d9fc94e {
+        letter-spacing: -0.01004em;
+      }
+
+      .f457c741-a445-49d3-bb17-af266fc66be9 {
+        letter-spacing: -0.00893em;
+      }
+
+      .e4f90d3f-1f6a-4494-9b49-447c35f8e754 {
+        letter-spacing: -0.00907em;
+      }
+
+      .e095bcfd-4965-4321-b3d5-499252cdf70d {
+        letter-spacing: -0.00991em;
+      }
+    </style>
+  </defs>
+  <title>VehcileAcceleration</title>
+  <g id="bec39925-11b0-4ba2-8e76-05959afe7c69" data-name="Layer 2">
+    <g id="f9050329-431c-4fe0-aae9-52f6225353f4" data-name="Layer 1">
+      <text id="b64b12a1-effa-4a88-a022-e21eb3182f18" data-name="VehcileAcceleration" class="fc3716ba-a49a-42bd-887a-029795416bb7" transform="translate(0 5.81006)"><tspan class="bf7a0189-f7e8-43d6-abd9-9ab83d9fc94e">Ac</tspan><tspan class="f457c741-a445-49d3-bb17-af266fc66be9" x="7.63672" y="0">c</tspan><tspan class="bf7a0189-f7e8-43d6-abd9-9ab83d9fc94e" x="11.07422" y="0">e</tspan><tspan class="e4f90d3f-1f6a-4494-9b49-447c35f8e754" x="14.50391" y="0">l</tspan><tspan class="e095bcfd-4965-4321-b3d5-499252cdf70d" x="16.38672" y="0">e</tspan><tspan class="e4f90d3f-1f6a-4494-9b49-447c35f8e754" x="19.81738" y="0">r</tspan><tspan class="bf7a0189-f7e8-43d6-abd9-9ab83d9fc94e" x="22.08496" y="0">a</tspan><tspan class="e4f90d3f-1f6a-4494-9b49-447c35f8e754" x="25.51465" y="0">t</tspan><tspan class="bf7a0189-f7e8-43d6-abd9-9ab83d9fc94e" x="27.39746" y="0">i</tspan><tspan class="f457c741-a445-49d3-bb17-af266fc66be9" x="29.27344" y="0">o</tspan><tspan x="32.71094" y="0">n</tspan></text>
+    </g>
+  </g>
+</svg>

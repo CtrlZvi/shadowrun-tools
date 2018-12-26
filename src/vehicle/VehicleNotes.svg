@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.45703 7.55957">
+  <defs>
+    <style>
+      .a9c98cfc-eed2-4eb1-9fb4-86d485749539 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+        letter-spacing: -0.00907em;
+      }
+
+      .a1b6e841-e298-4c75-b177-bf60afff13cc {
+        letter-spacing: -0.00991em;
+      }
+
+      .b158dc3a-c33c-4233-862c-6226bbb76909 {
+        letter-spacing: -0.01004em;
+      }
+
+      .e5cda130-532a-4eb8-967b-cf790c358dd8 {
+        letter-spacing: 0.00014em;
+      }
+    </style>
+  </defs>
+  <title>VehicleNotes</title>
+  <g id="b6c18dd3-f94a-4c1c-a5a4-8ed0e21e5075" data-name="Layer 2">
+    <g id="bd8382eb-1beb-465d-a173-c77e8751bcbe" data-name="Layer 1">
+      <text id="ab7943b1-49b6-4067-af9a-8618e3cc4e9c" data-name="VehicleNotes" class="a9c98cfc-eed2-4eb1-9fb4-86d485749539" transform="translate(0 5.80957)">N<tspan class="a1b6e841-e298-4c75-b177-bf60afff13cc" x="4.60547" y="0">o</tspan><tspan x="8.03613" y="0">t</tspan><tspan class="b158dc3a-c33c-4233-862c-6226bbb76909" x="9.91895" y="0">e</tspan><tspan class="e5cda130-532a-4eb8-967b-cf790c358dd8" x="13.34863" y="0">s</tspan></text>
+    </g>
+  </g>
+</svg>

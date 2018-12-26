@@ -1,0 +1,311 @@
+.adept-powers-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 119.04pt;
+  left: 314.9375pt;
+  top: 599.2352pt;
+}
+
+.adept-powers-tab {
+  position: absolute;
+  width: 256.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 599.235pt;
+}
+
+.adept-powers-style {
+  position: absolute;
+  width: 258.24001pt;
+  height: 15.36pt;
+  left: #{159.87951 + 154.333}pt;
+  top: #{29.32021 + 568.835}pt;
+}
+
+.adept-powers-text {
+  position: absolute;
+  width: 99.44043pt;
+  height: 9.89941pt;
+  left: 320.47pt;
+  top: 601.317pt;
+}
+
+.adept-powers-or {
+  position: absolute;
+  width: 21.01367pt;
+  height: 7.7002pt;
+  left: 419.649pt;
+  top: 603.115pt;
+}
+
+.adept-powers-other-abilities {
+  position: absolute;
+  width: 107.19824pt;
+  height: 9.89941pt;
+  left: 440.369pt;
+  top: 601.315pt;
+}
+
+%adept-powers-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.adept-powers-line-1 {
+  @extend %adept-powers-line;
+  top: 629.371pt;
+}
+
+.adept-powers-line-2 {
+  @extend %adept-powers-line;
+  top: 642.33pt;
+}
+
+.adept-powers-line-3 {
+  @extend %adept-powers-line;
+  top: 655.289pt;
+}
+
+.adept-powers-line-4 {
+  @extend %adept-powers-line;
+  top: 668.248pt;
+}
+
+.adept-powers-line-5 {
+  @extend %adept-powers-line;
+  top: 681.208pt;
+}
+
+.adept-powers-line-6 {
+  @extend %adept-powers-line;
+  top: 694.167pt;
+}
+
+.adept-powers-line-7 {
+  @extend %adept-powers-line;
+  top: 707.126pt;
+}
+
+.adept-powers-line-8 {
+  @extend %adept-powers-line;
+  top: 720.085pt;
+}
+
+.adept-powers-line-9 {
+  @extend %adept-powers-line;
+  top: 733.044pt;
+}
+
+.adept-powers-name {
+  position: absolute;
+  width: 16.52637pt;
+  height: 7.55957pt;
+  left: 331.995pt;
+  top: 618.938pt;
+}
+
+.adept-powers-ratings {
+  position: absolute;
+  width: 17.94824pt;
+  height: 7.55957pt;
+  left: 454.552pt;
+  top: 618.938pt;
+}
+
+.adept-powers-notes {
+  position: absolute;
+  width: 16.4502pt;
+  height: 7.55957pt;
+  left: 542.766pt;
+  top: 618.938pt;
+}
+
+// Style from AdeptPowersBox.svg
+
+.e1ac6db4-d2f3-45e6-af12-5d1f691cd487 {
+  fill: url(#f49188cb-dc4d-40f1-9973-fa0020d0e90b);
+}
+
+.f7f20cef-bddf-4608-9789-d83dedb35838 {
+  fill: url(#b633d9d0-12c6-4d3b-b1ea-a6c83e23121d);
+}
+
+.a5fad542-ca28-41a5-b96e-88c79a1186b4, .b44da6ec-914e-474d-836a-3d8797c8a94f, .bc6bc825-1a62-4a29-b49d-397b381ce207 {
+  fill: none;
+}
+
+.b4b6894d-75cc-44c0-a778-4cf3dfb6bf66 {
+  clip-path: url(#f03d0674-1e66-41cc-9023-51c922e7949a);
+}
+
+.bbb94323-6101-42db-a7ea-71af393ae5b3 {
+  mask: url(#a67688f5-9924-4c16-b171-5e9238e34980);
+}
+
+.a89ee040-1fe0-41aa-bc4d-09e07f0863de {
+  clip-path: url(#f4a41b06-b5af-4e4d-ae6c-93553773edff);
+}
+
+.a5fad542-ca28-41a5-b96e-88c79a1186b4, .bc6bc825-1a62-4a29-b49d-397b381ce207 {
+  stroke: #7e0f12;
+}
+
+.bc6bc825-1a62-4a29-b49d-397b381ce207 {
+  stroke-width: 0.75px;
+}
+
+.e939224f-a48b-4794-8589-5eddb9c54fd4 {
+  clip-path: url(#a3ad961d-2b25-4de6-9972-4d2c50269693);
+}
+
+// Style from AdeptPowersTab.svg
+
+.feb28be6-a5a2-4006-afab-60cd207ed21c {
+  fill: #7e0f12;
+}
+
+// Style from AdeptPowersStyle.svg
+
+.b24f2149-2a5a-4e7a-a8f0-f3ec1f5a0067 {
+  fill: none;
+}
+
+.b57b12c2-c320-4b54-88e4-ca09893a0939 {
+  isolation: isolate;
+}
+
+.f5ef3b77-38af-46ac-81a2-62b2056ab7cd {
+  clip-path: url(#ad672c95-e405-401d-a228-fe7443dc01bb);
+}
+
+.a45549d6-789e-4607-ace9-a6f03fc4ad81 {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.faa24bff-02a2-4155-adc8-cf19cfbda97e {
+  clip-path: url(#b581c8c9-a8b6-4aba-a6e7-37326d885bd9);
+}
+
+.acc1f9e0-7f01-4c1f-91bd-cd3ac973711c {
+  clip-path: url(#ad9d4222-d072-4e39-8a00-5ab372ccbf79);
+}
+
+// Style from AdeptPowersText.svg
+
+.fffdffcf-9ed8-436c-8c52-2ca13feac984 {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+.ed35867d-7692-458b-bec2-f53191c06d1f {
+  letter-spacing: -0.02007em;
+}
+
+.b7a8d67c-36c8-4fac-a62c-8c30857d1d0d {
+  letter-spacing: -0.01888em;
+}
+
+.b1779a0d-88e5-4c20-a0aa-cc34623298ae {
+  letter-spacing: -0.01997em;
+}
+
+.fd3e3225-d069-4421-ab12-682c4a746ded {
+  letter-spacing: -0.0191em;
+}
+
+// Style from AdeptPowersOr.svg
+
+.bd9443c5-1d86-48f2-8cbc-a3d8ec6e65a8 {
+  font-size: 7px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+  letter-spacing: -0.04004em;
+}
+
+.ab0630e5-6521-44e0-bdd2-2e15ae65bc2a {
+  letter-spacing: -0.03906em;
+}
+
+.e7ca8661-d76d-4f7d-9133-240fa9929d23 {
+  letter-spacing: -0.00014em;
+}
+
+// Style from AdeptPowersOtherAbilities.svg
+
+.f344a012-e2d0-4cc2-85fc-3c60faccf2fa {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+.a37ce6a0-29cd-4417-80b0-f60f15d84d89 {
+  letter-spacing: -0.01899em;
+}
+
+.a6c8c760-47e2-4a3f-9831-00cce475a106 {
+  letter-spacing: -0.01997em;
+}
+
+.e92146a0-bc96-475e-83eb-e84a82286f6c {
+  letter-spacing: -0.0191em;
+}
+
+// Style from AdeptPowersLine.svg
+
+.a56ce1e6-caa3-4c8f-92ca-b1363662eb16 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from AdeptPowersName.svg
+
+.f674b7b5-cf55-4c4d-9e32-96f89ed78ef3 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b09684cd-d15f-45ce-895e-a2cde0e97474 {
+  letter-spacing: -0.00907em;
+}
+
+.b5a3ec40-5c93-48bb-9222-d0b881a2bbba {
+  letter-spacing: -0.00991em;
+}
+
+// Style from AdeptPowersRating.svg
+
+.e7f20dbf-784d-4170-8315-ab75bea83da2 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.b0b72988-44ca-424e-8ab8-ef73e51fc8e4 {
+  letter-spacing: -0.00991em;
+}
+
+.a2e879dc-b671-4553-9e80-f2fc08ce2f97 {
+  letter-spacing: -0.00907em;
+}
+
+// Style from AdeptPowersNotes.svg
+.ad413591-aa8f-450d-af66-b50503c8c3a6 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+  letter-spacing: -0.00907em;
+}
+
+.aa76876d-b550-4bcb-a814-e468ad9a0f8b {
+  letter-spacing: -0.00991em;
+}
+
+.bd111e19-3daf-4a7b-b057-475ccba0f296 {
+  letter-spacing: 0.00014em;
+}

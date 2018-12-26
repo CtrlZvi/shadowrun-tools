@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 19.49512 7.55957">
+  <defs>
+    <style>
+      .b8155bb1-7912-444b-9b33-34d26cdfbe74 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .a3ba22fc-ba14-4263-bb3e-ba86fd3b6bce {
+        letter-spacing: -0.00991em;
+      }
+
+      .b5c84e0c-286b-4d9f-9e3c-df028ade0982 {
+        letter-spacing: -0.00893em;
+      }
+
+      .f0deed51-b49f-4733-a737-f69acb27a20a {
+        letter-spacing: -0.01004em;
+      }
+    </style>
+  </defs>
+  <title>VehicleSensor</title>
+  <g id="a16b0adb-203d-4af3-8d14-6ce701544e70" data-name="Layer 2">
+    <g id="a9a9c2cd-602c-4bd3-b433-d40e95472b15" data-name="Layer 1">
+      <text id="b6ef07fa-ad99-4a73-9ed8-8e69f3407e2e" data-name="VehicleSensor" class="b8155bb1-7912-444b-9b33-34d26cdfbe74" transform="translate(0 5.80957)"><tspan class="a3ba22fc-ba14-4263-bb3e-ba86fd3b6bce">Se</tspan><tspan class="b5c84e0c-286b-4d9f-9e3c-df028ade0982" x="7.25195" y="0">ns</tspan><tspan class="f0deed51-b49f-4733-a737-f69acb27a20a" x="13.73438" y="0">o</tspan><tspan x="17.16406" y="0">r</tspan></text>
+    </g>
+  </g>
+</svg>

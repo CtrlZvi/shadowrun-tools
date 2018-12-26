@@ -75,8 +75,12 @@ body {
   }
 }
 
-.character-sheet-page.rendered {
+.character-sheet-page.rendered:nth-child(1) {
   content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_1.png')
+}
+
+.character-sheet-page.rendered:nth-child(2) {
+  content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_2.png')
 }
 
 .background {

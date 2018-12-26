@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.22656 7.55957">
+  <defs>
+    <style>
+      .a56b3e9f-7c63-4d72-8f76-95f1a61de587 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .a808bdfd-9e98-4738-8b93-984b633c1038 {
+        letter-spacing: -0.01004em;
+      }
+
+      .bd0353a3-82cb-41a6-b433-f267ec160e87 {
+        letter-spacing: -0.00907em;
+      }
+    </style>
+  </defs>
+  <title>VehicleArmor</title>
+  <g id="b27f6292-c00a-48ed-bfad-5d9c00d7806e" data-name="Layer 2">
+    <g id="a3819306-ecd2-4086-bd65-362d840dfc83" data-name="Layer 1">
+      <text id="be639db1-b88e-451b-a556-321305d11814" data-name="VehicleArmor" class="a56b3e9f-7c63-4d72-8f76-95f1a61de587" transform="translate(0 5.80957)"><tspan class="a808bdfd-9e98-4738-8b93-984b633c1038">A</tspan><tspan class="bd0353a3-82cb-41a6-b433-f267ec160e87" x="4.20703" y="0">rm</tspan><tspan class="a808bdfd-9e98-4738-8b93-984b633c1038" x="11.46582" y="0">o</tspan><tspan x="14.89551" y="0">r</tspan></text>
+    </g>
+  </g>
+</svg>

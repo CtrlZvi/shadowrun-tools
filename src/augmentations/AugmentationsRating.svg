@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.94775 7.56006">
+  <defs>
+    <style>
+      .ecb70793-b43e-4aef-aba4-0c5d86b55c5b {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .eef2a63d-9cec-4ce1-84d0-711e8cf40dfa {
+        letter-spacing: -0.01004em;
+      }
+
+      .b4e4f322-d6fc-4e86-9181-b83d2d5f93ba {
+        letter-spacing: -0.009em;
+      }
+
+      .e6509b69-0c1d-43c2-b668-c248499d43b2 {
+        letter-spacing: -0.00997em;
+      }
+
+      .bce4eae3-8012-4a2e-ae22-711c400e56d7 {
+        letter-spacing: -0.00893em;
+      }
+    </style>
+  </defs>
+  <title>AugmentationsRating</title>
+  <g id="a88ecf11-b439-4b65-957b-c4c5070a5462" data-name="Layer 2">
+    <g id="b2efc413-64d1-4b53-9b7e-8f4f66b05ddd" data-name="Layer 1">
+      <text id="ffd283f2-467c-44c8-a2df-8bad20ed4da6" data-name="AugmentationRating" class="ecb70793-b43e-4aef-aba4-0c5d86b55c5b" transform="translate(0 5.81006)"><tspan class="eef2a63d-9cec-4ce1-84d0-711e8cf40dfa">R</tspan><tspan class="b4e4f322-d6fc-4e86-9181-b83d2d5f93ba" x="3.82178" y="0">a</tspan><tspan class="e6509b69-0c1d-43c2-b668-c248499d43b2" x="7.25879" y="0">t</tspan><tspan class="bce4eae3-8012-4a2e-ae22-711c400e56d7" x="9.13477" y="0">i</tspan><tspan class="eef2a63d-9cec-4ce1-84d0-711e8cf40dfa" x="11.01807" y="0">n</tspan><tspan x="14.44775" y="0">g</tspan></text>
+    </g>
+  </g>
+</svg>

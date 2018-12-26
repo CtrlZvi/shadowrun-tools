@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.23975 7.56006">
+  <defs>
+    <style>
+      .a34bb5c2-9a46-4948-a246-b3f317548c4b {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .bf57694d-2c55-4ac6-928d-b5cf51c05425 {
+        letter-spacing: -0.03404em;
+      }
+
+      .ba7aa48a-9d52-4cb3-9edf-9abeeb9d5599 {
+        letter-spacing: -0.009em;
+      }
+    </style>
+  </defs>
+  <title>RangedWeaponsName</title>
+  <g id="ed8de9cd-fa12-4eba-af79-cff82ce97a5c" data-name="Layer 2">
+    <g id="f560bec9-a0ee-463b-847a-0e6d478341d2" data-name="Layer 1">
+      <text id="ac06fb9a-d82a-424b-9056-e2ca2b3aeeeb" data-name="RangedWeaponsName" class="a34bb5c2-9a46-4948-a246-b3f317548c4b" transform="translate(0.00684 5.81006)"><tspan class="bf57694d-2c55-4ac6-928d-b5cf51c05425">W</tspan><tspan class="ba7aa48a-9d52-4cb3-9edf-9abeeb9d5599" x="5.98486" y="0">eapo</tspan><tspan x="19.73291" y="0">n</tspan></text>
+    </g>
+  </g>
+</svg>

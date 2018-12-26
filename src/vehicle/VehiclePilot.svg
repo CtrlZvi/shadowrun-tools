@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12.96387 7.56006">
+  <defs>
+    <style>
+      .a99d2002-54b2-47fe-a6d7-ae5e537662ed {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .b50b5a68-4307-4f80-8d1c-0e39bbccb0b9 {
+        letter-spacing: -0.00991em;
+      }
+
+      .af73b741-4bcf-41b0-93d9-90f065bd1cae {
+        letter-spacing: -0.00907em;
+      }
+
+      .e0621fc7-a76f-471b-a197-75d6125c3035 {
+        letter-spacing: -0.01004em;
+      }
+    </style>
+  </defs>
+  <title>VehiclePilot</title>
+  <g id="b683b69b-d058-41ff-b467-d8f814df04be" data-name="Layer 2">
+    <g id="a3213202-4ef1-47d4-b994-b9ae06d1f03c" data-name="Layer 1">
+      <text id="ae86ae86-0ec0-4f23-a058-412527c46aff" data-name="VehiclePilot" class="a99d2002-54b2-47fe-a6d7-ae5e537662ed" transform="translate(0 5.81006)"><tspan class="b50b5a68-4307-4f80-8d1c-0e39bbccb0b9">P</tspan><tspan class="af73b741-4bcf-41b0-93d9-90f065bd1cae" x="3.82227" y="0">il</tspan><tspan class="e0621fc7-a76f-471b-a197-75d6125c3035" x="7.58789" y="0">o</tspan><tspan x="11.01758" y="0">t</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 14.18164 7.56006">
+  <defs>
+    <style>
+      .e74f9089-bdc3-485f-a3be-d5660e17a3b0 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .bf9d1861-b340-4b3b-a72b-7b5cfb72642c {
+        letter-spacing: -0.01004em;
+      }
+
+      .af6ba785-0726-4328-9a1d-c30a6b9aac7b {
+        letter-spacing: -0.00893em;
+      }
+    </style>
+  </defs>
+  <title>VehicleBody</title>
+  <g id="b0777f78-376f-42d1-b3fc-f29b127f1774" data-name="Layer 2">
+    <g id="f96f5cc4-bf00-479c-9bea-f2d52b2fb6de" data-name="Layer 1">
+      <text id="b750e228-915a-4c56-b03d-bdd49d9f9f5a" data-name="VehicleBody" class="e74f9089-bdc3-485f-a3be-d5660e17a3b0" transform="translate(0 5.81006)"><tspan class="bf9d1861-b340-4b3b-a72b-7b5cfb72642c">Bo</tspan><tspan class="af6ba785-0726-4328-9a1d-c30a6b9aac7b" x="7.63672" y="0">d</tspan><tspan x="11.07422" y="0">y</tspan></text>
+    </g>
+  </g>
+</svg>

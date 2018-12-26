@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 129.03999">
+  <defs>
+    <style>
+      .ef0ba2eb-fa7e-4bff-829e-88e4b365d267 {
+        fill: url(#a811c151-e46d-4404-b6b7-96a94191dd23);
+      }
+
+      .f937f0fa-c7e2-4274-930f-c2ae43c05a01 {
+        fill: url(#ad77be1b-14f4-4c8b-82d5-6ef955e16bf4);
+      }
+
+      .b36ddbdc-b1b5-4b67-b008-12c193536ec8, .b45734ea-f0ac-4271-b099-5eb28770cc15, .be2d29dd-d935-4ec7-b3bd-ae2d84282926 {
+        fill: none;
+      }
+
+      .bdeaf546-a33d-4a66-833f-58ec7ff1bd60 {
+        clip-path: url(#f6da981f-40f5-42f7-b5e8-4fac8f287bfd);
+      }
+
+      .be81d66d-450d-41e5-88c6-cf02c281ad50 {
+        mask: url(#ba1e82c6-caed-40db-8a8b-2d775d56b008);
+      }
+
+      .b067ce31-0d7b-4c65-a183-16f9ab2976db {
+        clip-path: url(#a7a8f30c-3d9f-4ea1-9073-3b03bd20febd);
+      }
+
+      .b45734ea-f0ac-4271-b099-5eb28770cc15, .be2d29dd-d935-4ec7-b3bd-ae2d84282926 {
+        stroke: #7e0f12;
+      }
+
+      .b45734ea-f0ac-4271-b099-5eb28770cc15 {
+        stroke-width: 0.75px;
+      }
+
+      .bc643fb7-00dc-4a4a-bb5d-d645119d808d {
+        clip-path: url(#fa07e5e8-9a7b-453b-ba8e-16bb8a4f1986);
+      }
+    </style>
+    <linearGradient id="a811c151-e46d-4404-b6b7-96a94191dd23" y1="764.92493" x2="1" y2="764.92493" gradientTransform="translate(-98399.90736 568.30188) rotate(-90) scale(129.03999)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.54" stop-color="#fff"/>
+      <stop offset="0.93498" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="ad77be1b-14f4-4c8b-82d5-6ef955e16bf4" y1="761.82243" x2="1" y2="761.82243" gradientTransform="translate(-66719.14007 550.15387) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="f6da981f-40f5-42f7-b5e8-4fac8f287bfd" transform="translate(-314.9375 -439.26181)">
+      <rect class="b36ddbdc-b1b5-4b67-b008-12c193536ec8" width="612" height="765"/>
+    </clipPath>
+    <mask id="ba1e82c6-caed-40db-8a8b-2d775d56b008" x="-314.9375" y="-439.26181" width="611.99994" height="765.00002" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.9375 -439.26181)">
+        <rect class="ef0ba2eb-fa7e-4bff-829e-88e4b365d267" width="611.99994" height="765.00002"/>
+      </g>
+    </mask>
+    <clipPath id="a7a8f30c-3d9f-4ea1-9073-3b03bd20febd" transform="translate(-314.9375 -439.26181)">
+      <rect class="b36ddbdc-b1b5-4b67-b008-12c193536ec8" x="305.93701" y="432.26199" width="18.75" height="137.04001"/>
+    </clipPath>
+    <clipPath id="fa07e5e8-9a7b-453b-ba8e-16bb8a4f1986" transform="translate(-314.9375 -439.26181)">
+      <rect class="b36ddbdc-b1b5-4b67-b008-12c193536ec8" x="306.06201" y="455.17401" width="288.5" height="95.98"/>
+    </clipPath>
+  </defs>
+  <title>SpellsBox</title>
+  <g id="bc7db280-57a8-40bc-aa1f-6e35ee094e0e" data-name="Layer 2">
+    <g id="f8f9c9b0-9ded-40b8-bca1-cd50d45ed36b" data-name="Layer 1">
+      <g id="ac401732-69a5-411c-a4b9-e32bb112caa2" data-name="Boxes">
+        <g class="bdeaf546-a33d-4a66-833f-58ec7ff1bd60">
+          <g class="be81d66d-450d-41e5-88c6-cf02c281ad50">
+            <g id="b2456d93-48d1-4764-8ebc-5980c160d5bc" data-name="SpellsVertical">
+              <g class="b067ce31-0d7b-4c65-a183-16f9ab2976db">
+                <line class="b45734ea-f0ac-4271-b099-5eb28770cc15" x1="0.375" x2="0.375" y2="129.03999"/>
+              </g>
+            </g>
+          </g>
+          <g class="be81d66d-450d-41e5-88c6-cf02c281ad50">
+            <g id="b8f8cb3e-a55e-44ac-bb76-310e6da8a9a2" data-name="SpellsCorner">
+              <g class="bc643fb7-00dc-4a4a-bb5d-d645119d808d">
+                <polyline class="be2d29dd-d935-4ec7-b3bd-ae2d84282926" points="0.125 23.412 258.965 23.412 270.125 34.572 270.125 110.892"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

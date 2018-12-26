@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.25488 8.7998">
+  <defs>
+    <style>
+      .b81cdc31-3006-4b74-b04b-9c870a556ea7 {
+        font-size: 8px;
+        fill: #fff;
+        font-family: ArmaduraSolid, Armadura Solid;
+      }
+
+      .a9c050ab-2c85-4c93-a194-ac2e9a73691c {
+        letter-spacing: -0.02905em;
+      }
+
+      .adac50ca-1f9a-4357-9677-7c4bebe345e9 {
+        letter-spacing: -0.03003em;
+      }
+
+      .f50f7cb5-fe9d-43d6-99eb-e730abe0a82a {
+        letter-spacing: -0.02893em;
+      }
+    </style>
+  </defs>
+  <title>SpellsPreparationsText</title>
+  <g id="b10a563e-3d82-4434-93af-a8ff786b731d" data-name="Layer 2">
+    <g id="b2e0c59b-fa3f-4f23-bac6-fde7108c82e1" data-name="Layer 1">
+      <text id="aac8cea5-c15d-43ea-a661-e3186bc73efb" data-name="SpellsPreparationsText" class="b81cdc31-3006-4b74-b04b-9c870a556ea7" transform="translate(0 7.2002)"><tspan class="a9c050ab-2c85-4c93-a194-ac2e9a73691c">SPELLS /</tspan><tspan class="adac50ca-1f9a-4357-9677-7c4bebe345e9" x="49.0957" y="0"> </tspan><tspan class="a9c050ab-2c85-4c93-a194-ac2e9a73691c" x="53.97559" y="0">PREPAR</tspan><tspan class="adac50ca-1f9a-4357-9677-7c4bebe345e9" x="95.14258" y="0">A</tspan><tspan class="f50f7cb5-fe9d-43d6-99eb-e730abe0a82a" x="102.2627" y="0">TION</tspan><tspan x="128.21484" y="0">S</tspan></text>
+    </g>
+  </g>
+</svg>

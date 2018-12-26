@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 254.90501">
+  <defs>
+    <style>
+      .a4b1d0ec-ff13-4f9b-a533-e8c8c21724bb {
+        fill: url(#a8ac5ded-3ca3-4b9d-b1df-2a163fe16130);
+      }
+
+      .e6250ccc-303d-444a-a55a-6849586e53bb {
+        fill: url(#b5384364-1491-4bfb-ae17-32f37e993962);
+      }
+
+      .ae9a9310-32ad-4694-bce1-6a6c061cf1f4, .ba4536dd-ad3f-4839-8abb-a6140ba88677, .bbf4a0c3-5bc0-4f5c-979b-2a316f70e597 {
+        fill: none;
+      }
+
+      .b9094b70-82dd-4e5c-919d-072d005d0c0f {
+        clip-path: url(#b0617f3a-b6b5-4d5e-843c-0cd1d311b918);
+      }
+
+      .efcc654b-dd9c-41e4-a55e-08f5a12a5e27 {
+        mask: url(#fde0099f-17af-424a-b651-67a0d736434d);
+      }
+
+      .fc8d9992-28c2-402e-9812-c845312e85a6 {
+        clip-path: url(#ebfdd75d-4f56-43a4-b09b-e48c1095e6d5);
+      }
+
+      .ba4536dd-ad3f-4839-8abb-a6140ba88677, .bbf4a0c3-5bc0-4f5c-979b-2a316f70e597 {
+        stroke: #7e0f12;
+      }
+
+      .bbf4a0c3-5bc0-4f5c-979b-2a316f70e597 {
+        stroke-width: 0.75px;
+      }
+
+      .f3e7c7e8-ad07-4b35-b3d3-4bd358047912 {
+        clip-path: url(#f7e9b927-ab91-4971-b781-22771abbb316);
+      }
+    </style>
+    <linearGradient id="a8ac5ded-3ca3-4b9d-b1df-2a163fe16130" y1="764.96189" x2="1" y2="764.96189" gradientTransform="matrix(0, -254.18489, -254.18489, 0, 194747.75392, 728.46002)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.02505" stop-color="#131313"/>
+      <stop offset="0.13761" stop-color="#666"/>
+      <stop offset="0.2373" stop-color="#a8a8a8"/>
+      <stop offset="0.32044" stop-color="#d7d7d7"/>
+      <stop offset="0.38384" stop-color="#f4f4f4"/>
+      <stop offset="0.42" stop-color="#fff"/>
+      <stop offset="0.91802" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b5384364-1491-4bfb-ae17-32f37e993962" y1="763.84475" x2="1" y2="763.84475" gradientTransform="matrix(0, -241.99289, -241.99289, 0, 185150.99789, 729.17999)" xlink:href="#a8ac5ded-3ca3-4b9d-b1df-2a163fe16130"/>
+    <clipPath id="b0617f3a-b6b5-4d5e-843c-0cd1d311b918" transform="translate(-26.4375 -474.27509)">
+      <rect class="ae9a9310-32ad-4694-bce1-6a6c061cf1f4" width="612" height="765"/>
+    </clipPath>
+    <mask id="fde0099f-17af-424a-b651-67a0d736434d" x="-26.43753" y="-474.27509" width="612.00003" height="765" maskUnits="userSpaceOnUse">
+      <g transform="translate(-26.4375 -474.27509)">
+        <rect class="a4b1d0ec-ff13-4f9b-a533-e8c8c21724bb" x="-0.00003" width="612.00003" height="765"/>
+      </g>
+    </mask>
+    <clipPath id="ebfdd75d-4f56-43a4-b09b-e48c1095e6d5" transform="translate(-26.4375 -474.27509)">
+      <rect class="ae9a9310-32ad-4694-bce1-6a6c061cf1f4" x="287.31201" y="467.27499" width="18.75" height="262.18501"/>
+    </clipPath>
+    <clipPath id="f7e9b927-ab91-4971-b781-22771abbb316" transform="translate(-26.4375 -474.27509)">
+      <rect class="ae9a9310-32ad-4694-bce1-6a6c061cf1f4" x="17.4375" y="480.18701" width="288.49951" height="249.99299"/>
+    </clipPath>
+  </defs>
+  <title>GearBox</title>
+  <g id="aa03af09-efba-48ea-bc3c-27e708cf4b3b" data-name="Layer 2">
+    <g id="f157aec1-5797-4b8e-8f47-5a1c9fdb7b7f" data-name="Layer 1">
+      <g id="fa37c4af-30ef-4ad0-ad7e-0b4c098b705a" data-name="Boxes">
+        <g class="b9094b70-82dd-4e5c-919d-072d005d0c0f">
+          <g class="efcc654b-dd9c-41e4-a55e-08f5a12a5e27">
+            <g id="ac6c5cb6-5861-4a46-99c4-ef3374f15d9f" data-name="GearVertical">
+              <g class="fc8d9992-28c2-402e-9812-c845312e85a6">
+                <line class="bbf4a0c3-5bc0-4f5c-979b-2a316f70e597" x1="270.25" x2="270.25" y2="254.185"/>
+              </g>
+            </g>
+          </g>
+          <g class="efcc654b-dd9c-41e4-a55e-08f5a12a5e27">
+            <g id="ab7188f1-6240-438b-8093-357960fe3c1c" data-name="GearCorner">
+              <g class="f3e7c7e8-ad07-4b35-b3d3-4bd358047912">
+                <polyline class="ba4536dd-ad3f-4839-8abb-a6140ba88677" points="270.5 13.412 11.66 13.412 0.5 24.572 0.5 254.905"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

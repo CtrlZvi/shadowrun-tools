@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 23.21875 7.56006">
+  <defs>
+    <style>
+      .a5fac5eb-6e7a-4f8f-bb67-444314a674ba {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .bfd644e6-cac3-4f5d-a035-647fd58e7f67 {
+        letter-spacing: -0.0339em;
+      }
+
+      .a98ba34c-2911-4e52-b4a2-ee23ee8f8750 {
+        letter-spacing: -0.01004em;
+      }
+
+      .ab89cf3d-c2ad-4577-8fa5-f077a1ca2087 {
+        letter-spacing: -0.00893em;
+      }
+    </style>
+  </defs>
+  <title>MeleeWeaponsName</title>
+  <g id="aeb2780b-ebcb-4c9c-8abb-ac77ab0ed346" data-name="Layer 2">
+    <g id="bc64c6a1-8f3e-4429-8849-403356b6891c" data-name="Layer 1">
+      <text id="a53c329e-0c00-41b9-a8e3-26036eaaaae3" data-name="MeleeWeaponsName" class="a5fac5eb-6e7a-4f8f-bb67-444314a674ba" transform="translate(0.00684 5.81006)"><tspan class="bfd644e6-cac3-4f5d-a035-647fd58e7f67">W</tspan><tspan class="a98ba34c-2911-4e52-b4a2-ee23ee8f8750" x="5.98535" y="0">ea</tspan><tspan class="ab89cf3d-c2ad-4577-8fa5-f077a1ca2087" x="12.84473" y="0">p</tspan><tspan class="a98ba34c-2911-4e52-b4a2-ee23ee8f8750" x="16.28223" y="0">o</tspan><tspan x="19.71191" y="0">n</tspan></text>
+    </g>
+  </g>
+</svg>

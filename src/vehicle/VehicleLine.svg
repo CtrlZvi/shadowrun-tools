@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 241.56 0.75">
+  <defs>
+    <style>
+      .b7d46218-c6b2-406a-add5-a571a1c8d610 {
+        fill: none;
+        stroke: #6d6e70;
+        stroke-width: 0.75px;
+      }
+    </style>
+  </defs>
+  <title>VehicleLine1</title>
+  <g id="e53971a1-7b0e-40a1-bade-287ab2f64fad" data-name="Layer 2">
+    <g id="b928aaa5-4484-4c2d-ac6c-2c06aae392d2" data-name="Layer 1">
+      <line id="b524a38e-6e2f-4225-9832-68e3281e03f2" data-name="VehicleLine1" class="b7d46218-c6b2-406a-add5-a571a1c8d610" x1="241.56" y1="0.375" y2="0.375"/>
+    </g>
+  </g>
+</svg>

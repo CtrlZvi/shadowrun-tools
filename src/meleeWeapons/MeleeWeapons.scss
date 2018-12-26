@@ -1,0 +1,264 @@
+.melee-weapons-box {
+  position: absolute;
+  width: 270.5pt;
+  height: 119.04004pt;
+  left: 315.0625pt;
+  top: 75.50012pt;
+}
+
+.melee-weapons-tab {
+  position: absolute;
+  width: 146.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 75.5pt;
+}
+
+.melee-weapons-style {
+  position: absolute;
+  width: 148.31999pt;
+  height: 15.36pt;
+  left: #{99.332 + 214.84003}pt;
+  top: #{45.1 + 29.32001}pt;
+}
+
+.melee-weapons-text {
+  position: absolute;
+  width: 112.67871pt;
+  height: 9.8999pt;
+  left: 320.47pt;
+  top: 77.58pt;
+}
+
+%melee-weapons-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.melee-weapons-line-1 {
+  @extend %melee-weapons-line;
+  top: 105.636pt;
+}
+
+.melee-weapons-line-2 {
+  @extend %melee-weapons-line;
+  top: 118.595pt;
+}
+
+.melee-weapons-line-3 {
+  @extend %melee-weapons-line;
+  top: 131.554pt;
+}
+
+.melee-weapons-line-4 {
+  @extend %melee-weapons-line;
+  top: 144.513pt;
+}
+
+.melee-weapons-line-5 {
+  @extend %melee-weapons-line;
+  top: 157.472pt;
+}
+
+.melee-weapons-line-6 {
+  @extend %melee-weapons-line;
+  top: 170.432pt;
+}
+
+.melee-weapons-line-7 {
+  @extend %melee-weapons-line;
+  top: 183.391pt;
+}
+
+.melee-weapons-accuracy {
+  position: absolute;
+  width: 11.13672pt;
+  height: 7.56006pt;
+  left: 495.516pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-ap {
+  position: absolute;
+  width: 8.10547pt;
+  height: 7.56006pt;
+  left: 545.349pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-attributes {
+  position: absolute;
+  width: 63.46875pt;
+  height: 7.56006pt;
+  left: 395.653pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-name {
+  position: absolute;
+  width: 23.21875pt;
+  height: 7.56006pt;
+  left: 331.981pt;
+  top: 95.205pt;
+}
+
+// Style from MeleeWeaponsBox.svg
+
+.a00320f1-352f-4293-85f2-cbf8ee7970a7 {
+  fill: url(#bfa5e4cc-f4ae-410e-84c0-6c3824892944);
+}
+
+.a7c9aa0c-b87b-4ab3-b22e-4c98affdae99 {
+  fill: url(#b3cd6ea0-5220-4ac1-97a0-5455e3bf077d);
+}
+
+.aa30605d-0441-4df5-919b-f45e00ecda45, .b1022641-1aba-43c1-a149-2ae818600bbf, .b6462fa2-0f33-4fe5-814f-7591ae1403ad {
+  fill: none;
+}
+
+.a3ae0b8b-1c12-46d6-aea4-377436528b24 {
+  clip-path: url(#ea05fc6f-b324-4540-ac6d-32a5a3b544d7);
+}
+
+.e0dc5036-0f2b-46ff-bf8b-c00f56a2ac21 {
+  mask: url(#b5ccb71d-4a65-43c7-87a0-1123ee8beb57);
+}
+
+.b6d12803-ada5-40d5-a0bb-211a46578bd2 {
+  clip-path: url(#fda59114-b0f3-4fee-a344-3c86e79c6c55);
+}
+
+.aa30605d-0441-4df5-919b-f45e00ecda45, .b1022641-1aba-43c1-a149-2ae818600bbf {
+  stroke: #7e0f12;
+}
+
+.aa30605d-0441-4df5-919b-f45e00ecda45 {
+  stroke-width: 0.75px;
+}
+
+.b2c05286-c78d-4316-8898-3ce5ea159b48 {
+  clip-path: url(#be32745f-5ab6-454a-9653-e57d415e3494);
+}
+
+// Style from MeleeWeaponsTab.svg
+
+.b908ecdc-c537-41b2-8a5f-b09d57d58c89 {
+  fill: #7e0f12;
+}
+
+// Style from MeleeWeaponsStyle.svg
+
+.a38a6791-249b-42eb-a040-5af51ac49d8a {
+  fill: none;
+}
+
+.f9a99c80-a6f0-4725-a8ac-4c6ec38025df {
+  isolation: isolate;
+}
+
+.bdf1f482-745e-4030-b902-a9177512aa99 {
+  clip-path: url(#e1806911-3dd5-47bd-affc-34ff609adf41);
+}
+
+.bbf0fbfb-0bd2-4db7-aad1-bec71f8def8e {
+  opacity: 0.35001;
+  mix-blend-mode: multiply;
+}
+
+.ee8c07fc-51c2-4fdd-af92-2c3d73251eb5 {
+  clip-path: url(#ac26c8d4-a85b-4f1e-aad8-9e33a1842a46);
+}
+
+.e57731c9-125f-48dd-8f6d-bd574e78172b {
+  clip-path: url(#a517f9f4-780a-4968-965e-0a73aa3063fd);
+}
+
+// Style from MeleeWeaponsText.svg
+
+.f767d2c9-c397-4ebe-b8a3-660671e34394 {
+  font-size: 9px;
+  fill: #fff;
+  font-family: ArmaduraSolid, Armadura Solid;
+}
+
+// Style from MeleeWeaponsLine.svg
+
+.aad1a71c-580f-46b5-b85f-024c41e77827 {
+  fill: none;
+  stroke: #6d6e70;
+  stroke-width: 0.75px;
+}
+
+// Style from MeleeWeaponsAccuracy.svg
+
+.f3e7bf05-bedc-4d16-b5e2-5854d8712f14 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.fbd90b13-a617-4486-b613-5c32193f98d9 {
+  letter-spacing: -0.01004em;
+}
+
+// Style from MeleeWeaponsAP.svg
+
+.f7be7884-e978-4f18-b220-dc7d388a041b {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.ece640fe-7c00-4f12-a228-32dd92119898 {
+  letter-spacing: -0.00907em;
+}
+
+// Style from MeleeWeaponsAttributes.svg
+
+.e6274b56-296c-48f6-b28e-930dd5f0f527 {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.a0a7a5d1-43d5-4091-aea2-94ce984c764b {
+  letter-spacing: -0.00991em;
+}
+
+.f6b17912-1673-4145-b9ed-75353c2eba4d {
+  letter-spacing: -0.00893em;
+}
+
+.eaef856d-ee5c-4e10-ba2f-c169756a1477 {
+  letter-spacing: -0.01004em;
+}
+
+.a86ee0c3-876a-4452-80d9-7498384edb13 {
+  letter-spacing: 4.73605em;
+}
+
+.aa61989b-8575-442c-9505-d287258e8022 {
+  letter-spacing: -0.01018em;
+}
+
+// Style from MeleeWeaponsName.svg
+
+.a5fac5eb-6e7a-4f8f-bb67-444314a674ba {
+  font-size: 7px;
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  // font-weight: 700;
+}
+
+.bfd644e6-cac3-4f5d-a035-647fd58e7f67 {
+  letter-spacing: -0.0339em;
+}
+
+.a98ba34c-2911-4e52-b4a2-ee23ee8f8750 {
+  letter-spacing: -0.01004em;
+}
+
+.ab89cf3d-c2ad-4577-8fa5-f077a1ca2087 {
+  letter-spacing: -0.00893em;
+}

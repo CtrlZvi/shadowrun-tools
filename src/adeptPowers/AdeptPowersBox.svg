@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 119.04">
+  <defs>
+    <style>
+      .e1ac6db4-d2f3-45e6-af12-5d1f691cd487 {
+        fill: url(#f49188cb-dc4d-40f1-9973-fa0020d0e90b);
+      }
+
+      .f7f20cef-bddf-4608-9789-d83dedb35838 {
+        fill: url(#b633d9d0-12c6-4d3b-b1ea-a6c83e23121d);
+      }
+
+      .a5fad542-ca28-41a5-b96e-88c79a1186b4, .b44da6ec-914e-474d-836a-3d8797c8a94f, .bc6bc825-1a62-4a29-b49d-397b381ce207 {
+        fill: none;
+      }
+
+      .b4b6894d-75cc-44c0-a778-4cf3dfb6bf66 {
+        clip-path: url(#f03d0674-1e66-41cc-9023-51c922e7949a);
+      }
+
+      .bbb94323-6101-42db-a7ea-71af393ae5b3 {
+        mask: url(#a67688f5-9924-4c16-b171-5e9238e34980);
+      }
+
+      .a89ee040-1fe0-41aa-bc4d-09e07f0863de {
+        clip-path: url(#f4a41b06-b5af-4e4d-ae6c-93553773edff);
+      }
+
+      .a5fad542-ca28-41a5-b96e-88c79a1186b4, .bc6bc825-1a62-4a29-b49d-397b381ce207 {
+        stroke: #7e0f12;
+      }
+
+      .bc6bc825-1a62-4a29-b49d-397b381ce207 {
+        stroke-width: 0.75px;
+      }
+
+      .e939224f-a48b-4794-8589-5eddb9c54fd4 {
+        clip-path: url(#a3ad961d-2b25-4de6-9972-4d2c50269693);
+      }
+    </style>
+    <linearGradient id="f49188cb-dc4d-40f1-9973-fa0020d0e90b" y1="764.91862" x2="1" y2="764.91862" gradientTransform="translate(-90749.9132 718.27527) rotate(-90) scale(119.04)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.54" stop-color="#fff"/>
+      <stop offset="0.93498" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b633d9d0-12c6-4d3b-b1ea-a6c83e23121d" y1="761.82243" x2="1" y2="761.82243" gradientTransform="translate(-66719.14007 700.1272) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="f03d0674-1e66-41cc-9023-51c922e7949a" transform="translate(-314.9375 -599.2352)">
+      <rect class="b44da6ec-914e-474d-836a-3d8797c8a94f" width="612" height="765"/>
+    </clipPath>
+    <mask id="a67688f5-9924-4c16-b171-5e9238e34980" x="-314.93753" y="-599.2352" width="612.00003" height="765" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.9375 -599.2352)">
+        <rect class="e1ac6db4-d2f3-45e6-af12-5d1f691cd487" x="-0.00003" width="612.00003" height="765"/>
+      </g>
+    </mask>
+    <clipPath id="f4a41b06-b5af-4e4d-ae6c-93553773edff" transform="translate(-314.9375 -599.2352)">
+      <rect class="b44da6ec-914e-474d-836a-3d8797c8a94f" x="305.93701" y="592.235" width="18.75" height="127.0403"/>
+    </clipPath>
+    <clipPath id="a3ad961d-2b25-4de6-9972-4d2c50269693" transform="translate(-314.9375 -599.2352)">
+      <rect class="b44da6ec-914e-474d-836a-3d8797c8a94f" x="306.06201" y="605.147" width="288.5" height="95.9802"/>
+    </clipPath>
+  </defs>
+  <title>AdeptPowersBox</title>
+  <g id="a7964ed8-5885-4847-8891-0a4cd3b11c58" data-name="Layer 2">
+    <g id="a4c2ce08-d48c-4b09-84ca-72f8a5c0db80" data-name="Layer 1">
+      <g id="aa2f10de-9018-48ea-ae2b-14d34059610f" data-name="Boxes">
+        <g class="b4b6894d-75cc-44c0-a778-4cf3dfb6bf66">
+          <g class="bbb94323-6101-42db-a7ea-71af393ae5b3">
+            <g id="e1ddd9d2-1ecb-40e2-b087-94837bfeb6b4" data-name="AdeptPowersVertical">
+              <g class="a89ee040-1fe0-41aa-bc4d-09e07f0863de">
+                <line class="bc6bc825-1a62-4a29-b49d-397b381ce207" x1="0.375" x2="0.375" y2="119.04"/>
+              </g>
+            </g>
+          </g>
+          <g class="bbb94323-6101-42db-a7ea-71af393ae5b3">
+            <g id="bc56cdc6-3c42-4397-a6df-e77ed9c35e4b" data-name="AdeptPowersCorner">
+              <g class="e939224f-a48b-4794-8589-5eddb9c54fd4">
+                <polyline class="a5fad542-ca28-41a5-b96e-88c79a1186b4" points="0.125 13.412 258.965 13.412 270.125 24.572 270.125 100.892"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.45703 7.56006">
+  <defs>
+    <style>
+      .ff0b8a9d-895a-45e2-8f58-d68408c6afca {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .bc66117f-5252-43f3-baa0-3f84b852d08b {
+        letter-spacing: -0.009em;
+      }
+
+      .f92f9a4e-dff2-4393-8ced-bc1822081d04 {
+        letter-spacing: -0.00997em;
+      }
+    </style>
+  </defs>
+  <title>AugmentationsNotes</title>
+  <g id="bbde77a2-a381-4c72-b05e-94086a8a4b66" data-name="Layer 2">
+    <g id="b93c6490-5e42-47cd-9f98-1c7448b67e82" data-name="Layer 1">
+      <text id="b794c42f-009c-4212-970a-b93332eb61f4" data-name="AugmentationNotes" class="ff0b8a9d-895a-45e2-8f58-d68408c6afca" transform="translate(0 5.81006)"><tspan class="bc66117f-5252-43f3-baa0-3f84b852d08b">N</tspan><tspan class="f92f9a4e-dff2-4393-8ced-bc1822081d04" x="4.60596" y="0">ot</tspan><tspan class="bc66117f-5252-43f3-baa0-3f84b852d08b" x="9.91211" y="0">e</tspan><tspan x="13.34912" y="0">s</tspan></text>
+    </g>
+  </g>
+</svg>

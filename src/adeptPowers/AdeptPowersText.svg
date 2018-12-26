@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 99.44043 9.89941">
+  <defs>
+    <style>
+      .fffdffcf-9ed8-436c-8c52-2ca13feac984 {
+        font-size: 9px;
+        fill: #fff;
+        font-family: ArmaduraSolid, Armadura Solid;
+      }
+
+      .ed35867d-7692-458b-bec2-f53191c06d1f {
+        letter-spacing: -0.02007em;
+      }
+
+      .b7a8d67c-36c8-4fac-a62c-8c30857d1d0d {
+        letter-spacing: -0.01888em;
+      }
+
+      .b1779a0d-88e5-4c20-a0aa-cc34623298ae {
+        letter-spacing: -0.01997em;
+      }
+
+      .fd3e3225-d069-4421-ab12-682c4a746ded {
+        letter-spacing: -0.0191em;
+      }
+    </style>
+  </defs>
+  <title>AdeptPowersText</title>
+  <g id="b1200315-3df6-4e5b-b6e9-aa9bad695642" data-name="Layer 2">
+    <g id="a4822204-3bad-43dd-9314-156775f23c62" data-name="Layer 1">
+      <text id="b3cb4ae4-d487-4377-ae9f-8e4a3916117e" data-name="AdeptPowersText" class="fffdffcf-9ed8-436c-8c52-2ca13feac984" transform="translate(0 8.09961)"><tspan class="ed35867d-7692-458b-bec2-f53191c06d1f">A</tspan><tspan class="b7a8d67c-36c8-4fac-a62c-8c30857d1d0d" x="8.09961" y="0">DEPT</tspan><tspan class="b1779a0d-88e5-4c20-a0aa-cc34623298ae" x="39.45605" y="0"> </tspan><tspan class="fd3e3225-d069-4421-ab12-682c4a746ded" x="45.03613" y="0">POWER</tspan><tspan x="91.52051" y="0">S</tspan></text>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 270.625 102.70602">
+  <defs>
+    <style>
+      .e701aff4-0fda-45d4-85c6-1688ee5c8496 {
+        fill: url(#bbfc9090-d113-4d32-9872-77e63188732b);
+      }
+
+      .a2f53529-00b2-4181-bb84-3c98be04934f {
+        fill: url(#b2bcea7d-4716-412c-acf0-2fc51e2d0187);
+      }
+
+      .a8393733-b431-42f4-a3f2-50c314f96c20, .b06a0175-d02a-4d68-9397-a45897b28109, .e503417b-e452-40c2-9423-1a92e70c82b2 {
+        fill: none;
+      }
+
+      .e5516720-9b7a-40d0-85d0-8bddf36be941 {
+        clip-path: url(#f41e5b82-0459-4b6f-89ce-0877b21d550b);
+      }
+
+      .f0097cb1-a8ab-4218-b797-01268fb30bd2 {
+        mask: url(#b510d394-8a2a-49a8-9399-73f0a809cc15);
+      }
+
+      .e5af5ba2-f14d-447c-9ed3-f31324c7e417 {
+        clip-path: url(#a9df816a-76bc-42ef-8d51-5d6af1826900);
+      }
+
+      .b06a0175-d02a-4d68-9397-a45897b28109, .e503417b-e452-40c2-9423-1a92e70c82b2 {
+        stroke: #7e0f12;
+      }
+
+      .e503417b-e452-40c2-9423-1a92e70c82b2 {
+        stroke-width: 0.75px;
+      }
+
+      .aa739c44-47f1-4d5f-bb7d-73b00e88b5fb {
+        clip-path: url(#a1dc987c-496a-4679-b5b9-1401c094f248);
+      }
+    </style>
+    <linearGradient id="bbfc9090-d113-4d32-9872-77e63188732b" y1="764.90568" x2="1" y2="764.90568" gradientTransform="translate(-78254.33344 430.35736) rotate(-90) scale(102.70591)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.54" stop-color="#fff"/>
+      <stop offset="0.93498" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <linearGradient id="b2bcea7d-4716-412c-acf0-2fc51e2d0187" y1="761.82243" x2="1" y2="761.82243" gradientTransform="translate(-66719.14007 428.54346) rotate(-90) scale(87.98)" gradientUnits="userSpaceOnUse">
+      <stop offset="0"/>
+      <stop offset="0.7" stop-color="#fff"/>
+      <stop offset="0.9576" stop-color="#fff"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <clipPath id="f41e5b82-0459-4b6f-89ce-0877b21d550b" transform="translate(-314.9375 -327.6514)">
+      <rect class="a8393733-b431-42f4-a3f2-50c314f96c20" width="612" height="765"/>
+    </clipPath>
+    <mask id="b510d394-8a2a-49a8-9399-73f0a809cc15" x="-314.93753" y="-327.65134" width="611.99997" height="764.99997" maskUnits="userSpaceOnUse">
+      <g transform="translate(-314.9375 -327.6514)">
+        <rect class="e701aff4-0fda-45d4-85c6-1688ee5c8496" x="-0.00003" y="0.00006" width="611.99997" height="764.99997"/>
+      </g>
+    </mask>
+    <clipPath id="a9df816a-76bc-42ef-8d51-5d6af1826900" transform="translate(-314.9375 -327.6514)">
+      <rect class="a8393733-b431-42f4-a3f2-50c314f96c20" x="305.93701" y="320.651" width="18.75" height="110.70599"/>
+    </clipPath>
+    <clipPath id="a1dc987c-496a-4679-b5b9-1401c094f248" transform="translate(-314.9375 -327.6514)">
+      <rect class="a8393733-b431-42f4-a3f2-50c314f96c20" x="306.06201" y="333.56299" width="288.5" height="95.98001"/>
+    </clipPath>
+  </defs>
+  <title>VehicleBox</title>
+  <g id="b048aacc-bc7e-4b06-8410-ab633e35e5f9" data-name="Layer 2">
+    <g id="e128c1e2-d734-4649-8eca-18e11c6ab243" data-name="Layer 1">
+      <g id="bdddaaee-ecd7-4e6a-82e7-2632821aa85b" data-name="VehicleBox">
+        <g class="e5516720-9b7a-40d0-85d0-8bddf36be941">
+          <g class="f0097cb1-a8ab-4218-b797-01268fb30bd2">
+            <g class="e5af5ba2-f14d-447c-9ed3-f31324c7e417">
+              <line class="e503417b-e452-40c2-9423-1a92e70c82b2" x1="0.375" x2="0.375" y2="102.70602"/>
+            </g>
+          </g>
+          <g class="f0097cb1-a8ab-4218-b797-01268fb30bd2">
+            <g class="aa739c44-47f1-4d5f-bb7d-73b00e88b5fb">
+              <polyline class="b06a0175-d02a-4d68-9397-a45897b28109" points="0.125 13.412 258.965 13.412 270.125 24.572 270.125 100.892"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

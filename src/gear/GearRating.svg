@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.94775 7.55957">
+  <defs>
+    <style>
+      .beb7fc15-5584-4b92-bd5f-7c2c79f11f43 {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .b754cc24-b32f-4582-a0d2-c53fe4d82946 {
+        letter-spacing: -0.01004em;
+      }
+
+      .ffaa2354-05b8-4291-b31d-6cc169cb1543 {
+        letter-spacing: -0.009em;
+      }
+    </style>
+  </defs>
+  <title>GearRating</title>
+  <g id="ff1bd088-569f-42c7-81c8-d967dc899013" data-name="Layer 2">
+    <g id="e536f3ef-d171-43a7-8602-6a757b93fa21" data-name="Layer 1">
+      <text id="bd7a1257-e120-486e-8ee7-e890a35d2a66" data-name="GearRating" class="beb7fc15-5584-4b92-bd5f-7c2c79f11f43" transform="translate(0 5.80957)"><tspan class="b754cc24-b32f-4582-a0d2-c53fe4d82946">Ra</tspan><tspan class="ffaa2354-05b8-4291-b31d-6cc169cb1543" x="7.25195" y="0">ti</tspan><tspan class="b754cc24-b32f-4582-a0d2-c53fe4d82946" x="11.01807" y="0">n</tspan><tspan x="14.44775" y="0">g</tspan></text>
+    </g>
+  </g>
+</svg>

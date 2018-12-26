@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.94775 7.56006">
+  <defs>
+    <style>
+      .a5df56eb-1e35-4410-92c8-3df33c4fb6ef {
+        font-size: 7px;
+        font-family: UniversLTStd-BoldCn, Univers LT Std;
+        font-weight: 700;
+      }
+
+      .beffc541-480d-4ffc-a176-c86255924181 {
+        letter-spacing: -0.01004em;
+      }
+
+      .a4699941-33b6-4aa3-99e2-cefbd3a85a56 {
+        letter-spacing: -0.009em;
+      }
+
+      .a72f239b-4354-42c8-b900-27bd0f35f932 {
+        letter-spacing: -0.00997em;
+      }
+
+      .f0e41410-1d43-41c5-85a6-497efa17c318 {
+        letter-spacing: -0.00893em;
+      }
+    </style>
+  </defs>
+  <title>ArmorRating</title>
+  <g id="e29696bb-2d3f-4c13-b569-db4da8d749b7" data-name="Layer 2">
+    <g id="ed4dbfcb-0c20-42ce-8c1e-d6d4b27aeb8b" data-name="Layer 1">
+      <text id="f0865a1f-f9a6-485f-9577-eb02a376da09" data-name="ArmorRating" class="a5df56eb-1e35-4410-92c8-3df33c4fb6ef" transform="translate(0 5.81006)"><tspan class="beffc541-480d-4ffc-a176-c86255924181">R</tspan><tspan class="a4699941-33b6-4aa3-99e2-cefbd3a85a56" x="3.82178" y="0">a</tspan><tspan class="a72f239b-4354-42c8-b900-27bd0f35f932" x="7.25879" y="0">t</tspan><tspan class="f0e41410-1d43-41c5-85a6-497efa17c318" x="9.13477" y="0">i</tspan><tspan class="beffc541-480d-4ffc-a176-c86255924181" x="11.01807" y="0">n</tspan><tspan x="14.44775" y="0">g</tspan></text>
+    </g>
+  </g>
+</svg>
