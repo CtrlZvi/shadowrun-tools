@@ -4,7 +4,7 @@
       .a19f9763-3f26-450c-ad04-04c3ffa2c490 {
         font-size: 7px;
         font-family: UniversLTStd-BoldCn, Univers LT Std;
-        font-weight: 700;
+        <!-- font-weight: 700; -->
       }
 
       .fa2a3639-eb63-4cff-baa8-41cd92ed546c {

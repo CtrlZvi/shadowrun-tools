@@ -4,7 +4,7 @@
       .e02ebb39-3490-43ad-a972-0dbe9924ec14 {
         font-size: 7px;
         font-family: UniversLTStd-BoldCn, Univers LT Std;
-        font-weight: 700;
+        <!-- font-weight: 700; -->
         letter-spacing: -0.00991em;
       }
 
