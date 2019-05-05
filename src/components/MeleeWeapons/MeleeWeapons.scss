@@ -1,0 +1,105 @@
+.melee-weapons-box {
+  position: absolute;
+  width: 270.5pt;
+  height: 119.04004pt;
+  left: 315.0625pt;
+  top: 75.50012pt;
+}
+
+.melee-weapons-tab {
+  position: absolute;
+  width: 146.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 75.5pt;
+}
+
+.melee-weapons-style {
+  position: absolute;
+  width: 148.31999pt;
+  height: 15.36pt;
+  left: #{99.332 + 214.84003}pt;
+  top: #{45.1 + 29.32001}pt;
+}
+
+.melee-weapons-text {
+  position: absolute;
+  width: 112.67871pt;
+  height: 9.8999pt;
+  left: 320.47pt;
+  top: 77.58pt;
+}
+
+%melee-weapons-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.melee-weapons-line-1 {
+  @extend %melee-weapons-line;
+  top: 105.636pt;
+}
+
+.melee-weapons-line-2 {
+  @extend %melee-weapons-line;
+  top: 118.595pt;
+}
+
+.melee-weapons-line-3 {
+  @extend %melee-weapons-line;
+  top: 131.554pt;
+}
+
+.melee-weapons-line-4 {
+  @extend %melee-weapons-line;
+  top: 144.513pt;
+}
+
+.melee-weapons-line-5 {
+  @extend %melee-weapons-line;
+  top: 157.472pt;
+}
+
+.melee-weapons-line-6 {
+  @extend %melee-weapons-line;
+  top: 170.432pt;
+}
+
+.melee-weapons-line-7 {
+  @extend %melee-weapons-line;
+  top: 183.391pt;
+}
+
+.melee-weapons-accuracy {
+  position: absolute;
+  width: 11.13672pt;
+  height: 7.56006pt;
+  left: 495.516pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-ap {
+  position: absolute;
+  width: 8.10547pt;
+  height: 7.56006pt;
+  left: 545.349pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-attributes {
+  position: absolute;
+  width: 63.46875pt;
+  height: 7.56006pt;
+  left: 395.653pt;
+  top: 95.205pt;
+}
+
+.melee-weapons-name {
+  position: absolute;
+  width: 23.21875pt;
+  height: 7.56006pt;
+  left: 331.981pt;
+  top: 95.205pt;
+}

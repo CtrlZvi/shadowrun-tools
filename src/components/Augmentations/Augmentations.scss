@@ -1,0 +1,110 @@
+.augmentations-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 138.009pt;
+  left: 26.4375pt;
+  top: 327.6514pt;
+}
+
+.augmentations-tab {
+  position: absolute;
+  width: 136.03999pt;
+  height: 13.20001pt;
+  left: 160.648pt;
+  top: 327.651pt;
+}
+
+.augmentations-style {
+  position: absolute;
+  width: 138.23999pt;
+  height: 15.36pt;
+  left: #{-60.333 + 219.87998}pt;
+  top: #{297.251 + 29.32034}pt;
+}
+
+.augmentations-text {
+  position: absolute;
+  width: 106.19922pt;
+  height: 9.8999pt;
+  left: 186.687pt;
+  top: 329.731pt;
+}
+
+%augmentations-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 43.497pt;
+}
+
+.augmentations-line-1 {
+  @extend %augmentations-line;
+  top: 357.787pt;
+}
+
+.augmentations-line-2 {
+  @extend %augmentations-line;
+  top: 370.746pt;
+}
+
+.augmentations-line-3 {
+  @extend %augmentations-line;
+  top: 385.395pt;
+}
+
+.augmentations-line-4 {
+  @extend %augmentations-line;
+  top: 400.044pt;
+}
+
+.augmentations-line-5 {
+  @extend %augmentations-line;
+  top: 414.692pt;
+}
+
+.augmentations-line-6 {
+  @extend %augmentations-line;
+  top: 429.341pt;
+}
+
+.augmentations-line-7 {
+  @extend %augmentations-line;
+  top: 443.989pt;
+}
+
+.augmentations-line-8 {
+  @extend %augmentations-line;
+  top: 458.638pt;
+}
+
+.augmentations-name {
+  position: absolute;
+  width: 38.96191pt;
+  height: 7.56006pt;
+  left: 43.498pt;
+  top: 347.356pt;
+}
+
+.augmentations-rating {
+  position: absolute;
+  width: 17.94775pt;
+  height: 7.56006pt;
+  left: 125.118pt;
+  top: 347.356pt;
+}
+
+.augmentations-notes {
+  position: absolute;
+  width: 16.45703pt;
+  height: 7.56006pt;
+  left: 186.255pt;
+  top: 347.356pt;
+}
+
+.augmentations-essence {
+  position: absolute;
+  width: 23.31689pt;
+  height: 7.56006pt;
+  left: 243.222pt;
+  top: 347.356pt;
+}

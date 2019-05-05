@@ -1,0 +1,1661 @@
+{
+    "Human": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 9,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 5,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "E": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27000": {
+                "pages": [
+                    50,
+                    65,
+                    66
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 2,
+            "maximum": 7
+        }
+    },
+    "Elf": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27000": {
+                "pages": [
+                    50,
+                    65,
+                    66
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 3,
+            "maximum": 8
+        },
+        "edge": {
+            "base": 2,
+            "maximum": 7
+        }
+    },
+    "Dwarf": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Pumilionis",
+        "books": {
+            "27000": {
+                "pages": [
+                    50,
+                    65,
+                    66
+                ]
+            }
+        },
+        "body": {
+            "base": 3,
+            "maximum": 8
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 5
+        },
+        "strength": {
+            "base": 3,
+            "maximum": 8
+        },
+        "willpower": {
+            "base": 2,
+            "maximum": 7
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 3,
+            "maximum": 8
+        },
+        "edge": {
+            "base": 2,
+            "maximum": 7
+        }
+    },
+    "Ork": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Robustus",
+        "books": {
+            "27000": {
+                "pages": [
+                    50,
+                    65,
+                    66
+                ]
+            }
+        },
+        "body": {
+            "base": 4,
+            "maximum": 9
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 3,
+            "maximum": 8
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Troll": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Ingentis",
+        "books": {
+            "27000": {
+                "pages": [
+                    50,
+                    51,
+                    65,
+                    66
+                ]
+            }
+        },
+        "body": {
+            "base": 5,
+            "maximum": 10
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 5
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 5,
+            "maximum": 10
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 5
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 4
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Gnome": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 7
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 7
+            },
+            "C": {
+                "specialAttributePoints": 1,
+                "karmaCost": 7
+            }
+        },
+        "species": "Dwarf",
+        "books": {
+            "27004": {
+                "pages": [
+                    88,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 4
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 4
+        },
+        "willpower": {
+            "base": 2,
+            "maximum": 7
+        },
+        "logic": {
+            "base": 2,
+            "maximum": 7
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Hanuman": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 5
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 5
+            },
+            "C": {
+                "specialAttributePoints": 1,
+                "karmaCost": 5
+            }
+        },
+        "species": "Homo Sapiens Pumilionis",
+        "books": {
+            "27004": {
+                "pages": [
+                    88,
+                    89,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 2,
+            "maximum": 7
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Koborokuru": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Pumilionis",
+        "books": {
+            "27004": {
+                "pages": [
+                    90,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 2,
+            "maximum": 7
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 2,
+            "maximum": 7
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Menehune": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 2
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 2
+            },
+            "C": {
+                "specialAttributePoints": 1,
+                "karmaCost": 2
+            }
+        },
+        "species": "Homo Sapiens Pumilionis",
+        "books": {
+            "27004": {
+                "pages": [
+                    90,
+                    91,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 2,
+            "maximum": 7
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 5
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Dryad": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 2,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27004": {
+                "pages": [
+                    95,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 5
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 3,
+            "maximum": 8
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Nocturna": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27004": {
+                "pages": [
+                    95,
+                    96,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 5
+        },
+        "agility": {
+            "base": 3,
+            "maximum": 8
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 2,
+            "maximum": 7
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Wakyambi": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 12
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 12
+            },
+            "C": {
+                "specialAttributePoints": 3,
+                "karmaCost": 12
+            },
+            "D": {
+                "specialAttributePoints": 0,
+                "karmaCost": 12
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27004": {
+                "pages": [
+                    96,
+                    97,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 2,
+            "maximum": 7
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Xapiri Thëpë": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27004": {
+                "pages": [
+                    97,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 2,
+            "maximum": 7
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Nartaki": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "B": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "C": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "D": {
+                "specialAttributePoints": 2,
+                "karmaCost": 0
+            },
+            "E": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            }
+        },
+        "species": "Homo Sapiens Nobilis",
+        "books": {
+            "27004": {
+                "pages": [
+                    97,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 6
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 2,
+            "maximum": 7
+        }
+    },
+    "Hobgoblin": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 5
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 5
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 5
+            }
+        },
+        "species": "Homo Sapiens Robustus",
+        "books": {
+            "27004": {
+                "pages": [
+                    91,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 3,
+            "maximum": 8
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Ogre": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 8
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 8
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 8
+            }
+        },
+        "species": "Homo Sapiens Robustus",
+        "books": {
+            "27004": {
+                "pages": [
+                    91,
+                    92,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 4,
+            "maximum": 9
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 5
+        },
+        "strength": {
+            "base": 3,
+            "maximum": 8
+        },
+        "willpower": {
+            "base": 2,
+            "maximum": 7
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 4
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Oni": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 4
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 4
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 4
+            }
+        },
+        "species": "Homo Sapiens Robustus",
+        "books": {
+            "27004": {
+                "pages": [
+                    92,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 3,
+            "maximum": 8
+        },
+        "agility": {
+            "base": 2,
+            "maximum": 7
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 2,
+            "maximum": 7
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Satyr": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 7,
+                "karmaCost": 10
+            },
+            "B": {
+                "specialAttributePoints": 4,
+                "karmaCost": 10
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 10
+            }
+        },
+        "species": "Homo Sapiens Robustus",
+        "books": {
+            "27004": {
+                "pages": [
+                    92,
+                    104,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 2,
+            "maximum": 7
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 2,
+            "maximum": 7
+        },
+        "strength": {
+            "base": 2,
+            "maximum": 7
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Cyclops": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "B": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            }
+        },
+        "species": "Homo Sapiens Ingentis",
+        "books": {
+            "27004": {
+                "pages": [
+                    93,
+                    104,
+                    106
+                ]
+            }
+        },
+        "body": {
+            "base": 5,
+            "maximum": 10
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 5
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 6,
+            "maximum": 11
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 4
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 5
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 4
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Fomorian": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 12
+            },
+            "B": {
+                "specialAttributePoints": 0,
+                "karmaCost": 12
+            }
+        },
+        "species": "Homo Sapiens Ingentis",
+        "books": {
+            "27004": {
+                "pages": [
+                    93,
+                    94,
+                    104,
+                    106
+                ]
+            }
+        },
+        "body": {
+            "base": 4,
+            "maximum": 9
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 5
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 5,
+            "maximum": 10
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 5
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 4
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 4
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Giant": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "B": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            }
+        },
+        "species": "Homo Sapiens Ingentis",
+        "books": {
+            "27004": {
+                "pages": [
+                    94,
+                    104,
+                    106
+                ]
+            }
+        },
+        "body": {
+            "base": 5,
+            "maximum": 10
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 5
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 5
+        },
+        "strength": {
+            "base": 5,
+            "maximum": 10
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 5
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Minotaur": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "B": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            }
+        },
+        "species": "Homo Sapiens Ingentis",
+        "books": {
+            "27004": {
+                "pages": [
+                    94,
+                    95,
+                    104,
+                    106
+                ]
+            }
+        },
+        "body": {
+            "base": 6,
+            "maximum": 11
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 5
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 5,
+            "maximum": 10
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 5
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 4
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        }
+    },
+    "Centaur": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 6,
+                "karmaCost": 25
+            },
+            "B": {
+                "specialAttributePoints": 3,
+                "karmaCost": 25
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 25
+            }
+        },
+        "species": "Equus Sagittarius",
+        "books": {
+            "27004": {
+                "pages": [
+                    98,
+                    105,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 3,
+            "maximum": 8
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 3,
+            "maximum": 8
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 5
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 5
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 5
+        },
+        "magic": 1
+    },
+    "Naga": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 4,
+                "karmaCost": 25
+            },
+            "B": {
+                "specialAttributePoints": 2,
+                "karmaCost": 25
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 25
+            }
+        },
+        "species": "Custos Serpens",
+        "books": {
+            "27004": {
+                "pages": [
+                    98,
+                    99,
+                    105,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 3,
+            "maximum": 6
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 4
+        },
+        "reaction": {
+            "base": 2,
+            "maximum": 7
+        },
+        "strength": {
+            "base": 4,
+            "maximum": 9
+        },
+        "willpower": {
+            "base": 2,
+            "maximum": 7
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 2,
+            "maximum": 7
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 5
+        },
+        "magic": 1
+    },
+    "Pixie": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 6,
+                "karmaCost": 15
+            },
+            "B": {
+                "specialAttributePoints": 3,
+                "karmaCost": 15
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 15
+            }
+        },
+        "species": "",
+        "books": {
+            "27004": {
+                "pages": [
+                    99,
+                    105,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 1,
+            "maximum": 2
+        },
+        "agility": {
+            "base": 3,
+            "maximum": 8
+        },
+        "reaction": {
+            "base": 3,
+            "maximum": 8
+        },
+        "strength": {
+            "base": 1,
+            "maximum": 2
+        },
+        "willpower": {
+            "base": 3,
+            "maximum": 8
+        },
+        "logic": {
+            "base": 2,
+            "maximum": 7
+        },
+        "intuition": {
+            "base": 2,
+            "maximum": 7
+        },
+        "charisma": {
+            "base": 3,
+            "maximum": 8
+        },
+        "edge": {
+            "base": 2,
+            "maximum": 7
+        },
+        "magic": 1
+    },
+    "Sasquatch": {
+        "priorities": {
+            "A": {
+                "specialAttributePoints": 5,
+                "karmaCost": 20
+            },
+            "B": {
+                "specialAttributePoints": 2,
+                "karmaCost": 20
+            },
+            "C": {
+                "specialAttributePoints": 0,
+                "karmaCost": 20
+            }
+        },
+        "species": "Pesvastus Pilosis",
+        "books": {
+            "27004": {
+                "pages": [
+                    99,
+                    100,
+                    105,
+                    106,
+                    107
+                ]
+            }
+        },
+        "body": {
+            "base": 6,
+            "maximum": 11
+        },
+        "agility": {
+            "base": 1,
+            "maximum": 6
+        },
+        "reaction": {
+            "base": 1,
+            "maximum": 6
+        },
+        "strength": {
+            "base": 5,
+            "maximum": 10
+        },
+        "willpower": {
+            "base": 1,
+            "maximum": 6
+        },
+        "logic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "intuition": {
+            "base": 1,
+            "maximum": 6
+        },
+        "charisma": {
+            "base": 1,
+            "maximum": 6
+        },
+        "edge": {
+            "base": 1,
+            "maximum": 6
+        },
+        "magic": 1
+    }
+}

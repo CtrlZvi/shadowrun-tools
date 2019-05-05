@@ -1,9 +1,16 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import * as serviceWorker from './serviceWorker';
-import CharacterSheet from './CharacterSheet';
+import { configure } from 'mobx';
+import CharacterCreator from './CharacterCreator';
 
-ReactDOM.render(<CharacterSheet />, document.getElementById('root'));
+configure({
+    enforceActions: 'always',
+    computedRequiresReaction: true,
+    isolateGlobalState: true,
+});
+
+ReactDOM.render(<CharacterCreator />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

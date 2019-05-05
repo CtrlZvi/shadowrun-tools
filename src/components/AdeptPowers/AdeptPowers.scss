@@ -1,0 +1,123 @@
+.adept-powers-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 119.04pt;
+  left: 314.9375pt;
+  top: 599.2352pt;
+}
+
+.adept-powers-tab {
+  position: absolute;
+  width: 256.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 599.235pt;
+}
+
+.adept-powers-style {
+  position: absolute;
+  width: 258.24001pt;
+  height: 15.36pt;
+  left: #{159.87951 + 154.333}pt;
+  top: #{29.32021 + 568.835}pt;
+}
+
+.adept-powers-text {
+  position: absolute;
+  width: 99.44043pt;
+  height: 9.89941pt;
+  left: 320.47pt;
+  top: 601.317pt;
+}
+
+.adept-powers-or {
+  position: absolute;
+  width: 21.01367pt;
+  height: 7.7002pt;
+  left: 419.649pt;
+  top: 603.115pt;
+}
+
+.adept-powers-other-abilities {
+  position: absolute;
+  width: 107.19824pt;
+  height: 9.89941pt;
+  left: 440.369pt;
+  top: 601.315pt;
+}
+
+%adept-powers-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.adept-powers-line-1 {
+  @extend %adept-powers-line;
+  top: 629.371pt;
+}
+
+.adept-powers-line-2 {
+  @extend %adept-powers-line;
+  top: 642.33pt;
+}
+
+.adept-powers-line-3 {
+  @extend %adept-powers-line;
+  top: 655.289pt;
+}
+
+.adept-powers-line-4 {
+  @extend %adept-powers-line;
+  top: 668.248pt;
+}
+
+.adept-powers-line-5 {
+  @extend %adept-powers-line;
+  top: 681.208pt;
+}
+
+.adept-powers-line-6 {
+  @extend %adept-powers-line;
+  top: 694.167pt;
+}
+
+.adept-powers-line-7 {
+  @extend %adept-powers-line;
+  top: 707.126pt;
+}
+
+.adept-powers-line-8 {
+  @extend %adept-powers-line;
+  top: 720.085pt;
+}
+
+.adept-powers-line-9 {
+  @extend %adept-powers-line;
+  top: 733.044pt;
+}
+
+.adept-powers-name {
+  position: absolute;
+  width: 16.52637pt;
+  height: 7.55957pt;
+  left: 331.995pt;
+  top: 618.938pt;
+}
+
+.adept-powers-ratings {
+  position: absolute;
+  width: 17.94824pt;
+  height: 7.55957pt;
+  left: 454.552pt;
+  top: 618.938pt;
+}
+
+.adept-powers-notes {
+  position: absolute;
+  width: 16.4502pt;
+  height: 7.55957pt;
+  left: 542.766pt;
+  top: 618.938pt;
+}

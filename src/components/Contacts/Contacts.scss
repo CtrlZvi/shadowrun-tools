@@ -1,0 +1,92 @@
+.contacts-text {
+  position: absolute;
+  width: 64.0791pt;
+  height: 9.89941pt;
+  left: 320.72pt;
+  top: 625.494pt;
+}
+
+.contacts-tab {
+  position: absolute;
+  width: 96.03998pt;
+  height: 13.20001pt;
+  left: 315.562pt;
+  top: 623.414pt;
+}
+
+.contacts-style {
+  position: absolute;
+  width: 98.4pt;
+  height: 15.36pt;
+  left: #{239.80003 + 74.582}pt;
+  top: #{29.31992 + 593.014}pt;
+}
+
+.contacts-vertical {
+  position: absolute;
+  width: 0.75pt;
+  height: 101.326pt;
+  left: 314.5625pt;
+  top: 622.98pt;
+}
+
+.contacts-corner {
+  position: absolute;
+  width: 270.5pt;
+  height: 87.98pt;
+  left: 315.3125pt;
+  top: 636.3259pt;
+}
+
+%contacts-line {
+  position: absolute;
+  width: 249.89502pt;
+  height: 0.75pt;
+  left: 321.597pt;
+}
+
+.contacts-line-1 {
+  @extend %contacts-line;
+  top: 653.55pt;
+}
+
+.contacts-line-2 {
+  @extend %contacts-line;
+  top: 666.589pt;
+}
+
+.contacts-line-3 {
+  @extend %contacts-line;
+  top: 679.468pt;
+}
+
+.contacts-line-4 {
+  @extend %contacts-line;
+  top: 692.427pt;
+}
+
+.contacts-line-5 {
+  @extend %contacts-line;
+  top: 705.386pt;
+}
+
+.contacts-line-6 {
+  @extend %contacts-line;
+  top: 718.346pt;
+}
+
+.contacts-name {
+  position: absolute;
+  width: 16.52637pt;
+  height: 7.55957pt;
+  left: 321.598pt;
+  top: 643.119pt;
+}
+
+.contacts-attributes {
+  position: absolute;
+  width: 125.35547pt;
+  height: 7.55957pt;
+  left: 426.989pt;
+  top: 643.119pt;
+}

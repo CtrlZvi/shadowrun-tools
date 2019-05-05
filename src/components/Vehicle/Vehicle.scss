@@ -1,0 +1,140 @@
+.vehicle-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 102.70602pt;
+  left: 314.9375pt;
+  top: 327.6514pt;
+}
+
+.vehicle-tab {
+  position: absolute;
+  width: 86.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 327.651pt;
+}
+
+.vehicle-style {
+  position: absolute;
+  width: 88.32pt;
+  height: 15.36pt;
+  left: #{244.84003 + 69.332}pt;
+  top: #{29.32034 + 297.251}pt;
+}
+
+.vehicle-text {
+  position: absolute;
+  width: 52.91895pt;
+  height: 9.8999pt;
+  left: 320.47pt;
+  top: 329.731pt;
+}
+
+%vehicle-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.vehicle-line-1 {
+  @extend %vehicle-line;
+  top: 357.787pt;
+}
+
+.vehicle-line-2 {
+  @extend %vehicle-line;
+  top: 370.746pt;
+}
+
+.vehicle-line-3 {
+  @extend %vehicle-line;
+  top: 383.706pt;
+}
+
+.vehicle-line-4 {
+  @extend %vehicle-line;
+  top: 396.665pt;
+}
+
+.vehicle-line-5 {
+  @extend %vehicle-line;
+  top: 409.624pt;
+}
+
+.vehicle-line-6 {
+  @extend %vehicle-line;
+  top: 422.583pt;
+}
+
+.vehicle-name {
+  position: absolute;
+  width: 21.12598pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 349.442pt;
+}
+
+.vehicle-handling {
+  position: absolute;
+  width: 25.2002pt;
+  height: 7.56006pt;
+  left: 439.86pt;
+  top: 349.442pt;
+}
+
+.vehicle-acceleration {
+  position: absolute;
+  width: 36.21094pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 362.777pt;
+}
+
+.vehicle-speed {
+  position: absolute;
+  width: 17.61914pt;
+  height: 7.56006pt;
+  left: 447.428pt;
+  top: 362.777pt;
+}
+
+.vehicle-pilot {
+  position: absolute;
+  width: 12.96387pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 375.363pt;
+}
+
+.vehicle-body {
+  position: absolute;
+  width: 14.18164pt;
+  height: 7.56006pt;
+  left: 450.864pt;
+  top: 375.363pt;
+}
+
+.vehicle-sensor {
+  position: absolute;
+  width: 19.49512pt;
+  height: 7.55957pt;
+  left: 445.559pt;
+  top: 388.32pt;
+}
+
+.vehicle-armor {
+  position: absolute;
+  width: 17.22656pt;
+  height: 7.55957pt;
+  left: 331.997pt;
+  top: 388.32pt;
+}
+
+.vehicle-notes {
+  position: absolute;
+  width: 16.45703pt;
+  height: 7.55957pt;
+  left: 331.997pt;
+  top: 401.655pt;
+}

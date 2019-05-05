@@ -1,0 +1,100 @@
+.ids-lifestyles-currency-text {
+  position: absolute;
+  width: 194.38037pt;
+  height: 9.89941pt;
+  left: 97.895pt;
+  top: 625.061pt;
+}
+
+.ids-lifestyles-currency-tab {
+  position: absolute;
+  width: 221.03999pt;
+  height: 13.20001pt;
+  left: 75.398pt;
+  top: 622.984pt;
+}
+
+.ids-lifestyles-currency-style {
+  position: absolute;
+  width: 223.43999pt;
+  height: 15.36pt;
+  left: #{348.27952 - 274.112}pt;
+  top: #{10.35992 + 611.464}pt;
+}
+
+.ids-lifestyles-currency-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 102.896pt;
+  left: 26.1875pt;
+  top: 622.98pt;
+}
+
+%ids-lifestyles-currency-line {
+  position: absolute;
+  width: 242.97301pt;
+  height: 0.75pt;
+  left: 43.247pt;
+}
+
+.ids-lifestyles-currency-line-1 {
+  @extend %ids-lifestyles-currency-line;
+  top: 656.813pt;
+}
+
+.ids-lifestyles-currency-line-2 {
+  @extend %ids-lifestyles-currency-line;
+  top: 669.772pt;
+}
+
+.ids-lifestyles-currency-line-3 {
+  @extend %ids-lifestyles-currency-line;
+  top: 682.731pt;
+}
+
+.ids-lifestyles-currency-line-4 {
+  @extend %ids-lifestyles-currency-line;
+  top: 695.69pt;
+}
+
+.ids-lifestyles-currency-line-5 {
+  @extend %ids-lifestyles-currency-line;
+  top: 708.65pt;
+}
+
+.ids-lifestyles-currency-line-6 {
+  @extend %ids-lifestyles-currency-line;
+  top: 721.931pt;
+}
+
+.primary-lifestyle {
+  position: absolute;
+  width: 46.80811pt;
+  height: 7.55957pt;
+  left: 43.253pt;
+  top: 648.94pt;
+}
+
+.nuyen {
+  position: absolute;
+  width: 18.0249pt;
+  height: 7.55957pt;
+  left: 43.248pt;
+  top: 661.855pt;
+}
+
+.licenses {
+  position: absolute;
+  width: 24.80762pt;
+  height: 7.55957pt;
+  left: 176.569pt;
+  top: 661.855pt;
+}
+
+.fake-ids-related-lifestyles-funds-licenses {
+  position: absolute;
+  width: 129.14795pt;
+  height: 7.55957pt;
+  left: 43.248pt;
+  top: 674.099pt;
+}

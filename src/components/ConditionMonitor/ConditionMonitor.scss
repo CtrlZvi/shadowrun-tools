@@ -1,0 +1,740 @@
+.condition-monitor-text {
+  position: absolute;
+  width: 133.01855pt;
+  height: 9.8999pt;
+  left: 319.305pt;
+  top: 195.085pt;
+}
+
+.condition-monitor-tab {
+  position: absolute;
+  width: 158.03998pt;
+  height: 13.20001pt;
+  left: 315.188pt;
+  top: 193.016pt;
+}
+
+.condition-monitor-style {
+  position: absolute;
+  width: 160.32pt;
+  height: 15.36pt;
+  left: #{6.27951 + 307.738}pt;
+  top: #{10.35962 + 181.496}pt;
+}
+
+.condition-monitor-box {
+  position: absolute;
+  width: 271pt;
+  height: 271.04401pt;
+  left: 314.4375pt;
+  top: 193.01563pt;
+}
+
+%damage-box-outer-inside-horizontal {
+  position: absolute;
+  width: 35.625pt;
+  height: 1pt;
+}
+
+%damage-box-inner-inside-horizontal {
+  position: absolute;
+  width: 36pt;
+  height: 1pt;
+}
+
+%damage-box-outer-outside-horizontal {
+  position: absolute;
+  width: 36.375pt;
+  height: 0.75pt;
+}
+
+%damage-box-inner-outside-horizontal {
+  position: absolute;
+  width: 36pt;
+  height: 0.75pt;
+}
+
+.physical-damage-box-top-1 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 327.973pt;
+  top: 227.635pt;
+}
+
+.physical-damage-box-top-2 {
+  @extend %damage-box-inner-outside-horizontal;
+  left: 364.348pt;
+  top: 227.635pt;
+}
+
+.physical-damage-box-top-3 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 400.348pt;
+  top: 227.635pt;
+}
+
+.physical-damage-box-bottom-1 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 328.723pt;
+  top: 263.635pt;
+}
+
+.physical-damage-box-bottom-2 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 364.348pt;
+  top: 263.635pt;
+}
+
+.physical-damage-box-bottom-3 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 400.348pt;
+  top: 263.635pt;
+}
+
+.physical-damage-box-bottom-4 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 328.723pt;
+  top: 299.635pt;
+}
+
+.physical-damage-box-bottom-5 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 364.348pt;
+  top: 299.635pt;
+}
+
+.physical-damage-box-bottom-6 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 400.348pt;
+  top: 299.635pt;
+}
+
+.physical-damage-box-bottom-7 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 328.723pt;
+  top: 335.635pt;
+}
+
+.physical-damage-box-bottom-8 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 364.348pt;
+  top: 335.635pt;
+}
+
+.physical-damage-box-bottom-9 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 400.348pt;
+  top: 335.635pt;
+}
+
+.physical-damage-box-bottom-10 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 328.723pt;
+  top: 371.635pt;
+}
+
+.physical-damage-box-bottom-11 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 364.348pt;
+  top: 371.635pt;
+}
+
+.physical-damage-box-bottom-12 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 400.348pt;
+  top: 371.635pt;
+}
+
+.physical-damage-box-bottom-13 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 328.723pt;
+  top: 407.635pt;
+}
+
+.physical-damage-box-bottom-14 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 364.348pt;
+  top: 407.635pt;
+}
+
+.physical-damage-box-bottom-15 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 400.348pt;
+  top: 407.635pt;
+}
+
+.physical-damage-box-bottom-16 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 327.973pt;
+  top: 443.635pt;
+}
+
+.physical-damage-box-bottom-17 {
+  @extend %damage-box-inner-outside-horizontal;
+  left: 364.348pt;
+  top: 443.635pt;
+}
+
+.physical-damage-box-bottom-18 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 400.348pt;
+  top: 443.635pt;
+}
+
+.stun-damage-box-top-1 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 458.293pt;
+  top: 227.635pt;
+}
+
+.stun-damage-box-top-2 {
+  @extend %damage-box-inner-outside-horizontal;
+  left: 494.668pt;
+  top: 227.635pt;
+}
+
+.stun-damage-box-top-3 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 530.667pt;
+  top: 227.635pt;
+}
+
+.stun-damage-box-bottom-1 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 459.043pt;
+  top: 263.635pt;
+}
+
+.stun-damage-box-bottom-2 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 494.668pt;
+  top: 263.635pt;
+}
+
+.stun-damage-box-bottom-3 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 530.667pt;
+  top: 263.635pt;
+}
+
+.stun-damage-box-bottom-4 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 459.043pt;
+  top: 299.635pt;
+}
+
+.stun-damage-box-bottom-5 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 494.668pt;
+  top: 299.635pt;
+}
+
+.stun-damage-box-bottom-6 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 530.667pt;
+  top: 299.635pt;
+}
+
+.stun-damage-box-bottom-7 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 459.043pt;
+  top: 335.635pt;
+}
+
+.stun-damage-box-bottom-8 {
+  @extend %damage-box-inner-inside-horizontal;
+  left: 494.668pt;
+  top: 335.635pt;
+}
+
+.stun-damage-box-bottom-9 {
+  @extend %damage-box-outer-inside-horizontal;
+  left: 530.667pt;
+  top: 335.635pt;
+}
+
+.stun-damage-box-bottom-10 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 458.293pt;
+  top: 371.635pt;
+}
+
+.stun-damage-box-bottom-11 {
+  @extend %damage-box-inner-outside-horizontal;
+  left: 494.668pt;
+  top: 371.635pt;
+}
+
+.stun-damage-box-bottom-12 {
+  @extend %damage-box-outer-outside-horizontal;
+  left: 530.667pt;
+  top: 371.635pt;
+}
+
+%damage-box-outer-inside-vertical {
+  position: absolute;
+  width: 1pt;
+  height: 35.125pt;
+}
+
+%damage-box-inner-inside-vertical {
+  position: absolute;
+  width: 1t;
+  height: 35pt;
+}
+
+%damage-box-outer-outside-vertical {
+  position: absolute;
+  width: 0.75pt;
+  height: 35.625pt;
+}
+
+%damage-box-inner-outside-vertical {
+  position: absolute;
+  width: 0.75pt;
+  height: 36pt;
+}
+
+.physical-damage-box-left-1 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 328.348pt;
+  top: 228.01pt;
+}
+
+.physical-damage-box-left-2 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 364.348pt;
+  top: 228.01pt;
+}
+
+.physical-damage-box-left-3 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 400.348pt;
+  top: 228.01pt;
+}
+
+.physical-damage-box-right-3 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 436.348pt;
+  top: 228.01pt;
+}
+
+.physical-damage-box-left-4 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 328.348pt;
+  top: 263.635pt;
+}
+
+.physical-damage-box-left-5 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 364.348pt;
+  top: 264.135pt;
+}
+
+.physical-damage-box-left-6 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 400.348pt;
+  top: 264.135pt;
+}
+
+.physical-damage-box-right-6 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 436.348pt;
+  top: 263.635pt;
+}
+
+.physical-damage-box-left-7 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 328.348pt;
+  top: 299.635pt;
+}
+
+.physical-damage-box-left-8 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 364.348pt;
+  top: 300.135pt;
+}
+
+.physical-damage-box-left-9 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 400.348pt;
+  top: 300.135pt;
+}
+
+.physical-damage-box-right-9 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 436.348pt;
+  top: 299.635pt;
+}
+
+.physical-damage-box-left-10 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 328.348pt;
+  top: 335.635pt;
+}
+
+.physical-damage-box-left-11 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 364.348pt;
+  top: 336.135pt;
+}
+
+.physical-damage-box-left-12 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 400.348pt;
+  top: 336.135pt;
+}
+
+.physical-damage-box-right-12 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 436.348pt;
+  top: 335.635pt;
+}
+
+.physical-damage-box-left-13 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 328.348pt;
+  top: 371.635pt;
+}
+
+.physical-damage-box-left-14 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 364.348pt;
+  top: 372.135pt;
+}
+
+.physical-damage-box-left-15 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 400.348pt;
+  top: 372.135pt;
+}
+
+.physical-damage-box-right-15 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 436.348pt;
+  top: 371.635pt;
+}
+
+.physical-damage-box-left-16 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 328.348pt;
+  top: 407.635pt;
+}
+
+.physical-damage-box-left-17 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 364.348pt;
+  top: 408.135pt;
+}
+
+.physical-damage-box-left-18 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 400.348pt;
+  top: 408.135pt;
+}
+
+.physical-damage-box-right-18 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 436.348pt;
+  top: 407.635pt;
+}
+
+.stun-damage-box-left-1 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 458.668pt;
+  top: 228.01pt;
+}
+
+.stun-damage-box-left-2 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 494.668pt;
+  top: 228.01pt;
+}
+
+.stun-damage-box-left-3 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 530.667pt;
+  top: 228.01pt;
+}
+
+.stun-damage-box-right-3 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 566.667pt;
+  top: 228.01pt;
+}
+
+.stun-damage-box-left-4 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 458.668pt;
+  top: 263.635pt;
+}
+
+.stun-damage-box-left-5 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 494.668pt;
+  top: 264.135pt;
+}
+
+.stun-damage-box-left-6 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 530.667pt;
+  top: 264.135pt;
+}
+
+.stun-damage-box-right-6 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 566.667pt;
+  top: 263.635pt;
+}
+
+.stun-damage-box-left-7 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 458.668pt;
+  top: 299.635pt;
+}
+
+.stun-damage-box-left-8 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 494.668pt;
+  top: 300.135pt;
+}
+
+.stun-damage-box-left-9 {
+  @extend %damage-box-inner-inside-vertical;
+  left: 530.667pt;
+  top: 300.135pt;
+}
+
+.stun-damage-box-right-9 {
+  @extend %damage-box-inner-outside-vertical;
+  left: 566.667pt;
+  top: 299.635pt;
+}
+
+.stun-damage-box-left-10 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 458.668pt;
+  top: 335.635pt;
+}
+
+.stun-damage-box-left-11 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 494.668pt;
+  top: 336.135pt;
+}
+
+.stun-damage-box-left-12 {
+  @extend %damage-box-outer-inside-vertical;
+  left: 530.667pt;
+  top: 336.135pt;
+}
+
+.stun-damage-box-right-12 {
+  @extend %damage-box-outer-outside-vertical;
+  left: 566.667pt;
+  top: 335.635pt;
+}
+
+%damage-modifier {
+  font-size: 12pt;
+  color: #59595b;
+  font-family: UniversLTStd, Univers LT Std;
+  position: absolute;
+  width: 10.66797pt;
+  height: 12.95996pt;
+}
+
+.physical-damage-modifier-1 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 249.675pt;
+}
+
+.physical-damage-modifier-2 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 285.675pt;
+}
+
+.physical-damage-modifier-3 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 321.675pt;
+}
+
+.physical-damage-modifier-4 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 357.675pt;
+}
+
+.physical-damage-modifier-5 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 393.675pt;
+}
+
+.physical-damage-modifier-6 {
+  @extend %damage-modifier;
+  left: 421.68pt;
+  top: 429.675pt;
+}
+
+.stun-damage-modifier-1 {
+  @extend %damage-modifier;
+  left: 552pt;
+  top: 249.675pt;
+}
+
+.stun-damage-modifier-2 {
+  @extend %damage-modifier;
+  left: 552pt;
+  top: 285.675pt;
+}
+
+.stun-damage-modifier-3 {
+  @extend %damage-modifier;
+  left: 552pt;
+  top: 321.675pt;
+}
+
+.stun-damage-modifier-4 {
+  @extend %damage-modifier;
+  left: 552pt;
+  top: 357.675pt;
+}
+
+.physical-damage-track {
+  position: absolute;
+  width: 85.82324pt;
+  height: 9.72021pt;
+  left: 339.436pt;
+  top: 211.546pt;
+}
+
+.physical-damage-tracker-indicator {
+  position: absolute;
+  width: 78.99095pt;
+  height: 180.60001pt;
+  left: 335.965pt;
+  top: 246.26pt;
+}
+
+.physical-damage-tracker-indicator-details {
+  position: absolute;
+  width: 70.20001pt;
+  height: 184.15259pt;
+  left: 344.33249pt;
+  top: 244.25983pt;
+}
+
+.stun-damage-track {
+  position: absolute;
+  width: 70.83887pt;
+  height: 9.72021pt;
+  left: 477.253pt;
+  top: 211.546pt;
+}
+
+.stun-damage-tracker-indicator {
+  position: absolute;
+  width: 78.19316pt;
+  height: 109.043pt;
+  left: 474.186pt;
+  top: 246.26pt;
+}
+
+.stun-damage-tracker-indicator-details {
+  position: absolute;
+  width: 76.19998pt;
+  height: 112.5939pt;
+  left: 475.74631pt;
+  top: 244.25983pt;
+}
+
+.condition-counts {
+  position: absolute;
+  width: 235.7168pt;
+  height: 84.87012pt;
+  left: 329.8252pt;
+  top: 374.35352pt;
+}
+
+.overflow {
+  position: absolute;
+  width: 32.99414pt;
+  height: 9.71973pt;
+  left: 469.669pt;
+  top: 397.269pt;
+}
+
+.overflow-line {
+  position: absolute;
+  width: 60.01501pt;
+  height: 0.75pt;
+  left: 507.027pt;
+  top: 404.63pt;
+}
+
+.overflow-instructions-1 {
+  position: absolute;
+  width: 99.66406pt;
+  height: 7.55957pt;
+  left: 464.676pt;
+  top: 410.13pt;
+}
+
+.overflow-instructions-2 {
+  position: absolute;
+  width: 91.30664pt;
+  height: 7.55957pt;
+  left: 468.833pt;
+  top: 418.131pt;
+}
+
+.overflow-instructions-3 {
+  position: absolute;
+  width: 89.40918pt;
+  height: 7.55957pt;
+  left: 469.82pt;
+  top: 426.132pt;
+}
+
+.overflow-instructions-4 {
+  position: absolute;
+  width: 102.09277pt;
+  height: 7.55957pt;
+  left: 463.472pt;
+  top: 434.133pt;
+}
+
+.overflow-instructions-5 {
+  position: absolute;
+  width: 93.97363pt;
+  height: 7.55957pt;
+  left: 467.518pt;
+  top: 442.134pt;
+}
+
+.overflow-instructions-6 {
+  position: absolute;
+  width: 11.46582pt;
+  height: 7.55957pt;
+  left: 474.258pt;
+  top: 450.136pt;
+}
+
+.overflow-instructions-7 {
+  position: absolute;
+  width: 47.75586pt;
+  height: 7.69922pt;
+  left: 485.641pt;
+  top: 450.136pt;
+}
+
+.overflow-instructions-8 {
+  position: absolute;
+  width: 20.08203pt;
+  height: 7.55957pt;
+  left: 533.051pt;
+  top: 450.136pt;
+}

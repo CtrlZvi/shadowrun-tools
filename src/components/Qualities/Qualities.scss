@@ -1,0 +1,133 @@
+.qualities-text {
+  position: absolute;
+  width: 67.13965pt;
+  height: 9.89941pt;
+  left: 319.305pt;
+  top: 476.461pt;
+}
+
+.qualities-tab {
+  position: absolute;
+  width: 93.03998pt;
+  height: 13.20001pt;
+  left: 315.188pt;
+  top: 474.393pt;
+}
+
+.qualities-style {
+  position: absolute;
+  width: 95.28pt;
+  height: 15.36pt;
+  left: #{6.27951 + 307.738}pt;
+  top: #{10.36029 + 462.873}pt;
+}
+
+.qualities-box {
+  position: absolute;
+  width: 271pt;
+  height: 135.33109pt;
+  left: 314.4375pt;
+  top: 474.39331pt;
+}
+
+%qualities-line {
+  position: absolute;
+  width: 249.89502pt;
+  height: 0.75pt;
+  left: 321.597pt;
+}
+
+.qualities-line-1 {
+  @extend %qualities-line;
+  top: 503.327pt;
+}
+
+.qualities-line-2 {
+  @extend %qualities-line;
+  top: 513.336pt;
+}
+
+.qualities-line-3 {
+  @extend %qualities-line;
+  top: 524.004pt;
+}
+
+.qualities-line-4 {
+  @extend %qualities-line;
+  top: 534.673pt;
+}
+
+.qualities-line-5 {
+  @extend %qualities-line;
+  top: 545.341pt;
+}
+
+.qualities-line-6 {
+  @extend %qualities-line;
+  top: 556.009pt;
+}
+
+.qualities-line-7 {
+  @extend %qualities-line;
+  top: 566.677pt;
+}
+
+.qualities-line-8 {
+  @extend %qualities-line;
+  top: 577.345pt;
+}
+
+.qualities-line-9 {
+  @extend %qualities-line;
+  top: 588.013pt;
+}
+
+.qualities-line-10 {
+  @extend %qualities-line;
+  top: 598.681pt;
+}
+
+.qualities-line-11 {
+  @extend %qualities-line;
+  top: 609.349pt;
+}
+
+.qualities-quality {
+  position: absolute;
+  width: 16.64355pt;
+  height: 6.48047pt;
+  left: 321.598pt;
+  top: 495.535pt;
+}
+
+.qualities-notes {
+  position: absolute;
+  width: 13.87207pt;
+  height: 6.48047pt;
+  left: 461.733pt;
+  top: 495.535pt;
+}
+
+.qualities-t {
+  position: absolute;
+  width: 3pt;
+  height: 6.48047pt;
+  left: 556.84pt;
+  top: 495.535pt;
+}
+
+.qualities-ype {
+  position: absolute;
+  width: 8.43555pt;
+  height: 6.48047pt;
+  left: 559.18pt;
+  top: 495.535pt;
+}
+
+.positive-negative {
+  position: absolute;
+  width: 8.44141pt;
+  height: 102.2168pt;
+  left: 558.22266pt;
+  top: 506.52344pt;
+}

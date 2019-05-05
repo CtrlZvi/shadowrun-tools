@@ -1,0 +1,89 @@
+.ranged-weapons-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 119.04004pt;
+  left: 26.4375pt;
+  top: 75.50012pt;
+}
+
+.ranged-weapons-tab {
+  position: absolute;
+  width: 146.03999pt;
+  height: 13.20001pt;
+  left: 150.648pt;
+  top: 75.5pt;
+}
+
+.ranged-weapons-style {
+  position: absolute;
+  width: 148.31999pt;
+  height: 15.36pt;
+  left: #{423.4005 - 273.863}pt;
+  top: #{10.35999 + 63.98}pt;
+}
+
+.ranged-weapons-text {
+  position: absolute;
+  width: 119.33887pt;
+  height: 9.8999pt;
+  left: 173.547pt;
+  top: 77.58pt;
+}
+
+%ranged-weapons-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 43.497pt;
+}
+
+.ranged-weapons-line-1 {
+  @extend %ranged-weapons-line;
+  top: 105.636pt;
+}
+
+.ranged-weapons-line-2 {
+  @extend %ranged-weapons-line;
+  top: 118.595pt;
+}
+
+.ranged-weapons-line-3 {
+  @extend %ranged-weapons-line;
+  top: 131.554pt;
+}
+
+.ranged-weapons-line-4 {
+  @extend %ranged-weapons-line;
+  top: 144.513pt;
+}
+
+.ranged-weapons-line-5 {
+  @extend %ranged-weapons-line;
+  top: 157.472pt;
+}
+
+.ranged-weapons-line-6 {
+  @extend %ranged-weapons-line;
+  top: 170.432pt;
+}
+
+.ranged-weapons-line-7 {
+  @extend %ranged-weapons-line;
+  top: 183.391pt;
+}
+
+.ranged-weapons-name {
+  position: absolute;
+  width: 23.23975pt;
+  height: 7.56006pt;
+  left: 43.491pt;
+  top: 95.205pt;
+}
+
+.ranged-weapons-attributes {
+  position: absolute;
+  width: 172.40234pt;
+  height: 7.56006pt;
+  left: 105.791pt;
+  top: 95.205pt;
+}

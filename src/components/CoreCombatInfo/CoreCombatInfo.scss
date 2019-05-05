@@ -1,0 +1,93 @@
+.core-combat-info-text {
+  position: absolute;
+  width: 125.81934pt;
+  height: 9.8999pt;
+  left: 319.305pt;
+  top: 87.571pt;
+}
+
+.core-combat-info-tab {
+  position: absolute;
+  width: 151.03998pt;
+  height: 13.20001pt;
+  left: 315.188pt;
+  top: 85.5pt;
+}
+
+.core-combat-info-style {
+  position: absolute;
+  width: 153.36001pt;
+  height: 15.36pt;
+  left: #{6.27951 + 307.738}pt;
+  top: #{10.35999 + 73.98}pt;
+}
+
+.core-combat-info-box {
+  position: absolute;
+  width: 271pt;
+  height: 96.89203pt;
+  left: 314.4375pt;
+  top: 85.50012pt;
+}
+
+%core-combat-info-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 326.818pt;
+}
+
+.core-combat-info-line-1 {
+  @extend %core-combat-info-line;
+  top: 115.636pt;
+}
+
+.core-combat-info-line-2 {
+  @extend %core-combat-info-line;
+  top: 128.595pt;
+}
+
+.core-combat-info-line-3 {
+  @extend %core-combat-info-line;
+  top: 157.033pt;
+}
+
+.primary-armor {
+  position: absolute;
+  width: 40.42383pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 107.763pt;
+}
+
+.primary-armor-rating {
+  position: absolute;
+  width: 15.06543pt;
+  height: 6.47998pt;
+  left: 500.10156pt;
+  top: 108.56836pt;
+}
+
+.primary-ranged-weapon {
+  position: absolute;
+  width: 68.87988pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 120.707pt;
+}
+
+.primary-melee-weapon {
+  position: absolute;
+  width: 65.8418pt;
+  height: 7.56006pt;
+  left: 326.822pt;
+  top: 149.147pt;
+}
+
+.weapon-attributes {
+  position: absolute;
+  width: 218.9668pt;
+  height: 35.97217pt;
+  left: 327.05273pt;
+  top: 131.11768pt;
+}

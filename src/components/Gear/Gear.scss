@@ -1,0 +1,154 @@
+.gear-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 254.90501pt;
+  left: 26.4375pt;
+  top: 474.27509pt;
+}
+
+.gear-tab {
+  position: absolute;
+  width: 136.03999pt;
+  height: 13.20001pt;
+  left: 160.648pt;
+  top: 474.275pt;
+}
+
+.gear-style {
+  position: absolute;
+  width: 138.23999pt;
+  height: 15.36pt;
+  left: #{219.87998 - 60.333}pt;
+  top: #{29.32007 + 443.875}pt;
+}
+
+.gear-text {
+  position: absolute;
+  width: 32.03955pt;
+  height: 9.89941pt;
+  left: 260.847pt;
+  top: 476.36pt;
+}
+
+%gear-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 43.497pt;
+}
+
+.gear-line-1 {
+  @extend %gear-line;
+  top: 504.411pt;
+}
+
+.gear-line-2 {
+  @extend %gear-line;
+  top: 515.715pt;
+}
+
+.gear-line-3 {
+  @extend %gear-line;
+  top: 527.235pt;
+}
+
+.gear-line-4 {
+  @extend %gear-line;
+  top: 538.755pt;
+}
+
+.gear-line-5 {
+  @extend %gear-line;
+  top: 550.275pt;
+}
+
+.gear-line-6 {
+  @extend %gear-line;
+  top: 561.795pt;
+}
+
+.gear-line-7 {
+  @extend %gear-line;
+  top: 573.315pt;
+}
+
+.gear-line-8 {
+  @extend %gear-line;
+  top: 584.835pt;
+}
+
+.gear-line-9 {
+  @extend %gear-line;
+  top: 596.355pt;
+}
+
+.gear-line-10 {
+  @extend %gear-line;
+  top: 607.875pt;
+}
+
+.gear-line-11 {
+  @extend %gear-line;
+  top: 619.395pt;
+}
+
+.gear-line-12 {
+  @extend %gear-line;
+  top: 630.915pt;
+}
+
+.gear-line-13 {
+  @extend %gear-line;
+  top: 642.435pt;
+}
+
+.gear-line-14 {
+  @extend %gear-line;
+  top: 653.955pt;
+}
+
+.gear-line-15 {
+  @extend %gear-line;
+  top: 665.475pt;
+}
+
+.gear-line-16 {
+  @extend %gear-line;
+  top: 676.995pt;
+}
+
+.gear-line-17 {
+  @extend %gear-line;
+  top: 688.515pt;
+}
+
+.gear-line-18 {
+  @extend %gear-line;
+  top: 700.035pt;
+}
+
+.gear-line-19 {
+  @extend %gear-line;
+  top: 711.555pt;
+}
+
+.gear-line-20 {
+  @extend %gear-line;
+  top: 723.075pt;
+}
+
+.gear-name {
+  position: absolute;
+  width: 12.25684pt;
+  height: 7.55957pt;
+  left: 43.504pt;
+  top: 493.979pt;
+}
+
+.gear-rating {
+  position: absolute;
+  width: 17.94775pt;
+  height: 7.55957pt;
+  left: 267.133pt;
+  top: 493.979pt;
+}

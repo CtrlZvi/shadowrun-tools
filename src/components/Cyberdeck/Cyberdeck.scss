@@ -1,0 +1,237 @@
+.cyberdeck-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 119.04001pt;
+  left: 314.9375pt;
+  top: 198.93378pt;
+}
+
+.cyberdeck-tab {
+  position: absolute;
+  width: 105.03998pt;
+  height: 13.20001pt;
+  left: 315.312pt;
+  top: 198.934pt;
+}
+
+.cyberdeck-style {
+  position: absolute;
+  width: 107.28pt;
+  height: 15.36pt;
+  left: #{79.332 + 234.76004}pt;
+  top: #{168.534 + 29.31982}pt;
+}
+
+.cyberdeck-text {
+  position: absolute;
+  width: 72.35938pt;
+  height: 9.8999pt;
+  left: 320.47pt;
+  top: 201.014pt;
+}
+
+%cyberdeck-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.cyberdeck-line-1 {
+  @extend %cyberdeck-line;
+  top: 229.07pt;
+}
+
+.cyberdeck-line-2 {
+  @extend %cyberdeck-line;
+  top: 242.029pt;
+}
+
+.cyberdeck-line-3 {
+  @extend %cyberdeck-line;
+  top: 254.988pt;
+}
+
+.cyberdeck-line-4 {
+  @extend %cyberdeck-line;
+  top: 267.947pt;
+}
+
+.cyberdeck-line-5 {
+  @extend %cyberdeck-line;
+  top: 280.906pt;
+}
+
+.cyberdeck-line-6 {
+  @extend %cyberdeck-line;
+  top: 293.865pt;
+}
+
+.cyberdeck-line-7 {
+  @extend %cyberdeck-line;
+  width: 76.04001pt;
+  top: 306.824pt;
+}
+
+.cyberdeck-model {
+  position: absolute;
+  width: 18.01074pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 220.725pt;
+}
+
+.cyberdeck-attack {
+  position: absolute;
+  width: 18.33301pt;
+  height: 7.56006pt;
+  left: 446.721pt;
+  top: 220.725pt;
+}
+
+.cyberdeck-sleaze {
+  position: absolute;
+  width: 18.72461pt;
+  height: 7.56006pt;
+  left: 523.35pt;
+  top: 220.725pt;
+}
+
+.cyberdeck-device-rating {
+  position: absolute;
+  width: 38.86328pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 234.06pt;
+}
+
+.cyberdeck-data-processing {
+  position: absolute;
+  width: 45.73047pt;
+  height: 7.56006pt;
+  left: 419.357pt;
+  top: 234.06pt;
+}
+
+.cyberdeck-firewall {
+  position: absolute;
+  width: 23.24707pt;
+  height: 7.56006pt;
+  left: 518.827pt;
+  top: 234.06pt;
+}
+
+.cyberdeck-programs {
+  position: absolute;
+  width: 26.74707pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 246.646pt;
+}
+
+.cyberdeck-matrix-condition-monitor {
+  position: absolute;
+  width: 70.41992pt;
+  height: 7.56006pt;
+  left: 331.997pt;
+  top: 298.48pt;
+}
+
+%cyberdeck-condition {
+  position: absolute;
+  width: 14.11801pt;
+  height: 16.30237pt;
+  top: 297.345pt;
+}
+
+.cyberdeck-condition-1 {
+  @extend %cyberdeck-condition;
+  left: 412.409pt;
+}
+
+.cyberdeck-condition-2 {
+  @extend %cyberdeck-condition;
+  left: 425.941pt;
+}
+
+.cyberdeck-condition-3 {
+  @extend %cyberdeck-condition;
+  left: 439.473pt;
+}
+
+.cyberdeck-condition-4 {
+  @extend %cyberdeck-condition;
+  left: 453.005pt;
+}
+
+.cyberdeck-condition-5 {
+  @extend %cyberdeck-condition;
+  left: 466.537pt;
+}
+
+.cyberdeck-condition-6 {
+  @extend %cyberdeck-condition;
+  left: 480.069pt;
+}
+
+.cyberdeck-condition-7 {
+  @extend %cyberdeck-condition;
+  left: 493.6pt;
+}
+
+.cyberdeck-condition-8 {
+  @extend %cyberdeck-condition;
+  left: 507.132pt;
+}
+
+.cyberdeck-condition-9 {
+  @extend %cyberdeck-condition;
+  left: 520.664pt;
+}
+
+.cyberdeck-condition-10 {
+  @extend %cyberdeck-condition;
+  left: 534.196pt;
+}
+
+.cyberdeck-condition-11 {
+  @extend %cyberdeck-condition;
+  left: 547.728pt;
+}
+
+.cyberdeck-condition-12 {
+  @extend %cyberdeck-condition;
+  left: 561.26pt;
+}
+
+.cyberdeck-condition-numbers {
+  position: absolute;
+  width: 112.63184pt;
+  height: 8.64014pt;
+  left: 416.994pt;
+  top: 301.464pt;
+}
+
+.cyberdeck-condition-number-10 {
+  position: absolute;
+  width: 8.37598pt;
+  height: 8.64014pt;
+  left: 536.786pt;
+  top: 301.464pt;
+}
+
+.cyberdeck-condition-number-11 {
+  position: absolute;
+  width: 7.74414pt;
+  height: 8.64014pt;
+  left: 550.634pt;
+  top: 301.464pt;
+}
+
+.cyberdeck-condition-number-12 {
+  position: absolute;
+  width: 8.69629pt;
+  height: 8.64014pt;
+  left: 563.682pt;
+  top: 301.464pt;
+}

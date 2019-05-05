@@ -1,0 +1,99 @@
+.spells-box {
+  position: absolute;
+  width: 270.625pt;
+  height: 129.03999pt;
+  left: 314.9375pt;
+  top: 439.26181pt;
+}
+
+.spells-tab {
+  position: absolute;
+  width: 176.03998pt;
+  height: 23.20001pt;
+  left: 315.312pt;
+  top: 439.262pt;
+}
+
+.spells-style {
+  position: absolute;
+  width: 178.31999pt;
+  height: 25.44pt;
+  left: #{159.87955 + 154.333}pt;
+  top: #{19.23987 + 418.862}pt;
+}
+
+.spells-preparations {
+  position: absolute;
+  width: 135.25488pt;
+  height: 8.7998pt;
+  left: 320.47pt;
+  top: 441.157pt;
+}
+
+.rituals-complex-forms {
+  position: absolute;
+  width: 153.03809pt;
+  height: 8.7998pt;
+  left: 320.47pt;
+  top: 450.757pt;
+}
+
+%spells-line {
+  position: absolute;
+  width: 241.56pt;
+  height: 0.75pt;
+  left: 331.997pt;
+}
+
+.spells-line-1 {
+  @extend %spells-line;
+  top: 479.398pt;
+}
+
+.spells-line-2 {
+  @extend %spells-line;
+  top: 492.357pt;
+}
+
+.spells-line-3 {
+  @extend %spells-line;
+  top: 505.316pt;
+}
+
+.spells-line-4 {
+  @extend %spells-line;
+  top: 518.275pt;
+}
+
+.spells-line-5 {
+  @extend %spells-line;
+  top: 531.234pt;
+}
+
+.spells-line-6 {
+  @extend %spells-line;
+  top: 544.193pt;
+}
+
+.spells-line-7 {
+  @extend %spells-line;
+  top: 557.152pt;
+}
+
+.spells-line-8 {
+  @extend %spells-line;
+  top: 571.108pt;
+}
+
+.spells-line-9 {
+  @extend %spells-line;
+  top: 585.063pt;
+}
+
+.spells-attributes {
+  position: absolute;
+  width: 225.1123pt;
+  height: 7.55957pt;
+  left: 331.995pt;
+  top: 468.963pt;
+}
