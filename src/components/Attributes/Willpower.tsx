@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { observer } from 'mobx-react';
-import { ReactComponent as WillpowerText } from './Willpower.svg';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'react';
 
-@observer class Willpower extends Component<{ character: Character }> {
-    render() {
-        return (
-            <div className="attributes-willpower">
-                <WillpowerText />
-                <div>{this.props.character.willpower}</div>
-            </div >
-        )
-    }
-}
+import { ReactComponent as SVG } from './Willpower.svg';
+
+import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterContext from '../../contexts/Character';
+
+const Willpower = observer(() => {
+    let characterSheet = useContext(CharacterSheetContext);
+    let character = useContext(CharacterContext);
+
+    let svg = !characterSheet.rendered ? <SVG /> : undefined;
+
+    return (
+        <div className="attributes-willpower">
+            {svg}
+            <div>{character.willpower}</div>
+        </div>
+    )
+});
 
 export default Willpower;

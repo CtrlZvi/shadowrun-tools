@@ -1,23 +1,23 @@
 import { observer } from 'mobx-react-lite';
 import React, { useContext } from 'react';
 
-import { ReactComponent as SVG } from './Reaction.svg';
+import { ReactComponent as SVG } from './Edge.svg';
 
 import CharacterSheetContext from '../../contexts/CharacterSheet';
 import CharacterContext from '../../contexts/Character';
 
-const Reaction = observer(() => {
+const Edge = observer(() => {
     let characterSheet = useContext(CharacterSheetContext);
     let character = useContext(CharacterContext);
 
     let svg = !characterSheet.rendered ? <SVG /> : undefined;
 
     return (
-        <div className="attributes-reaction">
+        <div className="attributes-edge">
             {svg}
-            <div>{character.reaction}</div>
+            <div>{character.edge}</div>
         </div>
     )
 });
 
-export default Reaction;
+export default Edge;

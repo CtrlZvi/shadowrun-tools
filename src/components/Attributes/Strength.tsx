@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { observer } from 'mobx-react';
-import { ReactComponent as StrengthText } from './Strength.svg';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'react';
 
-@observer class Strength extends Component<{ character: Character }> {
-    render() {
-        return (
-            <div className="attributes-strength">
-                <StrengthText />
-                <div>{this.props.character.strength}</div>
-            </div >
-        )
-    }
-}
+import { ReactComponent as SVG } from './Strength.svg';
+
+import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterContext from '../../contexts/Character';
+
+const Strength = observer(() => {
+    let characterSheet = useContext(CharacterSheetContext);
+    let character = useContext(CharacterContext);
+
+    let svg = !characterSheet.rendered ? <SVG /> : undefined;
+
+    return (
+        <div className="attributes-strength">
+            {svg}
+            <div>{character.strength}</div>
+        </div>
+    )
+});
 
 export default Strength;

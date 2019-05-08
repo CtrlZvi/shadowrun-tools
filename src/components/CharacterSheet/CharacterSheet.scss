@@ -90,13 +90,21 @@ body {
   }
 }
 
-.character-sheet-page.rendered:nth-child(1) {
-  content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_1.png')
-}
+// .character-sheet-page.rendered:nth-child(1) {
+//   content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_1.png')
+// }
 
-.character-sheet-page.rendered:nth-child(2) {
-  content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_2.png')
-}
+// .character-sheet-page.rendered:nth-child(2) {
+//   content: url('CAT27000_Shadowrun_5_Character_Sheet_Page_2.png')
+// }
+
+// .background {
+//   width: 642.66701pt;
+//   height: 783.00005pt;
+//   left: -10.03023pt;
+//   top: -9pt;
+//   position: absolute;
+// }
 
 .background {
   width: 642.66701pt;
@@ -105,6 +113,24 @@ body {
   top: -9pt;
   position: absolute;
 }
+
+.background-rendered {
+  width: 612pt;
+  height: 765pt;
+  left: 0pt;
+  top: 0pt;
+  background-size: 612pt 765pt;
+  position: absolute;
+}
+
+.character-sheet-page:nth-child(1)>div.background-rendered {
+  background-image: url('CAT27000_Shadowrun_5_Character_Sheet_Page_1.png')
+}
+
+.character-sheet-page:nth-child(2)>div.background-rendered {
+  background-image: url('CAT27000_Shadowrun_5_Character_Sheet_Page_2.png')
+}
+
 
 // Style from Background.svg
 

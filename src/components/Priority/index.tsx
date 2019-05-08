@@ -1,64 +1,47 @@
-import React, { Component, ChangeEvent } from "react";
-import { observer } from 'mobx-react';
-import { Character } from "../../models/Character";
-import { Priority, Category } from "../../models/Priority";
-import { action, trace } from 'mobx';
+import { action } from 'mobx';
+import { observer } from 'mobx-react-lite';
+import React, { useContext, ChangeEvent } from "react";
 
-@observer class PriorityComponent extends Component<{ character: Character, priorities: Map<Priority, Category> }> {
-    @action handleChangePriority(priority: Priority, event: ChangeEvent<HTMLSelectElement>) {
-        if (event.currentTarget.value === undefined) {
-            this.props.priorities.delete(priority)
-        } else {
-            let selectedCategory = (Category as any)[event.currentTarget.value];
-            // FIXME (zeffron 2019-05-05) We can't just set the priority, as
-            // there may already be something at that priority that needs to be
-            // adjusted.
-            for (let [priority, category] of this.props.priorities) {
-                if (category === selectedCategory) {
-                    this.props.priorities.delete(priority);
-                }
-            }
-            this.props.priorities.set(priority, selectedCategory);
-        }
-    }
+import PriorityContext from '../../contexts/Priority';
+import { Priority, Category } from '../../models/PrioritySystem';
 
-    render() {
-        let priorities = Object.entries(Priority).filter(
-            ([priorityName, priority]) => !(parseInt(priorityName, 10) >= 0)
-        ).map(
-            ([priorityName, priority]) => (
-                <tr key={priorityName}>
-                    <th scope="row">{priorityName}</th>
-                    <td>
-                        <select value={Category[this.props.priorities.get(priority as Priority)!] || "None"} onChange={this.handleChangePriority.bind(this, priority)}>
-                            <option value="None"></option>
-                            {Object.keys(Category).filter(
-                                categoryName => !(parseInt(categoryName, 10) >= 0)
-                            ).map(
-                                categoryName => (
-                                    <option key={priorityName + ":" + categoryName} value={categoryName}>
-                                        {categoryName}
-                                    </option>
-                                )
-                            )}
-                        </select>
-                    </td>
+const PriorityComponent = observer(() => {
+    const priorityMetadata = useContext(PriorityContext);
+
+    return (
+        <table>
+            <thead>
+                <tr>
+                    <th colSpan={2}>Priorities</th>
                 </tr>
-            )
-        )
-        return (
-            <table className="priority" >
-                <thead>
-                    <tr>
-                        <th colSpan={2}>Priority</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    {priorities}
-                </tbody>
-            </table>
-        )
-    }
-}
+            </thead>
+            <tbody>
+                {
+                    [...priorityMetadata.priorities.entries()].map(([priority, category]) => (
+                        <tr key={Priority[priority]}>
+                            <th>{Priority[priority]}</th>
+                            <td>
+                                <select value={Category[category]} onChange={action(
+                                    (event: ChangeEvent<HTMLSelectElement>) => priorityMetadata.setPriority(
+                                        priority,
+                                        (Category as any)[event.currentTarget.value],
+                                    )
+                                )}>
+                                    {Object.keys(Category)
+                                        .filter(name => isNaN(Number(name)))
+                                        .map(name => (
+                                            <option key={Priority[priority] + ":" + name} value={name}>
+                                                {name}
+                                            </option>
+                                        ))}
+                                </select>
+                            </td>
+                        </tr>
+                    ))
+                }
+            </tbody>
+        </table>
+    )
+});
 
 export default PriorityComponent;

@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { observer } from 'mobx-react';
-import { ReactComponent as LogicText } from './Logic.svg';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'react';
 
-@observer class Logic extends Component<{ character: Character }> {
-    render() {
-        return (
-            <div className="attributes-logic">
-                <LogicText />
-                <div>{this.props.character.logic}</div>
-            </div >
-        )
-    }
-}
+import { ReactComponent as SVG } from './Logic.svg';
+
+import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterContext from '../../contexts/Character';
+
+const Logic = observer(() => {
+    let characterSheet = useContext(CharacterSheetContext);
+    let character = useContext(CharacterContext);
+
+    let svg = !characterSheet.rendered ? <SVG /> : undefined;
+
+    return (
+        <div className="attributes-logic">
+            {svg}
+            <div>{character.logic}</div>
+        </div>
+    )
+});
 
 export default Logic;

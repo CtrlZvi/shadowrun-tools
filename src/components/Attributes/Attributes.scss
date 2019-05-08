@@ -490,10 +490,17 @@
   top: 293.852pt;
 }
 
-.attributes-edge {
+.attributes-edge>svg {
   @extend %attribute-key;
   width:  13.8042pt;
   left: 61.383pt;
+  top: 306.276pt;
+}
+
+.attributes-edge>div {
+  @extend %attribute-value;
+  width: 66.068pt;
+  left: 84.732pt;
   top: 306.276pt;
 }
 

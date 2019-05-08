@@ -925,7 +925,7 @@
             },
             "C": {
                 "specialAttributePoints": 0,
-                "karmaCost": 5
+                "karmaCost": -5
             }
         },
         "species": "Homo Sapiens Robustus",
@@ -1052,7 +1052,7 @@
             },
             "C": {
                 "specialAttributePoints": 0,
-                "karmaCost": 4
+                "karmaCost": -4
             }
         },
         "species": "Homo Sapiens Robustus",

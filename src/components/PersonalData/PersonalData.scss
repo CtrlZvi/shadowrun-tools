@@ -70,7 +70,7 @@
   position: absolute;
 }
 
-.name-primary-alias {
+.name-primary-alias>svg {
   width: 65.69434pt;
   height: 7.56006pt;
   left: 43.248pt;
@@ -78,7 +78,23 @@
   position: absolute;
 }
 
-.metatype svg {
+.name-primary-alias>input {
+  // width: 65.69434pt;
+  max-width: #{241.56 - (43.248 + 65.69434)}pt;
+  height: 7.56006pt;
+  left: #{43.248 + 65.69434}pt;
+  top: 107.738pt;
+  position: absolute;
+  font-size: 7pt;
+  font-family: Friz Quadrata Std Regular;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  background-color: transparent;
+  padding: 0;
+  border: none;
+}
+
+.metatype>svg {
   width: 26.38281pt;
   height: 7.56006pt;
   left: 43.248pt;
@@ -86,7 +102,7 @@
   position: absolute;
 }
 
-.metatype select {
+.metatype>select {
   // width: #{153.168 - (43.248 + 26.38281)}pt;
   left: #{43.248 + 26.38281}pt;
   bottom: #{765 - 128.595}pt;

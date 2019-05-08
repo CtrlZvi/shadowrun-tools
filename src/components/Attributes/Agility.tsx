@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { observer } from 'mobx-react';
-import { ReactComponent as AgilityText } from './Agility.svg';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'react';
 
-@observer class Agility extends Component<{ character: Character }> {
-    render() {
-        return (
-            <div className="attributes-agility">
-                <AgilityText />
-                <div>{this.props.character.agility}</div>
-            </div >
-        )
-    }
-}
+import { ReactComponent as SVG } from './Agility.svg';
+
+import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterContext from '../../contexts/Character';
+
+const Agility = observer(() => {
+    let characterSheet = useContext(CharacterSheetContext);
+    let character = useContext(CharacterContext);
+
+    let svg = !characterSheet.rendered ? <SVG /> : undefined;
+
+    return (
+        <div className="attributes-agility">
+            {svg}
+            <div>{character.agility}</div>
+        </div>
+    )
+});
 
 export default Agility;

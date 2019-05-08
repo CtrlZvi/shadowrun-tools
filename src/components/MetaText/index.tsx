@@ -1,33 +1,33 @@
-import React, { Component, useContext, FormEvent, ChangeEvent, Context, Dispatch, SetStateAction } from 'react';
-import { ReactComponent as Image } from './MetaText.svg';
-import "./MetaText.scss";
 import { action } from 'mobx';
-import { observer } from 'mobx-react';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext, ChangeEvent, } from 'react';
 
-@observer class MetaText extends Component<{ character: Character }> {
-    @action handleChangeName(event: ChangeEvent<HTMLInputElement>) {
-        this.props.character.name = event.currentTarget.value;
-    }
+import { ReactComponent as Image } from './Metatext.svg';
+import "./Metatext.scss";
 
-    @action handleChangePlayer(event: ChangeEvent<HTMLInputElement>) {
-        this.props.character.player = event.currentTarget.value;
-    }
+import CharacterContext from '../../contexts/Character';
+import CharacterSheetContext from '../../contexts/CharacterSheet';
 
-    @action handleChangeNotes(event: ChangeEvent<HTMLInputElement>) {
-        this.props.character.notes = event.currentTarget.value;
-    }
+const Metatext = observer(() => {
+    const character = useContext(CharacterContext);
+    const characterSheet = useContext(CharacterSheetContext);
 
-    render() {
-        return (
-            <div className="metatext">
-                <Image className="metatext-image" />
-                <input className="character" type="text" value={this.props.character.name} onChange={this.handleChangeName.bind(this)} />
-                <input className="player" type="text" value={this.props.character.player} onChange={this.handleChangePlayer.bind(this)} />
-                <input className="notes" type="text" value={this.props.character.notes} onChange={this.handleChangeNotes.bind(this)} />
-            </div>
-        );
-    }
-}
+    let image = !characterSheet.rendered ? <Image /> : undefined;
 
-export default MetaText;
+    return (
+        <div className="metatext">
+            {image}
+            <input className="character" type="text" value={character.name} onChange={
+                action((event: ChangeEvent<HTMLInputElement>) => character.name = event.currentTarget.value)
+            } />
+            <input className="player" type="text" value={character.player} onChange={
+                action((event: ChangeEvent<HTMLInputElement>) => character.player = event.currentTarget.value)
+            } />
+            <input className="notes" type="text" value={character.notes} onChange={
+                action((event: ChangeEvent<HTMLInputElement>) => character.notes = event.currentTarget.value)
+            } />
+        </div>
+    )
+});
+
+export default Metatext;

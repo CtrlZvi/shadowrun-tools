@@ -19,8 +19,8 @@ interface MetatypeAttribute {
 }
 
 export interface Metatype {
+    metasapient: Metasapient;
     priorities: Priorities;
-    species: Metasapient;
     body: MetatypeAttribute;
     agility: MetatypeAttribute;
     reaction: MetatypeAttribute;
@@ -33,6 +33,7 @@ export interface Metatype {
 }
 
 export enum Metasapient {
+    None = "None",
     // Base Types
     Human = "Human",
     Elf = "Elf",
@@ -63,23 +64,29 @@ export enum Metasapient {
     Sasquatch = "Sasquatch",
 }
 
-export function stringToMetasapient(name: string): Metasapient {
-    for (let key in Metasapient) {
-        if (Metasapient[key] == name) {
-            return key as Metasapient;
-        }
-    }
-    throw new Error(name + ' is not a valid Metasapient');
+const InvalidMetatype: Metatype = {
+    metasapient: Metasapient.None,
+    priorities: {},
+    body: { base: 0, maximum: 0 },
+    agility: { base: 0, maximum: 0 },
+    reaction: { base: 0, maximum: 0 },
+    strength: { base: 0, maximum: 0 },
+    willpower: { base: 0, maximum: 0 },
+    logic: { base: 0, maximum: 0 },
+    intuition: { base: 0, maximum: 0 },
+    charisma: { base: 0, maximum: 0 },
+    edge: { base: 0, maximum: 0 },
 }
 
 export const Metatypes: Map<Metasapient, Metatype> = new Map(
-    Object.entries(metatypes).map(
-        ([key, value]) => {
-            // The iteration order will matter later when we're deciding what
-            // changes to make to the character's priorities based on metatype
-            // changes.
-            // TODO (zeffron 2019-05-05) Ensure the priorities are sorted.
-            return [stringToMetasapient(key), value as Metatype];
-        }
-    )
+    [
+        ...Object.entries(metatypes).map(
+            ([name, value]): [Metasapient, Metatype] => {
+                let metasapient = [...Object.values(Metasapient)]
+                    .find(value => value == name)!;
+                return [metasapient, { metasapient: metasapient, ...value }];
+            }
+        ),
+        [Metasapient.None, InvalidMetatype],
+    ]
 );

@@ -1,17 +1,23 @@
-import React, { Component } from 'react';
-import { observer } from 'mobx-react';
-import { ReactComponent as BodyText } from './Body.svg';
-import { Character } from '../../models/Character';
+import { observer } from 'mobx-react-lite';
+import React, { useContext } from 'react';
 
-@observer class Body extends Component<{ character: Character }> {
-    render() {
-        return (
-            <div className="attributes-body">
-                <BodyText />
-                <div>{this.props.character.body}</div>
-            </div >
-        )
-    }
-}
+import { ReactComponent as SVG } from './Body.svg';
+
+import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterContext from '../../contexts/Character';
+
+const Body = observer(() => {
+    let characterSheet = useContext(CharacterSheetContext);
+    let character = useContext(CharacterContext);
+
+    let svg = !characterSheet.rendered ? <SVG /> : undefined;
+
+    return (
+        <div className="attributes-body">
+            {svg}
+            <div>{character.body}</div>
+        </div>
+    )
+});
 
 export default Body;

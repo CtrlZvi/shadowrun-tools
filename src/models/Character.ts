@@ -8,7 +8,7 @@ export class Character {
     @observable notes: string = "";
 
     // Personal Data
-    @observable metatype: Metatype = Metatypes.get(Metasapient.Human)!;
+    @observable metatype: Metatype = Metatypes.get(Metasapient.None)!;
 
     // Attributes
     @computed get body() {
