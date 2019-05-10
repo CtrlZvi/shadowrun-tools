@@ -1,6 +1,7 @@
 import { observer } from 'mobx-react-lite';
 import React from 'react';
 
+import { ReactComponent as AgilitySVG } from './Agility.svg';
 import './Attributes.scss';
 import { ReactComponent as AstralInitiative } from './AstralInitiative.svg';
 import { ReactComponent as Box } from './AttributesBox.svg';
@@ -12,30 +13,31 @@ import { ReactComponent as Tab } from './AttributesTab.svg';
 import { ReactComponent as Text } from './AttributesText.svg';
 import { ReactComponent as ValueEven } from './AttributesValueEven.svg';
 import { ReactComponent as ValueOdd } from './AttributesValueOdd.svg';
+import { ReactComponent as BodySVG } from './Body.svg';
+import { ReactComponent as CharismaSVG } from './Charisma.svg';
 import { ReactComponent as Composure } from './Composure.svg';
 import { ReactComponent as EdgePoint } from './EdgePoint.svg';
 import { ReactComponent as EdgePoints } from './EdgePoints.svg';
 import { ReactComponent as Essence } from './Essence.svg';
 import { ReactComponent as Initiative } from './Initiative.svg';
+import { ReactComponent as IntuitionSVG } from './Intuition.svg';
 import { ReactComponent as JudgeIntentions } from './JudgeIntentions.svg';
 import { ReactComponent as LiftCarry } from './LiftCarry.svg';
+import { ReactComponent as LogicSVG } from './Logic.svg';
 import { ReactComponent as MagicResonance } from './MagicResonance.svg';
 import { ReactComponent as MatrixInitiative } from './MatrixInitiative.svg';
 import { ReactComponent as Memory } from './Memory.svg';
 import { ReactComponent as MentalLimit } from './MentalLimit.svg';
 import { ReactComponent as Movement } from './Movement.svg';
 import { ReactComponent as PhysicalLimit } from './PhysicalLimit.svg';
+import { ReactComponent as ReactionSVG } from './Reaction.svg';
 import { ReactComponent as SocialLimit } from './SocialLimit.svg';
+import { ReactComponent as StrengthSVG } from './Strength.svg';
+import { ReactComponent as WillpowerSVG } from './Willpower.svg';
 
-import Agility from './Agility';
-import Body from './Body';
-import Charisma from './Charisma';
+import AttributeComponent from './Attribute';
 import Edge from './Edge';
-import Intuition from './Intuition';
-import Logic from './Logic';
-import Reaction from './Reaction';
-import Strength from './Strength';
-import Willpower from './Willpower';
+import { Attribute } from '../../models/Attribute';
 
 const Attributes = observer(() => {
     return (
@@ -92,21 +94,21 @@ const Attributes = observer(() => {
             <EdgePoint className="attributes-edge-point-6" />
             <EdgePoint className="attributes-edge-point-7" />
             <EdgePoint className="attributes-edge-point-8" />
-            <Body />
+            <AttributeComponent attribute={Attribute.Body} svg={<BodySVG />} />
             <Essence className="attributes-essence" />
-            <Agility />
+            <AttributeComponent attribute={Attribute.Agility} svg={<AgilitySVG />} />
             <MagicResonance className="attributes-magic-resonance" />
-            <Reaction />
+            <AttributeComponent attribute={Attribute.Reaction} svg={<ReactionSVG />} />
             <Initiative className="attributes-initiative" />
-            <Strength />
+            <AttributeComponent attribute={Attribute.Strength} svg={<StrengthSVG />} />
             <MatrixInitiative className="attributes-matrix-initiative" />
-            <Willpower />
+            <AttributeComponent attribute={Attribute.Willpower} svg={<WillpowerSVG />} />
             <AstralInitiative className="attributes-astral-initiative" />
-            <Logic />
+            <AttributeComponent attribute={Attribute.Logic} svg={<LogicSVG />} />
             <Composure className="attributes-composure" />
-            <Intuition />
+            <AttributeComponent attribute={Attribute.Intuition} svg={<IntuitionSVG />} />
             <JudgeIntentions className="attributes-judge-intentions" />
-            <Charisma />
+            <AttributeComponent attribute={Attribute.Charisma} svg={<CharismaSVG />} />
             <Memory className="attributes-memory" />
             <Edge />
             <LiftCarry className="attributes-lift-carry" />

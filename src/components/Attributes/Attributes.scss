@@ -330,10 +330,19 @@
 
 .attributes-body>div {
   @extend %attribute-value;
-  // left: #{60.998 + 14.18896}pt;
   width: 66.068pt;
+  // left: #{60.998 + 14.18896}pt;
   left: 84.732pt;
   top: 203.254pt;
+}
+
+.attributes-body input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
 }
 
 .attributes-essence {
@@ -357,6 +366,15 @@
   top: 216.193pt;
 }
 
+.attributes-agility input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
+}
+
 .attributes-magic-resonance {
   @extend %attribute-key;
   width: 50.79199pt;
@@ -376,6 +394,15 @@
   width: 66.068pt;
   left: 84.732pt;
   top: 229.136pt;
+}
+
+.attributes-reaction input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
 }
 
 .attributes-initiative {
@@ -399,6 +426,15 @@
   top: 242.08pt;
 }
 
+.attributes-strength input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
+}
+
 .attributes-matrix-initiative {
   @extend %attribute-key;
   width:  43.76367pt;
@@ -418,6 +454,15 @@
   width: 66.068pt;
   left: 84.732pt;
   top: 255.022pt;
+}
+
+.attributes-willpower input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
 }
 
 .attributes-astral-initiative {
@@ -441,6 +486,15 @@
   top: 267.965pt;
 }
 
+.attributes-logic input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
+}
+
 .attributes-composure {
   @extend %attribute-key;
   width:  31.35986pt;
@@ -462,6 +516,15 @@
   top: 280.908pt;
 }
 
+.attributes-intuition input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
+}
+
 .attributes-judge-intentions {
   @extend %attribute-key;
   width:  46.44482pt;
@@ -481,6 +544,15 @@
   width: 66.068pt;
   left: 84.732pt;
   top: 293.852pt;
+}
+
+.attributes-charisma input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
 }
 
 .attributes-memory {

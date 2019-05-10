@@ -1,19 +1,18 @@
 import { action } from 'mobx';
 import { observer } from 'mobx-react-lite';
 import React, { useContext, ChangeEvent } from 'react';
-import { isUndefined } from 'util';
 
 import { ReactComponent as SVG } from './Metatype.svg';
 
 import CharacterContext from '../../contexts/Character';
 import CharacterSheetContext from '../../contexts/CharacterSheet';
+import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Metatypes, Metasapient } from '../../models/Metatype';
-import PriorityContext from '../../contexts/Priority';
 
 const Metatype = observer(() => {
     let characterSheet = useContext(CharacterSheetContext);
     let character = useContext(CharacterContext);
-    let priorityMetadata = useContext(PriorityContext);
+    let prioritySystem = useContext(PrioritySystemContext);
 
     let svg = !characterSheet.rendered ? <SVG /> : undefined;
     let metatypes = Object.entries(Metasapient).map(
@@ -28,7 +27,7 @@ const Metatype = observer(() => {
         <div className="metatype">
             {svg}
             <select value={character.metatype.metasapient} onChange={
-                action((event: ChangeEvent<HTMLSelectElement>) => priorityMetadata.updateMetatype(
+                action((event: ChangeEvent<HTMLSelectElement>) => prioritySystem.updateMetatype(
                     Metatypes.get(event.currentTarget.value as Metasapient)!
                 ))
             }>

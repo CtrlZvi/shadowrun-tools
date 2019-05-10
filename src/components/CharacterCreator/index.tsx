@@ -2,23 +2,23 @@ import { observer, useLocalStore } from 'mobx-react-lite';
 import React from "react";
 
 import CharacterSheet from "../CharacterSheet";
-import PriorityComponent from "../Priority";
+import PrioritySystemComponent from "../PrioritySystem";
 import CharacterContext from "../../contexts/Character";
-import PriorityContext from '../../contexts/Priority';
+import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Character } from "../../models/Character";
-import { PrioritySystemMetadata } from '../../models/PrioritySystem';
+import { PrioritySystem } from '../../models/PrioritySystem';
 
 const CharacterCreator = observer(() => {
     const character = useLocalStore(() => new Character());
-    const priorityMetadata = useLocalStore(() => new PrioritySystemMetadata(character));
+    const priorityMetadata = useLocalStore(() => new PrioritySystem(character));
 
     return (
-        <PriorityContext.Provider value={priorityMetadata}>
+        <PrioritySystemContext.Provider value={priorityMetadata}>
             <CharacterContext.Provider value={character} >
-                <PriorityComponent />
+                <PrioritySystemComponent />
                 <CharacterSheet />
             </CharacterContext.Provider>
-        </PriorityContext.Provider>
+        </PrioritySystemContext.Provider>
     )
 });
 

@@ -13,7 +13,7 @@ interface Priorities {
     E?: Priority;
 }
 
-interface MetatypeAttribute {
+export interface MetatypeAttribute {
     base: number;
     maximum: number;
 }
