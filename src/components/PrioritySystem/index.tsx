@@ -13,34 +13,22 @@ const PriorityComponent = observer(() => {
             <table>
                 <thead>
                     <tr>
-                        <th colSpan={2}>Priorities</th>
+                        <th colSpan={3}>Priorities</th>
+                    </tr>
+                    <tr>
+                        <td>Priority</td>
+                        <td>Selection</td>
+                        <td>Information</td>
                     </tr>
                 </thead>
                 <tbody>
                     {
                         [...prioritySystem.priorities.entries()].map(([priority, category]) => (
-                            <tr key={Priority[priority]}>
+                            <tr key={priority}>
                                 <th>{Priority[priority]}</th>
+                                <td>{Category[prioritySystem.priorities.get(priority)!]}</td>
                                 <td>
-                                    <select value={Category[category]} onChange={action(
-                                        (event: ChangeEvent<HTMLSelectElement>) => {
-                                            try {
-                                                prioritySystem.setPriority(
-                                                    priority,
-                                                    (Category as any)[event.currentTarget.value],
-                                                );
-                                            } catch (error) {
-                                                console.debug(error);
-                                            }
-                                        })}>
-                                        {Object.keys(Category)
-                                            .filter(name => isNaN(Number(name)))
-                                            .map(name => (
-                                                <option key={Priority[priority] + ":" + name} value={name}>
-                                                    {name}
-                                                </option>
-                                            ))}
-                                    </select>
+                                    {category === Category.Metatype ? `${prioritySystem.remainingSpecialAttributePoints} / ${prioritySystem.specialAttributePoints}` : undefined}
                                     {category === Category.Attributes ? `${prioritySystem.remainingAttributePoints} / ${prioritySystem.attributePoints}` : undefined}
                                 </td>
                             </tr>

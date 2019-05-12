@@ -576,6 +576,15 @@
   top: 306.276pt;
 }
 
+.attributes-edge input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
+}
+
 .attributes-lift-carry {
   @extend %attribute-key;
   width:  25.4585pt;

@@ -1,27 +1,5 @@
 {
     "Human": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 9,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 7,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 5,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 3,
-                "karmaCost": 0
-            },
-            "E": {
-                "specialAttributePoints": 1,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27000": {
@@ -67,27 +45,17 @@
         "edge": {
             "base": 2,
             "maximum": 7
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Elf": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 3,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 0,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27000": {
@@ -131,25 +99,19 @@
             "maximum": 8
         },
         "edge": {
-            "base": 2,
-            "maximum": 7
+            "base": 1,
+            "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Dwarf": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 1,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Pumilionis",
         "books": {
             "27000": {
@@ -193,25 +155,19 @@
             "maximum": 8
         },
         "edge": {
-            "base": 2,
-            "maximum": 7
+            "base": 1,
+            "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Ork": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Robustus",
         "books": {
             "27000": {
@@ -257,19 +213,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Troll": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 0,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Ingentis",
         "books": {
             "27000": {
@@ -316,23 +270,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Gnome": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 7
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 7
-            },
-            "C": {
-                "specialAttributePoints": 1,
-                "karmaCost": 7
-            }
-        },
         "species": "Dwarf",
         "books": {
             "27004": {
@@ -379,23 +327,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Hanuman": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 5
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 5
-            },
-            "C": {
-                "specialAttributePoints": 1,
-                "karmaCost": 5
-            }
-        },
         "species": "Homo Sapiens Pumilionis",
         "books": {
             "27004": {
@@ -443,23 +385,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Koborokuru": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 1,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Pumilionis",
         "books": {
             "27004": {
@@ -505,24 +441,18 @@
         },
         "edge": {
             "base": 1,
+            "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
             "maximum": 6
         }
     },
     "Menehune": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 2
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 2
-            },
-            "C": {
-                "specialAttributePoints": 1,
-                "karmaCost": 2
-            }
-        },
         "species": "Homo Sapiens Pumilionis",
         "books": {
             "27004": {
@@ -570,27 +500,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Dryad": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 4,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 2,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27004": {
@@ -636,28 +556,18 @@
         },
         "edge": {
             "base": 1,
+            "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
             "maximum": 6
         }
     },
     "Nocturna": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 3,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 0,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27004": {
@@ -704,28 +614,18 @@
         },
         "edge": {
             "base": 1,
+            "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
             "maximum": 6
         }
     },
     "Wakyambi": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 12
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 12
-            },
-            "C": {
-                "specialAttributePoints": 3,
-                "karmaCost": 12
-            },
-            "D": {
-                "specialAttributePoints": 0,
-                "karmaCost": 12
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27004": {
@@ -773,27 +673,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Xapiri Thëpë": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 3,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 0,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27004": {
@@ -840,31 +730,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Nartaki": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 8,
-                "karmaCost": 0
-            },
-            "B": {
-                "specialAttributePoints": 6,
-                "karmaCost": 0
-            },
-            "C": {
-                "specialAttributePoints": 4,
-                "karmaCost": 0
-            },
-            "D": {
-                "specialAttributePoints": 2,
-                "karmaCost": 0
-            },
-            "E": {
-                "specialAttributePoints": 1,
-                "karmaCost": 0
-            }
-        },
         "species": "Homo Sapiens Nobilis",
         "books": {
             "27004": {
@@ -911,23 +787,17 @@
         "edge": {
             "base": 2,
             "maximum": 7
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Hobgoblin": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 5
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 5
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": -5
-            }
-        },
         "species": "Homo Sapiens Robustus",
         "books": {
             "27004": {
@@ -974,23 +844,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Ogre": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 8
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 8
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 8
-            }
-        },
         "species": "Homo Sapiens Robustus",
         "books": {
             "27004": {
@@ -1038,23 +902,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Oni": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 4
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 4
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": -4
-            }
-        },
         "species": "Homo Sapiens Robustus",
         "books": {
             "27004": {
@@ -1101,23 +959,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Satyr": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 7,
-                "karmaCost": 10
-            },
-            "B": {
-                "specialAttributePoints": 4,
-                "karmaCost": 10
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 10
-            }
-        },
         "species": "Homo Sapiens Robustus",
         "books": {
             "27004": {
@@ -1164,19 +1016,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Cyclops": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 2
-            },
-            "B": {
-                "specialAttributePoints": 0,
-                "karmaCost": 2
-            }
-        },
         "species": "Homo Sapiens Ingentis",
         "books": {
             "27004": {
@@ -1222,19 +1072,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Fomorian": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 12
-            },
-            "B": {
-                "specialAttributePoints": 0,
-                "karmaCost": 12
-            }
-        },
         "species": "Homo Sapiens Ingentis",
         "books": {
             "27004": {
@@ -1281,19 +1129,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Giant": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 2
-            },
-            "B": {
-                "specialAttributePoints": 0,
-                "karmaCost": 2
-            }
-        },
         "species": "Homo Sapiens Ingentis",
         "books": {
             "27004": {
@@ -1339,19 +1185,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Minotaur": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 2
-            },
-            "B": {
-                "specialAttributePoints": 0,
-                "karmaCost": 2
-            }
-        },
         "species": "Homo Sapiens Ingentis",
         "books": {
             "27004": {
@@ -1398,23 +1242,17 @@
         "edge": {
             "base": 1,
             "maximum": 6
+        },
+        "magic": {
+            "base": 0,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 6
         }
     },
     "Centaur": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 6,
-                "karmaCost": 25
-            },
-            "B": {
-                "specialAttributePoints": 3,
-                "karmaCost": 25
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 25
-            }
-        },
         "species": "Equus Sagittarius",
         "books": {
             "27004": {
@@ -1462,23 +1300,16 @@
             "base": 1,
             "maximum": 5
         },
-        "magic": 1
+        "magic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 0
+        }
     },
     "Naga": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 4,
-                "karmaCost": 25
-            },
-            "B": {
-                "specialAttributePoints": 2,
-                "karmaCost": 25
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 25
-            }
-        },
         "species": "Custos Serpens",
         "books": {
             "27004": {
@@ -1527,23 +1358,16 @@
             "base": 1,
             "maximum": 5
         },
-        "magic": 1
+        "magic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 0
+        }
     },
     "Pixie": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 6,
-                "karmaCost": 15
-            },
-            "B": {
-                "specialAttributePoints": 3,
-                "karmaCost": 15
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 15
-            }
-        },
         "species": "",
         "books": {
             "27004": {
@@ -1591,23 +1415,16 @@
             "base": 2,
             "maximum": 7
         },
-        "magic": 1
+        "magic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 0
+        }
     },
     "Sasquatch": {
-        "priorities": {
-            "A": {
-                "specialAttributePoints": 5,
-                "karmaCost": 20
-            },
-            "B": {
-                "specialAttributePoints": 2,
-                "karmaCost": 20
-            },
-            "C": {
-                "specialAttributePoints": 0,
-                "karmaCost": 20
-            }
-        },
         "species": "Pesvastus Pilosis",
         "books": {
             "27004": {
@@ -1656,6 +1473,13 @@
             "base": 1,
             "maximum": 6
         },
-        "magic": 1
+        "magic": {
+            "base": 1,
+            "maximum": 6
+        },
+        "resonance": {
+            "base": 0,
+            "maximum": 0
+        }
     }
 }

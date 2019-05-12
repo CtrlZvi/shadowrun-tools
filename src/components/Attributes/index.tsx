@@ -16,6 +16,7 @@ import { ReactComponent as ValueOdd } from './AttributesValueOdd.svg';
 import { ReactComponent as BodySVG } from './Body.svg';
 import { ReactComponent as CharismaSVG } from './Charisma.svg';
 import { ReactComponent as Composure } from './Composure.svg';
+import { ReactComponent as EdgeSVG } from './Edge.svg';
 import { ReactComponent as EdgePoint } from './EdgePoint.svg';
 import { ReactComponent as EdgePoints } from './EdgePoints.svg';
 import { ReactComponent as Essence } from './Essence.svg';
@@ -36,7 +37,6 @@ import { ReactComponent as StrengthSVG } from './Strength.svg';
 import { ReactComponent as WillpowerSVG } from './Willpower.svg';
 
 import AttributeComponent from './Attribute';
-import Edge from './Edge';
 import { Attribute } from '../../models/Attribute';
 
 const Attributes = observer(() => {
@@ -110,7 +110,7 @@ const Attributes = observer(() => {
             <JudgeIntentions className="attributes-judge-intentions" />
             <AttributeComponent attribute={Attribute.Charisma} svg={<CharismaSVG />} />
             <Memory className="attributes-memory" />
-            <Edge />
+            <AttributeComponent attribute={Attribute.Edge} svg={<EdgeSVG />} />
             <LiftCarry className="attributes-lift-carry" />
             <EdgePoints className="attributes-edge-points" />
             <Movement className="attributes-movement" />

@@ -1,0 +1,518 @@
+{
+    "metatypes": {
+        "A": {
+            "Centaur": {
+                "specialAttributePoints": 6,
+                "karmaCost": 25
+            },
+            "Cyclops": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "Dryad": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "Dwarf": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "Elf": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "Fomorian": {
+                "specialAttributePoints": 5,
+                "karmaCost": 12
+            },
+            "Giant": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "Gnome": {
+                "specialAttributePoints": 7,
+                "karmaCost": 7
+            },
+            "Hanuman": {
+                "specialAttributePoints": 7,
+                "karmaCost": 5
+            },
+            "Hobgoblin": {
+                "specialAttributePoints": 7,
+                "karmaCost": 5
+            },
+            "Human": {
+                "specialAttributePoints": 9,
+                "karmaCost": 0
+            },
+            "Koborokuru": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "Menehune": {
+                "specialAttributePoints": 7,
+                "karmaCost": 2
+            },
+            "Minotaur": {
+                "specialAttributePoints": 5,
+                "karmaCost": 2
+            },
+            "Naga": {
+                "specialAttributePoints": 4,
+                "karmaCost": 25
+            },
+            "Nartaki": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "Nocturna": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            },
+            "Ogre": {
+                "specialAttributePoints": 7,
+                "karmaCost": 8
+            },
+            "Oni": {
+                "specialAttributePoints": 7,
+                "karmaCost": 4
+            },
+            "Ork": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "Pixie": {
+                "specialAttributePoints": 6,
+                "karmaCost": 15
+            },
+            "Sasquatch": {
+                "specialAttributePoints": 5,
+                "karmaCost": 20
+            },
+            "Satyr": {
+                "specialAttributePoints": 7,
+                "karmaCost": 10
+            },
+            "Troll": {
+                "specialAttributePoints": 5,
+                "karmaCost": 0
+            },
+            "Wakyambi": {
+                "specialAttributePoints": 8,
+                "karmaCost": 12
+            },
+            "Xapiri Thëpë": {
+                "specialAttributePoints": 8,
+                "karmaCost": 0
+            }
+        },
+        "B": {
+            "Centaur": {
+                "specialAttributePoints": 3,
+                "karmaCost": 25
+            },
+            "Cyclops": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            },
+            "Dryad": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "Dwarf": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "Elf": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "Fomorian": {
+                "specialAttributePoints": 0,
+                "karmaCost": 12
+            },
+            "Giant": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            },
+            "Gnome": {
+                "specialAttributePoints": 4,
+                "karmaCost": 7
+            },
+            "Hanuman": {
+                "specialAttributePoints": 4,
+                "karmaCost": 5
+            },
+            "Hobgoblin": {
+                "specialAttributePoints": 4,
+                "karmaCost": 5
+            },
+            "Human": {
+                "specialAttributePoints": 7,
+                "karmaCost": 0
+            },
+            "Koborokuru": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "Menehune": {
+                "specialAttributePoints": 4,
+                "karmaCost": 2
+            },
+            "Minotaur": {
+                "specialAttributePoints": 0,
+                "karmaCost": 2
+            },
+            "Naga": {
+                "specialAttributePoints": 2,
+                "karmaCost": 25
+            },
+            "Nartaki": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "Nocturna": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            },
+            "Ogre": {
+                "specialAttributePoints": 4,
+                "karmaCost": 8
+            },
+            "Oni": {
+                "specialAttributePoints": 4,
+                "karmaCost": 4
+            },
+            "Ork": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "Pixie": {
+                "specialAttributePoints": 3,
+                "karmaCost": 15
+            },
+            "Sasquatch": {
+                "specialAttributePoints": 2,
+                "karmaCost": 20
+            },
+            "Satyr": {
+                "specialAttributePoints": 4,
+                "karmaCost": 10
+            },
+            "Troll": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            },
+            "Wakyambi": {
+                "specialAttributePoints": 6,
+                "karmaCost": 12
+            },
+            "Xapiri Thëpë": {
+                "specialAttributePoints": 6,
+                "karmaCost": 0
+            }
+        },
+        "C": {
+            "Centaur": {
+                "specialAttributePoints": 0,
+                "karmaCost": 25
+            },
+            "Dryad": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "Dwarf": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            },
+            "Elf": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "Gnome": {
+                "specialAttributePoints": 1,
+                "karmaCost": 7
+            },
+            "Hanuman": {
+                "specialAttributePoints": 1,
+                "karmaCost": 5
+            },
+            "Hobgoblin": {
+                "specialAttributePoints": 0,
+                "karmaCost": -5
+            },
+            "Human": {
+                "specialAttributePoints": 5,
+                "karmaCost": 0
+            },
+            "Koborokuru": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            },
+            "Menehune": {
+                "specialAttributePoints": 1,
+                "karmaCost": 2
+            },
+            "Naga": {
+                "specialAttributePoints": 0,
+                "karmaCost": 25
+            },
+            "Nartaki": {
+                "specialAttributePoints": 4,
+                "karmaCost": 0
+            },
+            "Nocturna": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "Ogre": {
+                "specialAttributePoints": 0,
+                "karmaCost": 8
+            },
+            "Oni": {
+                "specialAttributePoints": 0,
+                "karmaCost": -4
+            },
+            "Ork": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            },
+            "Pixie": {
+                "specialAttributePoints": 0,
+                "karmaCost": 15
+            },
+            "Sasquatch": {
+                "specialAttributePoints": 0,
+                "karmaCost": 20
+            },
+            "Satyr": {
+                "specialAttributePoints": 0,
+                "karmaCost": 10
+            },
+            "Wakyambi": {
+                "specialAttributePoints": 3,
+                "karmaCost": 12
+            },
+            "Xapiri Thëpë": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            }
+        },
+        "D": {
+            "Dryad": {
+                "specialAttributePoints": 2,
+                "karmaCost": 0
+            },
+            "Elf": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            },
+            "Human": {
+                "specialAttributePoints": 3,
+                "karmaCost": 0
+            },
+            "Nartaki": {
+                "specialAttributePoints": 2,
+                "karmaCost": 0
+            },
+            "Nocturna": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            },
+            "Wakyambi": {
+                "specialAttributePoints": 0,
+                "karmaCost": 12
+            },
+            "Xapiri Thëpë": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
+            }
+        },
+        "E": {
+            "Human": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            },
+            "Nartaki": {
+                "specialAttributePoints": 1,
+                "karmaCost": 0
+            }
+        }
+    },
+    "attributes": {
+        "A": 24,
+        "B": 20,
+        "C": 16,
+        "D": 14,
+        "E": 12
+    },
+    "magic": {
+        "A": {
+            "magician": {
+                "magic": 6,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 5,
+                        "group": false
+                    },
+                    {
+                        "type": "magic",
+                        "rating": 5,
+                        "group": false
+                    }
+                ],
+                "spells": 10
+            },
+            "mysticadept": {
+                "magic": 6,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 5,
+                        "group": false
+                    },
+                    {
+                        "type": "magic",
+                        "rating": 5,
+                        "group": false
+                    }
+                ],
+                "spells": 10
+            }
+        },
+        "B": {
+            "magician": {
+                "magic": 4,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 4,
+                        "group": false
+                    },
+                    {
+                        "type": "magic",
+                        "rating": 4,
+                        "group": false
+                    }
+                ],
+                "spells": 7
+            },
+            "mysticadept": {
+                "magic": 4,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 4,
+                        "group": false
+                    },
+                    {
+                        "type": "magic",
+                        "rating": 4,
+                        "group": false
+                    }
+                ],
+                "spells": 7
+            },
+            "adept": {
+                "magic": 6,
+                "skills": [
+                    {
+                        "type": "active",
+                        "rating": 4,
+                        "group": false
+                    }
+                ],
+                "spells": 0
+            },
+            "aspectedmagician": {
+                "magic": 5,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 4,
+                        "group": true
+                    }
+                ],
+                "spells": 0
+            }
+        },
+        "C": {
+            "magician": {
+                "magic": 3,
+                "skills": [],
+                "spells": 5
+            },
+            "mysticadept": {
+                "magic": 3,
+                "skills": [],
+                "spells": 5
+            },
+            "adept": {
+                "magic": 4,
+                "skills": [
+                    {
+                        "type": "active",
+                        "rating": 2,
+                        "group": false
+                    }
+                ],
+                "spells": 0
+            },
+            "aspectedmagician": {
+                "magic": 3,
+                "skills": [
+                    {
+                        "type": "magic",
+                        "rating": 2,
+                        "group": true
+                    }
+                ],
+                "spells": 0
+            }
+        },
+        "D": {
+            "adept": {
+                "magic": 2,
+                "skills": [],
+                "spells": 0
+            },
+            "aspectedmagician": {
+                "magic": 2,
+                "skills": [],
+                "spells": 0
+            }
+        },
+        "E": {}
+    },
+    "skills": {
+        "A": {
+            "skills": 46,
+            "groups": 10
+        },
+        "B": {
+            "skills": 36,
+            "groups": 5
+        },
+        "C": {
+            "skills": 28,
+            "groups": 2
+        },
+        "D": {
+            "skills": 22,
+            "groups": 0
+        },
+        "E": {
+            "skills": 18,
+            "groups": 0
+        }
+    },
+    "resources": {
+        "A": 450000,
+        "B": 275000,
+        "C": 140000,
+        "D": 50000,
+        "E": 6000
+    },
+    "karma": 25
+}

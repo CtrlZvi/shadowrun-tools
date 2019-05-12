@@ -1,18 +1,5 @@
 import metatypes from '../data/metatypes.json'
 
-interface Priority {
-    specialAttributePoints: number;
-    karmaCost: number;
-}
-
-interface Priorities {
-    A?: Priority;
-    B?: Priority;
-    C?: Priority;
-    D?: Priority;
-    E?: Priority;
-}
-
 export interface MetatypeAttribute {
     base: number;
     maximum: number;
@@ -20,7 +7,6 @@ export interface MetatypeAttribute {
 
 export interface Metatype {
     metasapient: Metasapient;
-    priorities: Priorities;
     body: MetatypeAttribute;
     agility: MetatypeAttribute;
     reaction: MetatypeAttribute;
@@ -66,7 +52,6 @@ export enum Metasapient {
 
 const InvalidMetatype: Metatype = {
     metasapient: Metasapient.None,
-    priorities: {},
     body: { base: 0, maximum: 0 },
     agility: { base: 0, maximum: 0 },
     reaction: { base: 0, maximum: 0 },

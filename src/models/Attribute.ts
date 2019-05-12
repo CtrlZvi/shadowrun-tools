@@ -11,3 +11,23 @@ export enum Attribute {
     Magic,
     Resonance,
 }
+
+export enum SpecialAttribute {
+    Edge,
+    Magic,
+    Resonance,
+}
+
+export enum MentalAttribute {
+    Willpower,
+    Intuition,
+    Charisma,
+    Logic,
+}
+
+export enum PhysicalAttribute {
+    Body,
+    Agility,
+    Strength,
+    Reaction
+}
