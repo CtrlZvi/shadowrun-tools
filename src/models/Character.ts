@@ -1,7 +1,9 @@
 import { observable, computed, action } from "mobx";
 
 import { Attribute } from "./Attribute";
+import { MagicUser } from "./Magic";
 import { Metatype, Metatypes, Metasapient } from './Metatype';
+import { ResonanceUser } from "./Resonance";
 
 export class Character {
     // Meta Text
@@ -9,8 +11,10 @@ export class Character {
     @observable player: string = "";
     @observable notes: string = "";
 
-    // Personal Data
     @observable metatype: Metatype = Metatypes.get(Metasapient.None)!;
+
+    // Magic or Resonance
+    @observable magicOrResonanceType: MagicUser | ResonanceUser = MagicUser.None;
 
     // Attributes
     @observable attributes = new Map<Attribute, number>(

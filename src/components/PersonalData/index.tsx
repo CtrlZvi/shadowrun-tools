@@ -5,7 +5,6 @@ import { ReactComponent as Age } from './Age.svg';
 import { ReactComponent as Ethnicity } from './Ethnicity.svg';
 import { ReactComponent as Height } from './Height.svg';
 import { ReactComponent as Karma } from './Karma.svg';
-import { ReactComponent as Misc } from './Misc.svg';
 import { ReactComponent as Notoriety } from './Notoriety.svg';
 import './PersonalData.scss';
 import { ReactComponent as Box } from './PersonalDataBox.svg';
@@ -20,6 +19,7 @@ import { ReactComponent as TotalKarma } from './TotalKarma.svg';
 import { ReactComponent as Weight } from './Weight.svg';
 
 import Metatype from './Metatype'
+import Misc from './Misc';
 import NamePrimaryAlias from './NamePrimaryAlias';
 
 const PersonalData = observer(() => {
@@ -46,7 +46,7 @@ const PersonalData = observer(() => {
             <PublicAwareness className="public-awareness" />
             <Karma className="karma" />
             <TotalKarma className="total-karma" />
-            <Misc className="misc" />
+            <Misc />
         </div>
     );
 });

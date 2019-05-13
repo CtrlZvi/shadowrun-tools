@@ -105,7 +105,7 @@
 .metatype>select {
   // width: #{153.168 - (43.248 + 26.38281)}pt;
   left: #{43.248 + 26.38281}pt;
-  bottom: #{765 - 128.595}pt;
+  bottom: #{765 - (120.678 + 7.56006)}pt;
   position: absolute;
   overflow:hidden;
   font-size: 7pt;
@@ -213,4 +213,37 @@
   left: 175.169pt;
   top: 158.835pt;
   position: absolute;
+}
+
+.tradition>svg {
+  width: 14.18896pt;
+  height: 7.56006pt;
+  left: 175.169pt;
+  top: 158.835pt;
+  position: absolute;
+}
+
+.tradition>select {
+  // width: #{153.168 - (43.248 + 26.38281)}pt;
+  left: #{175.169 + 14.18896}pt;
+  bottom: #{765 - 167.472}pt;
+  position: absolute;
+  overflow:hidden;
+  font-size: 7pt;
+  font-family: Friz Quadrata Std Regular;
+  background: transparent;
+  border: none;
+}
+
+.tradition option {
+  // width: #{153.168 - (43.248 + 26.38281)}pt;
+  // left: #{43.248 + 26.38281}pt;
+  // bottom: #{765 - 128.595}pt;
+  // position: absolute;
+  // overflow:hidden;
+  font-size: 7pt;
+  font-family: Friz Quadrata Std Regular;
+  background-color: #f1efee;
+  // background-color: #eeeceb;
+  border: none;
 }

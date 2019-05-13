@@ -348,7 +348,7 @@
     },
     "magic": {
         "A": {
-            "magician": {
+            "Magician": {
                 "magic": 6,
                 "skills": [
                     {
@@ -364,7 +364,7 @@
                 ],
                 "spells": 10
             },
-            "mysticadept": {
+            "Mystic Adept": {
                 "magic": 6,
                 "skills": [
                     {
@@ -382,7 +382,7 @@
             }
         },
         "B": {
-            "magician": {
+            "Magician": {
                 "magic": 4,
                 "skills": [
                     {
@@ -398,7 +398,7 @@
                 ],
                 "spells": 7
             },
-            "mysticadept": {
+            "Mystic Adept": {
                 "magic": 4,
                 "skills": [
                     {
@@ -414,7 +414,7 @@
                 ],
                 "spells": 7
             },
-            "adept": {
+            "Adept": {
                 "magic": 6,
                 "skills": [
                     {
@@ -425,7 +425,7 @@
                 ],
                 "spells": 0
             },
-            "aspectedmagician": {
+            "Aspected Magician": {
                 "magic": 5,
                 "skills": [
                     {
@@ -438,17 +438,17 @@
             }
         },
         "C": {
-            "magician": {
+            "Magician": {
                 "magic": 3,
                 "skills": [],
                 "spells": 5
             },
-            "mysticadept": {
+            "Mystic Adept": {
                 "magic": 3,
                 "skills": [],
                 "spells": 5
             },
-            "adept": {
+            "Adept": {
                 "magic": 4,
                 "skills": [
                     {
@@ -459,7 +459,7 @@
                 ],
                 "spells": 0
             },
-            "aspectedmagician": {
+            "Aspected Magician": {
                 "magic": 3,
                 "skills": [
                     {
@@ -472,17 +472,64 @@
             }
         },
         "D": {
-            "adept": {
+            "Adept": {
                 "magic": 2,
                 "skills": [],
                 "spells": 0
             },
-            "aspectedmagician": {
+            "Aspected Magician": {
                 "magic": 2,
                 "skills": [],
                 "spells": 0
             }
         },
+        "E": {}
+    },
+    "resonance": {
+        "A": {
+            "Technomancer": {
+                "resonance": 6,
+                "skills": [
+                    {
+                        "type": "resonance",
+                        "rating": 5,
+                        "group": false
+                    },
+                    {
+                        "type": "resonance",
+                        "rating": 5,
+                        "group": false
+                    }
+                ],
+                "complexForms": 5
+            }
+        },
+        "B": {
+            "Technomancer": {
+                "resonance": 4,
+                "skills": [
+                    {
+                        "type": "resonance",
+                        "rating": 4,
+                        "group": false
+                    },
+                    {
+                        "type": "resonance",
+                        "rating": 4,
+                        "group": false
+                    }
+                ],
+                "complexForms": 2
+            }
+        },
+        "C": {
+            "Technomancer": {
+                "resonance": 3,
+                "skills": [],
+                "complexForms": 1
+            }
+        },
+        "D": {},
         "E": {}
     },
     "skills": {
