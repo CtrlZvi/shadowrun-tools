@@ -326,6 +326,10 @@
             "Xapiri Thëpë": {
                 "specialAttributePoints": 0,
                 "karmaCost": 0
+            },
+            "None": {
+                "specialAttributePoints": 0,
+                "karmaCost": 0
             }
         },
         "E": {
@@ -346,7 +350,7 @@
         "D": 14,
         "E": 12
     },
-    "magic": {
+    "magicOrResonance": {
         "A": {
             "Magician": {
                 "magic": 6,
@@ -379,6 +383,22 @@
                     }
                 ],
                 "spells": 10
+            },
+            "Technomancer": {
+                "resonance": 6,
+                "skills": [
+                    {
+                        "type": "resonance",
+                        "rating": 5,
+                        "group": false
+                    },
+                    {
+                        "type": "resonance",
+                        "rating": 5,
+                        "group": false
+                    }
+                ],
+                "complexForms": 5
             }
         },
         "B": {
@@ -435,6 +455,22 @@
                     }
                 ],
                 "spells": 0
+            },
+            "Technomancer": {
+                "resonance": 4,
+                "skills": [
+                    {
+                        "type": "resonance",
+                        "rating": 4,
+                        "group": false
+                    },
+                    {
+                        "type": "resonance",
+                        "rating": 4,
+                        "group": false
+                    }
+                ],
+                "complexForms": 2
             }
         },
         "C": {
@@ -469,6 +505,11 @@
                     }
                 ],
                 "spells": 0
+            },
+            "Technomancer": {
+                "resonance": 3,
+                "skills": [],
+                "complexForms": 1
             }
         },
         "D": {
@@ -483,54 +524,15 @@
                 "spells": 0
             }
         },
-        "E": {}
-    },
-    "resonance": {
-        "A": {
-            "Technomancer": {
-                "resonance": 6,
-                "skills": [
-                    {
-                        "type": "resonance",
-                        "rating": 5,
-                        "group": false
-                    },
-                    {
-                        "type": "resonance",
-                        "rating": 5,
-                        "group": false
-                    }
-                ],
-                "complexForms": 5
-            }
-        },
-        "B": {
-            "Technomancer": {
-                "resonance": 4,
-                "skills": [
-                    {
-                        "type": "resonance",
-                        "rating": 4,
-                        "group": false
-                    },
-                    {
-                        "type": "resonance",
-                        "rating": 4,
-                        "group": false
-                    }
-                ],
-                "complexForms": 2
-            }
-        },
-        "C": {
-            "Technomancer": {
-                "resonance": 3,
+        "E": {
+            "None": {
+                "magic": 0,
+                "resonance": 0,
                 "skills": [],
-                "complexForms": 1
+                "spells": 0,
+                "complexForms": 0
             }
-        },
-        "D": {},
-        "E": {}
+        }
     },
     "skills": {
         "A": {

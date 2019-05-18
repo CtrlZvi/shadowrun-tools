@@ -6,16 +6,21 @@ import CharacterContext from '../../contexts/Character';
 import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Attribute } from '../../models/Attribute';
 import { MetatypeAttribute } from '../../models/Metatype';
+import { MagicOrResonanceUser } from '../../models/MagicOrResonance';
 
 const AttributeComponent = observer(({ attribute, svg }: { attribute: Attribute, svg: JSX.Element }) => {
-    let characterSheet = useContext(CharacterSheetContext);
-    let character = useContext(CharacterContext);
-    let prioritySystem = useContext(PrioritySystemContext);
+    const characterSheet = useContext(CharacterSheetContext);
+    const character = useContext(CharacterContext);
+    const prioritySystem = useContext(PrioritySystemContext);
 
     const name = Attribute[attribute];
     const lookupName = name.toLowerCase()
     let value: number = (character as any)[lookupName];
-    let metatypeAttribute: MetatypeAttribute = (character.metatype as any)[lookupName];
+    let metatypeAttribute: MetatypeAttribute = lookupName !== Attribute[Attribute.MagicOrResonance].toLowerCase() ?
+        (character.metatype as any)[lookupName] :
+        character.magicOrResonanceUser === MagicOrResonanceUser.Technomancer ?
+            character.metatype["resonance"] :
+            character.metatype["magic"];
 
     return (
         <div className={`attributes-${lookupName}`} >
@@ -23,9 +28,9 @@ const AttributeComponent = observer(({ attribute, svg }: { attribute: Attribute,
             < div >
                 <span>{value}({value})</span>
                 <input type="number"
-                    value={character.attributes.get(attribute)}
-                    min={0}
-                    max={metatypeAttribute.maximum - metatypeAttribute.base}
+                    value={value}
+                    min={metatypeAttribute !== undefined ? metatypeAttribute.base : 0}
+                    max={metatypeAttribute !== undefined ? metatypeAttribute.maximum : 0}
                     onChange={
                         (event: ChangeEvent<HTMLInputElement>) => prioritySystem.updateAttribute(attribute, event.currentTarget.valueAsNumber)
                     } />

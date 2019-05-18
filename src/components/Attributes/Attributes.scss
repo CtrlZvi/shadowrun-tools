@@ -375,11 +375,27 @@
   overflow: hidden;
 }
 
-.attributes-magic-resonance {
+.attributes-magicorresonance>svg {
   @extend %attribute-key;
   width: 50.79199pt;
   left: 159.726pt;
   top: 216.193pt;
+}
+
+.attributes-magicorresonance>div {
+  @extend %attribute-value;
+  width: 69.42801pt;
+  left: 219.292pt;
+  top: 216.193pt;
+}
+
+.attributes-magicorresonance input {
+  width: 1em;
+  height: 7.56006pt;
+  background: transparent;
+  border: none;
+  padding: 0pt;
+  overflow: hidden;
 }
 
 .attributes-reaction>svg {

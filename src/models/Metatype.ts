@@ -16,6 +16,8 @@ export interface Metatype {
     intuition: MetatypeAttribute;
     charisma: MetatypeAttribute;
     edge: MetatypeAttribute;
+    magic: MetatypeAttribute;
+    resonance: MetatypeAttribute;
 }
 
 export enum Metasapient {
@@ -61,6 +63,8 @@ const InvalidMetatype: Metatype = {
     intuition: { base: 0, maximum: 0 },
     charisma: { base: 0, maximum: 0 },
     edge: { base: 0, maximum: 0 },
+    magic: { base: 0, maximum: 0 },
+    resonance: { base: 0, maximum: 0 },
 }
 
 export const Metatypes: Map<Metasapient, Metatype> = new Map(

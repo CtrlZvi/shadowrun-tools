@@ -8,14 +8,12 @@ export enum Attribute {
     Charisma,
     Logic,
     Edge,
-    Magic,
-    Resonance,
+    MagicOrResonance,
 }
 
 export enum SpecialAttribute {
     Edge,
-    Magic,
-    Resonance,
+    MagicOrResonance,
 }
 
 export enum MentalAttribute {

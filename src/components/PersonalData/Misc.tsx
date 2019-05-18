@@ -7,8 +7,7 @@ import { ReactComponent as SVG } from './Misc.svg';
 import CharacterContext from '../../contexts/Character';
 import CharacterSheetContext from '../../contexts/CharacterSheet';
 import PrioritySystemContext from '../../contexts/PrioritySystem';
-import { MagicUser } from '../../models/Magic';
-import { ResonanceUser } from '../../models/Resonance';
+import { MagicOrResonanceUser } from '../../models/MagicOrResonance';
 
 const MagicUserComponent = observer(() => {
     let characterSheet = useContext(CharacterSheetContext);
@@ -16,10 +15,7 @@ const MagicUserComponent = observer(() => {
     let prioritySystem = useContext(PrioritySystemContext);
 
     let svg = !characterSheet.rendered ? <SVG /> : undefined;
-    const types = [...new Set<MagicUser | ResonanceUser>(
-        Object.values(MagicUser)
-            .concat(Object.values(ResonanceUser))
-    ).values()]
+    const types = [...Object.values(MagicOrResonanceUser)]
         .map(userType => (
             <option key={userType} value={userType}>
                 {userType}
@@ -29,9 +25,9 @@ const MagicUserComponent = observer(() => {
     return (
         <div className="tradition">
             {svg}
-            <select value={character.magicOrResonanceType} onChange={
-                action((event: ChangeEvent<HTMLSelectElement>) => prioritySystem.updateMagicOrResonanceType(
-                    event.currentTarget.value as (MagicUser | ResonanceUser)
+            <select value={character.magicOrResonanceUser} onChange={
+                action((event: ChangeEvent<HTMLSelectElement>) => prioritySystem.updateMagicOrResonanceUser(
+                    event.currentTarget.value as MagicOrResonanceUser
                 ))
             }>
                 {types}

@@ -23,13 +23,13 @@ const PriorityComponent = observer(() => {
                 </thead>
                 <tbody>
                     {
-                        [...prioritySystem.priorities.entries()].map(([priority, category]) => (
+                        [...Object.entries(prioritySystem.priorities)].map(([priority, category]) => (
                             <tr key={priority}>
-                                <th>{Priority[priority]}</th>
-                                <td>{Category[prioritySystem.priorities.get(priority)!]}</td>
+                                <th>{priority}</th>
+                                <td>{category}</td>
                                 <td>
-                                    {category === Category.Metatype ? `${prioritySystem.remainingSpecialAttributePoints} / ${prioritySystem.specialAttributePoints}` : undefined}
-                                    {category === Category.Attributes ? `${prioritySystem.remainingAttributePoints} / ${prioritySystem.attributePoints}` : undefined}
+                                    {category === Category.Metatype ? `${prioritySystem.availableSpecialAttributePoints} / ${prioritySystem.totalSpecialAttributePoints}` : undefined}
+                                    {category === Category.Attributes ? `${prioritySystem.availableAttributePoints} / ${prioritySystem.totalAttributePoints}` : undefined}
                                 </td>
                             </tr>
                         ))

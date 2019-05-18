@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { ReactComponent as AgilitySVG } from './Agility.svg';
 import './Attributes.scss';
@@ -25,7 +25,7 @@ import { ReactComponent as IntuitionSVG } from './Intuition.svg';
 import { ReactComponent as JudgeIntentions } from './JudgeIntentions.svg';
 import { ReactComponent as LiftCarry } from './LiftCarry.svg';
 import { ReactComponent as LogicSVG } from './Logic.svg';
-import { ReactComponent as MagicResonance } from './MagicResonance.svg';
+import { ReactComponent as MagicOrResonanceSVG } from './MagicResonance.svg';
 import { ReactComponent as MatrixInitiative } from './MatrixInitiative.svg';
 import { ReactComponent as Memory } from './Memory.svg';
 import { ReactComponent as MentalLimit } from './MentalLimit.svg';
@@ -97,7 +97,7 @@ const Attributes = observer(() => {
             <AttributeComponent attribute={Attribute.Body} svg={<BodySVG />} />
             <Essence className="attributes-essence" />
             <AttributeComponent attribute={Attribute.Agility} svg={<AgilitySVG />} />
-            <MagicResonance className="attributes-magic-resonance" />
+            <AttributeComponent attribute={Attribute.MagicOrResonance} svg={<MagicOrResonanceSVG />} />
             <AttributeComponent attribute={Attribute.Reaction} svg={<ReactionSVG />} />
             <Initiative className="attributes-initiative" />
             <AttributeComponent attribute={Attribute.Strength} svg={<StrengthSVG />} />

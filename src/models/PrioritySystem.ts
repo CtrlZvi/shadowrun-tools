@@ -1,10 +1,9 @@
-import { observable, action, computed } from "mobx";
+import { action, computed, reaction } from "mobx";
 
 import { Attribute, SpecialAttribute } from "./Attribute";
 import { Character } from "./Character";
-import { MagicUser } from "./Magic";
-import { Metatype, MetatypeAttribute, Metasapient } from "./Metatype";
-import { ResonanceUser } from "./Resonance";
+import { MagicOrResonanceUser } from "./MagicOrResonance";
+import { Metatype, Metasapient } from "./Metatype";
 import prioritySystem from '../data/prioritySystem.json'
 
 export enum Priority {
@@ -14,20 +13,17 @@ export enum Priority {
     D,
     E,
 }
+const priorities: Priority[] = [...Object.values(Priority)]
+    .filter(value => !isNaN(Number(value)));
 
-// The categories are sorted by their order of importance. When attempting to
-// automatically adjust the priorities, a lower importance category will not
-// bubble up past a higher importance one, and a higher importance one will
-// not bubble down past a lower importance one.
 export enum Category {
-    None,
-    Magic,
-    Resonance,
-    Metatype,
-    Attributes,
-    Skills,
-    Resources,
+    MagicOrResonance = "Magic or Resonance",
+    Metatype = "Metatype",
+    Attributes = "Attributes",
+    Skills = "Skills",
+    Resources = "Resources",
 }
+const categories: Category[] = [...Object.values(Category)]
 
 interface MetatypeMetadata {
     specialAttributePoints: number;
@@ -40,10 +36,18 @@ interface MagicMetadata {
     spells: number;
 }
 
+function isMagicMetadata(metadata: MagicMetadata | ResonanceMetadata): metadata is MagicMetadata {
+    return (metadata as MagicMetadata).magic !== undefined;
+}
+
 interface ResonanceMetadata {
-    magic: number;
+    resonance: number;
     skills: { type: string, rating: number, group: boolean }[];
     complexForms: number;
+}
+
+function isResonanceMetadata(metadata: MagicMetadata | ResonanceMetadata): metadata is ResonanceMetadata {
+    return (metadata as ResonanceMetadata).resonance !== undefined;
 }
 
 const metatypes = new Map<Priority, Map<Metasapient, MetatypeMetadata>>([
@@ -59,28 +63,15 @@ const metatypes = new Map<Priority, Map<Metasapient, MetatypeMetadata>>([
             ])
         ])
 ]);
-const magic = new Map<Priority, Map<MagicUser, MagicMetadata>>([
-    ...Object.entries(prioritySystem.magic)
-        .map(([priority, magicUserTypes]): [Priority, Map<MagicUser, MagicMetadata>] => [
+const magicOrResonance = new Map<Priority, Map<MagicOrResonanceUser, MagicMetadata | ResonanceMetadata>>([
+    ...Object.entries(prioritySystem.magicOrResonance)
+        .map(([priority, userTypes]): [Priority, Map<MagicOrResonanceUser, MagicMetadata | ResonanceMetadata>] => [
             (Priority as any)[priority],
-            new Map<MagicUser, MagicMetadata>([
-                ...Object.entries(magicUserTypes)
-                    .map(([userType, metadata]): [MagicUser, MagicMetadata] => [
-                        userType as MagicUser,
-                        metadata as MagicMetadata
-                    ])
-            ])
-        ])
-]);
-const resonance = new Map<Priority, Map<ResonanceUser, ResonanceMetadata>>([
-    ...Object.entries(prioritySystem.resonance)
-        .map(([priority, resonanceUserTypes]): [Priority, Map<ResonanceUser, ResonanceMetadata>] => [
-            (Priority as any)[priority],
-            new Map<ResonanceUser, ResonanceMetadata>([
-                ...Object.entries(resonanceUserTypes)
-                    .map(([userType, metadata]): [ResonanceUser, ResonanceMetadata] => [
-                        userType as ResonanceUser,
-                        metadata as ResonanceMetadata
+            new Map<MagicOrResonanceUser, MagicMetadata | ResonanceMetadata>([
+                ...Object.entries(userTypes)
+                    .map(([userType, metadata]): [MagicOrResonanceUser, MagicMetadata | ResonanceMetadata] => [
+                        userType as MagicOrResonanceUser,
+                        metadata as MagicMetadata | ResonanceMetadata,
                     ])
             ])
         ])
@@ -90,158 +81,214 @@ const attributes = new Map<Priority, number>([
         .map(([priority, points]): [Priority, number] => [(Priority as any)[priority], points])
 ]);
 
-export class PrioritySystem {
-    @observable priorities = new Map<Priority, Category>(
-        Object.values(Priority)
-            .filter(priority => !isNaN(Number(priority)))
-            .map((priority: Priority) => [priority, Category.None])
-    );
+class PriorityConfiguration {
+    A: Category;
+    B: Category;
+    C: Category;
+    D: Category;
+    E: Category;
 
-    character: Character;
+    constructor(a: Category, b: Category, c: Category, d: Category, e: Category) {
+        this.A = a;
+        this.B = b;
+        this.C = c;
+        this.D = d;
+        this.E = e;
+    }
+
+    priority(category: Category): Priority {
+        return this.A === category ?
+            Priority.A :
+            this.B === category ?
+                Priority.B :
+                this.C === category ?
+                    Priority.C :
+                    this.D === category ?
+                        Priority.D :
+                        Priority.E;
+    }
+}
+
+const priorityConfigurations: PriorityConfiguration[] = categories
+    .flatMap(a => categories
+        .filter(category => ![a].includes(category))
+        .flatMap(b => categories
+            .filter(category => ![a, b].includes(category))
+            .flatMap(c => categories
+                .filter(category => ![a, b, c].includes(category))
+                .flatMap(d => categories
+                    .filter(category => ![a, b, c, d].includes(category))
+                    .map(e => new PriorityConfiguration(a, b, c, d, e))
+                )
+            )
+        )
+    )
+
+
+export class PrioritySystem {
+    private character: Character;
+
+    // Remembered pieces of data for Magic or Resonance recomputation.
+    private previousMagicOrResonancePriority = Priority.E;
+    private previousMagicOrResonanceUser = MagicOrResonanceUser.None;
 
     constructor(character: Character) {
         this.character = character;
-    }
 
-    @action private adjustPriorities = () => {
-        let availablePriorities = [...this.priorities.keys()].sort().reverse();
-        const categories: Category[] = Object.entries(Category)
-            .filter(([name, category]) => isNaN(Number(name)))
-            .map(([name, category]) => category);
-        for (const category of categories) {
-            if (category === Category.None) {
-                continue;
+        reaction(
+            () => {
+                const magicOrResonanceMetadata = magicOrResonance
+                    .get(this.priorities.priority(Category.MagicOrResonance))!
+                    .get(this.character.magicOrResonanceUser)!;
+                return isMagicMetadata(magicOrResonanceMetadata) ?
+                    magicOrResonanceMetadata.magic :
+                    magicOrResonanceMetadata.resonance;
+            },
+            (data, reaction) => {
+                const previousMagicOrResonanceMetadata = magicOrResonance
+                    .get(this.previousMagicOrResonancePriority)!
+                    .get(this.previousMagicOrResonanceUser)!;
+                const previousPriorityContribution = isMagicMetadata(previousMagicOrResonanceMetadata) ?
+                    previousMagicOrResonanceMetadata.magic :
+                    previousMagicOrResonanceMetadata.resonance;
+                this.character.magicorresonance = this.character.magicorresonance - previousPriorityContribution + data;
+                this.previousMagicOrResonancePriority = this.priorities.priority(Category.MagicOrResonance)!;
+                this.previousMagicOrResonanceUser = this.character.magicOrResonanceUser;
             }
-            if (availablePriorities.length == 0) {
-                break;
-            }
-            const priorityIndex = availablePriorities.findIndex(priority => this.satisfies(priority, category));
-            if (priorityIndex == -1) {
-                continue;
-            }
-            const priority = availablePriorities.splice(priorityIndex, 1)[0];
-            this.priorities.set(priority, category);
-        }
-        for (let priority of availablePriorities) {
-            this.priorities.set(priority, Category.None);
-        }
+        )
     }
 
-    private satisfies(priority: Priority, category: Category) {
-        switch (category) {
-            case Category.Metatype:
-                const metatype = metatypes.get(priority)!.get(this.character.metatype.metasapient);
-                return metatype !== undefined && this._specialAttributePoints <= metatype.specialAttributePoints;
-            case Category.Magic:
-                const magicUserType = [...Object.values(MagicUser)]
-                    .find(magicUserType => magicUserType == this.character.magicOrResonanceType && magicUserType != MagicUser.None);
-                const magicMetadata = magic.get(priority)!.get(magicUserType)!
-                return magicUserType !== undefined && magicMetadata !== undefined;
-            case Category.Resonance:
-                const resonanceUserType: ResonanceUser = [...Object.values(ResonanceUser)]
-                    .find(resonanceUserType => resonanceUserType == this.character.magicOrResonanceType && resonanceUserType != ResonanceUser.None);
-                const resonanceMetadata = resonance.get(priority)!.get(resonanceUserType)!
-                return resonanceUserType !== undefined && resonanceMetadata !== undefined;
-            case Category.Attributes:
-                return this._attributePoints <= attributes.get(priority)!;
-            default:
-                return true;
-        }
-    }
+    @computed get priorities() {
+        // There's a computation cycle for the used special attribute points,
+        // because calculating them requires knowing the priority of Magic or
+        // Resonance, but knowing the priority of Magic or Resonance requires
+        // knowing the used special attribute points. We break this cycle by
+        // redefining the function here on a per priority basis so evaluation
+        // can be correct.
+        const usedSpecialAttributePoints = (magicOrResonancePriority: Priority) => {
+            const magicOrResonanceMetadata = magicOrResonance
+                .get(magicOrResonancePriority)!
+                .get(this.character.magicOrResonanceUser);
+            return this.character.attributes.get(Attribute.Edge)! + Math.max(
+                this.character.attributes.get(Attribute.MagicOrResonance)! - (
+                    magicOrResonanceMetadata !== undefined ?
+                        isMagicMetadata(magicOrResonanceMetadata) ?
+                            magicOrResonanceMetadata.magic :
+                            magicOrResonanceMetadata.resonance :
+                        0,
+                    0
+                )
+            );
+        };
 
-    private satisfied(category: Category) {
-        const priority = [...this.priorities.entries()]
-            .find(([priority, candidateCategory]) => category === candidateCategory);
-        if (priority === undefined) {
-            return false;
-        }
-        return this.satisfies(priority[0], category);
-    }
+        let weightedPriorityConfigurations = priorityConfigurations.map(
+            configuration => ({ configuration: configuration, count: 0 })
+        );
 
-    @action updateMetatype = (metatype: Metatype) => {
+        // Inviolable Constraint: Metatype priority must be in range for the
+        // character's metatype.
+        weightedPriorityConfigurations
+            .forEach(configuration => {
+                const priority = configuration.configuration.priority(Category.Metatype);
+                const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
+                configuration.count += metatypeMetadata !== undefined ? 0 : Infinity;
+            });
+
+        // Weighted Constraint: Metatype priority must be high enough priority for the
+        // character's used special attribute points.
+        weightedPriorityConfigurations
+            .forEach(configuration => {
+                const priority = configuration.configuration.priority(Category.Metatype);
+                const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
+                configuration.count += Math.max(
+                    0,
+                    usedSpecialAttributePoints(priority) - (
+                        metatypeMetadata !== undefined ?
+                            metatypeMetadata.specialAttributePoints :
+                            0
+                    ),
+                );
+            });
+
+        // Inviolable Constraint: Magic or Resonance priority must be in range for the
+        // character's user type.
+        weightedPriorityConfigurations
+            .forEach(configuration => {
+                const priority = configuration.configuration.priority(Category.MagicOrResonance);
+                const magicOrResonanceMetadata = magicOrResonance.get(priority)!.get(this.character.magicOrResonanceUser);
+                configuration.count += magicOrResonanceMetadata !== undefined ? 0 : Infinity;
+            });
+
+        // Weighted Constraint: Attributes must be high enough priority for the
+        // character's used attribute points.
+        weightedPriorityConfigurations
+            .forEach(configuration => {
+                const priority = configuration.configuration.priority(Category.Attributes);
+                configuration.count += Math.max(
+                    0,
+                    this.usedAttributePoints - attributes.get(priority)!,
+                );
+            });
+
+        return weightedPriorityConfigurations
+            .sort((a, b) => a.count - b.count)[0].configuration;
+    };
+
+
+    @action updateMetatype(metatype: Metatype) {
         this.character.metatype = metatype;
-
-        if (this.satisfied(Category.Metatype)) {
-            return;
-        }
-
-        this.adjustPriorities();
     }
 
-    @action updateMagicOrResonanceType = (userType: MagicUser | ResonanceUser) => {
-        switch (this.character.metatype.metasapient) {
-            case Metasapient.Centaur:
-            case Metasapient.Naga:
-            case Metasapient.Pixie:
-            case Metasapient.Sasquatch:
-                if (userType == ResonanceUser.Technomancer) {
-                    throw new Error(
-                        `metasapients (such as a ${this.character.metatype.metasapient}) have natural magic and cannot have Resonance [Run Faster (CAT27004) page 102]`
-                    )
-                }
-        }
-        this.character.magicOrResonanceType = userType;
-
-        if (this.satisfied(Category.Magic) && this.satisfied(Category.Resonance)) {
-            return;
-        }
-
-        this.adjustPriorities();
+    @computed get totalSpecialAttributePoints() {
+        const metatypePriority = this.priorities.priority(Category.Metatype);
+        return metatypes
+            .get(this.priorities.priority(Category.Metatype))!
+            .get(this.character.metatype.metasapient)!
+            .specialAttributePoints;
     }
 
-    @observable private _attributePoints: number = 0;
-
-    @computed get remainingAttributePoints() {
-        return this.attributePoints - this._attributePoints;
+    @computed private get usedSpecialAttributePoints() {
+        const magicOrResonancePriority = this.priorities.priority(Category.MagicOrResonance)!;
+        const magicOrResonanceMetadata = magicOrResonance
+            .get(magicOrResonancePriority)!
+            .get(this.character.magicOrResonanceUser)!;
+        return this.character.attributes.get(Attribute.Edge)! + Math.max(
+            this.character.attributes.get(Attribute.MagicOrResonance)! - (
+                isMagicMetadata(magicOrResonanceMetadata) ?
+                    magicOrResonanceMetadata.magic :
+                    magicOrResonanceMetadata.resonance
+            ),
+            0
+        );
     }
 
-    @computed get attributePoints() {
-        let priority = [...this.priorities.entries()]
-            .find(([priority, category]) => category === Category.Attributes);
-        if (priority === undefined) {
-            return 0;
-        }
-        return attributes.get(priority[0])!;
+    @computed get availableSpecialAttributePoints() {
+        return this.totalSpecialAttributePoints - this.usedSpecialAttributePoints;
     }
 
-    @observable private _specialAttributePoints: number = 0;
-
-    @computed get remainingSpecialAttributePoints() {
-        return this.specialAttributePoints - this._specialAttributePoints;
+    @action updateMagicOrResonanceUser(magicOrResonanceUser: MagicOrResonanceUser) {
+        this.character.magicOrResonanceUser = magicOrResonanceUser;
     }
 
-    @computed get specialAttributePoints() {
-        let priority = [...this.priorities.entries()]
-            .find(([priority, category]) => category === Category.Metatype);
-        if (priority === undefined) {
-            return 0;
+    @action updateAttribute(attribute: Attribute, value: number) {
+        switch (attribute) {
+            default:
+                (this.character as any)[Attribute[attribute].toLowerCase()] = value;
         }
-        return metatypes.get(priority[0])!.get(this.character.metatype.metasapient)!.specialAttributePoints;
     }
 
-    @action updateAttribute = (attribute: Attribute, points: number) => {
-        // Adjust the character's attribute value.
-        let name = Attribute[attribute].toLowerCase();
-        let metatypeAttribute: MetatypeAttribute = (this.character.metatype as any)[name];
-        let delta = points - this.character.attributes.get(attribute)!;
-        let value: number = (this.character as any)[name] + delta;
-        if (value > metatypeAttribute.maximum) {
-            throw new RangeError(`cannot increase ${name} beyond the ${this.character.metatype.metasapient}'s natural maximum`);
-        }
-        if (value < metatypeAttribute.base) {
-            throw new RangeError(`cannot decrease ${name} beyond the ${this.character.metatype.metasapient}'s base`);
-        }
-        this.character.attributes.set(attribute, points);
+    @computed get totalAttributePoints() {
+        return attributes.get(this.priorities.priority(Category.Attributes))!;
+    }
 
-        if ((SpecialAttribute as any)[Attribute[attribute]] === undefined) {
-            this._attributePoints += delta;
-        } else {
-            this._specialAttributePoints += delta;
-        }
-        if (this.satisfied(Category.Attributes) && this.satisfied(Category.Metatype)) {
-            return;
-        }
+    @computed private get usedAttributePoints() {
+        return [...this.character.attributes.entries()]
+            .filter(([attribute, points]) => ![Attribute.Edge, Attribute.MagicOrResonance].includes(attribute))
+            .map(([attribute, points]) => points)
+            .reduce((previous, current) => previous + current, 0);
+    }
 
-        this.adjustPriorities();
+    @computed get availableAttributePoints() {
+        return this.totalAttributePoints - this.usedAttributePoints;
     }
 }
