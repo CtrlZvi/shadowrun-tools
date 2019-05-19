@@ -15,10 +15,10 @@ const Metatype = observer(() => {
     let prioritySystem = useContext(PrioritySystemContext);
 
     let svg = !characterSheet.rendered ? <SVG /> : undefined;
-    let metatypes = Object.entries(Metasapient).map(
-        ([metasapient, name]) => (
-            <option key={name} value={metasapient}>
-                {name}
+    let metatypes = Object.values(Metasapient).map(
+        (metasapient) => (
+            <option key={metasapient} value={metasapient}>
+                {metasapient}
             </option>
         )
     )

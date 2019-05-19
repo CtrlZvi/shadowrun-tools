@@ -1,6 +1,6 @@
 import { action, computed, reaction } from "mobx";
 
-import { Attribute, SpecialAttribute } from "./Attribute";
+import { Attribute } from "./Attribute";
 import { Character } from "./Character";
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metasapient } from "./Metatype";
@@ -57,7 +57,7 @@ const metatypes = new Map<Priority, Map<Metasapient, MetatypeMetadata>>([
             new Map<Metasapient, MetatypeMetadata>([
                 ...Object.entries(metatypes)
                     .map(([metasapient, metadata]): [Metasapient, MetatypeMetadata] => [
-                        (Metasapient as any)[metasapient],
+                        metasapient as Metasapient,
                         metadata
                     ])
             ])
@@ -187,48 +187,44 @@ export class PrioritySystem {
 
         // Inviolable Constraint: Metatype priority must be in range for the
         // character's metatype.
-        weightedPriorityConfigurations
-            .forEach(configuration => {
-                const priority = configuration.configuration.priority(Category.Metatype);
-                const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
-                configuration.count += metatypeMetadata !== undefined ? 0 : Infinity;
-            });
+        for (const configuration of weightedPriorityConfigurations) {
+            const priority = configuration.configuration.priority(Category.Metatype);
+            const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
+            configuration.count += metatypeMetadata !== undefined ? 0 : Infinity;
+        }
 
         // Weighted Constraint: Metatype priority must be high enough priority for the
         // character's used special attribute points.
-        weightedPriorityConfigurations
-            .forEach(configuration => {
-                const priority = configuration.configuration.priority(Category.Metatype);
-                const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
-                configuration.count += Math.max(
-                    0,
-                    usedSpecialAttributePoints(priority) - (
-                        metatypeMetadata !== undefined ?
-                            metatypeMetadata.specialAttributePoints :
-                            0
-                    ),
-                );
-            });
+        for (const configuration of weightedPriorityConfigurations) {
+            const priority = configuration.configuration.priority(Category.Metatype);
+            const metatypeMetadata = metatypes.get(priority)!.get(this.character.metatype.metasapient);
+            configuration.count += Math.max(
+                0,
+                usedSpecialAttributePoints(priority) - (
+                    metatypeMetadata !== undefined ?
+                        metatypeMetadata.specialAttributePoints :
+                        0
+                ),
+            );
+        }
 
         // Inviolable Constraint: Magic or Resonance priority must be in range for the
         // character's user type.
-        weightedPriorityConfigurations
-            .forEach(configuration => {
-                const priority = configuration.configuration.priority(Category.MagicOrResonance);
-                const magicOrResonanceMetadata = magicOrResonance.get(priority)!.get(this.character.magicOrResonanceUser);
-                configuration.count += magicOrResonanceMetadata !== undefined ? 0 : Infinity;
-            });
+        for (const configuration of weightedPriorityConfigurations) {
+            const priority = configuration.configuration.priority(Category.MagicOrResonance);
+            const magicOrResonanceMetadata = magicOrResonance.get(priority)!.get(this.character.magicOrResonanceUser);
+            configuration.count += magicOrResonanceMetadata !== undefined ? 0 : Infinity;
+        };
 
         // Weighted Constraint: Attributes must be high enough priority for the
         // character's used attribute points.
-        weightedPriorityConfigurations
-            .forEach(configuration => {
-                const priority = configuration.configuration.priority(Category.Attributes);
-                configuration.count += Math.max(
-                    0,
-                    this.usedAttributePoints - attributes.get(priority)!,
-                );
-            });
+        for (const configuration of weightedPriorityConfigurations) {
+            const priority = configuration.configuration.priority(Category.Attributes);
+            configuration.count += Math.max(
+                0,
+                this.usedAttributePoints - attributes.get(priority)!,
+            );
+        };
 
         return weightedPriorityConfigurations
             .sort((a, b) => a.count - b.count)[0].configuration;
