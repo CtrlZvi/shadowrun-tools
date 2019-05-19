@@ -1,9 +1,8 @@
-import { action } from 'mobx';
 import { observer } from 'mobx-react-lite';
-import React, { useContext, ChangeEvent } from "react";
+import React, { useContext } from "react";
 
 import PrioritySystemContext from '../../contexts/PrioritySystem';
-import { Priority, Category } from '../../models/PrioritySystem';
+import { Category } from '../../models/PrioritySystem';
 
 const PriorityComponent = observer(() => {
     const prioritySystem = useContext(PrioritySystemContext);

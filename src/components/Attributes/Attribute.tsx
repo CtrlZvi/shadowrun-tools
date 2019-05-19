@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext, ChangeEvent, FunctionComponent, SVGProps } from 'react';
+import React, { useContext, ChangeEvent } from 'react';
 
 import CharacterSheetContext from '../../contexts/CharacterSheet';
 import CharacterContext from '../../contexts/Character';

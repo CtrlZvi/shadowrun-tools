@@ -13,8 +13,6 @@ export enum Priority {
     D,
     E,
 }
-const priorities: Priority[] = [...Object.values(Priority)]
-    .filter(value => !isNaN(Number(value)));
 
 export enum Category {
     MagicOrResonance = "Magic or Resonance",
@@ -44,10 +42,6 @@ interface ResonanceMetadata {
     resonance: number;
     skills: { type: string, rating: number, group: boolean }[];
     complexForms: number;
-}
-
-function isResonanceMetadata(metadata: MagicMetadata | ResonanceMetadata): metadata is ResonanceMetadata {
-    return (metadata as ResonanceMetadata).resonance !== undefined;
 }
 
 const metatypes = new Map<Priority, Map<Metasapient, MetatypeMetadata>>([
@@ -236,7 +230,6 @@ export class PrioritySystem {
     }
 
     @computed get totalSpecialAttributePoints() {
-        const metatypePriority = this.priorities.priority(Category.Metatype);
         return metatypes
             .get(this.priorities.priority(Category.Metatype))!
             .get(this.character.metatype.metasapient)!

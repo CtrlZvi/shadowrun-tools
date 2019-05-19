@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 
 import { ReactComponent as AgilitySVG } from './Agility.svg';
 import './Attributes.scss';

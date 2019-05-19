@@ -1,4 +1,4 @@
-import { observable, computed, action } from "mobx";
+import { observable, computed } from "mobx";
 
 import { Attribute } from "./Attribute";
 import { MagicOrResonanceUser } from "./MagicOrResonance";

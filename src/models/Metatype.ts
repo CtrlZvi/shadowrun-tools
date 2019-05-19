@@ -72,7 +72,7 @@ export const Metatypes: Map<Metasapient, Metatype> = new Map(
         ...Object.entries(metatypes).map(
             ([name, value]): [Metasapient, Metatype] => {
                 let metasapient = [...Object.values(Metasapient)]
-                    .find(value => value == name)!;
+                    .find(value => value === name)!;
                 return [metasapient, { metasapient: metasapient, ...value }];
             }
         ),

@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React, { Component } from 'react';
+import React from 'react';
 
 import { ReactComponent as Age } from './Age.svg';
 import { ReactComponent as Ethnicity } from './Ethnicity.svg';
