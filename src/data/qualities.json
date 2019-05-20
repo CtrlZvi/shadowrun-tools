@@ -1,0 +1,1227 @@
+{
+    "": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 0
+            }
+        ],
+        "type": "Positive"
+    },
+    "Ambidextrous": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 4
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    71,
+                    73
+                ]
+            }
+        }
+    },
+    "Analytical Mind": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 5
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Aptitude": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 14
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Astral Chameleon": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Bilingual": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 5
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Blandness": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 8
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Catlike": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 7
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Codeslinger": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Double Jointed": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 6
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73
+                ]
+            }
+        }
+    },
+    "Exceptional Attribute": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 14
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    73,
+                    74
+                ]
+            }
+        }
+    },
+    "First Impression": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 11
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    74
+                ]
+            }
+        }
+    },
+    "Focused Concentration": {
+        "ratings": [
+            {
+                "name": "1",
+                "karmaCost": 4
+            },
+            {
+                "name": "2",
+                "karmaCost": 8
+            },
+            {
+                "name": "3",
+                "karmaCost": 12
+            },
+            {
+                "name": "4",
+                "karmaCost": 16
+            },
+            {
+                "name": "5",
+                "karmaCost": 20
+            },
+            {
+                "name": "6",
+                "karmaCost": 24
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    74
+                ]
+            }
+        }
+    },
+    "Gearhead": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 11
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    74
+                ]
+            }
+        }
+    },
+    "Guts": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    74
+                ]
+            }
+        }
+    },
+    "High Pain Tolerance": {
+        "ratings": [
+            {
+                "name": "1",
+                "karmaCost": 7
+            },
+            {
+                "name": "2",
+                "karmaCost": 14
+            },
+            {
+                "name": "3",
+                "karmaCost": 21
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    74
+                ]
+            }
+        }
+    },
+    "Home Ground": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "bonuses": [
+            "Astral Acclimation",
+            "You Know a Guy",
+            "Digital Turf",
+            "The Transporter",
+            "On the Lam",
+            "Street Politics"
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    75
+                ]
+            }
+        }
+    },
+    "Human Looking": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 6
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    75
+                ]
+            }
+        }
+    },
+    "Indomitable": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 8
+            }
+        ],
+        "bonuses": [
+            "Mental",
+            "Physical",
+            "Social"
+        ],
+        "repeatable": 3,
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    75
+                ]
+            }
+        }
+    },
+    "Juryrigger": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    75,
+                    76
+                ]
+            }
+        }
+    },
+    "Lucky": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 12
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Magic Resistance": {
+        "ratings": [
+            {
+                "name": "1",
+                "karmaCost": 6
+            },
+            {
+                "name": "2",
+                "karmaCost": 12
+            },
+            {
+                "name": "3",
+                "karmaCost": 18
+            },
+            {
+                "name": "4",
+                "karmaCost": 24
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Mentor Spirit": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 5
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Natural Athlete": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 7
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Natural Hardening": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Natural Immunity": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 4
+            },
+            {
+                "name": "Synthetic",
+                "karmaCost": 10
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Photographic Memory": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 6
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    76
+                ]
+            }
+        }
+    },
+    "Quick Healer": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 3
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Resistance to Pathogens": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 4
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Resistance to Toxins": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 4
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Spirit Affinitiy": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 7
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Toughness": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 9
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Will to Live": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": 3
+            },
+            {
+                "name": "2",
+                "karmaCost": 6
+            },
+            {
+                "name": "3",
+                "karmaCost": 9
+            }
+        ],
+        "type": "Positive",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77
+                ]
+            }
+        }
+    },
+    "Addiction": {
+        "ratings": [
+            {
+                "name": "Mild",
+                "karmaCost": -4
+            },
+            {
+                "name": "Moderate",
+                "karmaCost": -9
+            },
+            {
+                "name": "Severe",
+                "karmaCost": -20
+            },
+            {
+                "name": "Burnout",
+                "karmaCost": -25
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    77,
+                    78
+                ]
+            }
+        }
+    },
+    "Common Allergy": {
+        "ratings": [
+            {
+                "name": "Mild",
+                "karmaCost": -10
+            },
+            {
+                "name": "Moderate",
+                "karmaCost": -15
+            },
+            {
+                "name": "Severe",
+                "karmaCost": -20
+            },
+            {
+                "name": "Extreme",
+                "karmaCost": -25
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    78
+                ]
+            }
+        }
+    },
+    "Uncommon Allergy": {
+        "ratings": [
+            {
+                "name": "Mild",
+                "karmaCost": -5
+            },
+            {
+                "name": "Moderate",
+                "karmaCost": -10
+            },
+            {
+                "name": "Severe",
+                "karmaCost": -15
+            },
+            {
+                "name": "Extreme",
+                "karmaCost": -20
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    78
+                ]
+            }
+        }
+    },
+    "Astral Beacon": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    78,
+                    79
+                ]
+            }
+        }
+    },
+    "Bad Luck": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -12
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    79
+                ]
+            }
+        }
+    },
+    "Bad Rep": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -7
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    79
+                ]
+            }
+        }
+    },
+    "Code of Honor": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -15
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    79,
+                    80
+                ]
+            }
+        }
+    },
+    "Codeblock": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    80
+                ]
+            }
+        }
+    },
+    "Combat Paralysis": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -12
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    80
+                ]
+            }
+        }
+    },
+    "Dependents": {
+        "ratings": [
+            {
+                "name": "Occasional Nuisance",
+                "karmaCost": -3
+            },
+            {
+                "name": "Inconvenience",
+                "karmaCost": -6
+            },
+            {
+                "name": "Family",
+                "karmaCost": -9
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    80
+                ]
+            }
+        }
+    },
+    "Distinctive Style": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -5
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    80,
+                    81
+                ]
+            }
+        }
+    },
+    "Elf Poser": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -6
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    81
+                ]
+            }
+        }
+    },
+    "Gremlins": {
+        "ratings": [
+            {
+                "name": "1",
+                "karmaCost": -4
+            },
+            {
+                "name": "2",
+                "karmaCost": -8
+            },
+            {
+                "name": "3",
+                "karmaCost": -12
+            },
+            {
+                "name": "4",
+                "karmaCost": -16
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    81
+                ]
+            }
+        }
+    },
+    "Incompetent": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -5
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    81
+                ]
+            }
+        }
+    },
+    "Insomnia": {
+        "ratings": [
+            {
+                "name": "1",
+                "karmaCost": -10
+            },
+            {
+                "name": "2",
+                "karmaCost": -15
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    81,
+                    82
+                ]
+            }
+        }
+    },
+    "Loss of Confidence": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    82
+                ]
+            }
+        }
+    },
+    "Low Pain Tolerance": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -9
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    82
+                ]
+            }
+        }
+    },
+    "Ork Poser": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -6
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    82
+                ]
+            }
+        }
+    },
+    "Prejudiced": {
+        "ratings": [
+            {
+                "name": "Biased",
+                "karmaCost": -5
+            },
+            {
+                "name": "Outspoken",
+                "karmaCost": -7
+            },
+            {
+                "name": "Radical",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    82
+                ]
+            }
+        }
+    },
+    "Specific Prejudiced": {
+        "ratings": [
+            {
+                "name": "Biased",
+                "karmaCost": -3
+            },
+            {
+                "name": "Outspoken",
+                "karmaCost": -5
+            },
+            {
+                "name": "Radical",
+                "karmaCost": -8
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    82
+                ]
+            }
+        }
+    },
+    "Scortched": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    83
+                ]
+            }
+        }
+    },
+    "Sensitive System": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -12
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    83
+                ]
+            }
+        }
+    },
+    "Simsense Vertigo": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -5
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    83
+                ]
+            }
+        }
+    },
+    "SINner": {
+        "ratings": [
+            {
+                "name": "National",
+                "karmaCost": -5
+            },
+            {
+                "name": "Criminal",
+                "karmaCost": -10
+            },
+            {
+                "name": "Corporate Limited",
+                "karmaCost": -15
+            },
+            {
+                "name": "Corporate",
+                "karmaCost": -25
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    84,
+                    85
+                ]
+            }
+        }
+    },
+    "Social Stress": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -8
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    85
+                ]
+            }
+        }
+    },
+    "Spirit Bane": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -7
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    85
+                ]
+            }
+        }
+    },
+    "Uncouth": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -14
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    85
+                ]
+            }
+        }
+    },
+    "Uneducated": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -8
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    87
+                ]
+            }
+        }
+    },
+    "Unsteady Hands": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -7
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    87
+                ]
+            }
+        }
+    },
+    "Weak Immune System": {
+        "ratings": [
+            {
+                "name": "",
+                "karmaCost": -10
+            }
+        ],
+        "type": "Negative",
+        "books": {
+            "27004": {
+                "pages": [
+                    72,
+                    87
+                ]
+            }
+        }
+    }
+}

@@ -131,3 +131,34 @@
   left: 558.22266pt;
   top: 506.52344pt;
 }
+
+.selected-qualities {
+  position: absolute;
+  font-family: Friz Quadrata Std Regular;
+  font-size: 7.5pt;
+  top: 503.327pt;
+  width: 249.89502pt;
+  // height: 106.672pt;
+  left: 321.597pt;
+}
+
+.quality {
+  height: 10.668pt;
+}
+
+tr.quality {
+  display: block;
+}
+
+.quality>td {
+  padding: 0pt;
+  display: block;
+  border: none;
+}
+
+.quality select {
+  overflow:hidden;
+  font-size: 7pt;
+  background: transparent;
+  border: none;
+}

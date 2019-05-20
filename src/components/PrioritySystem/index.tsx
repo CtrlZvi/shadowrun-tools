@@ -9,6 +9,7 @@ const PriorityComponent = observer(() => {
 
     return (
         <div className="prioritySystem">
+            Karma: {prioritySystem.karma}
             <table>
                 <thead>
                     <tr>

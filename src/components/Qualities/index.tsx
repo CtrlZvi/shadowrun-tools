@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { ReactComponent as PositiveNegative } from './PositiveNegative.svg';
 import './Qualities.scss';
@@ -12,8 +12,14 @@ import { ReactComponent as T } from './QualitiesT.svg';
 import { ReactComponent as Tab } from './QualitiesTab.svg';
 import { ReactComponent as Text } from './QualitiesText.svg';
 import { ReactComponent as Ype } from './QualitiesYpe.svg';
+import QualityComponent from './Quality';
+import CharacterContext from '../../contexts/Character';
+import { Qualities } from '../../models/Quality';
 
-const Qualities = observer(() => {
+const QualitiesComponent = observer(() => {
+    const character = useContext(CharacterContext);
+    const qualities = character.qualities.map((quality, index) => <QualityComponent key={quality.name} quality={quality} index={index} />)
+
     return (
         <div className="qualities">
             <Tab className="qualities-tab" />
@@ -36,8 +42,14 @@ const Qualities = observer(() => {
             <T className="qualities-t" />
             <Ype className="qualities-ype" />
             <PositiveNegative className="positive-negative" />
+            <table className="selected-qualities">
+                <tbody>
+                    {qualities}
+                    <QualityComponent key={""} quality={Qualities.get("")!} index={character.qualities.length} />
+                </tbody>
+            </table>
         </div>
     );
 });
 
-export default Qualities;
+export default QualitiesComponent;

@@ -3,6 +3,7 @@ import { Character } from './Character';
 import { MagicOrResonanceUser } from './MagicOrResonance';
 import { Metatypes, Metasapient } from './Metatype';
 import { PrioritySystem, Category } from './PrioritySystem';
+import { Qualities } from './Quality';
 
 it("Regression: inability to increase magic or resonance attribute", () => {
     const character = new Character()
@@ -35,4 +36,37 @@ it("Regression: inability to increase magic or resonance attribute", () => {
         D: Category.Skills,
         E: Category.Resources,
     });
-})
+});
+
+it("Regression: duplicating instead of replacing qualities", () => {
+    const character = new Character()
+    const prioritySystem = new PrioritySystem(character);
+    prioritySystem.updateQuality(Qualities.get("Ambidextrous")!, 0, 0);
+    prioritySystem.updateQuality(Qualities.get("Analytical Mind")!, 0, 1);
+    prioritySystem.updateQuality(Qualities.get("Aptitude")!, 0, 2);
+    prioritySystem.updateQuality(Qualities.get("Analytical Mind")!, 0, 3);
+
+    expect(character.qualities.length).toBe(3);
+    expect(character.qualities).toMatchObject([
+        Qualities.get("Ambidextrous")!,
+        Qualities.get("Aptitude")!,
+        Qualities.get("Analytical Mind")!,
+    ]);
+});
+
+it("Regression: changing a quality rating doesn't remove the quality", () => {
+    const character = new Character()
+    const prioritySystem = new PrioritySystem(character);
+
+    prioritySystem.updateQuality(Qualities.get("Focused Concentration")!, 0, 0);
+    expect(character.qualities.length).toBe(1);
+    expect(character.qualities).toMatchObject([
+        { rating: 0, ...Qualities.get("Focused Concentration")! },
+    ]);
+
+    prioritySystem.updateQuality(Qualities.get("Focused Concentration")!, 5, 0);
+    expect(character.qualities.length).toBe(1);
+    expect(character.qualities).toMatchObject([
+        { rating: 5, ...Qualities.get("Focused Concentration")! },
+    ]);
+});

@@ -4,6 +4,7 @@ import { Attribute } from "./Attribute";
 import { Character } from "./Character";
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metasapient, Metatypes } from "./Metatype";
+import { Quality, Qualities } from "./Quality";
 import prioritySystem from '../data/prioritySystem.json'
 
 export enum Priority {
@@ -311,6 +312,35 @@ export class PrioritySystem {
     @action updateMagicOrResonanceUser(magicOrResonanceUser: MagicOrResonanceUser) {
         this.previousMagicOrResonanceUser = this.character.magicOrResonanceUser;
         this.character.magicOrResonanceUser = magicOrResonanceUser;
+    }
+
+    @action updateQuality(quality: Quality, ratingIndex: number, index: number) {
+        quality = { ...quality, rating: ratingIndex };
+
+        if (quality.name === Qualities.get("")!.name) {
+            this.character.qualities.splice(index, 1);
+            return
+        }
+
+        const previousIndex = this.character.qualities
+            .findIndex(candidate => candidate.name === quality.name);
+
+        if (this.character.qualities.length > index) {
+            this.character.qualities[index] = quality;
+        } else {
+            this.character.qualities.push(quality);
+        }
+
+        if (previousIndex >= 0 && index !== previousIndex) {
+            this.character.qualities.splice(previousIndex, 1);
+        }
+    }
+
+    @computed get karma() {
+        // TODO (zeffron 2019-05-19) Handle the 25 point limit for both
+        // positive and negative qualities.
+        return this.character.qualities
+            .reduce((karma, quality) => karma - quality.ratings[quality.rating!].karmaCost, 25);
     }
 
     @action updateAttribute(attribute: Attribute, value: number) {

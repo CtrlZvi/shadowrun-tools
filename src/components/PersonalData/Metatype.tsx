@@ -9,19 +9,19 @@ import CharacterSheetContext from '../../contexts/CharacterSheet';
 import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Metatypes, Metasapient } from '../../models/Metatype';
 
-const Metatype = observer(() => {
-    let characterSheet = useContext(CharacterSheetContext);
-    let character = useContext(CharacterContext);
-    let prioritySystem = useContext(PrioritySystemContext);
+const metatypes = Object.values(Metasapient)
+    .map(metasapient => (
+        <option key={metasapient} value={metasapient}>
+            {metasapient}
+        </option>
+    ));
 
-    let svg = !characterSheet.rendered ? <SVG /> : undefined;
-    let metatypes = Object.values(Metasapient).map(
-        (metasapient) => (
-            <option key={metasapient} value={metasapient}>
-                {metasapient}
-            </option>
-        )
-    )
+const Metatype = observer(() => {
+    const characterSheet = useContext(CharacterSheetContext);
+    const character = useContext(CharacterContext);
+    const prioritySystem = useContext(PrioritySystemContext);
+
+    const svg = !characterSheet.rendered ? <SVG /> : undefined;
 
     return (
         <div className="metatype">

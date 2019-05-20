@@ -3,6 +3,7 @@ import { observable, computed } from "mobx";
 import { Attribute } from "./Attribute";
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metatypes, Metasapient } from './Metatype';
+import { Quality } from './Quality';
 
 export class Character {
     // Meta Text
@@ -14,6 +15,9 @@ export class Character {
 
     // Magic or Resonance
     @observable magicOrResonanceUser = MagicOrResonanceUser.None;
+
+    // Qualities
+    @observable qualities: Quality[] = [];
 
     // Attributes
     @observable attributes = new Map<Attribute, number>(
