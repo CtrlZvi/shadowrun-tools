@@ -30,6 +30,7 @@ const PriorityComponent = observer(() => {
                                 <td>
                                     {category === Category.Metatype ? `${prioritySystem.availableSpecialAttributePoints} / ${prioritySystem.totalSpecialAttributePoints}` : undefined}
                                     {category === Category.Attributes ? `${prioritySystem.availableAttributePoints} / ${prioritySystem.totalAttributePoints}` : undefined}
+                                    {category === Category.Skills ? `${prioritySystem.availableSkillPoints} / ${prioritySystem.totalSkillPoints} (${prioritySystem.availableSkillGroupPoints} / ${prioritySystem.totalSkillGroupPoints})` : undefined}
                                 </td>
                             </tr>
                         ))

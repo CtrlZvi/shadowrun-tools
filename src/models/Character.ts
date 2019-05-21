@@ -4,6 +4,7 @@ import { Attribute } from "./Attribute";
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metatypes, Metasapient } from './Metatype';
 import { Quality } from './Quality';
+import { Skill, SkillGroup } from './Skill';
 
 export class Character {
     // Meta Text
@@ -97,4 +98,7 @@ export class Character {
     set magicorresonance(value) {
         this.attributes.set(Attribute.MagicOrResonance, value);
     }
+
+    // Skills
+    @observable skills: [Skill | SkillGroup, number][] = [];
 }

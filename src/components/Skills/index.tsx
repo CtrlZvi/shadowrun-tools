@@ -1,5 +1,5 @@
 import { observer } from 'mobx-react-lite';
-import React from 'react';
+import React, { useContext } from 'react';
 
 import { ReactComponent as ActiveKnowledge } from './ActiveKnowledge.svg';
 import { ReactComponent as RatingLeft } from './RatingLeft.svg';
@@ -14,7 +14,15 @@ import { ReactComponent as Line } from './SkillsLine.svg';
 import { ReactComponent as TypeLeftSkillRight } from './TypeLeftSkillRight.svg';
 import { ReactComponent as TypeRight } from './TypeRight.svg';
 
+import SkillComponent from './Skill';
+import CharacterContext from '../../contexts/Character';
+import { SkillGroups } from '../../models/Skill';
+
 const Skills = observer(() => {
+    const character = useContext(CharacterContext);
+    const skills = character.skills
+        .map(([skill, rating], index) => <SkillComponent key={skill.name} skill={skill} rating={rating} index={index} />)
+
     return (
         <div className="skills">
             <Tab className="skills-tab" />
@@ -65,6 +73,12 @@ const Skills = observer(() => {
             <RatingRight className="skills-rating-right" />
             <TypeRight className="skills-type-right" />
             <ActiveKnowledge className="skills-active-knowledge" />
+            <table className="selected-skills">
+                <tbody>
+                    {skills}
+                    <SkillComponent key={""} skill={SkillGroups.get("")!} rating={0} index={character.skills.length} />
+                </tbody>
+            </table>
         </div>
     );
 });

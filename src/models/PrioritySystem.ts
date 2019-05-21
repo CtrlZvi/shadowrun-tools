@@ -6,6 +6,7 @@ import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metasapient, Metatypes } from "./Metatype";
 import { Quality, Qualities } from "./Quality";
 import prioritySystem from '../data/prioritySystem.json'
+import { Skill, SkillGroup, SkillGroups, isSkill, isSkillGroup } from "./Skill";
 
 export enum Priority {
     A,
@@ -45,6 +46,11 @@ interface ResonanceMetadata {
     complexForms: number;
 }
 
+interface SkillMetadata {
+    skills: number;
+    groups: number;
+}
+
 const metatypes = new Map<Priority, Map<Metasapient, MetatypeMetadata>>([
     ...Object.entries(prioritySystem.metatypes)
         .map(([priority, metatypes]): [Priority, Map<Metasapient, MetatypeMetadata>] => [
@@ -74,6 +80,10 @@ const magicOrResonance = new Map<Priority, Map<MagicOrResonanceUser, MagicMetada
 const attributes = new Map<Priority, number>([
     ...Object.entries(prioritySystem.attributes)
         .map(([priority, points]): [Priority, number] => [(Priority as any)[priority], points])
+]);
+const skills = new Map<Priority, SkillMetadata>([
+    ...Object.entries(prioritySystem.skills)
+        .map(([priority, metadata]): [Priority, SkillMetadata] => [(Priority as any)[priority], metadata])
 ]);
 
 class PriorityConfiguration {
@@ -245,6 +255,8 @@ export class PrioritySystem {
 
             const attributePriority = configuration.configuration.priority(Category.Attributes);
 
+            const skillPriority = configuration.configuration.priority(Category.Skills);
+
             // Inviolable Constraint: Metatype priority must be in range
             // for the character's metatype.
             configuration.count += metatypeMetadata !== undefined ? 0 : Infinity;
@@ -269,6 +281,22 @@ export class PrioritySystem {
             configuration.count += Math.max(
                 0,
                 this.usedAttributePoints - attributes.get(attributePriority)!,
+            );
+
+            // Weighted Constraint: Skills must be high enough priority
+            // for the character's used skill points.
+            configuration.count += Math.max(
+                0,
+                this.usedSkillPoints - skills.get(skillPriority)!.skills,
+            );
+
+            // Weighted Constraint: Skills must be high enough priority
+            // for the character's used skill group points.
+            // TODO (zeffron 2019-05-21) Figure out a method for constraining
+            // skills that takes into account splitting groups (if possible).
+            configuration.count += Math.max(
+                0,
+                this.usedSkillGroupPoints - skills.get(skillPriority)!.groups,
             );
         }
 
@@ -363,5 +391,55 @@ export class PrioritySystem {
 
     @computed get availableAttributePoints() {
         return this.totalAttributePoints - this.usedAttributePoints;
+    }
+
+    @action updateSkill(skill: Skill | SkillGroup, rating: number, index: number) {
+        if (skill.name === SkillGroups.get("")!.name) {
+            this.character.skills.splice(index, 1);
+            return
+        }
+
+        const previousIndex = this.character.skills
+            .findIndex(candidate => candidate[0].name === skill.name);
+
+        if (this.character.skills.length > index) {
+            this.character.skills[index] = [skill, rating];
+        } else {
+            this.character.skills.push([skill, 1]);
+        }
+
+        if (previousIndex >= 0 && index !== previousIndex) {
+            this.character.skills.splice(previousIndex, 1);
+        }
+    }
+
+    @computed get totalSkillPoints() {
+        return skills.get(this.priorities.priority(Category.Skills))!.skills;
+    }
+
+    @computed private get usedSkillPoints() {
+        return [...this.character.skills.values()]
+            .filter(([skill, points]) => isSkill(skill))
+            .map(([skill, points]) => points)
+            .reduce((previous, current) => previous + current, 0);
+    }
+
+    @computed get availableSkillPoints() {
+        return this.totalSkillPoints - this.usedSkillPoints;
+    }
+
+    @computed get totalSkillGroupPoints() {
+        return skills.get(this.priorities.priority(Category.Skills))!.groups;
+    }
+
+    @computed private get usedSkillGroupPoints() {
+        return [...this.character.skills.values()]
+            .filter(([skill, points]) => isSkillGroup(skill))
+            .map(([skill, points]) => points)
+            .reduce((previous, current) => previous + current, 0);
+    }
+
+    @computed get availableSkillGroupPoints() {
+        return this.totalSkillGroupPoints - this.usedSkillGroupPoints;
     }
 }

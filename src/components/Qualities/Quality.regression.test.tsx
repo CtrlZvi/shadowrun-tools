@@ -29,7 +29,7 @@ it("Regression: updating a quality rating results in a rating change", () => {
         </PrioritySystemContext.Provider>
     );
 
-    wrapper.find(".quality-rating").getDOMNode().value = "6";
+    (wrapper.find(".quality-rating").getDOMNode() as HTMLSelectElement).value = "6";
     wrapper
         .find(".quality-rating")
         .simulate(

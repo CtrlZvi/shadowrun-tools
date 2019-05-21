@@ -12,6 +12,7 @@ import { ReactComponent as T } from './QualitiesT.svg';
 import { ReactComponent as Tab } from './QualitiesTab.svg';
 import { ReactComponent as Text } from './QualitiesText.svg';
 import { ReactComponent as Ype } from './QualitiesYpe.svg';
+
 import QualityComponent from './Quality';
 import CharacterContext from '../../contexts/Character';
 import { Qualities } from '../../models/Quality';

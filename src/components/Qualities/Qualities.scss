@@ -162,3 +162,16 @@ tr.quality {
   background: transparent;
   border: none;
 }
+
+.quality option {
+  // width: #{153.168 - (43.248 + 26.38281)}pt;
+  // left: #{43.248 + 26.38281}pt;
+  // bottom: #{765 - 128.595}pt;
+  // position: absolute;
+  // overflow:hidden;
+  font-size: 7pt;
+  font-family: Friz Quadrata Std Regular;
+  background-color: #f1efee;
+  // background-color: #eeeceb;
+  border: none;
+}

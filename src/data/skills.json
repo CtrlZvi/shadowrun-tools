@@ -1,0 +1,323 @@
+{
+    "skills": {
+        "Archery": {
+            "attribute": "Agility"
+        },
+        "Automatics": {
+            "attribute": "Agility"
+        },
+        "Blades": {
+            "attribute": "Agility"
+        },
+        "Clubs": {
+            "attribute": "Agility"
+        },
+        "Escape Artist": {
+            "attribute": "Agility"
+        },
+        "Exotic Melee Weapon (Sepcific)": {
+            "attribute": "Agility"
+        },
+        "Exotic Ranged Weapon (Specific)": {
+            "attribute": "Agility"
+        },
+        "Gunnery": {
+            "attribute": "Agility"
+        },
+        "Gymnastics": {
+            "attribute": "Agility"
+        },
+        "Heavy Weapons": {
+            "attribute": "Agility"
+        },
+        "Locksmith": {
+            "attribute": "Agility"
+        },
+        "Longarms": {
+            "attribute": "Agility"
+        },
+        "Palming": {
+            "attribute": "Agility"
+        },
+        "Pistols": {
+            "attribute": "Agility"
+        },
+        "Sneaking": {
+            "attribute": "Agility"
+        },
+        "Throwing Weapons": {
+            "attribute": "Agility"
+        },
+        "Unarmed Combat": {
+            "attribute": "Agility"
+        },
+        "Diving": {
+            "attribute": "Body"
+        },
+        "Free-Fall": {
+            "attribute": "Body"
+        },
+        "Pilot Aerospace": {
+            "attribute": "Reaction"
+        },
+        "Pilot Aircraft": {
+            "attribute": "Reaction"
+        },
+        "Pilot Exotic Vehicle (Specific)": {
+            "attribute": "Reaction"
+        },
+        "Pilot Groundcraft": {
+            "attribute": "Reaction"
+        },
+        "Pilot Walker": {
+            "attribute": "Reaction"
+        },
+        "Pilot Watercraft": {
+            "attribute": "Reaction"
+        },
+        "Running": {
+            "attribute": "Strength"
+        },
+        "Swimming": {
+            "attribute": "Strength"
+        },
+        "Animal Handling": {
+            "attribute": "Charisma"
+        },
+        "Con": {
+            "attribute": "Charisma"
+        },
+        "Etiquette": {
+            "attribute": "Charisma"
+        },
+        "Impersonation": {
+            "attribute": "Charisma"
+        },
+        "Instruction": {
+            "attribute": "Charisma"
+        },
+        "Intimidation": {
+            "attribute": "Charisma"
+        },
+        "Leadership": {
+            "attribute": "Charisma"
+        },
+        "Negotiation": {
+            "attribute": "Charisma"
+        },
+        "Performance": {
+            "attribute": "Charisma"
+        },
+        "Artisan": {
+            "attribute": "Intuition"
+        },
+        "Assensing": {
+            "attribute": "Intuition"
+        },
+        "Disguise": {
+            "attribute": "Intuition"
+        },
+        "Interests Knowledge": {
+            "attribute": "Intuition"
+        },
+        "Language": {
+            "attribute": "Intuition"
+        },
+        "Navigation": {
+            "attribute": "Intuition"
+        },
+        "Perception": {
+            "attribute": "Intuition"
+        },
+        "Street Knowledge": {
+            "attribute": "Intuition"
+        },
+        "Tracking": {
+            "attribute": "Intuition"
+        },
+        "Academic Knowledge": {
+            "attribute": "Logic"
+        },
+        "Aeronautics Mechanic": {
+            "attribute": "Logic"
+        },
+        "Arcana": {
+            "attribute": "Logic"
+        },
+        "Armorer": {
+            "attribute": "Logic"
+        },
+        "Automotive Mechanic": {
+            "attribute": "Logic"
+        },
+        "Biotechnology": {
+            "attribute": "Logic"
+        },
+        "Chemistry": {
+            "attribute": "Logic"
+        },
+        "Computer": {
+            "attribute": "Logic"
+        },
+        "Cybertechnology": {
+            "attribute": "Logic"
+        },
+        "Cybercombat": {
+            "attribute": "Logic"
+        },
+        "Demolitions": {
+            "attribute": "Logic"
+        },
+        "Electronic Warfare": {
+            "attribute": "Logic"
+        },
+        "First Aid": {
+            "attribute": "Logic"
+        },
+        "Forgery": {
+            "attribute": "Logic"
+        },
+        "Industrial Mechanic": {
+            "attribute": "Logic"
+        },
+        "Hacking": {
+            "attribute": "Logic"
+        },
+        "Hardware": {
+            "attribute": "Logic"
+        },
+        "Medicine": {
+            "attribute": "Logic"
+        },
+        "Nautical Mechanic": {
+            "attribute": "Logic"
+        },
+        "Professional Knowledge": {
+            "attribute": "Logic"
+        },
+        "Software": {
+            "attribute": "Logic"
+        },
+        "Astral Combat": {
+            "attribute": "Willpower"
+        },
+        "Survival": {
+            "attribute": "Willpower"
+        },
+        "Alchemy": {
+            "attribute": "Magic"
+        },
+        "Artificing": {
+            "attribute": "Magic"
+        },
+        "Banishing": {
+            "attribute": "Magic"
+        },
+        "Binding": {
+            "attribute": "Magic"
+        },
+        "Counterspelling": {
+            "attribute": "Magic"
+        },
+        "Disenchanting": {
+            "attribute": "Magic"
+        },
+        "Ritual Spellcasting": {
+            "attribute": "Magic"
+        },
+        "Spellcasting": {
+            "attribute": "Magic"
+        },
+        "Summoning": {
+            "attribute": "Magic"
+        },
+        "Compiling": {
+            "attribute": "Resonance"
+        },
+        "Decompiling": {
+            "attribute": "Resonance"
+        },
+        "Registering": {
+            "attribute": "Resonance"
+        }
+    },
+    "skillsGroups": {
+        "": [],
+        "Acting": [
+            "Con",
+            "Impersonation",
+            "Performance"
+        ],
+        "Athletics": [
+            "Gymnastics",
+            "Running",
+            "Swimming"
+        ],
+        "Bitotech": [
+            "Cybertechnology",
+            "First Aid",
+            "Medicine"
+        ],
+        "Close Combat": [
+            "Blades",
+            "Clubs",
+            "Unarmed Combat"
+        ],
+        "Conjuring": [
+            "Binding",
+            "Banishing",
+            "Summoning"
+        ],
+        "Cracking": [
+            "Cybercomabt",
+            "Electronic Warfare",
+            "Hacking"
+        ],
+        "Electronics": [
+            "Computer",
+            "Hardware",
+            "Software"
+        ],
+        "Enchanting": [
+            "Alchemy",
+            "Artificing",
+            "Disenchanting"
+        ],
+        "Firearms": [
+            "Automatics",
+            "Longarms",
+            "Psitols"
+        ],
+        "Influence": [
+            "Etiquette",
+            "Leadership",
+            "Negotiation"
+        ],
+        "Engineering": [
+            "Aeronautics Mechanic",
+            "Automotive Mechanic",
+            "Industrial Mechanic",
+            "Nautical Mechanic"
+        ],
+        "Outdoors": [
+            "Navigation",
+            "Survival",
+            "Tracking"
+        ],
+        "Sorcery": [
+            "Counterspelling",
+            "Ritual Spellcasting",
+            "Spellcasting"
+        ],
+        "Stealth": [
+            "Disguise",
+            "Palming",
+            "Sneaking"
+        ],
+        "Tasking": [
+            "Compiling",
+            "Decompiling",
+            "Regisering"
+        ]
+    }
+}

@@ -26,7 +26,12 @@ export const Qualities: Map<string, Quality> = new Map(
                     {
                         name: name,
                         type: QualityType.Positive,
-                        ratings: value.ratings,
+                        ratings: (value as {
+                            ratings: {
+                                name: string,
+                                karmaCost: number
+                            }[]
+                        }).ratings,
                     },
                 ];
             }
