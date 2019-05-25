@@ -2,7 +2,7 @@ import { observer } from 'mobx-react-lite';
 import React, { useState } from 'react';
 
 import { ReactComponent as SVG } from './Background.svg';
-import './CharacterSheet.scss';
+import './style.scss';
 
 import AdeptPowers from '../AdeptPowers';
 import Armor from '../Armor';
@@ -23,12 +23,13 @@ import Skills from '../Skills';
 import Spells from '../Spells';
 import Vehicle from '../Vehicle';
 import CharacterSheetContext from '../../contexts/CharacterSheet';
+import CharacterSheetSection from '../CharacterSheetSection';
 
 let toggleRendered = () => { }
 
 const CharacterSheet = observer(() => {
     const [developmentState, setDevelopmentState] = useState({
-        rendered: false,
+        rendered: true,
     });
     // HACK (zeffron 2019-05-05) This is not ideal because it causes the
     // function to be updated every time the state changes, but it works.
@@ -40,38 +41,41 @@ const CharacterSheet = observer(() => {
 
     let background = !developmentState.rendered ?
         <SVG className="background" /> :
-        <div className="background-rendered"></div>
+        undefined;
 
     return (
         <CharacterSheetContext.Provider value={developmentState}>
             <div className="character-sheet">
-                <div className={"character-sheet-page"}>
+                <div className={"character-sheet-page" + (developmentState.rendered ? " rendered" : "")}>
                     {background}
-                    <Metatext />
-                    <PersonalData />
-                    <Attributes />
-                    <Skills />
-                    <IDsLifestylesCurrency />
-                    <CoreCombatInfo />
-                    <ConditionMonitor />
-                    <Qualities />
-                    <Contacts />
+                    <div className="sections">
+                        <CharacterSheetSection name="PERSONAL DATA" />
+                    </div>
+                    {/* <Metatext /> */}
+                    {/* <PersonalData /> */}
+                    {/* <Attributes /> */}
+                    {/* <Skills /> */}
+                    {/* <IDsLifestylesCurrency /> */}
+                    {/* <CoreCombatInfo /> */}
+                    {/* <ConditionMonitor /> */}
+                    {/* <Qualities /> */}
+                    {/* <Contacts /> */}
                 </div>
-                <div className={"character-sheet-page"}>
+                <div className={"character-sheet-page" + (developmentState.rendered ? " rendered" : "")}>
                     {background}
-                    <Metatext />
-                    <RangedWeapons />
-                    <Armor />
-                    <Augmentations />
-                    <Gear />
-                    <MeleeWeapons />
-                    <Cyberdeck />
-                    <Vehicle />
-                    <Spells />
-                    <AdeptPowers />
+                    {/* <Metatext /> */}
+                    {/* <RangedWeapons /> */}
+                    {/* <Armor /> */}
+                    {/* <Augmentations /> */}
+                    {/* <Gear /> */}
+                    {/* <MeleeWeapons /> */}
+                    {/* <Cyberdeck /> */}
+                    {/* <Vehicle /> */}
+                    {/* <Spells /> */}
+                    {/* <AdeptPowers /> */}
                 </div>
             </div>
-        </CharacterSheetContext.Provider>
+        </CharacterSheetContext.Provider >
     )
 });
 

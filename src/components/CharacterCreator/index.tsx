@@ -1,6 +1,7 @@
 import { observer, useLocalStore } from 'mobx-react-lite';
 import React from "react";
 
+import './style.scss';
 import CharacterSheet from "../CharacterSheet";
 import PrioritySystemComponent from "../PrioritySystem";
 import CharacterContext from "../../contexts/Character";
@@ -15,7 +16,7 @@ const CharacterCreator = observer(() => {
     return (
         <PrioritySystemContext.Provider value={priorityMetadata}>
             <CharacterContext.Provider value={character} >
-                <PrioritySystemComponent />
+                {/* <PrioritySystemComponent /> */}
                 <CharacterSheet />
             </CharacterContext.Provider>
         </PrioritySystemContext.Provider>

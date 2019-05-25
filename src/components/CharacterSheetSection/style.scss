@@ -1,0 +1,43 @@
+@import "../CharacterSheet/variables.scss";
+@import "../../styles/fonts.scss";
+
+$section-header-text-right: 292.637pt;
+
+.character-sheet-section {
+    display: inline-block;
+    width: $section-width;
+    position: relative;
+    background-color: rgba(255, 255, 0, 0.5);
+    background-color: transparent;
+}
+
+.character-sheet-section>.section-box-top {
+    position: absolute;
+    height: 11.535pt;
+    top: 13.037pt;
+    width: 100%;
+    display: flex;
+}
+
+.character-sheet-section header {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.character-sheet-section header>h2 {
+    display: inline;
+    
+    color: #ffffff;
+    background-color: #7e0f12;
+    
+    font-family: ArmaduraSolid, Armadura Solid;
+    font-size: 9pt;
+    font-weight: normal;
+    line-height: 12pt;
+    
+    margin: 0pt;
+    padding: 0pt #{$section-width - (189.137pt + 103.5pt - $section-left)};
+    padding-bottom: 1.412pt;
+    // padding-right: #{$section-width - (189.137pt + 103.5pt - $section-left)};
+}
