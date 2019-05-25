@@ -1,0 +1,16 @@
+@import "../CharacterSheet/variables.scss";
+
+$stroke-width: 0.75pt;
+
+$section-header-height: 13.037pt;
+$section-header-line-height: 12pt;
+// TODO (zeffron 2019-05-25) Understand why we need to remove an extra half of
+// a stroke width in the below margin.
+$section-top-margin: 107.738pt - $sections-top - $section-header-height - $stroke-width - ($stroke-width / 2);
+$section-left-margin: 43.248pt - $section-left;
+$section-right-margin: $section-width - $section-left-margin - 241.56pt;
+$section-bottom-margin: 181.016pt - $sections-top - 86.89203pt;
+
+$section-padding-bottom: 86.89203pt - 85.9875pt;
+
+$section-line-margin-bottom: (128.595pt - 115.636pt) - 8.55pt - 0.75pt;

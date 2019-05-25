@@ -50,6 +50,7 @@ const CharacterSheet = observer(() => {
                     {background}
                     <div className="sections">
                         <CharacterSheetSection name="PERSONAL DATA" />
+                        <CharacterSheetSection name="ATTRIBUTES" />
                     </div>
                     {/* <Metatext /> */}
                     {/* <PersonalData /> */}

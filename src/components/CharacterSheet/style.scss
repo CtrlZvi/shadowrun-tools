@@ -61,8 +61,12 @@
 
   // background-color: rgba(0, 255, 255, 0.5);
   
-  display: grid;
-  grid-template-columns: $section-width 1fr $section-width;
+  // display: grid;
+  // grid-template-columns: repeat(2, $section-width);
+  // grid-column-gap: $section-column-gap;
+
+  display: flex;
+  flex-direction: column;
 }
 
 // $page-width: 612pt;

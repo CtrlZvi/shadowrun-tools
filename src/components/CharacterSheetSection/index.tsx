@@ -16,16 +16,28 @@ const CharacterSheetSection = observer(({ name }: { name: string }) => {
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 270.625 11.535"
             >
-                <polyline
-                    points="270.25,11.535 270.25,0.5 11.66,0.5 0.5,11.535"
-                    fill="none"
-                    stroke-width="0.75pt"
-                    stroke="#7e0f12"
-                />
+                <polyline points="270.25,11.535 270.25,0.5 11.66,0.5 0.5,11.535" />
             </svg>
             <header>
                 <h2>{name}</h2>
             </header>
+            <div className="character-sheet-section-body">
+                <div>
+                    NAME/PRIMARY ALIAS
+                </div>
+                <div>
+                    Metatype
+                </div>
+                <div>
+                    Age
+                </div>
+                <div>
+                    Street Cred
+                </div>
+                <div>
+                    Karma
+                </div>
+            </div>
         </section >
     )
 });
