@@ -3,7 +3,7 @@ import React from "react";
 
 import './style.scss';
 import CharacterSheet from "../CharacterSheet";
-import PrioritySystemComponent from "../PrioritySystem";
+// import PrioritySystemComponent from "../PrioritySystem";
 import CharacterContext from "../../contexts/Character";
 import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Character } from "../../models/Character";

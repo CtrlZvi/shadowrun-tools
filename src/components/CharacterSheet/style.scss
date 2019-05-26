@@ -54,19 +54,21 @@
 
 .sections {
   position: relative;
-  left: $section-left;
+  left: $sections-left;
   top: $sections-top;
-  width: 559.25pt;
-  height: #{724.306pt - $sections-top};
+  width: $sections-width;
+  height: $sections-height;
 
   // background-color: rgba(0, 255, 255, 0.5);
   
   // display: grid;
   // grid-template-columns: repeat(2, $section-width);
-  // grid-column-gap: $section-column-gap;
+  // column-gap: $section-column-gap;
 
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
+  align-content: space-between;
 }
 
 // $page-width: 612pt;

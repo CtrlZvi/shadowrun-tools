@@ -1,14 +1,11 @@
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React from 'react';
 
 import './style.scss';
-import CharacterSheetContext from '../../contexts/CharacterSheet';
 
-const CharacterSheetSection = observer(({ name }: { name: string }) => {
-    const characterSheet = useContext(CharacterSheetContext);
-
+const CharacterSheetSection = observer(({ name }: { name: string }, ref: any) => {
     return (
-        <section className="character-sheet-section">
+        <section className="character-sheet-section" ref={ref}>
             <svg
                 className="section-box-top"
                 version="1.1"
@@ -40,6 +37,8 @@ const CharacterSheetSection = observer(({ name }: { name: string }) => {
             </div>
         </section >
     )
-});
+},
+    { forwardRef: true },
+);
 
 export default CharacterSheetSection;

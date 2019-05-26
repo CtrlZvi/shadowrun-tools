@@ -12,6 +12,7 @@ $section-header-text-right: 292.637pt;
 
     padding-bottom: $section-padding-bottom;
     margin-bottom: $section-bottom-margin;
+    margin-right: $sections-column-gap;
 }
 
 .character-sheet-section>.section-box-top {
@@ -45,7 +46,7 @@ $section-header-text-right: 292.637pt;
     line-height: $section-header-line-height;
     
     margin: 0pt;
-    padding: 0pt #{$section-width - (189.137pt + 103.5pt - $section-left)};
+    padding: 0pt #{$section-width - (189.137pt + 103.5pt - $sections-left)};
     padding-bottom: #{$section-header-height - $section-header-line-height};
 }
 

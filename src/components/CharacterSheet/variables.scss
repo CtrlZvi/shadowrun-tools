@@ -6,7 +6,11 @@ $background-height: 783.00005pt;
 $background-offset-x: -10.03023pt;
 $background-offset-y: -9pt;
 
-$sections-top: 85.50012pt;
 $section-width: 270.625pt;
-$section-left: 26.1875pt;
-$section-column-gap: 315.312pt - $section-width - $section-left;
+
+$sections-top: 85.50012pt;
+$sections-height: 724.306pt - $sections-top;
+$sections-left: 26.1875pt;
+$sections-column-gap: 315.312pt - $section-width - $sections-left;
+$sections-width: 2 * $section-width + $sections-column-gap;
+

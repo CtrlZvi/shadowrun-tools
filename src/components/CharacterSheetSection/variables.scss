@@ -7,7 +7,7 @@ $section-header-line-height: 12pt;
 // TODO (zeffron 2019-05-25) Understand why we need to remove an extra half of
 // a stroke width in the below margin.
 $section-top-margin: 107.738pt - $sections-top - $section-header-height - $stroke-width - ($stroke-width / 2);
-$section-left-margin: 43.248pt - $section-left;
+$section-left-margin: 43.248pt - $sections-left;
 $section-right-margin: $section-width - $section-left-margin - 241.56pt;
 $section-bottom-margin: 181.016pt - $sections-top - 86.89203pt;
 
