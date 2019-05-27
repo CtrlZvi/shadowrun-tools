@@ -138,7 +138,7 @@ export class PrioritySystem {
         Category.Skills,
         Category.Resources,
         Category.Metatype,
-        Category.MagicOrResonance
+        Category.MagicOrResonance,
     );
 
     @computed get priorities() {
@@ -205,6 +205,7 @@ export class PrioritySystem {
                 this.previousMetatype = this.character.metatype;
                 this._priorities = this.bestPriorities;
             }),
+            { fireImmediately: true },
         )
     }
 
@@ -312,10 +313,14 @@ export class PrioritySystem {
     }
 
     @computed get totalSpecialAttributePoints() {
-        return metatypes
-            .get(this.priorities.priority(Category.Metatype))!
-            .get(this.character.metatype.metasapient)!
-            .specialAttributePoints;
+        try {
+            return metatypes
+                .get(this.priorities.priority(Category.Metatype))!
+                .get(this.character.metatype.metasapient)!
+                .specialAttributePoints;
+        } catch (_exception) {
+            return NaN;
+        }
     }
 
     @computed private get usedSpecialAttributePoints() {

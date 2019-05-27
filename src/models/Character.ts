@@ -7,6 +7,89 @@ import { Quality } from './Quality';
 import { Skill, SkillGroup } from './Skill';
 
 export class Character {
+
+    public static fromChummer5a(dom: XMLDocument): Character {
+        const character = new Character();
+        character.metatype = Metatypes.get(
+            dom.evaluate(
+                "string(/character/metatype)",
+                dom,
+                null,
+                XPathResult.STRING_TYPE,
+                null,
+            ).stringValue as Metasapient
+        )!
+        const attributeIterator = dom.evaluate(
+            "/character/attributes/attribute",
+            dom,
+            null,
+            XPathResult.UNORDERED_NODE_ITERATOR_TYPE,
+            null,
+        );
+        let attribute: Node | null;;
+        while ((attribute = attributeIterator.iterateNext()) !== null) {
+            const attributeIdentifier = dom.evaluate(
+                "string(name)",
+                attribute,
+                null,
+                XPathResult.STRING_TYPE,
+                null,
+            ).stringValue;
+            const attributeValue = dom.evaluate(
+                "number(totalvalue)",
+                attribute,
+                null,
+                XPathResult.NUMBER_TYPE,
+                null,
+            ).numberValue;
+            switch (attributeIdentifier) {
+                case "AGI":
+                    character.agility = attributeValue;
+                    break;
+                case "BOD":
+                    character.body = attributeValue;
+                    break;
+                case "CHA":
+                    character.charisma = attributeValue;
+                    break;
+                case "EDG":
+                    character.edge = attributeValue;
+                    break;
+                case "INT":
+                    character.intuition = attributeValue;
+                    break;
+                case "LOG":
+                    character.logic = attributeValue;
+                    break;
+                case "MAG":
+                    if (![MagicOrResonanceUser.None, MagicOrResonanceUser.Technomancer].includes(character.magicOrResonanceUser)) {
+                        character.magicOrResonance = attributeValue;
+                    }
+                    break;
+                case "MAGAdept":
+                    if (![MagicOrResonanceUser.None, MagicOrResonanceUser.Technomancer].includes(character.magicOrResonanceUser)) {
+                        character.magicOrResonance = attributeValue;
+                    }
+                    break;
+                case "REA":
+                    character.reaction = attributeValue;
+                    break;
+                case "RES":
+                    if (character.magicOrResonanceUser === MagicOrResonanceUser.Technomancer) {
+                        character.magicOrResonance = attributeValue;
+                    }
+                    break;
+                case "STR":
+                    character.strength = attributeValue;
+                    break;
+                case "WIL":
+                    character.willpower = attributeValue;
+                    break;
+            }
+        }
+        return character;
+    }
+
     // Meta Text
     @observable name: string = "";
     @observable player: string = "";
