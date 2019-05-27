@@ -1,124 +1,272 @@
+import { action } from 'mobx';
 import { observer } from 'mobx-react-lite';
-import React from 'react';
+import React, { useContext, ChangeEvent } from 'react';
 
-import { ReactComponent as AgilitySVG } from './Agility.svg';
-import './Attributes.scss';
-import { ReactComponent as AstralInitiative } from './AstralInitiative.svg';
-import { ReactComponent as Box } from './AttributesBox.svg';
-import { ReactComponent as KeyEven } from './AttributesKeyEven.svg';
-import { ReactComponent as KeyOdd } from './AttributesKeyOdd.svg';
-import { ReactComponent as Limits } from './AttributesLimits.svg';
-import { ReactComponent as Style } from './AttributesStyle.svg';
-import { ReactComponent as Tab } from './AttributesTab.svg';
-import { ReactComponent as Text } from './AttributesText.svg';
-import { ReactComponent as ValueEven } from './AttributesValueEven.svg';
-import { ReactComponent as ValueOdd } from './AttributesValueOdd.svg';
-import { ReactComponent as BodySVG } from './Body.svg';
-import { ReactComponent as CharismaSVG } from './Charisma.svg';
-import { ReactComponent as Composure } from './Composure.svg';
-import { ReactComponent as EdgeSVG } from './Edge.svg';
-import { ReactComponent as EdgePoint } from './EdgePoint.svg';
-import { ReactComponent as EdgePoints } from './EdgePoints.svg';
-import { ReactComponent as Essence } from './Essence.svg';
-import { ReactComponent as Initiative } from './Initiative.svg';
-import { ReactComponent as IntuitionSVG } from './Intuition.svg';
-import { ReactComponent as JudgeIntentions } from './JudgeIntentions.svg';
-import { ReactComponent as LiftCarry } from './LiftCarry.svg';
-import { ReactComponent as LogicSVG } from './Logic.svg';
-import { ReactComponent as MagicOrResonanceSVG } from './MagicResonance.svg';
-import { ReactComponent as MatrixInitiative } from './MatrixInitiative.svg';
-import { ReactComponent as Memory } from './Memory.svg';
-import { ReactComponent as MentalLimit } from './MentalLimit.svg';
-import { ReactComponent as Movement } from './Movement.svg';
-import { ReactComponent as PhysicalLimit } from './PhysicalLimit.svg';
-import { ReactComponent as ReactionSVG } from './Reaction.svg';
-import { ReactComponent as SocialLimit } from './SocialLimit.svg';
-import { ReactComponent as StrengthSVG } from './Strength.svg';
-import { ReactComponent as WillpowerSVG } from './Willpower.svg';
-
-import AttributeComponent from './Attribute';
+import './style.scss';
+import CharacterSheetSection from '../CharacterSheetSection';
+import CharacterContext from "../../contexts/Character";
+import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Attribute } from '../../models/Attribute';
 
-const Attributes = observer(() => {
-    return (
-        <div className="attributes">
-            <Tab className="attributes-tab" />
-            <Style className="attributes-style" />
-            <Text className="attributes-text" />
-            <Box className="attributes-box" />
-            <KeyOdd className="attributes-key-1" />
-            <ValueOdd className="attributes-value-1" />
-            <KeyEven className="attributes-key-2" />
-            <ValueEven className="attributes-value-2" />
-            <KeyOdd className="attributes-key-3" />
-            <ValueOdd className="attributes-value-3" />
-            <KeyEven className="attributes-key-4" />
-            <ValueEven className="attributes-value-4" />
-            <KeyOdd className="attributes-key-5" />
-            <ValueOdd className="attributes-value-5" />
-            <KeyEven className="attributes-key-6" />
-            <ValueEven className="attributes-value-6" />
-            <KeyOdd className="attributes-key-7" />
-            <ValueOdd className="attributes-value-7" />
-            <KeyEven className="attributes-key-8" />
-            <ValueEven className="attributes-value-8" />
-            <KeyOdd className="attributes-key-9" />
-            <ValueOdd className="attributes-value-9" />
-            <KeyEven className="attributes-key-10" />
-            <ValueEven className="attributes-value-10" />
-            <KeyOdd className="attributes-key-11" />
-            <ValueOdd className="attributes-value-11" />
-            <KeyEven className="attributes-key-12" />
-            <ValueEven className="attributes-value-12" />
-            <KeyOdd className="attributes-key-13" />
-            <ValueOdd className="attributes-value-13" />
-            <KeyEven className="attributes-key-14" />
-            <ValueEven className="attributes-value-14" />
-            <KeyOdd className="attributes-key-15" />
-            <ValueOdd className="attributes-value-15" />
-            <KeyEven className="attributes-key-16" />
-            <ValueEven className="attributes-value-16" />
-            <KeyOdd className="attributes-key-17" />
-            <ValueOdd className="attributes-value-17" />
-            <KeyEven className="attributes-key-18" />
-            <ValueEven className="attributes-value-18" />
-            <KeyOdd className="attributes-key-19" />
-            <KeyEven className="attributes-key-20" />
-            <ValueEven className="attributes-value-20" />
-            <Limits className="attributes-limits" />
-            <EdgePoint className="attributes-edge-point-1" />
-            <EdgePoint className="attributes-edge-point-2" />
-            <EdgePoint className="attributes-edge-point-3" />
-            <EdgePoint className="attributes-edge-point-4" />
-            <EdgePoint className="attributes-edge-point-5" />
-            <EdgePoint className="attributes-edge-point-6" />
-            <EdgePoint className="attributes-edge-point-7" />
-            <EdgePoint className="attributes-edge-point-8" />
-            <AttributeComponent attribute={Attribute.Body} svg={<BodySVG />} />
-            <Essence className="attributes-essence" />
-            <AttributeComponent attribute={Attribute.Agility} svg={<AgilitySVG />} />
-            <AttributeComponent attribute={Attribute.MagicOrResonance} svg={<MagicOrResonanceSVG />} />
-            <AttributeComponent attribute={Attribute.Reaction} svg={<ReactionSVG />} />
-            <Initiative className="attributes-initiative" />
-            <AttributeComponent attribute={Attribute.Strength} svg={<StrengthSVG />} />
-            <MatrixInitiative className="attributes-matrix-initiative" />
-            <AttributeComponent attribute={Attribute.Willpower} svg={<WillpowerSVG />} />
-            <AstralInitiative className="attributes-astral-initiative" />
-            <AttributeComponent attribute={Attribute.Logic} svg={<LogicSVG />} />
-            <Composure className="attributes-composure" />
-            <AttributeComponent attribute={Attribute.Intuition} svg={<IntuitionSVG />} />
-            <JudgeIntentions className="attributes-judge-intentions" />
-            <AttributeComponent attribute={Attribute.Charisma} svg={<CharismaSVG />} />
-            <Memory className="attributes-memory" />
-            <AttributeComponent attribute={Attribute.Edge} svg={<EdgeSVG />} />
-            <LiftCarry className="attributes-lift-carry" />
-            <EdgePoints className="attributes-edge-points" />
-            <Movement className="attributes-movement" />
-            <PhysicalLimit className="attributes-physical-limit" />
-            <MentalLimit className="attributes-mental-limit" />
-            <SocialLimit className="attributes-social-limit" />
-        </div>
-    );
-});
+const AttributesComponent = observer(
+    (_: {}, ref) => {
+        const character = useContext(CharacterContext);
+        const prioritySystem = useContext(PrioritySystemContext);
 
-export default Attributes;
+        console.debug(`Screen resolution ${screen.width}x${screen.height}`); // eslint-disable-line no-restricted-globals
+        console.debug(`Device Pixel Ratio: ${window.devicePixelRatio}`);
+        return (
+            <CharacterSheetSection className="attributes" name={"ATTRIBUTES"} ref={ref}>
+                <label htmlFor="attribute-body">
+                    <span>Body</span>
+                </label>
+                <div>
+                    {character.body}({character.body})
+                        <input
+                        type="number"
+                        id="attribute-body"
+                        value={character.body}
+                        min={character.metatype.body !== undefined ? character.metatype.body.base : 0}
+                        max={character.metatype.body !== undefined ? character.metatype.body.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Body,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-">
+                    <span>Essence</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-agility">
+                    <span>Agility</span>
+                </label>
+                <div>
+                    {character.agility}({character.agility})
+                        <input
+                        type="number"
+                        id="attribute-agility"
+                        value={character.agility}
+                        min={character.metatype.agility !== undefined ? character.metatype.agility.base : 0}
+                        max={character.metatype.agility !== undefined ? character.metatype.agility.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Agility,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-magic-or-resonance">
+                    <span>Magic/Resonance</span>
+                </label>
+                <div>
+                    {character.magicOrResonance}({character.magicOrResonance})
+                        <input
+                        type="number"
+                        id="attribute-magic-or-resonance"
+                        value={character.magicOrResonance}
+                        min={0}
+                        max={6}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.MagicOrResonance,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-reaction">
+                    <span>Reaction</span>
+                </label>
+                <div>
+                    {character.reaction}({character.reaction})
+                        <input
+                        type="number"
+                        id="attribute-reaction"
+                        value={character.reaction}
+                        min={character.metatype.reaction !== undefined ? character.metatype.reaction.base : 0}
+                        max={character.metatype.reaction !== undefined ? character.metatype.reaction.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Reaction,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-initiative">
+                    <span>Initiative</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-strength">
+                    <span>Strength</span>
+                </label>
+                <div>
+                    {character.strength}({character.strength})
+                        <input
+                        type="number"
+                        id="attribute-strength"
+                        value={character.strength}
+                        min={character.metatype.strength !== undefined ? character.metatype.strength.base : 0}
+                        max={character.metatype.strength !== undefined ? character.metatype.strength.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Strength,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-matrix-initiative">
+                    <span>Matrix Initiative</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-willpower">
+                    <span>Willpower</span>
+                </label>
+                <div>
+                    {character.willpower}({character.willpower})
+                        <input
+                        type="number"
+                        id="attribute-willpower"
+                        value={character.willpower}
+                        min={character.metatype.willpower !== undefined ? character.metatype.willpower.base : 0}
+                        max={character.metatype.willpower !== undefined ? character.metatype.willpower.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Willpower,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-astral-initiative">
+                    <span>Astral Initiative</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-logic">
+                    <span>Logic</span>
+                </label>
+                <div>
+                    {character.logic}({character.logic})
+                        <input
+                        type="number"
+                        id="attribute-logic"
+                        value={character.logic}
+                        min={character.metatype.logic !== undefined ? character.metatype.logic.base : 0}
+                        max={character.metatype.logic !== undefined ? character.metatype.logic.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Logic,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-composure">
+                    <span>Composure</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-intuition">
+                    <span>Intuition</span>
+                </label>
+                <div>
+                    {character.intuition}({character.intuition})
+                        <input
+                        type="number"
+                        id="attribute-intuition"
+                        value={character.intuition}
+                        min={character.metatype.intuition !== undefined ? character.metatype.intuition.base : 0}
+                        max={character.metatype.intuition !== undefined ? character.metatype.intuition.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Intuition,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-judge-intentions">
+                    <span>Judge Intentions</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-charisma">
+                    <span>Charisma</span>
+                </label>
+                <div>
+                    {character.charisma}({character.charisma})
+                        <input
+                        type="number"
+                        id="attribute-charisma"
+                        value={character.charisma}
+                        min={character.metatype.charisma !== undefined ? character.metatype.charisma.base : 0}
+                        max={character.metatype.charisma !== undefined ? character.metatype.charisma.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Charisma,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-memory">
+                    <span>Memory</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-edge">
+                    <span>Edge</span>
+                </label>
+                <div>
+                    {character.edge}({character.edge})
+                        <input
+                        type="number"
+                        id="attribute-edge"
+                        value={character.edge}
+                        min={character.metatype.edge !== undefined ? character.metatype.edge.base : 0}
+                        max={character.metatype.edge !== undefined ? character.metatype.edge.maximum : 0}
+                        onChange={action(
+                            (event: ChangeEvent<HTMLInputElement>) => prioritySystem
+                                .updateAttribute(
+                                    Attribute.Edge,
+                                    event.currentTarget.valueAsNumber,
+                                )
+                        )} />
+                </div>
+                <label htmlFor="attribute-lift-carry">
+                    <span>Lift/Carry</span>
+                </label>
+                <div></div>
+                <label htmlFor="attribute-edge-points">
+                    <span>Edge Points</span>
+                </label>
+                <div className="edge-points"></div>
+                <label htmlFor="attribute-movement">
+                    <span>Movement</span>
+                </label>
+                <div></div>
+                <div className="limits">
+                    <label htmlFor="attribute-physical-limit">
+                        <span>Physical Limit</span>
+                    </label>
+                    <div></div>
+                    <label htmlFor="attribute-mental-limit">
+                        <span>Mental Limit</span>
+                    </label>
+                    <div></div>
+                    <label htmlFor="attribute-social-limit">
+                        <span>Social Limit</span>
+                    </label>
+                    <div></div>
+                </div>
+            </CharacterSheetSection >
+        )
+    },
+    { forwardRef: true },
+)
+
+AttributesComponent.displayName = "ATTRIBUTES";
+
+export default AttributesComponent;

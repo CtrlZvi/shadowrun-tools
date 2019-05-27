@@ -59,16 +59,34 @@
   width: $sections-width;
   height: $sections-height;
 
-  // background-color: rgba(0, 255, 255, 0.5);
-  
-  // display: grid;
-  // grid-template-columns: repeat(2, $section-width);
-  // column-gap: $section-column-gap;
-
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  align-content: space-between;
+}
+
+.character-sheet input {
+  font-family: Friz Quadrata Std Regular;
+  text-overflow: ellipsis;
+  overflow: hidden;
+
+  background-color: transparent;
+  padding: 0pt;
+  border: none;
+  margin: 0pt;
+}
+
+.character-sheet select {
+  font-family: Friz Quadrata Std Regular;
+  background: transparent;
+  border: none;
+}
+
+.character-sheet option {
+  font-family: Friz Quadrata Std Regular;
+  background: transparent;
+  background-color: #f1efee;
+  padding: 0pt;
+  border: none;
 }
 
 // $page-width: 612pt;

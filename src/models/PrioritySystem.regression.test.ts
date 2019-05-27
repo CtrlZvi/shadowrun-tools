@@ -17,7 +17,7 @@ it("Regression: inability to increase magic or resonance attribute", () => {
     prioritySystem.updateAttribute(Attribute.Willpower, 2);
     prioritySystem.updateAttribute(Attribute.Edge, 7);
 
-    expect(character.magicorresonance).toBe(4);
+    expect(character.magicOrResonance).toBe(4);
     expect(prioritySystem.priorities).toEqual({
         A: Category.Attributes,
         B: Category.MagicOrResonance,
@@ -28,7 +28,7 @@ it("Regression: inability to increase magic or resonance attribute", () => {
 
     prioritySystem.updateAttribute(Attribute.MagicOrResonance, 5);
 
-    expect(character.magicorresonance).toBe(5);
+    expect(character.magicOrResonance).toBe(5);
     expect(prioritySystem.priorities).toEqual({
         A: Category.Attributes,
         B: Category.Metatype,

@@ -184,9 +184,9 @@ export class PrioritySystem {
                     currentMetadata.magic :
                     currentMetadata.resonance;
                 const pointDelta = currentPoints - previousPoints;
-                const previousMagicOrResonanceAttributePoints = this.character.magicorresonance - previousPoints;
+                const previousMagicOrResonanceAttributePoints = this.character.magicOrResonance - previousPoints;
                 if (pointDelta > 0) {
-                    this.character.magicorresonance += Math.max(
+                    this.character.magicOrResonance += Math.max(
                         0,
                         pointDelta - previousMagicOrResonanceAttributePoints,
                     )
@@ -196,7 +196,7 @@ export class PrioritySystem {
                         .get(this.character.metatype.metasapient)!.specialAttributePoints - metatypes
                             .get(this.priorities.priority(Category.Metatype))!
                             .get(this.previousMetatype.metasapient)!.specialAttributePoints;
-                    this.character.magicorresonance += Math.min(
+                    this.character.magicOrResonance += Math.min(
                         0,
                         pointDelta + Math.max(0, additionalSpecialAttributePoints),
                     );
@@ -374,7 +374,12 @@ export class PrioritySystem {
     @action updateAttribute(attribute: Attribute, value: number) {
         switch (attribute) {
             default:
-                (this.character as any)[Attribute[attribute].toLowerCase()] = value;
+                (this.character as any)[
+                    Attribute[attribute].replace(
+                        /^\w/,
+                        match => match.toLowerCase(),
+                    )
+                ] = value;
         }
     }
 

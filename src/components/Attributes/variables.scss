@@ -1,0 +1,14 @@
+@import "../CharacterSheetSection/variables.scss";
+
+// TODO (zeffron 2019-05-26) Determine which margin is the correct left margin:
+// the one used by Attributes or the one used by Personal Data.
+$attributes-left: 39.248pt;
+$attributes-margin-adjust: $attributes-left - ($section-left-margin + $sections-left);
+
+$attributes-first-key-width: 37.925pt;
+$attributes-first-value-width: 66.068pt;
+$attributes-second-key-width: 53.01001pt;
+$attributes-second-value-width: 69.42801pt;
+$attributes-gap: 84.732pt - $attributes-first-key-width - $attributes-left;
+
+$attributes-first-value-right-margin: 159.57pt - 2 * $attributes-gap - $attributes-first-key-width - $attributes-first-value-width - $attributes-left;

@@ -90,12 +90,12 @@ export class Character {
         this.attributes.set(Attribute.Edge, value - this.metatype.edge.base);
     }
 
-    @computed get magicorresonance() {
+    @computed get magicOrResonance() {
         return this.magicOrResonanceUser !== MagicOrResonanceUser.None ?
             this.attributes.get(Attribute.MagicOrResonance)! :
             this.metatype.magic.base;
     }
-    set magicorresonance(value) {
+    set magicOrResonance(value) {
         this.attributes.set(Attribute.MagicOrResonance, value);
     }
 

@@ -1,35 +1,19 @@
 import { observer } from 'mobx-react-lite';
-import React, { useState, useLayoutEffect, useCallback } from 'react';
+import React, { useState, useLayoutEffect, useCallback, MemoExoticComponent, ForwardRefExoticComponent, RefAttributes } from 'react';
 
 import { ReactComponent as SVG } from './Background.svg';
 import './style.scss';
 
-// import AdeptPowers from '../AdeptPowers';
-// import Armor from '../Armor';
-// import Attributes from '../Attributes';
-// import Augmentations from '../Augmentations';
-// import ConditionMonitor from '../ConditionMonitor';
-// import Contacts from '../Contacts';
-// import CoreCombatInfo from '../CoreCombatInfo';
-// import Cyberdeck from '../Cyberdeck';
-// import Gear from '../Gear';
-// import IDsLifestylesCurrency from '../IDsLifestylesCurrency';
-// import Metatext from '../Metatext';
-// import MeleeWeapons from '../MeleeWeapons';
-// import PersonalData from '../PersonalData';
-// import Qualities from '../Qualities';
-// import RangedWeapons from '../RangedWeapons';
-// import Skills from '../Skills';
-// import Spells from '../Spells';
-// import Vehicle from '../Vehicle';
 import CharacterSheetContext from '../../contexts/CharacterSheet';
 import CharacterSheetSection from '../CharacterSheetSection';
+import PersonalData from '../PersonalData';
+import Attributes from "../Attributes";
 
 let toggleRendered = () => { }
 
 const sectionNames = [
-    "PERSONAL DATA",
-    "ATTRIBUTES",
+    PersonalData,
+    Attributes,
     "SKILLS",
     "IDS / LIFESTYLES / CURRENCY",
     "CORE COMBAT INFO",
@@ -70,7 +54,7 @@ const CharacterSheet = observer(() => {
     // has knowledge of. This allows us to create a list of components that
     // need references to get their bounding boxes without violating the rules
     // of hooks.
-    const CharacterSheetSectionWrapper = ({ name }: { name: string }) => {
+    const CharacterSheetSectionWrapper = ({ section }: { section: string | MemoExoticComponent<ForwardRefExoticComponent<RefAttributes<{}>>> }) => {
         // See https://reactjs.org/docs/hooks-faq.html#how-can-i-measure-a-dom-node
         // for more details on how this works.
         const ref = useCallback(
@@ -91,17 +75,22 @@ const CharacterSheet = observer(() => {
                     boundingRectangle.width,
                     boundingRectangle.height + (!isNaN(marginTop) ? marginTop : 0) + (!isNaN(marginBottom) ? marginBottom : 0),
                 )
-                setBoundingRectangles(boundingRectangles.set(name, marginBoundingRectangle));
+                setBoundingRectangles(boundingRectangles.set(typeof section === "string" ? section : section.displayName!, marginBoundingRectangle));
             },
-            [name],
+            [section],
         );
 
-        return <CharacterSheetSection ref={ref} name={name} />
+        if (typeof section !== "string") {
+            const Component = section;
+            return <Component ref={ref} />;
+        }
+
+        return <CharacterSheetSection ref={ref} name={section} />;
     };
 
     const [sections, setSections] = useState([
-        sectionNames.map(name =>
-            <CharacterSheetSectionWrapper key={name} name={name} />
+        sectionNames.map((section, index) =>
+            <CharacterSheetSectionWrapper key={typeof section === "string" ? section : section.displayName} section={section} />
         ),
     ]);
 
@@ -148,7 +137,7 @@ const CharacterSheet = observer(() => {
                     // third column, then we create a new page.
 
                     const sectionBoundingRectangle = boundingRectangles
-                        .get(section.props.name)!;
+                        .get(typeof section.props.section === "string" ? section.props.section : section.props.section.displayName)!;
 
                     const newHeight = location.height + sectionBoundingRectangle.height;
                     if (newHeight <= columnHeight) {
@@ -199,6 +188,11 @@ const CharacterSheet = observer(() => {
 
     return (
         <CharacterSheetContext.Provider value={developmentState}>
+            {/*
+                TODO (zeffron 2019-05-25) Use `window.devicePixelRatio` and CSS
+                transform to make the character sheet not be tiny on high DPI
+                devices.
+            */}
             <div className="character-sheet">
                 {/* <div className={"character-sheet-page" + (developmentState.rendered ? " rendered" : "")}>
                     {background}

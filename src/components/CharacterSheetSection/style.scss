@@ -53,21 +53,5 @@ $section-header-text-right: 292.637pt;
 .character-sheet-section-body {
     margin-top: $section-top-margin;
     margin-left: $section-left-margin;
-    margin-right: $section-right-margin;
     margin-right: 12pt;
-}
-
-.character-sheet-section-body>div {
-    font-family: UniversLTStd-BoldCn, Univers LT Std;
-    font-size: 7pt;
-    font-weight: normal;
-
-    color: rgba(0, 255, 255, 0.5);
-
-    border-color: #6d6e70;
-    border-color: rgba(0, 255, 255, 0.5);
-    border-bottom-width: 0.75pt;
-    border-bottom-style: solid;
-
-    margin-bottom: $section-line-margin-bottom;
 }

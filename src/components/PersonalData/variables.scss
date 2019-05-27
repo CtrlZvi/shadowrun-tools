@@ -1,0 +1,9 @@
+$personal-data-left-offset: 43.248pt;
+$metatype-width: 153.168pt - $personal-data-left-offset;
+$age-width: 97.126pt - $personal-data-left-offset;
+$sex-width: 151.013pt - $age-width - $personal-data-left-offset;
+$height-width: 204.892pt - $sex-width - $age-width - $personal-data-left-offset;
+$street-cred-width: 123.467pt - $personal-data-left-offset;
+$notoriety-width: 204.898pt - $street-cred-width - $personal-data-left-offset;
+$karma-width: 101.732pt - $personal-data-left-offset;
+$total-karma-width: 175.169pt - $karma-width - $personal-data-left-offset;
