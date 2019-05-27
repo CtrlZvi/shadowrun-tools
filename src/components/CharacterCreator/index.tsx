@@ -1,5 +1,5 @@
 import { observer, useLocalStore } from 'mobx-react-lite';
-import React, { ChangeEvent } from "react";
+import React, { ChangeEvent, MouseEvent } from "react";
 
 import './style.scss';
 import CharacterSheet from "../CharacterSheet";
@@ -36,6 +36,25 @@ const CharacterCreator = observer(() => {
                         );
                     }
                 } />
+            <a download="character_sheet.json" href="">
+                <button
+                    type="button"
+                    onClick={
+                        (event: MouseEvent) => {
+                            const blob = new Blob(
+                                [JSON.stringify(characterStore.character)],
+                                {
+                                    type: "application/json",
+                                    endings: "transparent",
+                                },
+                            );
+                            const url = URL.createObjectURL(blob);
+                            (event.currentTarget.parentElement as HTMLAnchorElement).href = url;
+                        }
+                    }>
+                    Save
+                </button>
+            </a>
             <CharacterContext.Provider value={characterStore.character} >
                 <PrioritySystemComponent />
                 <CharacterSheet />

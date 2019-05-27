@@ -90,6 +90,25 @@ export class Character {
         return character;
     }
 
+    public toJSON() {
+        return {
+            metatype: this.metatype.metasapient,
+            attributes: {
+                body: this.body,
+                agility: this.agility,
+                reaction: this.reaction,
+                strength: this.strength,
+                willpower: this.willpower,
+                logic: this.logic,
+                intuition: this.intuition,
+                charisma: this.charisma,
+                edge: this.edge,
+                magic: ![MagicOrResonanceUser.Technomancer, MagicOrResonanceUser.None].includes(this.magicOrResonanceUser) ? this.magicOrResonance : 0,
+                resonance: this.magicOrResonanceUser === MagicOrResonanceUser.Technomancer ? this.magicOrResonance : 0,
+            }
+        }
+    }
+
     // Meta Text
     @observable name: string = "";
     @observable player: string = "";
