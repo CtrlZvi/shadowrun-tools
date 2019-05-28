@@ -1,6 +1,6 @@
 import { observable, computed } from "mobx";
+import { computedFn } from "mobx-utils";
 
-import { Attribute } from "./Attribute";
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metatypes, Metasapient } from './Metatype';
 import { Quality } from './Quality';
@@ -26,7 +26,7 @@ export class Character {
             XPathResult.UNORDERED_NODE_ITERATOR_TYPE,
             null,
         );
-        let attribute: Node | null;;
+        let attribute: Node | null;
         while ((attribute = attributeIterator.iterateNext()) !== null) {
             const attributeIdentifier = dom.evaluate(
                 "string(name)",
@@ -90,24 +90,42 @@ export class Character {
         return character;
     }
 
-    public toJSON() {
-        return {
-            metatype: this.metatype.metasapient,
-            attributes: {
-                body: this.body,
-                agility: this.agility,
-                reaction: this.reaction,
-                strength: this.strength,
-                willpower: this.willpower,
-                logic: this.logic,
-                intuition: this.intuition,
-                charisma: this.charisma,
-                edge: this.edge,
-                magic: ![MagicOrResonanceUser.Technomancer, MagicOrResonanceUser.None].includes(this.magicOrResonanceUser) ? this.magicOrResonance : 0,
-                resonance: this.magicOrResonanceUser === MagicOrResonanceUser.Technomancer ? this.magicOrResonance : 0,
+    public toJSON = computedFn(
+        function (this: Character) {
+            return {
+                metatype: this.metatype.metasapient,
+                attributes: {
+                    body: this.body,
+                    agility: this.agility,
+                    reaction: this.reaction,
+                    strength: this.strength,
+                    willpower: this.willpower,
+                    logic: this.logic,
+                    intuition: this.intuition,
+                    charisma: this.charisma,
+                    edge: this.edge,
+                    magic: ![MagicOrResonanceUser.Technomancer, MagicOrResonanceUser.None].includes(this.magicOrResonanceUser) ? this.magicOrResonance : 0,
+                    resonance: this.magicOrResonanceUser === MagicOrResonanceUser.Technomancer ? this.magicOrResonance : 0,
+                }
             }
         }
+    );
+
+    @computed public get url() {
+        const blob = new Blob(
+            [JSON.stringify(this, null, 2)],
+            {
+                type: "application/json",
+                endings: "transparent",
+            },
+        );
+        if (this._url !== undefined) {
+            URL.revokeObjectURL(this._url)
+        }
+        this._url = URL.createObjectURL(blob);
+        return this._url;
     }
+    private _url: string | undefined = undefined;
 
     // Meta Text
     @observable name: string = "";
@@ -123,83 +141,16 @@ export class Character {
     @observable qualities: Quality[] = [];
 
     // Attributes
-    @observable attributes = new Map<Attribute, number>(
-        Object.values(Attribute)
-            .filter((attribute) => !isNaN(Number(attribute)))
-            .map((attribute: Attribute) => [attribute, 0])
-    );
-
-    @computed get body() {
-        return this.metatype.body.base + this.attributes.get(Attribute.Body)!;
-    }
-    set body(value) {
-        this.attributes.set(Attribute.Body, value - this.metatype.body.base);
-    }
-
-    @computed get agility() {
-        return this.metatype.agility.base + this.attributes.get(Attribute.Agility)!;
-    }
-    set agility(value) {
-        this.attributes.set(Attribute.Agility, value - this.metatype.agility.base);
-    }
-
-    @computed get reaction() {
-        return this.metatype.reaction.base + this.attributes.get(Attribute.Reaction)!;
-    }
-    set reaction(value) {
-        this.attributes.set(Attribute.Reaction, value - this.metatype.reaction.base);
-    }
-
-    @computed get strength() {
-        return this.metatype.strength.base + this.attributes.get(Attribute.Strength)!;
-    }
-    set strength(value) {
-        this.attributes.set(Attribute.Strength, value - this.metatype.strength.base);
-    }
-
-    @computed get willpower() {
-        return this.metatype.willpower.base + this.attributes.get(Attribute.Willpower)!;
-    }
-    set willpower(value) {
-        this.attributes.set(Attribute.Willpower, value - this.metatype.willpower.base);
-    }
-
-    @computed get logic() {
-        return this.metatype.logic.base + this.attributes.get(Attribute.Logic)!;
-    }
-    set logic(value) {
-        this.attributes.set(Attribute.Logic, value - this.metatype.logic.base);
-    }
-
-    @computed get intuition() {
-        return this.metatype.intuition.base + this.attributes.get(Attribute.Intuition)!;
-    }
-    set intuition(value) {
-        this.attributes.set(Attribute.Intuition, value - this.metatype.intuition.base);
-    }
-
-    @computed get charisma() {
-        return this.metatype.charisma.base + this.attributes.get(Attribute.Charisma)!;
-    }
-    set charisma(value) {
-        this.attributes.set(Attribute.Charisma, value - this.metatype.charisma.base);
-    }
-
-    @computed get edge() {
-        return this.metatype.edge.base + this.attributes.get(Attribute.Edge)!;
-    }
-    set edge(value) {
-        this.attributes.set(Attribute.Edge, value - this.metatype.edge.base);
-    }
-
-    @computed get magicOrResonance() {
-        return this.magicOrResonanceUser !== MagicOrResonanceUser.None ?
-            this.attributes.get(Attribute.MagicOrResonance)! :
-            this.metatype.magic.base;
-    }
-    set magicOrResonance(value) {
-        this.attributes.set(Attribute.MagicOrResonance, value);
-    }
+    @observable body: number = 0;
+    @observable agility: number = 0;
+    @observable reaction: number = 0;
+    @observable strength: number = 0;
+    @observable willpower: number = 0;
+    @observable logic: number = 0;
+    @observable intuition: number = 0;
+    @observable charisma: number = 0;
+    @observable edge: number = 0;
+    @observable magicOrResonance: number = 0;
 
     // Skills
     @observable skills: [Skill | SkillGroup, number][] = [];

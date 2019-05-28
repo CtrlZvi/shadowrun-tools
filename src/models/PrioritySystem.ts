@@ -1,4 +1,12 @@
-import { action, computed, reaction, observable, IReactionPublic, IReactionDisposer } from "mobx";
+import {
+    action,
+    computed,
+    reaction,
+    observable,
+    IReactionPublic,
+    IReactionDisposer
+} from "mobx";
+import { computedFn } from "mobx-utils";
 
 import { Attribute } from "./Attribute";
 import { Character } from "./Character";
@@ -112,6 +120,132 @@ class PriorityConfiguration {
                         Priority.D :
                         Priority.E;
     }
+
+    constraintScore: (character: Character) => number = computedFn(
+        function (this: PriorityConfiguration, character: Character): number {
+            let score = 0;
+
+            // There's a computation cycle for the used special attribute points,
+            // because calculating them requires knowing the priority of Magic or
+            // Resonance, but knowing the priority of Magic or Resonance requires
+            // knowing the used special attribute points. We break this cycle by
+            // redefining the function here on a per priority basis so evaluation
+            // can be correct.
+            const magicOrResonancePriority = this.priority(Category.MagicOrResonance);
+            const magicOrResonanceMetadata = magicOrResonance
+                .get(magicOrResonancePriority)!
+                .get(character.magicOrResonanceUser);
+
+            const metatypePriority = this.priority(Category.Metatype);
+            const metatypeMetadata = metatypes
+                .get(metatypePriority)!
+                .get(character.metatype.metasapient);
+
+            const attributePriority = this.priority(Category.Attributes);
+
+            const skillPriority = this.priority(Category.Skills);
+
+            // Inviolable Constraint: Metatype priority must be in range
+            // for the character's metatype.
+            score += metatypeMetadata !== undefined ? 0 : Infinity;
+
+            // Weighted Constraint: Metatype priority must be high enough
+            // priority for the character's used special attribute points.
+            score += Math.max(
+                0,
+                this.assignedSpecialAttributePoints(character) - (
+                    metatypeMetadata !== undefined ?
+                        metatypeMetadata.specialAttributePoints :
+                        0
+                ),
+            );
+
+            // Inviolable Constraint: Magic or Resonance priority must be
+            // in range for the character's user type.
+            score += magicOrResonanceMetadata !== undefined ? 0 : Infinity;
+
+            // Weighted Constraint: Attributes must be high enough priority
+            // for the character's used attribute points.
+            score += Math.max(
+                0,
+                this.assignedAttributePoints(character) - attributes.get(attributePriority)!,
+            );
+
+            // Weighted Constraint: Skills must be high enough priority
+            // for the character's used skill points.
+            score += Math.max(
+                0,
+                this.assignedSkillPoints(character) - skills.get(skillPriority)!.skills,
+            );
+
+            // Weighted Constraint: Skills must be high enough priority
+            // for the character's used skill group points.
+            // TODO (zeffron 2019-05-21) Figure out a method for constraining
+            // skills that takes into account splitting groups (if possible).
+            score += Math.max(
+                0,
+                this.assignedSkillGroupPoints(character) - skills.get(skillPriority)!.groups,
+            );
+
+            return score;
+        }
+    );
+
+    assignedAttributePoints: (character: Character) => number = computedFn(
+        function (character: Character) {
+            return (
+                (character.body - character.metatype.body.base) +
+                (character.agility - character.metatype.agility.base) +
+                (character.reaction - character.metatype.reaction.base) +
+                (character.strength - character.metatype.strength.base) +
+                (character.willpower - character.metatype.willpower.base) +
+                (character.logic - character.metatype.logic.base) +
+                (character.intuition - character.metatype.intuition.base) +
+                (character.charisma - character.metatype.charisma.base)
+            )
+        }
+    );
+
+    assignedSpecialAttributePoints: (character: Character) => number = computedFn(
+        function (this: PriorityConfiguration, character: Character) {
+            const magicOrResonancePriority = this.priority(Category.MagicOrResonance);
+            const magicOrResonanceMetadata = magicOrResonance
+                .get(magicOrResonancePriority)!
+                .get(character.magicOrResonanceUser);
+            const baseMagicOrResonance = magicOrResonanceMetadata !== undefined ?
+                (
+                    isMagicMetadata(magicOrResonanceMetadata) ?
+                        magicOrResonanceMetadata.magic :
+                        magicOrResonanceMetadata.resonance
+                ) :
+                character.metatype.magic.base;
+            return (
+                (character.edge - character.metatype.edge.base) +
+                Math.max(
+                    character.magicOrResonance - baseMagicOrResonance,
+                    0,
+                )
+            )
+        }
+    );
+
+    assignedSkillPoints: (character: Character) => number = computedFn(
+        function (character: Character) {
+            return [...character.skills.values()]
+                .filter(([skill, _]) => isSkill(skill))
+                .map(([_, points]) => points)
+                .reduce((previous, current) => previous + current, 0);
+        }
+    );
+
+    assignedSkillGroupPoints: (character: Character) => number = computedFn(
+        function (character: Character) {
+            return [...character.skills.values()]
+                .filter(([skillGroup, _]) => isSkillGroup(skillGroup))
+                .map(([_, points]) => points)
+                .reduce((previous, current) => previous + current, 0);
+        }
+    );
 }
 
 const priorityConfigurations: PriorityConfiguration[] = categories
@@ -210,99 +344,14 @@ export class PrioritySystem {
     }
 
     @computed private get bestPriorities() {
-        // There's a computation cycle for the used special attribute points,
-        // because calculating them requires knowing the priority of Magic or
-        // Resonance, but knowing the priority of Magic or Resonance requires
-        // knowing the used special attribute points. We break this cycle by
-        // redefining the function here on a per priority basis so evaluation
-        // can be correct.
-        const usedSpecialAttributePoints = (configuration: PriorityConfiguration) => {
-            const magicOrResonancePriority = configuration.priority(Category.MagicOrResonance);
-            const magicOrResonanceMetadata = magicOrResonance
-                .get(magicOrResonancePriority)!
-                .get(this.character.magicOrResonanceUser);
-            return this.character.attributes.get(Attribute.Edge)! + Math.max(
-                this.character.attributes.get(Attribute.MagicOrResonance)! - (
-                    magicOrResonanceMetadata !== undefined ?
-                        isMagicMetadata(magicOrResonanceMetadata) ?
-                            magicOrResonanceMetadata.magic :
-                            magicOrResonanceMetadata.resonance :
-                        0
-                ),
-                0
-            );
-        };
-
         // We put the current priority into the front of the map so the
         // stable sort at the end of the function will prefer it over any
-        // others with equal score.
-        // TODO (zeffron 2019-05-19) Determine a way that doesn't cost an
-        // additional element to be added, since we're already going to be
-        // doing this calculation, anyway. 
-        let weightedPriorityConfigurations = priorityConfigurations.map(
-            configuration => ({ configuration: configuration, count: 0 })
-        );
-
-        for (const configuration of weightedPriorityConfigurations) {
-            const metatypePriority = configuration.configuration.priority(Category.Metatype);
-            const metatypeMetadata = metatypes
-                .get(metatypePriority)!
-                .get(this.character.metatype.metasapient);
-
-            const magicOrResonancePriority = configuration.configuration.priority(Category.MagicOrResonance);
-            const magicOrResonanceMetadata = magicOrResonance
-                .get(magicOrResonancePriority)!
-                .get(this.character.magicOrResonanceUser);
-
-            const attributePriority = configuration.configuration.priority(Category.Attributes);
-
-            const skillPriority = configuration.configuration.priority(Category.Skills);
-
-            // Inviolable Constraint: Metatype priority must be in range
-            // for the character's metatype.
-            configuration.count += metatypeMetadata !== undefined ? 0 : Infinity;
-
-            // Weighted Constraint: Metatype priority must be high enough
-            // priority for the character's used special attribute points.
-            configuration.count += Math.max(
-                0,
-                usedSpecialAttributePoints(configuration.configuration) - (
-                    metatypeMetadata !== undefined ?
-                        metatypeMetadata.specialAttributePoints :
-                        0
-                ),
-            );
-
-            // Inviolable Constraint: Magic or Resonance priority must be
-            // in range for the character's user type.
-            configuration.count += magicOrResonanceMetadata !== undefined ? 0 : Infinity;
-
-            // Weighted Constraint: Attributes must be high enough priority
-            // for the character's used attribute points.
-            configuration.count += Math.max(
-                0,
-                this.usedAttributePoints - attributes.get(attributePriority)!,
-            );
-
-            // Weighted Constraint: Skills must be high enough priority
-            // for the character's used skill points.
-            configuration.count += Math.max(
-                0,
-                this.usedSkillPoints - skills.get(skillPriority)!.skills,
-            );
-
-            // Weighted Constraint: Skills must be high enough priority
-            // for the character's used skill group points.
-            // TODO (zeffron 2019-05-21) Figure out a method for constraining
-            // skills that takes into account splitting groups (if possible).
-            configuration.count += Math.max(
-                0,
-                this.usedSkillGroupPoints - skills.get(skillPriority)!.groups,
-            );
-        }
-
-        return weightedPriorityConfigurations
-            .sort((a, b) => a.count - b.count)[0].configuration;
+        // others with equal score. (This does not cost much extra computation
+        // as the constraint scores are memoized.)
+        return [this.priorities, ...priorityConfigurations]
+            .sort(
+                (a, b) => a.constraintScore(this.character) - b.constraintScore(this.character)
+            )[0];
     }
     private adjustPriorities: IReactionDisposer;
 
@@ -310,6 +359,18 @@ export class PrioritySystem {
     @action updateMetatype(metatype: Metatype) {
         this.previousMetatype = this.character.metatype;
         this.character.metatype = metatype;
+        this.character.body += this.character.metatype.body.base - this.previousMetatype.body.base;
+        this.character.agility += this.character.metatype.agility.base - this.previousMetatype.agility.base;
+        this.character.reaction += this.character.metatype.reaction.base - this.previousMetatype.reaction.base;
+        this.character.strength += this.character.metatype.strength.base - this.previousMetatype.strength.base;
+        this.character.willpower += this.character.metatype.willpower.base - this.previousMetatype.willpower.base;
+        this.character.logic += this.character.metatype.logic.base - this.previousMetatype.logic.base;
+        this.character.intuition += this.character.metatype.intuition.base - this.previousMetatype.intuition.base;
+        this.character.charisma += this.character.metatype.charisma.base - this.previousMetatype.charisma.base;
+        this.character.edge += this.character.metatype.edge.base - this.previousMetatype.edge.base;
+        this.character.magicOrResonance = this.character.magicOrResonanceUser !== MagicOrResonanceUser.None ?
+            this.character.magicOrResonance :
+            this.character.metatype.magic.base;
     }
 
     @computed get totalSpecialAttributePoints() {
@@ -323,23 +384,12 @@ export class PrioritySystem {
         }
     }
 
-    @computed private get usedSpecialAttributePoints() {
-        const magicOrResonancePriority = this.priorities.priority(Category.MagicOrResonance)!;
-        const magicOrResonanceMetadata = magicOrResonance
-            .get(magicOrResonancePriority)!
-            .get(this.character.magicOrResonanceUser)!;
-        return this.character.attributes.get(Attribute.Edge)! + Math.max(
-            this.character.attributes.get(Attribute.MagicOrResonance)! - (
-                isMagicMetadata(magicOrResonanceMetadata) ?
-                    magicOrResonanceMetadata.magic :
-                    magicOrResonanceMetadata.resonance
-            ),
-            0
-        );
+    @computed private get assignedSpecialAttributePoints() {
+        return this.priorities.assignedSpecialAttributePoints(this.character);
     }
 
     @computed get availableSpecialAttributePoints() {
-        return this.totalSpecialAttributePoints - this.usedSpecialAttributePoints;
+        return this.totalSpecialAttributePoints - this.assignedSpecialAttributePoints;
     }
 
     @action updateMagicOrResonanceUser(magicOrResonanceUser: MagicOrResonanceUser) {
@@ -392,15 +442,12 @@ export class PrioritySystem {
         return attributes.get(this.priorities.priority(Category.Attributes))!;
     }
 
-    @computed private get usedAttributePoints() {
-        return [...this.character.attributes.entries()]
-            .filter(([attribute, points]) => ![Attribute.Edge, Attribute.MagicOrResonance].includes(attribute))
-            .map(([attribute, points]) => points)
-            .reduce((previous, current) => previous + current, 0);
+    @computed private get assignedAttributePoints() {
+        return this.priorities.assignedAttributePoints(this.character);
     }
 
     @computed get availableAttributePoints() {
-        return this.totalAttributePoints - this.usedAttributePoints;
+        return this.totalAttributePoints - this.assignedAttributePoints;
     }
 
     @action updateSkill(skill: Skill | SkillGroup, rating: number, index: number) {
@@ -427,29 +474,23 @@ export class PrioritySystem {
         return skills.get(this.priorities.priority(Category.Skills))!.skills;
     }
 
-    @computed private get usedSkillPoints() {
-        return [...this.character.skills.values()]
-            .filter(([skill, points]) => isSkill(skill))
-            .map(([skill, points]) => points)
-            .reduce((previous, current) => previous + current, 0);
+    @computed private get assignedSkillPoints() {
+        return this.priorities.assignedSkillPoints(this.character);
     }
 
     @computed get availableSkillPoints() {
-        return this.totalSkillPoints - this.usedSkillPoints;
+        return this.totalSkillPoints - this.assignedSkillPoints;
     }
 
     @computed get totalSkillGroupPoints() {
         return skills.get(this.priorities.priority(Category.Skills))!.groups;
     }
 
-    @computed private get usedSkillGroupPoints() {
-        return [...this.character.skills.values()]
-            .filter(([skill, points]) => isSkillGroup(skill))
-            .map(([skill, points]) => points)
-            .reduce((previous, current) => previous + current, 0);
+    @computed private get assignedSkillGroupPoints() {
+        return this.priorities.assignedSkillGroupPoints(this.character);
     }
 
     @computed get availableSkillGroupPoints() {
-        return this.totalSkillGroupPoints - this.usedSkillGroupPoints;
+        return this.totalSkillGroupPoints - this.assignedSkillGroupPoints;
     }
 }
