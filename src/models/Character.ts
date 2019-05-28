@@ -8,7 +8,7 @@ import { Skill, SkillGroup } from './Skill';
 
 export class Character {
 
-    public static fromChummer5a(dom: XMLDocument): Character {
+    static fromChummer5a(dom: XMLDocument): Character {
         const character = new Character();
         character.metatype = Metatypes.get(
             dom.evaluate(
@@ -90,7 +90,7 @@ export class Character {
         return character;
     }
 
-    public toJSON = computedFn(
+    toJSON = computedFn(
         function (this: Character) {
             return {
                 metatype: this.metatype.metasapient,
@@ -111,7 +111,7 @@ export class Character {
         }
     );
 
-    @computed public get url() {
+    @computed get url() {
         const blob = new Blob(
             [JSON.stringify(this, null, 2)],
             {
@@ -151,6 +151,21 @@ export class Character {
     @observable charisma: number = 0;
     @observable edge: number = 0;
     @observable magicOrResonance: number = 0;
+    @observable essence: number = 6;
+
+    // Limits
+    @computed get mentalLimit() {
+        return Math.ceil((this.logic * 2 + this.intuition + this.willpower) / 3);
+    }
+
+    @computed get physicalLimit() {
+        return Math.ceil((this.strength * 2 + this.body + this.reaction) / 3);
+    }
+
+    @computed get socialLimit() {
+        return Math.ceil((this.charisma * 2 + this.willpower + this.essence) / 3);
+    }
+
 
     // Skills
     @observable skills: [Skill | SkillGroup, number][] = [];

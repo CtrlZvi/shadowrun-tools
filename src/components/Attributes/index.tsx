@@ -13,8 +13,6 @@ const AttributesComponent = observer(
         const character = useContext(CharacterContext);
         const prioritySystem = useContext(PrioritySystemContext);
 
-        console.debug(`Screen resolution ${screen.width}x${screen.height}`); // eslint-disable-line no-restricted-globals
-        console.debug(`Device Pixel Ratio: ${window.devicePixelRatio}`);
         return (
             <CharacterSheetSection className="attributes" name={"ATTRIBUTES"} ref={ref}>
                 <label htmlFor="attribute-body">
@@ -39,7 +37,9 @@ const AttributesComponent = observer(
                 <label htmlFor="attribute-">
                     <span>Essence</span>
                 </label>
-                <div></div>
+                <div>
+                    {character.essence}
+                </div>
                 <label htmlFor="attribute-agility">
                     <span>Agility</span>
                 </label>
@@ -251,15 +251,15 @@ const AttributesComponent = observer(
                     <label htmlFor="attribute-physical-limit">
                         <span>Physical Limit</span>
                     </label>
-                    <div></div>
+                    <div>{character.physicalLimit}</div>
                     <label htmlFor="attribute-mental-limit">
                         <span>Mental Limit</span>
                     </label>
-                    <div></div>
+                    <div>{character.mentalLimit}</div>
                     <label htmlFor="attribute-social-limit">
                         <span>Social Limit</span>
                     </label>
-                    <div></div>
+                    <div>{character.socialLimit}</div>
                 </div>
             </CharacterSheetSection >
         )

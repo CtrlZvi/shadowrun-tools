@@ -11,6 +11,8 @@
   margin-left: #{$section-left-margin + $attributes-margin-adjust};
   column-gap: $attributes-gap;
   row-gap: #{$section-line-margin-bottom - 0.375pt};
+
+  margin-bottom: $section-line-margin-bottom;
 }
 
 .attributes div.character-sheet-section-body>label {
@@ -43,14 +45,19 @@
 .attributes .limits {
   grid-column-start: 1;
   grid-column-end: 5;
-  display: block;
+  display: flex;
+
+  margin-top: 5.5pt;
 
   @extend %underline;
 
   label, div {
-    display: inline-block;
     border: none;
     width: auto;
+  }
+
+  div {
+    flex-grow: 1;
   }
 }
 

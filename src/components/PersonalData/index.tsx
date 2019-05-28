@@ -28,8 +28,6 @@ const PersonalDataComponent = observer(
         const character = useContext(CharacterContext);
         const prioritySystem = useContext(PrioritySystemContext);
 
-        console.debug(`Screen resolution ${screen.width}x${screen.height}`); // eslint-disable-line no-restricted-globals
-        console.debug(`Device Pixel Ratio: ${window.devicePixelRatio}`);
         return (
             <CharacterSheetSection className="personal-data" name={"PERSONAL DATA"} ref={ref}>
                 <div>

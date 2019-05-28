@@ -6,12 +6,9 @@
   font-size: 7pt;
   font-weight: normal;
   
-  color: rgba(0, 255, 255, 0.5);
+  // color: rgba(0, 255, 255, 0.5);
   
-  border-color: #6d6e70;
-  border-color: rgba(0, 255, 255, 0.5);
-  border-bottom-width: 0.75pt;
-  border-bottom-style: solid;
+  @extend %underline;
   
   margin-bottom: $section-line-margin-bottom;
 

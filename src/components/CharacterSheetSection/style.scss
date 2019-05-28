@@ -23,8 +23,7 @@ $section-header-text-right: 292.637pt;
     display: flex;
 
     fill: none;
-    stroke: #7e0f12;
-    stroke: rgba(0, 255, 255, 0.5);
+    stroke: $section-header-color;
     stroke-width: $stroke-width;
 }
 
@@ -38,7 +37,7 @@ $section-header-text-right: 292.637pt;
     display: inline;
     
     color: #ffffff;
-    background-color: #7e0f12;
+    background-color: $section-header-color;
     
     font-family: ArmaduraSolid, Armadura Solid;
     font-size: 9pt;
