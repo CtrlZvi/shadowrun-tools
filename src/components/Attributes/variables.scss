@@ -1,7 +1,7 @@
 @import "../CharacterSheetSection/variables.scss";
 
 // TODO (zeffron 2019-05-26) Determine which margin is the correct left margin:
-// the one used by Attributes or the one used by Personal Data.
+// the one used by Attributes and Skills or the one used by Personal Data.
 $attributes-left: 39.248pt;
 $attributes-margin-adjust: $attributes-left - ($section-left-margin + $sections-left);
 

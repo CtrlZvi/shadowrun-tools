@@ -2,9 +2,16 @@ import skills from '../data/skills.json';
 
 import { Attribute } from "./Attribute";
 
+export enum Type {
+    Active,
+    Knowledge,
+    Language,
+}
+
 export interface Skill {
     name: string;
     attribute: Attribute;
+    type: Type;
 };
 
 export function isSkill(skill: Skill | SkillGroup): skill is Skill {
@@ -29,6 +36,7 @@ export const Skills: Map<string, Skill> = new Map(
                     {
                         name: name,
                         attribute: (Attribute as any)[value.attribute],
+                        type: Type.Active,
                     },
                 ];
             }

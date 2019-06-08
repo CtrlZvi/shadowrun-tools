@@ -11,9 +11,10 @@ $section-left-margin: 43.248pt - $sections-left;
 $section-right-margin: $section-width - $section-left-margin - 241.56pt;
 $section-bottom-margin: 181.016pt - $sections-top - 86.89203pt;
 
-$section-padding-bottom: 86.89203pt - 85.9875pt;
+$section-padding-bottom: 1.25pt;
 
 $section-line-margin-bottom: (128.595pt - 115.636pt) - 8.55pt - 0.75pt;
+$section-line-margin-bottom: 3.25pt;
 
 $section-header-color: #7e0f12;
-// $section-header-color: rgba(0, 255, 255, 0.5);;
+// $section-header-color: rgba(0, 255, 255, 0.5);

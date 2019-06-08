@@ -1,3 +1,4 @@
+import { action } from 'mobx';
 import { observer, useLocalStore } from 'mobx-react-lite';
 import React, { ChangeEvent } from "react";
 
@@ -8,7 +9,6 @@ import CharacterContext from "../../contexts/Character";
 import PrioritySystemContext from '../../contexts/PrioritySystem';
 import { Character } from "../../models/Character";
 import { PrioritySystem } from '../../models/PrioritySystem';
-import { action } from 'mobx';
 
 const CharacterCreator = observer(() => {
     const characterStore = useLocalStore(() => ({ character: new Character() }));
@@ -18,23 +18,16 @@ const CharacterCreator = observer(() => {
         <PrioritySystemContext.Provider value={prioritySystemStore.prioritySystem}>
             <input
                 type="file"
-                accept=".chum5"
+                accept=".chum5,application/json"
                 onChange={
-                    (event: ChangeEvent) => {
-                        const reader = new FileReader();
-                        reader.onload = action((event) => {
-                            const parser = new DOMParser();
-                            const dom = parser.parseFromString(
-                                reader.result as string,
-                                "text/xml",
-                            )
-                            characterStore.character = Character.fromChummer5a(dom);
+                    (event: ChangeEvent) => Character.load(
+                        (event.currentTarget as HTMLInputElement).files!
+                    ).then(
+                        action((character: Character) => {
+                            characterStore.character = character;
                             prioritySystemStore.prioritySystem = new PrioritySystem(characterStore.character);
                         })
-                        reader.readAsText(
-                            (event.currentTarget as HTMLInputElement).files!.item(0)!,
-                        );
-                    }
+                    )
                 } />
             <a download="character_sheet.json" href={characterStore.character.url}>
                 <button type="button" >

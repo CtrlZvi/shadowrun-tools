@@ -67,7 +67,6 @@ const PriorityComponent = observer(() => {
                             {prioritySystem.priorities.E === Category.Skills ? `${prioritySystem.availableSkillPoints} / ${prioritySystem.totalSkillPoints} (${prioritySystem.availableSkillGroupPoints} / ${prioritySystem.totalSkillGroupPoints})` : undefined}
                         </td>
                     </tr>
-                    }
                 </tbody>
             </table>
         </div>

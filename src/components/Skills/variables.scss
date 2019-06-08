@@ -1,0 +1,17 @@
+@import "../CharacterSheetSection/variables.scss";
+
+// TODO (zeffron 2019-05-26) Determine which margin is the correct left margin:
+// the one used by Attributes and Skills or the one used by Personal Data.
+$skills-left: 38.247pt;
+$skills-margin-adjust: $skills-left - ($section-left-margin + $sections-left);
+
+$skills-rating-left: 121.425pt;
+$skills-type-left: 146.866pt;
+$skills-name-width: $skills-rating-left - $skills-left;
+$skills-rating-width: $skills-type-left - $skills-rating-left;
+
+$skills-line-width: 119.065pt;
+$skills-right-line-left: 167.155pt;
+$skills-gap: $skills-right-line-left - $skills-line-width - $skills-left;
+
+$skill-type-color: $section-header-color;

@@ -1,12 +1,143 @@
-import { observable, computed } from "mobx";
+import { observable, computed, action } from "mobx";
 import { computedFn } from "mobx-utils";
 
 import { MagicOrResonanceUser } from "./MagicOrResonance";
 import { Metatype, Metatypes, Metasapient } from './Metatype';
 import { Quality } from './Quality';
-import { Skill, SkillGroup } from './Skill';
+import { Skill, Skills, SkillGroup, SkillGroups, isSkill, Type as SkillType } from './Skill';
+import chummer from '../data/chummer.json';
+import { Attribute } from "./Attribute";
+
+const chummerSkills = new Map<string, Skill | SkillGroup>(
+    Object.entries(chummer.skills)
+        .map(
+            ([id, name]) =>
+                [id, Skills.has(name) ? Skills.get(name)! : SkillGroups.get(name)!]
+        )
+);
+
+interface AttributesJSON {
+    body: number;
+    agility: number;
+    reaction: number;
+    strength: number;
+    willpower: number;
+    logic: number;
+    intuition: number;
+    charisma: number;
+    edge: number;
+    magic?: number;
+    resonance?: number;
+}
+
+interface CharacterJSON {
+    metatype: string;
+    attributes: AttributesJSON;
+    skills: {
+        name: string;
+        value: number;
+        type?: SkillType;
+    }[];
+}
 
 export class Character {
+
+    static async load(files: FileList): Promise<Character> {
+        let file = files.item(0)!;
+        const reader = new FileReader();
+
+        let loadAction: (result: string | ArrayBuffer | null) => Character;
+        const chummerLoadAction = action(
+            (result: string | ArrayBuffer | null) =>
+                Character.fromChummer5a(
+                    new DOMParser()
+                        .parseFromString(result as string, "text/xml")
+                )
+        );
+        const jsonLoadAction = action(
+            (result: string | ArrayBuffer | null) =>
+                Character.fromJSON(JSON.parse(result as string))
+        );
+        switch (file.type) {
+            case "application/json":
+                loadAction = jsonLoadAction;
+                break;
+            case "text/xml":
+                loadAction = chummerLoadAction;
+                break;
+            default:
+                switch (file.name.split(".").pop()) {
+                    case "chum5":
+                        loadAction = chummerLoadAction;
+                        break;
+                }
+                break;
+        }
+        reader.readAsText(files.item(0)!);
+        return new Promise<Character>((resolve, reject) => {
+            reader.onload = (event) => resolve(loadAction(reader.result))
+        });
+    }
+
+    static fromJSON(json: CharacterJSON): Character {
+        const character = new Character();
+        character.metatype = Metatypes.get(json.metatype as Metasapient)!;
+        for (const [attribute, value] of Object.entries(json.attributes)) {
+            switch (attribute) {
+                case "body":
+                    character.body = value!;
+                    break;
+                case "agility":
+                    character.agility = value!;
+                    break;
+                case "reaction":
+                    character.reaction = value!;
+                    break;
+                case "strength":
+                    character.strength = value!;
+                    break;
+                case "willpower":
+                    character.willpower = value!;
+                    break;
+                case "logic":
+                    character.logic = value!;
+                    break;
+                case "intuition":
+                    character.intuition = value!;
+                    break;
+                case "charisma":
+                    character.charisma = value!;
+                    break;
+                case "edge":
+                    character.edge = value!;
+                    break;
+                case "magic":
+                    if (![MagicOrResonanceUser.None, MagicOrResonanceUser.Technomancer].includes(character.magicOrResonanceUser)) {
+                        character.magicOrResonance = value!;
+                    }
+                    // TODO (zeffron 2019-06-08) Raise an error in the else
+                    // case
+                    break;
+                case "resonance":
+                    if (character.magicOrResonanceUser === MagicOrResonanceUser.Technomancer) {
+                        character.magicOrResonance = value!;
+                    }
+                    // TODO (zeffron 2019-06-08) Raise an error in the else
+                    // case
+                    break;
+            }
+        }
+        json.skills.forEach(({ name, value, type }) =>
+            character.skills.push([
+                Skills.get(name) || SkillGroups.get(name) || {
+                    name: name,
+                    attribute: Attribute.Intuition,
+                    type: type !== undefined ? type : SkillType.Knowledge,
+                },
+                value
+            ]));
+        return character;
+    }
 
     static fromChummer5a(dom: XMLDocument): Character {
         const character = new Character();
@@ -87,26 +218,69 @@ export class Character {
                     break;
             }
         }
+        let skill: Node | null;
+        const skillIterator = dom.evaluate(
+            "/character/newskills/skills/skill",
+            dom,
+            null,
+            XPathResult.UNORDERED_NODE_ITERATOR_TYPE,
+            null,
+        );
+        while ((skill = skillIterator.iterateNext()) !== null) {
+            const skillIdentifier = dom.evaluate(
+                "string(suid)",
+                skill,
+                null,
+                XPathResult.STRING_TYPE,
+                null,
+            ).stringValue;
+            const skillValue = dom.evaluate(
+                "number(base)+number(karma)",
+                skill,
+                null,
+                XPathResult.NUMBER_TYPE,
+                null,
+            ).numberValue;
+            if (skillValue === 0) {
+                continue;
+            }
+            character.skills.push([
+                chummerSkills.get(skillIdentifier)!,
+                skillValue,
+            ]);
+        }
         return character;
     }
 
     toJSON = computedFn(
-        function (this: Character) {
+        function (this: Character): CharacterJSON {
+            const attributes: AttributesJSON = {
+                body: this.body,
+                agility: this.agility,
+                reaction: this.reaction,
+                strength: this.strength,
+                willpower: this.willpower,
+                logic: this.logic,
+                intuition: this.intuition,
+                charisma: this.charisma,
+                edge: this.edge,
+
+            }
+            if (this.magicOrResonanceUser === MagicOrResonanceUser.Technomancer) {
+                attributes.resonance = this.magicOrResonance;
+            } else if (this.magicOrResonanceUser !== MagicOrResonanceUser.None) {
+                attributes.magic = this.magicOrResonance;
+            }
             return {
                 metatype: this.metatype.metasapient,
-                attributes: {
-                    body: this.body,
-                    agility: this.agility,
-                    reaction: this.reaction,
-                    strength: this.strength,
-                    willpower: this.willpower,
-                    logic: this.logic,
-                    intuition: this.intuition,
-                    charisma: this.charisma,
-                    edge: this.edge,
-                    magic: ![MagicOrResonanceUser.Technomancer, MagicOrResonanceUser.None].includes(this.magicOrResonanceUser) ? this.magicOrResonance : 0,
-                    resonance: this.magicOrResonanceUser === MagicOrResonanceUser.Technomancer ? this.magicOrResonance : 0,
-                }
+                attributes: attributes,
+                skills: this.skills.map(
+                    ([skill, value]) => ({
+                        name: skill.name,
+                        value: value,
+                        type: isSkill(skill) ? skill.type : SkillType.Active,
+                    })
+                )
             }
         }
     );

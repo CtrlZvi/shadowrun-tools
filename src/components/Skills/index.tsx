@@ -1,86 +1,92 @@
+import { action } from 'mobx';
 import { observer } from 'mobx-react-lite';
-import React, { useContext } from 'react';
+import React, { useContext, ChangeEvent } from 'react';
 
-import { ReactComponent as ActiveKnowledge } from './ActiveKnowledge.svg';
-import { ReactComponent as RatingLeft } from './RatingLeft.svg';
-import { ReactComponent as RatingRight } from './RatingRight.svg';
-import './Skills.scss';
-import { ReactComponent as Box } from './SkillsBox.svg';
-import { ReactComponent as SkillLeft } from './SkillLeft.svg';
-import { ReactComponent as Style } from './SkillsStyle.svg';
-import { ReactComponent as Tab } from './SkillsTab.svg';
-import { ReactComponent as Text } from './SkillsText.svg';
-import { ReactComponent as Line } from './SkillsLine.svg';
-import { ReactComponent as TypeLeftSkillRight } from './TypeLeftSkillRight.svg';
-import { ReactComponent as TypeRight } from './TypeRight.svg';
-
-import SkillComponent from './Skill';
+import './style.scss';
+import CharacterSheetSection from '../CharacterSheetSection';
 import CharacterContext from '../../contexts/Character';
-import { SkillGroups } from '../../models/Skill';
+import PrioritySystemContext from '../../contexts/PrioritySystem';
+import { Attribute } from '../../models/Attribute'
+import { Skill, Skills, SkillGroup, SkillGroups, Type as SkillType, isSkill } from '../../models/Skill';
 
-const Skills = observer(() => {
-    const character = useContext(CharacterContext);
-    const skills = character.skills
-        .map(([skill, rating], index) => <SkillComponent key={skill.name} skill={skill} rating={rating} index={index} />)
+const skills = ([...SkillGroups.values()] as (Skill | SkillGroup)[])
+    .concat([...Skills.values()])
+    .map((skill: Skill | SkillGroup) => (
+        <option key={skill.name} value={skill.name}>
+            {skill.name}
+        </option>
+    ));
 
-    return (
-        <div className="skills">
-            <Tab className="skills-tab" />
-            <Style className="skills-style" />
-            <Text className="skills-text" />
-            <Box className="skills-box" />
-            <Line className="skills-line-1" />
-            <Line className="skills-line-2" />
-            <Line className="skills-line-3" />
-            <Line className="skills-line-4" />
-            <Line className="skills-line-5" />
-            <Line className="skills-line-6" />
-            <Line className="skills-line-7" />
-            <Line className="skills-line-8" />
-            <Line className="skills-line-9" />
-            <Line className="skills-line-10" />
-            <Line className="skills-line-11" />
-            <Line className="skills-line-12" />
-            <Line className="skills-line-13" />
-            <Line className="skills-line-14" />
-            <Line className="skills-line-15" />
-            <Line className="skills-line-16" />
-            <Line className="skills-line-17" />
-            <Line className="skills-line-18" />
-            <Line className="skills-line-19" />
-            <Line className="skills-line-20" />
-            <Line className="skills-line-21" />
-            <Line className="skills-line-22" />
-            <Line className="skills-line-23" />
-            <Line className="skills-line-24" />
-            <Line className="skills-line-25" />
-            <Line className="skills-line-26" />
-            <Line className="skills-line-27" />
-            <Line className="skills-line-28" />
-            <Line className="skills-line-29" />
-            <Line className="skills-line-30" />
-            <Line className="skills-line-31" />
-            <Line className="skills-line-32" />
-            <Line className="skills-line-33" />
-            <Line className="skills-line-34" />
-            <Line className="skills-line-35" />
-            <Line className="skills-line-36" />
-            <Line className="skills-line-37" />
-            <Line className="skills-line-38" />
-            <SkillLeft className="skills-skill-left" />
-            <RatingLeft className="skills-rating-left" />
-            <TypeLeftSkillRight className="skills-type-left-skill-right" />
-            <RatingRight className="skills-rating-right" />
-            <TypeRight className="skills-type-right" />
-            <ActiveKnowledge className="skills-active-knowledge" />
-            <table className="selected-skills">
-                <tbody>
+const SkillsComponent = observer(
+    (_: {}, ref) => {
+        const character = useContext(CharacterContext);
+        const prioritySystem = useContext(PrioritySystemContext);
+
+        const characterSkills = character.skills
+            .concat([[SkillGroups.get("")!, 0]])
+            .map(
+                ([skill, rating], index) =>
+                    <div key={skill.name}>
+                        <input
+                            type="text"
+                            list="skills"
+                            value={skill.name}
+                            // FIXME (zeffron 2019-06-08) Focus is lost after
+                            // each character when typing in the skill name.
+                            onChange={action(
+                                (event: ChangeEvent<HTMLInputElement>) =>
+                                    prioritySystem.updateSkill(
+                                        Skills.get(event.currentTarget.value) || SkillGroups.get(event.currentTarget.value) || {
+                                            name: event.currentTarget.value,
+                                            attribute: Attribute.Intuition,
+                                            type: SkillType.Knowledge,
+                                        },
+                                        1,
+                                        index,
+                                    )
+                            )} />
+                        <input
+                            type="number"
+                            value={rating}
+                            min={1}
+                            max={6}
+                            onChange={action(
+                                (event: ChangeEvent<HTMLInputElement>) => prioritySystem.updateSkill(
+                                    skill,
+                                    event.currentTarget.valueAsNumber,
+                                    index,
+                                )
+                            )} />
+                        <span className="skill-type">
+                            <span className={isSkill(skill) ? skill.type === SkillType.Active ? "selected" : "" : "selected"}>A</span>
+                            /
+                            <span className={isSkill(skill) ? skill.type !== SkillType.Active ? "selected" : "" : ""}>K</span>
+                        </span>
+                    </div>
+            )
+
+        return (
+            <CharacterSheetSection className="skills" name={"SKILLS"} ref={ref}>
+                <datalist id="skills">
                     {skills}
-                    <SkillComponent key={""} skill={SkillGroups.get("")!} rating={0} index={character.skills.length} />
-                </tbody>
-            </table>
-        </div>
-    );
-});
+                </datalist>
+                <div>
+                    <span>Skill</span>
+                    <span>RTG</span>
+                    <span>Type</span>
+                </div>
+                <div>
+                    <span>Skill</span>
+                    <span>RTG</span>
+                    <span>Type</span>
+                </div>
+                {characterSkills}
+            </CharacterSheetSection >
+        )
+    },
+    { forwardRef: true },
+)
 
-export default Skills;
+SkillsComponent.displayName = "SKILLS";
+
+export default SkillsComponent;

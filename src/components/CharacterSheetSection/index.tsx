@@ -21,9 +21,9 @@ const CharacterSheetSection = observer(
                     version="1.1"
                     baseProfile="full"
                     xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 270.625 11.535"
+                    viewBox="0 0 270.75 11.535"
                 >
-                    <polyline points="270.25,11.535 270.25,0.5 11.66,0.5 0.5,11.535" />
+                    <polyline points="0.5,11.535 11.66,0.5 270.375,0.5 270.375,11.535" />
                 </svg>
                 <header>
                     <h2>{name}</h2>

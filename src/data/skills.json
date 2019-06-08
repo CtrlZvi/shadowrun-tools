@@ -66,7 +66,7 @@
         "Pilot Exotic Vehicle (Specific)": {
             "attribute": "Reaction"
         },
-        "Pilot Groundcraft": {
+        "Pilot Ground Craft": {
             "attribute": "Reaction"
         },
         "Pilot Walker": {
@@ -253,7 +253,7 @@
             "Running",
             "Swimming"
         ],
-        "Bitotech": [
+        "Biotech": [
             "Cybertechnology",
             "First Aid",
             "Medicine"

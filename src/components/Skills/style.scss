@@ -1,0 +1,69 @@
+@import "variables.scss";
+
+.skills {
+  margin-top: 1.21043pt;
+}
+
+.skills div.character-sheet-section-body {
+  font-family: UniversLTStd-BoldCn, Univers LT Std;
+  font-size: 6pt;
+  font-weight: normal;
+  // color: rgba(0, 255, 255, 0.5);
+  
+  display: grid;
+  grid-template-columns: repeat(2, $skills-line-width);
+  margin-left: #{$section-left-margin + $skills-margin-adjust};
+  column-gap: $skills-gap;
+  row-gap: 1pt;
+
+  margin-bottom: $section-line-margin-bottom;
+}
+
+.skills div.character-sheet-section-body>div {
+  // background-color: rgba(255, 0, 255, 0.5);
+  display: grid;
+  grid-template-columns: $skills-name-width $skills-rating-width 1fr;
+  padding-bottom: 1pt;
+  height: 7.042pt;
+  height: 7.5pt;
+
+  @extend %underline;
+}
+
+
+.skills select {
+  width: 100%;
+  padding: 0pt;
+  font-size: 6pt;
+}
+
+.skills div.character-sheet-section-body>div {
+  margin-top:1.875pt;
+}
+
+.skills div.character-sheet-section-body>div:nth-of-type(1) {
+  margin-top:0pt;
+}
+.skills div.character-sheet-section-body>div:nth-of-type(2) {
+  margin-top:0pt;
+}
+.skills div.character-sheet-section-body>div:nth-of-type(3) {
+  margin-top:0pt;
+}
+.skills div.character-sheet-section-body>div:nth-of-type(4) {
+  margin-top:0pt;
+}
+
+.skills .skill-type {
+  padding-top: 1pt;
+  letter-spacing: 0.125em;
+  &>.selected {
+    color: $skill-type-color;
+  }
+}
+
+.skills input {
+  width: 100%;
+  padding: 0pt;
+  margin: 0pt;
+}

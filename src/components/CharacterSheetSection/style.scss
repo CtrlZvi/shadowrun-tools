@@ -7,18 +7,17 @@ $section-header-text-right: 292.637pt;
     display: inline-block;
     width: $section-width;
     position: relative;
-    background-color: rgba(255, 255, 0, 0.5);
-    background-color: transparent;
 
     padding-bottom: $section-padding-bottom;
     margin-bottom: $section-bottom-margin;
+    margin-bottom: 9pt;
     margin-right: $sections-column-gap;
 }
 
 .character-sheet-section>.section-box-top {
     position: absolute;
     height: 11.535pt;
-    top: 13.037pt;
+    top: $section-padding-bottom + $section-header-line-height;
     width: 100%;
     display: flex;
 
@@ -43,14 +42,25 @@ $section-header-text-right: 292.637pt;
     font-size: 9pt;
     font-weight: normal;
     line-height: $section-header-line-height;
+    letter-spacing: .175pt;
     
     margin: 0pt;
-    padding: 0pt #{$section-width - (189.137pt + 103.5pt - $sections-left)};
-    padding-bottom: #{$section-header-height - $section-header-line-height};
 }
 
 .character-sheet-section-body {
     margin-top: $section-top-margin;
     margin-left: $section-left-margin;
     margin-right: 12pt;
+}
+
+.personal-data header>h2 {
+    padding: 0pt 4.75pt $section-padding-bottom 2.5pt;
+}
+
+.attributes header > h2 {
+  padding: 0pt 4.75pt $section-padding-bottom 2.5pt;
+}
+
+.skills header > h2 {
+  padding: 0pt 4.75pt $section-padding-bottom 4pt;
 }

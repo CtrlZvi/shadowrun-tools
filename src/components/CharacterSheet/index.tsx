@@ -4,17 +4,18 @@ import React, { useState, useLayoutEffect, useCallback, MemoExoticComponent, For
 import { ReactComponent as SVG } from './Background.svg';
 import './style.scss';
 
+import Attributes from "../Attributes";
+import PersonalData from '../PersonalData';
+import Skills from '../Skills';
 import CharacterSheetContext from '../../contexts/CharacterSheet';
 import CharacterSheetSection from '../CharacterSheetSection';
-import PersonalData from '../PersonalData';
-import Attributes from "../Attributes";
 
 let toggleRendered = () => { }
 
 const sectionNames = [
     PersonalData,
     Attributes,
-    "SKILLS",
+    Skills,
     "IDS / LIFESTYLES / CURRENCY",
     "CORE COMBAT INFO",
     "CONDITION MONITOR",
